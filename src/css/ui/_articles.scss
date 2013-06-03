@@ -1,0 +1,82 @@
+/*------------------------------------*\
+	$ARTICLES
+\*------------------------------------*/
+article {
+	margin-bottom: $base-spacing-unit;
+	padding: $base-spacing-unit;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.92);
+	border-radius: 2px;
+	@include box-shadow(rgba(0, 0, 0, 0.15) 1px 1px 5px);
+	@include transition-property(all);
+	@include transition-duration(0.1s);
+
+	&:hover {
+		@include box-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px);
+	}
+
+	&:last-child,
+	:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.intro {
+	text-align: center;
+}
+	.intro__logo {
+		display: inline-block;
+		margin-bottom: $half-spacing-unit/4;
+		width: 78px;
+		height: 78px;
+		border-radius: 100%;
+		border: 3px solid $base-ui-color;
+		@include transition-property(all);
+		@include transition-duration(0.1s);
+
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: $base-link-color;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+		}
+	}
+
+	.intro__name {
+		margin-bottom: 0;
+		font-weight: 700;
+		color: $base-font-color;
+	}
+
+	.intro__tagline {
+		margin-bottom: $half-spacing-unit;
+		color: $alt-font-color;
+		font-style: italic;
+	}
+
+	.intro__links {
+		list-style: none;
+
+		li, a {
+			display: inline-block;
+		}
+
+		a {
+			@include font-size(20px);
+			margin: 0 $half-spacing-unit/4;
+			color: $alt-font-color;
+			@include transition-property(all);
+			@include transition-duration(0.1s);
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: $base-link-color;
+			}
+		}
+	}
