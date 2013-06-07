@@ -1,9 +1,4 @@
-/*------------------------------------*\
-	$SETUP
-\*------------------------------------*/
-/**
- * Generic utility styles etc.
- */
+// Generic utility styles etc.
 @import "defaults";
 @import "generic/mixins";
 @import "generic/normalize";
@@ -12,34 +7,24 @@
 @import "generic/shared";
 
 
-/**
- * Base styles; unclassed HTML elements etc.
- */
+// Base styles, unclassed HTML elements, etc.
 @import "base/main";
 @import "base/scale";
-@import "base/paragraphs";
 @import "base/quotes";
 @import "base/code";
 @import "base/images";
 @import "base/lists";
 @import "base/forms";
+@import "base/tables";
 
 
-/**
- * Objects and abstractions
- */
+// Objects and abstractions
 @import "objects/grids";
 @import "objects/nav";
-@import "objects/pagination";
 @import "objects/media";
 @import "objects/island";
-@import "objects/split";
 @import "objects/sprite";
-@import "objects/rules";
 
 
-/**
- * Helper classes
- */
-@import "generic/widths";
+// Helper classes
 @import "generic/helper";

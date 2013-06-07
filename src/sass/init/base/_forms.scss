@@ -1,0 +1,20 @@
+/**
+ * Forms
+ */
+fieldset {
+	padding: $base-spacing-unit;
+}
+
+
+// Applying `.text-input` to every input element provides an easy way to target all of them later.
+.text-input,
+textarea {
+	// Style these via your theme stylesheet.
+}
+
+
+// Use .label on any element that should act as a form label.
+.label,
+label {
+	display: block;
+}

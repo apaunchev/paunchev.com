@@ -1,19 +1,7 @@
-@if $use-helper == true {
-
 /*------------------------------------*\
 	$HELPER
 \*------------------------------------*/
-/**
- * A series of helper classes to use arbitrarily. Only use a helper class if an
- * element/component doesn’t already have a class to which you could apply this
- * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
- * that ruleset as opposed to adding the `.float--left` class to the markup.
- *
- * A lot of these classes carry `!important` as you will always want them to win
- * out over other selectors.
- */
-
-
+@if $use-helper == true {
 /**
  * Add/remove floats
  */
@@ -140,13 +128,9 @@
 .caps {
 	text-transform: uppercase !important;
 }
-
 } // endif
 
-/**
- * Hide content off-screen without resorting to `display:none;`, also provide
- * breakpoint specific hidden elements.
- */
+// Hide content off-screen without resorting to `display: none;`.
 @mixin accessibility {
 	border: 0 !important;
 	clip: rect(0 0 0 0) !important;
@@ -162,7 +146,10 @@
 	@include accessibility;
 }
 
-@if $responsive {
+@if $responsive == true {
+	/**
+	 * Provide breakpoint specific hidden elements.
+	 */
 	@each $state in palm, lap, lap-and-up, portable, desk, desk-wide {
 		@include media-query(#{$state}) {
 			.accessibility--#{$state},

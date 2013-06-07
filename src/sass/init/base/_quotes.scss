@@ -1,0 +1,46 @@
+/**
+ * Quotes
+ */
+// Big up @boblet: html5doctor.com/blockquote-q-cite
+q {
+	quotes: "\2018" "\2019" "\201C" "\201D";
+
+	&:before {
+		content: "\2018";
+	}
+	&:after {
+		content: "\2019";
+	}
+
+	q:before {
+		content: "\201C";
+	}
+	q:after {
+		content: "\201D";
+	}
+}
+
+blockquote {
+	quotes: "\201C" "\201D";
+
+	p:before {
+		content: "\201C";
+	}
+	p:after {
+		content: "";
+	}
+	p:last-of-type:after {
+		content: "\201D";
+	}
+
+	q:before {
+		content: "\2018";
+	}
+	q:after {
+		content: "\2019";
+	}
+
+	:last-of-type {
+		margin-bottom: 0;
+	}
+}
