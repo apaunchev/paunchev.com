@@ -12,7 +12,11 @@ html {
 }
 
 body {
-	margin: 5%;
+	margin: $base-spacing-unit*4 5% 5%;
+
+	@include media-query(palm) {
+		margin-top: $base-spacing-unit*2.5;
+	}
 }
 
 .page {
