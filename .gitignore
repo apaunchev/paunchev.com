@@ -1,7 +1,6 @@
 .sass-cache/
 css/
 node_modules/
-src/fonts
 src/img
 .htaccess
 compass.rb
