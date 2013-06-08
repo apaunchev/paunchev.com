@@ -19,27 +19,21 @@ body {
 	@extend .cf;
 	@extend .animated;
 	@extend .fadeInLeft;
-	max-width: 840px;
+	max-width: 820px;
 	margin: 0 auto;
 }
 	.page--single {
-		max-width: 396px;
+		max-width: 820px;
 	}
 
 .col {
-	float: left;
 	width: 50%;
-	padding-left: $base-spacing-unit;
-
-	&:first-child {
-		padding-left: 0;
-	}
+	padding: 0 $half-spacing-unit;
 
 	@include media-query(palm) {
 		float: none;
-		max-width: 396px;
+		max-width: 386px;
 		width: 100%;
-		padding-left: 0;
 		margin: 0 auto $base-spacing-unit;
 
 		&:last-child {
@@ -47,6 +41,20 @@ body {
 		}
 	}
 }
+	.col--left {
+		float: left;
+
+		@include media-query(palm) {
+			float: none;
+		}
+	}
+	.col--right {
+		float: right;
+
+		@include media-query(palm) {
+			float: none;
+		}
+	}
 	.col--single {
 		width: 100%;
 	}

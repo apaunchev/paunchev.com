@@ -26,9 +26,9 @@ article {
 }
 	.intro__logo {
 		display: inline-block;
-		margin-bottom: $half-spacing-unit/4;
 		width: 78px;
 		height: 78px;
+		margin-bottom: $half-spacing-unit/4;
 		border-radius: 100%;
 		border: 3px solid $base-ui-color;
 		@include transition-property(all);
