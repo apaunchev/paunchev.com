@@ -8,11 +8,11 @@
 @import "compass/css3";
 
 
-// Plugins
-@import "plugins/animate";
-
-
 // Custom imports
 @import "ui/page";
-@import "ui/articles";
+@import "ui/page-head";
 @import "ui/typography";
+
+
+// Plugins
+@import "plugins/animate";

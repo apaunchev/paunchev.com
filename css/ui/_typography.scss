@@ -1,0 +1,45 @@
+/*------------------------------------*\
+	$TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Paragraphs
+ */
+p {
+	margin-bottom: $half-spacing-unit;
+}
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -1px;
+}
+
+
+/**
+ * Links
+ */
+a {
+	color: $base-link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+
+/**
+ * Lists
+ */
+ul {
+	margin-left: 1.25*$base-spacing-unit;
+	margin-left: (1.25*$base-spacing-unit / $base-font-size)*1rem;
+	list-style-type: square;
+}
+	li {
+		margin-bottom: $half-spacing-unit/2;
+	}
