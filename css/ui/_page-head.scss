@@ -5,10 +5,6 @@
 	margin-bottom: $base-spacing-unit;
 	padding-top: $half-spacing-unit;
 	text-align: center;
-
-	@include media-query(portable) {
-		padding-top: 0;
-	}
 }
 
 .logo {
@@ -21,8 +17,7 @@
 	height: 86px;
 	border: 3px solid #fff;
 	border-radius: 100%;
-	@include transition-property(border);
-	@include transition-duration(0.1s);
+	@include box-shadow(rgba(0, 0, 0, 0.3) 0 1px 1px);
 
 	&:hover,
 	&:active,
@@ -37,9 +32,6 @@
 	}
 
 	@include media-query(portable) {
-		position: relative;
-		top: 0;
-		display: block;
 		width: 76px;
 		height: 76px;
 	}

@@ -15,7 +15,7 @@ body {
 	margin: 7.5%;
 
 	@include media-query(portable) {
-		margin: 5%;
+		margin: $base-spacing-unit*2.5 5% 5%;
 	}
 }
 
