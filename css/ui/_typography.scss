@@ -21,13 +21,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
+	border-bottom: 1px solid $base-ui-color;
 	color: $base-link-color;
 	text-decoration: none;
+	@include transition-property(border-color);
+	@include transition-duration(0.1s);
 
 	&:hover,
 	&:active,
 	&:focus {
-		text-decoration: underline;
+		border-color: $base-link-color;
 	}
 }
 
