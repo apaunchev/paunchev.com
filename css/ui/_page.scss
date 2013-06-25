@@ -18,23 +18,3 @@ body {
 		margin: $base-spacing-unit*2.5 5% 5%;
 	}
 }
-
-.page {
-	@extend .animated;
-	@extend .fadeInLeft;
-	position: relative;
-	max-width: 31.25em; /* 500px */
-	margin: 0 auto;
-	padding: $base-spacing-unit*1.5;
-	background-color: #fff;
-	border-radius: 2px;
-	@include box-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px);
-
-	* > :last-child {
-		margin-bottom: 0;
-	}
-
-	@include media-query(portable) {
-		padding: $base-spacing-unit;
-	}
-}

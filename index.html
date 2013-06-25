@@ -37,23 +37,28 @@
 	</head>
 
 	<body>
-		<div class="page">
-			<header class="page-head">
-				<a class="logo" href="/"><img src="/img/logo.jpg" height="80" width="80" alt="Angel Paunchev"></a>
-				<h1 class="name">Angel Paunchev</h1>
-				<p class="tagline">Web developer at <a href="http://theultralinx.com/">UltraLinx</a>. Student. Bulgarian.</p>
+		<div class="card">
+			<header class="card__intro">
+				<a class="intro__logo" href="/"><img src="/img/logo.jpg" height="80" width="80" alt="Angel Paunchev"></a>
+				<h1 class="intro__name">Angel Paunchev</h1>
+				<p class="intro__tagline">Web developer at <a href="http://theultralinx.com/">UltraLinx</a>. Student. Bulgarian.</p>
 			</header>
 
-			<main class="page-content">
-				<p>Recently I’ve been working on:</p>
-				<ul>
+			<div class="card__main">
+				<p>Projects I’m working on:</p>
+				<ul class="card-list">
 					<li><a href="http://theultralinx.com/category/themes">UltraLinx Themes</a> – a growing collection of premium WordPress and Tumblr themes</li>
-					<li><a href="http://pravopis.be/">pravopis.be</a> – an app which lets you know how to spell commonly mistaken words (in Bulgarian)</li>
+					<li><a href="http://pravopis.be/">pravopis.be</a> – check the spelling of commonly misspelled words and phrases (in Bulgarian)</li>
 					<li><a href="https://github.com/apaunchev/init">init</a> – a Sass-based, object-oriented CSS framework</li>
 				</ul>
+			</div>
 
-				<p>I’m <em>apaunchev</em> around the web. <a href="mailto:apaunchev@gmail.com">Say</a> <a href="http://twitter.com/?status=Hey,%20@apaunchev,%20">hello</a>.</p>
-			</main>
+			<footer class="card__outro">
+				<ul class="outro__contacts">
+					<li><a href="https://twitter.com/apaunchev">@apaunchev</a></li><!--
+					--><li><a href="mailto:apaunchev@gmail.com">apaunchev@gmail.com</a></li>
+				</ul>
+			</footer>
 		</div>
 	</body>
 </html>
