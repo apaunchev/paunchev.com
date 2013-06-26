@@ -1,6 +1,5 @@
 .sass-cache/
 node_modules/
-css/style.css
 src/
 Gruntfile.js
 package.json
