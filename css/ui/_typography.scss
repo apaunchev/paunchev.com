@@ -16,6 +16,7 @@ a {
 	border-bottom: 1px solid $base-ui-color;
 	color: $base-link-color;
 	text-decoration: none;
+	font-weight: 700;
 	@include transition-property(border-color);
 	@include transition-duration(0.1s);
 
