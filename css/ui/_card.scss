@@ -5,12 +5,12 @@
 	@extend .animated;
 	@extend .fadeInLeft;
 	position: relative;
-	max-width: 31.25em; /* 500px */
+	max-width: 33em; /* 528px */
 	margin: 0 auto;
 	padding: $base-spacing-unit*1.5;
 	background-color: #fff;
 	border-radius: 2px;
-	@include box-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px);
+	@include box-shadow(rgba(0, 0, 0, 0.1) 2px 2px 1px);
 
 	@include media-query(portable) {
 		padding: $base-spacing-unit;
@@ -110,9 +110,7 @@
 				*display: inline;
 				zoom: 1;
 			}
-		}
 
-		li {
 			&:before {
 				content: "\00A0 \00B7 \00A0";
 			}
