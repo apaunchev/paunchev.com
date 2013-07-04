@@ -12,9 +12,9 @@ html {
 }
 
 body {
-	margin: 7.5%;
+	margin: 7.5% 5% 5%;
 
 	@include media-query(portable) {
-		margin: $base-spacing-unit*2.5 5% 5%;
+		margin-top: $base-spacing-unit*2.5;
 	}
 }
