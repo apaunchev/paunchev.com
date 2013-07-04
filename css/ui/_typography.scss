@@ -25,24 +25,3 @@ a {
 		border-color: $base-link-color;
 	}
 }
-
-
-/**
- * Lists
- */
-ul {
-	list-style-type: square;
-}
-
-.card-list {
-	margin-left: 1.25 * $base-spacing-unit;
-	margin-left: (1.25 * $base-spacing-unit / $base-font-size)*1rem;
-
-	li {
-		margin-bottom: $half-spacing-unit/2;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
