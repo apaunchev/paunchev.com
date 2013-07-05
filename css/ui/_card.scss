@@ -5,12 +5,12 @@
 	@extend .animated;
 	@extend .fadeInLeft;
 	position: relative;
-	max-width: 35em; /* 560px */
-	margin: 0 auto;
+	max-width: 33em; /* 528px */
 	padding: $base-spacing-unit*1.5;
+	margin: 0 auto;
 	background-color: #fff;
 	border-radius: 2px;
-	@include box-shadow(rgba(0, 0, 0, 0.1) 2px 2px 1px);
+	@include vendor(box-shadow, rgba(0, 0, 0, 0.1) 2px 2px 1px);
 
 	@include media-query(portable) {
 		padding: $base-spacing-unit;
@@ -21,20 +21,25 @@
 	}
 }
 
-
-/**
- * Card intro
- */
-.card__intro {
+.card__head,
+.card__content,
+.card__foot {
 	margin-bottom: $base-spacing-unit;
-	padding-top: $half-spacing-unit*1.5;
-	text-align: center;
 
 	> :last-child {
 		margin-bottom: 0;
 	}
 }
-	.intro__logo {
+
+
+/**
+ * Card head
+ */
+.card__head {
+	padding-top: $half-spacing-unit;
+	text-align: center;
+}
+	.person__photo {
 		position: absolute;
 		top: -43px;
 		right: 0;
@@ -44,7 +49,7 @@
 		height: 86px;
 		border: 3px solid #fff;
 		border-radius: 100%;
-		@include box-shadow(rgba(0, 0, 0, 0.3) 0 1px 1px);
+		@include vendor(box-shadow, rgba(0, 0, 0, 0.3) 0 1px 1px);
 
 		&:hover,
 		&:active,
@@ -64,62 +69,50 @@
 		}
 	}
 
-	.intro__name {
-		margin-bottom: 0.1em;
+	.person__name {
+		margin-bottom: 0;
 	}
 
-	.intro__tagline {
-		@extend .lead;
+	.person__tagline {
 		font-style: italic;
 		color: $alt-font-color;
 	}
 
 
 /**
- * Card main
+ * Card foot
  */
-.card__main {
-	margin-bottom: $base-spacing-unit;
-
-	> :last-child {
-		margin-bottom: 0;
-	}
+.card__foot {
+	font-style: italic;
+	text-align: center;
+	color: $alt-font-color;
 }
 
 
 /**
- * Card outro
+ * Misc
  */
-.card__outro {
-	font-style: italic;
-	text-align: center;
-	color: $alt-font-color;
+.card__contacts {
+	@extend .cf;
+	margin-left: 0;
+	list-style: none;
 
-	> :last-child {
-		margin-bottom: 0;
-	}
-}
-	.outro__contacts {
-		@extend .cf;
-		margin-left: 0;
-		list-style: none;
+	> li {
+		&,
+		> a {
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+		}
 
-		> li {
-			&,
-			> a {
-				display: inline-block;
-				*display: inline;
-				zoom: 1;
-			}
+		&:before {
+			content: "\00A0 \00B7 \00A0";
+		}
 
+		&:first-child {
 			&:before {
-				content: "\00A0 \00B7 \00A0";
-			}
-
-			&:first-child {
-				&:before {
-					content: "";
-				}
+				content: "";
 			}
 		}
 	}
+}

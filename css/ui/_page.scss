@@ -2,9 +2,10 @@
 	$PAGE
 \*------------------------------------*/
 html {
-	background: #232327 url(../img/bg.jpg) no-repeat center center fixed;
+	background: #f1f1f1 url(../img/bg.jpg) no-repeat center center fixed;
 	color: $base-font-color;
-	@include background-size(cover);
+	font-family: $base-font-family;
+	@include vendor(background-size, cover);
 
 	@include media-query(portable) {
 		font-size: 0.85em;
