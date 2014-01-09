@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    $POSTS
+\*------------------------------------*/
+.post {
+    margin-bottom: $base-spacing-unit*2;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 25%;
+        margin: $base-spacing-unit*2 auto 0;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+
+        @include media-query(palm) {
+            margin-top: $base-spacing-unit;
+        }
+    }
+
+    h1 {
+        line-height: 1.25;
+
+        > a {
+            text-decoration: none;
+            color: $dark-link-color;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+    }
+
+    @include media-query(palm) {
+        margin-bottom: $base-spacing-unit;
+    }
+}
+
+.post--article {
+    .post-content {
+        p:first-child {
+            font-size: 1.125em;
+        }
+    }
+}
+
+.post--link {
+    h1 {
+        @extend .h2;
+
+        > a {
+            text-decoration: underline;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: lighten($dark-link-color, 10);
+            }
+        }
+    }
+}
+
+.link-plus {
+    margin-left: $half-spacing-unit/2;
+    color: darken($border-color, 5) !important;
+    text-decoration: none !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $accent-color !important;
+    }
+}
+
+.post-meta {
+    @extend .small;
+    margin-bottom: $half-spacing-unit;
+    color: $alt-font-color;
+    text-transform: uppercase;
+}

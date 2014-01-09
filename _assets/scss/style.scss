@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+// Reset.
+@import "plugins/normalize";
+
+
+// Setup.
+@import "vars",
+        "init/setup";
+
+
+// Custom imports.
+@import "ui/page",
+        "ui/typography",
+        "ui/page-head",
+        "ui/site-nav",
+        "ui/page-content",
+        "ui/page-foot",
+        "ui/posts",
+        "ui/pagination",
+        "ui/portfolio",
+        "ui/buttons",
+        "ui/syntax",
+        "ui/animations";

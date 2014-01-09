@@ -1,0 +1,14 @@
+name: Angel Paunchev
+url: http://paunchev.net
+description:
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:title
+paginate: 5
+exclude: ['node_modules', 'Gruntfile.js', 'package.json']
+include: ['.htaccess']
+
+# For use by glynn (https://github.com/dmathieu/glynn)
+ftp_host: 'paunchev.net'
+ftp_dir: '/public_html/alpha'
+ftp_passive: false

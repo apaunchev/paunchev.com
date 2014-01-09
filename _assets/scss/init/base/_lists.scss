@@ -1,0 +1,22 @@
+/**
+ * Lists
+ */
+// Remove vertical spacing from nested lists.
+li {
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
+}
+
+
+// Apply different list style types.
+.numbered-list {
+    list-style-type: decimal;
+}
+.circled-list {
+    list-style-type: circle;
+}
+.squared-list {
+    list-style-type: square;
+}

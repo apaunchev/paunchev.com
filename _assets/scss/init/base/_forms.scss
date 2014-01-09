@@ -1,0 +1,18 @@
+/**
+ * Forms
+ */
+fieldset {
+    padding: $base-spacing-unit;
+}
+
+
+// Instead of a `[type]` selector for each kind of form input, we just use a class to target any/every one.
+.text-input,
+textarea {}
+
+
+// Use the `.label` class on any element that should act as a form label.
+.label,
+label {
+    display: block;
+}

@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+    display: inline-block;
+    margin: 0 $half-spacing-unit;
+    padding: $half-spacing-unit/4 $half-spacing-unit;
+    background-color: $base-font-color;
+    border-radius: $radius-size;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    @include font-size(14px);
+
+    &:hover {
+        background-color: darken($base-font-color, 10);
+    }
+}

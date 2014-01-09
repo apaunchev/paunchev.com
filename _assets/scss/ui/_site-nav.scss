@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $SITE-NAV
+\*------------------------------------*/
+.site-nav {
+    float: left;
+    font-size: 0;
+
+    > a {
+        display: inline-block;
+        margin-left: $base-spacing-unit*1.25;
+        text-decoration: none;
+        color: $dark-link-color;
+        font-weight: 700;
+        @include font-size($base-font-size);
+        line-height: $avatar-size;
+
+        @include media-query(palm) {
+            margin-left: $half-spacing-unit*1.75;
+            line-height: $avatar-size - 10px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+}
+
+@each $page in portfolio, about {
+    .page--#{$page} .site-nav__#{$page} {
+        cursor: text;
+        color: $accent-color;
+    }
+}
