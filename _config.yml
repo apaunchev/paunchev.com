@@ -10,5 +10,5 @@ include: ['.htaccess']
 
 # For use by glynn (https://github.com/dmathieu/glynn)
 ftp_host: 'paunchev.net'
-ftp_dir: '/public_html/alpha'
+ftp_dir: '/public_html/'
 ftp_passive: false
