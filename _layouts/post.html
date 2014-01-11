@@ -5,7 +5,7 @@ page_class: page--single
 <article class="post{% if page.custom_type %} post--{{ page.custom_type }}{% endif %}">
     <header class="post-head">
         <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B, %Y" }}</time>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time>
         </p>
         {% if page.custom_type == 'article' %}
             <h1>{{ page.title }}</a></h1>
