@@ -7,10 +7,10 @@ page_class: page--home
     {% for post in paginator.posts %}
         <article class="post{% if post.custom_type %} post--{{ post.custom_type }}{% endif %}">
             <header class="post-head">
+                <p class="post-meta">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %B, %Y" }}</time>
+                </p>
                 {% if post.custom_type == 'article' %}
-                    <p class="post-meta">
-                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%e %B, %Y" }}</time>
-                    </p>
                     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 {% elsif post.custom_type == 'link' %}
                     <h1>
