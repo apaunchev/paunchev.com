@@ -1,6 +1,6 @@
-name: Angel Paunchev
+name: 'Angel Paunchev'
 url: http://paunchev.net
-description:
+description: 'A web developer from Bulgaria who builds tools for the web and writes about design, development, technology, and more.'
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title
