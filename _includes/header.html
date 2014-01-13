@@ -11,8 +11,6 @@
 
         <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}</title>
 
-        <meta name="description" content="{{ site.description }}">
-
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
         <link rel="stylesheet" href="/assets/css/style.min.css">
 
@@ -23,13 +21,13 @@
         <meta property="og:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}">
         <meta property="og:site_name" content="Angel Paunchev">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-        {% if page.custom_type == 'article' %}<meta property="og:type" content="article">{% endif %}
+        <meta property="og:description" content="{% if page.custom_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
+        {% if page.custom_type %}<meta property="og:type" content="article">{% endif %}
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:creator" content="@apaunchev">
         <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}">
-        <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
+        <meta name="twitter:description" content="{% if page.custom_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
     </head>
 
     <body>
