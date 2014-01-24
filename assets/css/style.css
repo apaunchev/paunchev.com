@@ -829,10 +829,10 @@ hr {
     $PAGE-HEAD
 \*------------------------------------*/
 .page-head {
-  padding: 48px 0; }
+  padding: 48px 0 0; }
   @media only screen and (max-width: 480px) {
     .page-head {
-      padding: 24px 0; } }
+      padding: 24px 0 0; } }
 
 .site-logo {
   float: left;
@@ -887,9 +887,6 @@ hr {
 /*------------------------------------*\
     $PAGE-CONTENT
 \*------------------------------------*/
-.page-content {
-  padding-top: 0; }
-
 .page--portfolio .post {
   margin-bottom: 0; }
   .page--portfolio .post:after {
@@ -960,6 +957,9 @@ hr {
   margin: 72px auto;
   border-top: 1px solid #eaecef;
   border-bottom: 1px solid #eaecef; }
+  @media only screen and (max-width: 480px) {
+    .post--article:before, .post--article:after {
+      margin: 36px auto; } }
 
 .post--link h1 > a {
   text-decoration: underline; }

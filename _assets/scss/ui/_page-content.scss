@@ -3,7 +3,6 @@
 \*------------------------------------*/
 .page-content {
     @extend %section;
-    padding-top: 0;
 }
 
 @each $page in portfolio, about, single, notfound {

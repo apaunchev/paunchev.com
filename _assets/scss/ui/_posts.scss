@@ -45,6 +45,10 @@
         margin: $base-spacing-unit*3 auto;
         border-top: 1px solid $border-color;
         border-bottom: 1px solid $border-color;
+
+        @include media-query(palm) {
+            margin: $base-spacing-unit*1.5 auto;
+        }
     }
 }
 
