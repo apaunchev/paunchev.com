@@ -103,4 +103,9 @@ hr {
             margin: $base-spacing-unit auto;
         }
     }
+
+    &.left {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

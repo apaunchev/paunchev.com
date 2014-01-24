@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "This is a webpage"
-custom_type: link
+post_type: link
 link_url: http://justinjackson.ca/words.html
 ---
 A bit dated now, but still perfectly relevant, [Justin Jackson](http://justinjackson.ca)’s short essay on words demonstrates brilliantly what the most powerful tool on the web still is.

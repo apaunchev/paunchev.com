@@ -21,13 +21,13 @@
         <meta property="og:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}">
         <meta property="og:site_name" content="Angel Paunchev">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="og:description" content="{% if page.custom_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
-        {% if page.custom_type %}<meta property="og:type" content="article">{% endif %}
+        <meta property="og:description" content="{% if page.post_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
+        {% if page.post_type %}<meta property="og:type" content="article">{% endif %}
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:creator" content="@apaunchev">
         <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}">
-        <meta name="twitter:description" content="{% if page.custom_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="twitter:description" content="{% if page.post_type %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
     </head>
 
     <body>

@@ -2,21 +2,21 @@
 layout: default
 page_class: page--single
 ---
-<article class="post{% if page.custom_type %} post--{{ page.custom_type }}{% endif %}">
+<article class="post{% if page.post_type %} post--{{ page.post_type }}{% endif %}">
     <header class="post-head">
         <p class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time>
         </p>
-        {% if page.custom_type == 'article' %}
-            <h1>{{ page.title }}</a></h1>
-        {% elsif page.custom_type == 'link' %}
+        {% if page.post_type == 'link' %}
             <h1><a href="{{ page.link_url }}">{{ page.title }}</a></h1>
+        {% else %}
+            <h1>{{ page.title }}</a></h1>
         {% endif %}
     </header>
 
     <div class="post-content">
         {{ content }}
-    </div>
 
-    <p><i>Share this post on <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=apaunchev">Twitter</a>, <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a> or <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a>.</i></p>
+        <p><i>Share this post on <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=apaunchev">Twitter</a>, <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a> or <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a>.</i></p>
+    </div>
 </article>

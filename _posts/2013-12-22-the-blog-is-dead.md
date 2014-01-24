@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The blog is dead, long live the blog"
-custom_type: link
+post_type: link
 link_url: http://www.niemanlab.org/2013/12/the-blog-is-dead/
 ---
 > Instead of blogging, people are posting to Tumblr, tweeting, pinning things to their board, posting to Reddit, Snapchatting, updating Facebook statuses, Instagramming, and publishing on Medium. In 1997, wired teens created online diaries, and in 2004 the blog was king. Today, teens are about as likely to start a blog (over Instagramming or Snapchatting) as they are to buy a music CD. Blogs are for 40-somethings with kids.

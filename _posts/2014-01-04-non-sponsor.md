@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Non-sponsor"
-custom_type: article
+post_type: article
 ---
 For as long as I can remember, I’ve been recommending things I like to people around me. Films, sites, games, gadgets — everything. Most recently, I’ve been fascinated by all kinds of web services and other tech-related products which make my life easier.
 

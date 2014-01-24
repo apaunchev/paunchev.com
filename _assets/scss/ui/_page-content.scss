@@ -8,26 +8,11 @@
 
 @each $page in portfolio, about, single, notfound {
     .page--#{$page} {
-        .page-content {
-            &:after {
-                @extend .large;
-                content: "\2766";
-                display: block;
-                text-align: center;
-                color: $border-color;
-                line-height: 1;
-            }
-        }
-
         .post {
+            margin-bottom: 0;
+
             &:after {
                 display: none;
-                margin: 0;
-                border: none;
-            }
-
-            @include media-query(palm) {
-                margin-bottom: $base-spacing-unit;
             }
         }
     }
