@@ -54,7 +54,7 @@
 
 .post--link {
     h1 {
-        @extend .h2;
+        @extend .h3;
 
         > a {
             text-decoration: underline;
@@ -85,4 +85,17 @@
     margin-bottom: $half-spacing-unit;
     color: $alt-font-color;
     text-transform: uppercase;
+}
+
+.callout {
+    @extend .small;
+    margin-bottom: 0;
+    padding: $half-spacing-unit $half-spacing-unit*1.5;
+    background-color: $foot-bg-color;
+    border-radius: $radius-size;
+    font-style: italic;
+
+    @include media-query(palm) {
+        padding: $half-spacing-unit;
+    }
 }

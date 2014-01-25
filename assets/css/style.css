@@ -435,12 +435,12 @@ h1, .h1 {
   font-size: 2.25rem;
   line-height: 1.33333; }
 
-h2, .h2, .post--link h1 {
+h2, .h2 {
   font-size: 27px;
   font-size: 1.6875rem;
   line-height: 1.77778; }
 
-h3, .h3 {
+h3, .h3, .post--link h1 {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
@@ -465,7 +465,7 @@ h6, .h6 {
   font-size: 3rem;
   line-height: 1; }
 
-.small, figure > figcaption, .post-meta, .pagination {
+.small, figure > figcaption, .post-meta, .callout, .pagination {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429; }
@@ -977,6 +977,16 @@ hr {
   margin-bottom: 12px;
   color: #888888;
   text-transform: uppercase; }
+
+.callout {
+  margin-bottom: 0;
+  padding: 12px 18px;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+  font-style: italic; }
+  @media only screen and (max-width: 480px) {
+    .callout {
+      padding: 12px; } }
 
 /*------------------------------------*\
     $PAGINATION
