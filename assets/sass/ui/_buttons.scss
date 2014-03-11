@@ -3,8 +3,8 @@
 \*------------------------------------*/
 .btn {
     display: inline-block;
-    margin: 0 $half-spacing-unit;
-    padding: $half-spacing-unit/4 $half-spacing-unit;
+    margin: 0 halve($base-spacing-unit);
+    padding: halve($base-spacing-unit)/4 halve($base-spacing-unit);
     background-color: $base-font-color;
     border-radius: $radius-size;
     font-weight: 700;

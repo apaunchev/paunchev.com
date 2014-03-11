@@ -15,7 +15,7 @@
         line-height: 250px;
 
         a {
-            padding: $half-spacing-unit/2 $half-spacing-unit;
+            padding: halve($base-spacing-unit)/2 halve($base-spacing-unit);
             background-color: black;
             background-color: rgba(0, 0, 0, 0.35);
             border-radius: $radius-size;
@@ -29,12 +29,12 @@
             }
         }
 
-        @include media-query(palm) {
+        @media (max-width: 481px) {
             line-height: 150px;
         }
     }
 
-    @include media-query(palm) {
+    @media (max-width: 481px) {
         height: 150px;
         background-position: center;
     }

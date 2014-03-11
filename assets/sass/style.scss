@@ -1,15 +1,10 @@
-@charset "UTF-8";
 /*------------------------------------*\
-    STYLE.CSS
+    #STYLE.CSS
 \*------------------------------------*/
-// Reset.
-@import "plugins/normalize";
 
-
-// Setup.
-@import "vars",
-        "init/setup";
-
+// Variables and framework.
+@import "vars";
+@import "initcss";
 
 // Custom imports.
 @import "ui/page",
@@ -22,5 +17,4 @@
         "ui/pagination",
         "ui/portfolio",
         "ui/buttons",
-        "ui/syntax",
         "ui/animations";

@@ -5,7 +5,7 @@
     padding: $base-spacing-unit*1.5 0;
     background-color: $foot-bg-color;
 
-    @include media-query(palm) {
+    @media (max-width: 481px) {
         padding: $base-spacing-unit 0;
     }
 }
@@ -21,7 +21,7 @@
         height: 65px;
         border-radius: 100%;
 
-        @include media-query(palm) {
+        @media (max-width: 481px) {
             display: none;
         }
     }

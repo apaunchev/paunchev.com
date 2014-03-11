@@ -1,4 +1,4 @@
-_site/
-_drafts/
 .sass-cache/
-node_modules/
+config.ru
+*.codekit
+*.css

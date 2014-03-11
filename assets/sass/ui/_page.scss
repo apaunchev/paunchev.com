@@ -8,23 +8,23 @@ html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 
-    @include media-query(palm) {
+    @media (max-width: 481px) {
         font-size: 87.5%;
     }
 }
 
 .wrap {
-    @extend .cf;
-    max-width: $half-spacing-unit*2 + $page-width;
+    @extend %clearfix;
+    max-width: halve($base-spacing-unit)*2 + $page-width;
     margin: 0 auto;
-    padding: 0 $half-spacing-unit;
+    padding: 0 halve($base-spacing-unit);
 }
 
 %section {
     padding: $base-spacing-unit*2 0;
     background-color: $base-bg-color;
 
-    @include media-query(palm) {
+    @media (max-width: 481px) {
         padding: $base-spacing-unit 0;
     }
 }

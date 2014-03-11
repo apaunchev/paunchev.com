@@ -14,8 +14,8 @@
         @include font-size($base-font-size);
         line-height: $avatar-size;
 
-        @include media-query(palm) {
-            margin-left: $half-spacing-unit*1.75;
+        @media (max-width: 481px) {
+            margin-left: halve($base-spacing-unit)*1.75;
             line-height: $avatar-size - 10px;
         }
 

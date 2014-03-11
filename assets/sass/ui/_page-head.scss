@@ -5,7 +5,7 @@
     @extend %section;
     padding: $base-spacing-unit*2 0 0;
 
-    @include media-query(palm) {
+    @media (max-width: 481px) {
         padding: $base-spacing-unit 0 0;
     }
 }
@@ -23,7 +23,7 @@
         border-radius: $radius-size;
         vertical-align: bottom;
 
-        @include media-query(palm) {
+        @media (max-width: 481px) {
             width: $avatar-size - 10px;
             height: $avatar-size - 10px;
             background-size: $avatar-size - 10px $avatar-size - 10px;
