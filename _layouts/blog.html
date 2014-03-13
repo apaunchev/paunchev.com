@@ -1,0 +1,15 @@
+{% capture content %}
+    <section class="blog">
+        {{ body }}
+
+        <ul class="posts-list">
+            {% for post in posts %}
+                <li>
+                    {% include 'includes/post-listing' %}
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endcapture %}
+
+{% include 'layouts/default' %}

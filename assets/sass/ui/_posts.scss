@@ -1,101 +1,80 @@
 /*------------------------------------*\
-    $POSTS
+    #POSTS
 \*------------------------------------*/
+
 .post {
-    margin-bottom: $base-spacing-unit*2;
-
-    &:first-child {
-        &:before {
-            display: none;
-        }
-    }
-
-    h1 {
-        line-height: 1.25;
-
-        > a {
-            text-decoration: none;
-            color: $dark-link-color;
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: $accent-color;
-            }
-        }
-    }
-
-    @media (max-width: 481px) {
+    .post__head {
         margin-bottom: $base-spacing-unit;
     }
-}
 
-.post--article {
-    .post-content {
-        > :first-child {
+    .post__meta {
+        margin-bottom: 0;
+        color: $alt-font-color;
+        text-transform: uppercase;
+        @include font-size(14px);
+    }
+
+    .post__content {
+        > p:first-child {
             font-size: 1.125em;
         }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
-    &:before,
-    &:after {
-        content: "";
-        display: block;
-        width: 30%;
-        margin: $base-spacing-unit*3 auto;
-        border-top: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
-
-        @media (max-width: 481px) {
-            margin: $base-spacing-unit*1.5 auto;
-        }
+    h1 {
+        margin-bottom: $base-spacing-unit/4;
+        line-height: 1.25;
     }
 }
 
-.post--link {
-    h1 {
-        @extend .h3;
+.posts-list {
+    margin: 0;
+    list-style: none;
 
-        > a {
-            text-decoration: underline;
+    > li {
+        margin-bottom: $base-spacing-unit*2;
 
-            &:hover,
-            &:active,
-            &:focus {
-                color: lighten($dark-link-color, 10);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .post__head {
+        margin-bottom: 0;
+
+        > h1 {
+            margin-bottom: $base-spacing-unit/4;
+
+            > a {
+                display: block;
+                color: $base-font-color;
+                text-decoration: none;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $accent-color;
+                }
             }
         }
     }
 }
 
-.link-plus {
-    margin-left: halve($base-spacing-unit)/2;
-    color: $border-color !important;
-    text-decoration: none !important;
+.page {
+    > h1 {
+        margin-bottom: $base-spacing-unit;
+    }
 
-    &:hover,
-    &:active,
-    &:focus {
-        color: $accent-color !important;
+    > :last-child {
+        margin-bottom: 0;
     }
 }
 
-.post-meta {
-    @extend %h6;
-    margin-bottom: halve($base-spacing-unit);
-    color: $alt-font-color;
-    text-transform: uppercase;
-}
-
-.callout {
-    @extend %h6;
-    margin-bottom: 0;
-    padding: halve($base-spacing-unit) halve($base-spacing-unit)*1.5;
-    background-color: $foot-bg-color;
-    border-radius: $radius-size;
-    font-style: italic;
-
-    @media (max-width: 481px) {
-        padding: halve($base-spacing-unit);
+.blog {
+    > :last-child {
+        margin-bottom: 0;
     }
 }

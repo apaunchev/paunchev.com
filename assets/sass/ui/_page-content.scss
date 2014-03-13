@@ -1,18 +1,12 @@
 /*------------------------------------*\
-    $PAGE-CONTENT
+    #PAGE-CONTENT
 \*------------------------------------*/
+
 .page-content {
     @extend %section;
-}
+    padding: $base-spacing-unit*2 0;
 
-@each $page in portfolio, about, single, notfound {
-    .page--#{$page} {
-        .post {
-            margin-bottom: 0;
-
-            &:after {
-                display: none;
-            }
-        }
+    @media (max-width: 30.0625em) {
+        padding: $base-spacing-unit 0;
     }
 }

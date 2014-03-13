@@ -1,0 +1,15 @@
+<article class="project">
+    {% for asset in project.assets %}
+        {% if asset.type == 'image' %}
+            <figure>
+                <img src="{{ asset.url }}" alt="{{ project.title }}">
+            </figure>
+        {% endif %}
+    {% endfor %}
+
+    <h2 class="project__title">
+        {{ project.title }} <a href="http://{{ project.meta.project_url }}">{{ project.meta.project_url }}
+    </h2>
+
+    {{ project.body }}
+</article>

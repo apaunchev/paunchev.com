@@ -1,27 +1,15 @@
 /*------------------------------------*\
-    $PAGE-FOOT
+    #PAGE-FOOT
 \*------------------------------------*/
+
 .page-foot {
-    padding: $base-spacing-unit*1.5 0;
+    @extend %section;
     background-color: $foot-bg-color;
+    text-align: center;
 
-    @media (max-width: 481px) {
-        padding: $base-spacing-unit 0;
-    }
-}
-
-.profile {
-    margin-bottom: 0;
-}
-
-    .profile__avatar {
-        display: inline-block;
-        vertical-align: bottom;
-        width: 65px;
-        height: 65px;
-        border-radius: 100%;
-
-        @media (max-width: 481px) {
-            display: none;
+    .container {
+        > :last-child {
+            margin-bottom: 0;
         }
     }
+}

@@ -6,15 +6,12 @@
 @import "vars";
 @import "initcss";
 
+
 // Custom imports.
 @import "ui/page",
         "ui/typography",
         "ui/page-head",
-        "ui/site-nav",
         "ui/page-content",
         "ui/page-foot",
         "ui/posts",
-        "ui/pagination",
-        "ui/portfolio",
-        "ui/buttons",
-        "ui/animations";
+        "ui/portfolio";

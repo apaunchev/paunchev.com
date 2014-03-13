@@ -1,30 +1,30 @@
 /*------------------------------------*\
-    $PAGE
+    #PAGE
 \*------------------------------------*/
+
 html {
     background-color: $foot-bg-color;
     font-family: Lato, sans-serif;
     color: $base-font-color;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
 
-    @media (max-width: 481px) {
+    @media (max-width: 30.0625em) {
         font-size: 87.5%;
     }
 }
 
-.wrap {
+.container {
     @extend %clearfix;
-    max-width: halve($base-spacing-unit)*2 + $page-width;
+    max-width: $page-width;
     margin: 0 auto;
-    padding: 0 halve($base-spacing-unit);
+    padding: 0 $base-spacing-unit/2;
 }
 
 %section {
     padding: $base-spacing-unit*2 0;
     background-color: $base-bg-color;
 
-    @media (max-width: 481px) {
+    @media (max-width: 30.0625em) {
         padding: $base-spacing-unit 0;
     }
 }

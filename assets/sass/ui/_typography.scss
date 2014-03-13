@@ -1,6 +1,7 @@
 /*------------------------------------*\
-    $TYPOGRAPHY
+    #TYPOGRAPHY
 \*------------------------------------*/
+
 /**
  * Headings
  */
@@ -8,10 +9,10 @@ h1, h2, h3 {
     letter-spacing: -1px;
 }
 h2 {
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit/2;
 }
 h3 {
-    margin-bottom: halve($base-spacing-unit);
+    margin-bottom: $base-spacing-unit/4;
     text-transform: uppercase;
     color: $alt-font-color;
     font-weight: 400;
@@ -22,12 +23,13 @@ h3 {
  * Quotes
  */
 blockquote {
+    margin-left: 0;
     padding-left: $base-spacing-unit;
     border-left: 4px solid $border-color;
     color: $alt-font-color;
 
-    @media (max-width: 481px) {
-        padding-left: halve($base-spacing-unit);
+    @media (max-width: 30.0625em) {
+        padding-left: $base-spacing-unit/2;
     }
 }
 
@@ -40,16 +42,17 @@ q {
  * Images
  */
 figure {
-    > img {
+    margin-left: 0;
+    margin-right: 0;
+
+    img {
         border-radius: $radius-size;
-        max-width: 100% !important;
-        height: auto !important;
     }
 
-    > figcaption {
-        @extend %h6;
-        margin-top: halve($base-spacing-unit)/2;
+    figcaption {
+        margin-top: $base-spacing-unit/2;
         color: $alt-font-color;
+        @include font-size(14px);
     }
 }
 
@@ -78,34 +81,41 @@ a {
     &:focus {
         color: lighten($accent-color, 10);
     }
-
-    &[id] {
-        color: $base-font-color;
-        text-decoration: none;
-    }
 }
 
 
 /**
  * Rules
  */
-hr {
+%sep {
     width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: $base-spacing-unit*2 auto;
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
+    border-left: none;
+    border-right: none;
+}
 
-    &.padded {
-        margin: $base-spacing-unit*2 auto;
+hr {
+    @extend %sep;
+}
 
-        @media (max-width: 481px) {
-            margin: $base-spacing-unit auto;
-        }
-    }
 
-    &.left {
-        margin-left: 0;
-        margin-right: 0;
+/**
+ * Paragraphs
+ */
+.lead {
+    font-size: 1.125em;
+}
+
+.callout {
+    padding: $base-spacing-unit/2 $base-spacing-unit;
+    background-color: $foot-bg-color;
+    border-radius: $radius-size;
+    font-style: italic;
+    font-size: 0.875em;
+
+    @media (max-width: 30.0625em) {
+        padding: $base-spacing-unit/2;
     }
 }

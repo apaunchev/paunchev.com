@@ -1,0 +1,17 @@
+{% capture content %}
+    <section class="page">
+        <h1>{{ title }}</h1>
+
+        {{ body }}
+
+        <hr>
+
+        <ul class="projects-list">
+            {% for project in site.pages.portfolio.posts %}
+                <li>{% include 'includes/project-listing' %}</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endcapture %}
+
+{% include 'layouts/default' %}

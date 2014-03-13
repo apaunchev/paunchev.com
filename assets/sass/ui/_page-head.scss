@@ -1,36 +1,60 @@
 /*------------------------------------*\
-    $PAGE-HEAD
+    #PAGE-HEAD
 \*------------------------------------*/
+
 .page-head {
     @extend %section;
-    padding: $base-spacing-unit*2 0 0;
-
-    @media (max-width: 481px) {
-        padding: $base-spacing-unit 0 0;
-    }
+    padding-bottom: 0;
 }
 
 .site-logo {
     float: left;
-    border-radius: $radius-size;
 
     > img {
-        display: inline-block;
+        display: block;
         width: $avatar-size;
         height: $avatar-size;
         background-image: url(/assets/images/avatar.jpg);
         background-size: $avatar-size $avatar-size;
         border-radius: $radius-size;
-        vertical-align: bottom;
 
-        @media (max-width: 481px) {
+        @media (max-width: 30.0625em) {
             width: $avatar-size - 10px;
             height: $avatar-size - 10px;
             background-size: $avatar-size - 10px $avatar-size - 10px;
         }
     }
 
-    .page--home & {
-        cursor: default;
+    .site-logo--current {
+        cursor: text;
+    }
+}
+
+.site-nav {
+    float: left;
+
+    > a {
+        display: inline-block;
+        margin-left: $base-spacing-unit*1.25;
+        text-decoration: none;
+        color: $dark-link-color;
+        font-weight: 700;
+        line-height: $avatar-size;
+
+        @media (max-width: 30.0625em) {
+            margin-left: $base-spacing-unit;
+            line-height: $avatar-size - 10px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    .site-nav--current {
+        cursor: text;
+        color: $accent-color;
     }
 }
