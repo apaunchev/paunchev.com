@@ -1,13 +1,13 @@
-<article class="post">
-    <header class="post__head">
+<article class="entry">
+    <header class="entry__head">
         <h1>{{ current.title }}</h1>
 
-        <p class="post__meta">
+        <p class="entry__meta">
             <time datetime="{{ current.date | date_to_xmlschema }}">{{ current.date | date: "%e %B %Y" }}</time>
         </p>
     </header>
 
-    <div class="post__content">
+    <div class="entry__body">
         {{ current.body }}
 
         <p class="callout">If you liked the post and you think others should read it, please share it on <a target="_blank" href="https://twitter.com/intent/tweet?text={{ current.title }}&url={{ site.permalink }}{{ current.url }}&via=apaunchev">Twitter</a> or <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.permalink }}{{ current.url }}">Facebook</a>.</p>

@@ -2,35 +2,35 @@
     #POSTS
 \*------------------------------------*/
 
-.post {
-    .post__head {
+.entry {
+    .entry__head {
         margin-bottom: $base-spacing-unit;
+
+        > h1 {
+            margin-bottom: $base-spacing-unit/4;
+            line-height: 1.25;
+        }
     }
 
-    .post__meta {
+    .entry__meta {
         margin-bottom: 0;
         color: $alt-font-color;
         text-transform: uppercase;
         @include font-size(14px);
     }
 
-    .post__content {
-        > p:first-child {
-            font-size: 1.125em;
+    .entry__body {
+        > p:first-of-type {
+            @extend %lead;
         }
 
         > :last-child {
             margin-bottom: 0;
         }
     }
-
-    h1 {
-        margin-bottom: $base-spacing-unit/4;
-        line-height: 1.25;
-    }
 }
 
-.posts-list {
+.posts {
     margin: 0;
     list-style: none;
 
@@ -42,7 +42,7 @@
         }
     }
 
-    .post__head {
+    .entry__head {
         margin-bottom: 0;
 
         > h1 {
@@ -60,21 +60,5 @@
                 }
             }
         }
-    }
-}
-
-.page {
-    > h1 {
-        margin-bottom: $base-spacing-unit;
-    }
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-.blog {
-    > :last-child {
-        margin-bottom: 0;
     }
 }

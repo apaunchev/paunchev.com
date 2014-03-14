@@ -1,14 +1,16 @@
 {% capture content %}
-    <section class="blog">
-        {{ body }}
+    <section class="entry">
+        <div class="entry__body">
+            {{ body }}
 
-        <ul class="posts-list">
-            {% for post in posts %}
-                <li>
-                    {% include 'includes/post-listing' %}
-                </li>
-            {% endfor %}
-        </ul>
+            <ul class="posts">
+                {% for post in posts %}
+                    <li>
+                        {% include 'includes/post-listing' %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </section>
 {% endcapture %}
 
