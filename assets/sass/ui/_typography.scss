@@ -94,6 +94,10 @@ a {
     border-bottom: 1px solid $border-color;
     border-left: none;
     border-right: none;
+
+    @media (max-width: 30.0625em) {
+        margin: $base-spacing-unit auto;
+    }
 }
 
 hr {
