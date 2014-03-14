@@ -3,3 +3,4 @@ assets/css/
 assets/images/
 config.ru
 *.codekit
+.htaccess
