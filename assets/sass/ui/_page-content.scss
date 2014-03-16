@@ -4,7 +4,7 @@
 
 .page-content {
     @extend %section;
-    padding: $base-spacing-unit*2 0;
+    display: block;
 
     @media (max-width: 30.0625em) {
         padding: $base-spacing-unit 0;
