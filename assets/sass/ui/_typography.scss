@@ -42,10 +42,11 @@ q {
  * Images
  */
 figure {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 $base-spacing-unit;
 
     img {
+        max-width: 100% !important;
+        height: auto !important;
         border-radius: $radius-size;
     }
 
