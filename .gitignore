@@ -1,6 +1,5 @@
 .sass-cache/
-assets/css/
-assets/images/
+css/
 config.ru
 *.codekit
 .htaccess
