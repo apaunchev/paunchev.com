@@ -33,23 +33,9 @@
     > :last-child {
         margin-bottom: 0;
     }
+}
 
     .project__title {
-        > a {
-            float: right;
-            color: $base-font-color;
-            @include font-size(18px);
-            line-height: 48px;
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: $accent-color;
-            }
-
-            &:after {
-                content: " »";
-            }
-        }
+        @extend %h3;
+        font-weight: 400;
     }
-}

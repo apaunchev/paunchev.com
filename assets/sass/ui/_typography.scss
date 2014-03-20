@@ -7,14 +7,29 @@
  */
 h1, h2, h3 {
     letter-spacing: -1px;
+
+    > small {
+        margin-left: $base-spacing-unit/4;
+        font-size: 75%;
+        color: $alt-font-color;
+
+        a {
+            color: inherit;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $accent-color;
+            }
+
+            &:after {
+                content: " »";
+            }
+        }
+    }
 }
-h2 {
-    margin-bottom: $base-spacing-unit/2;
-}
+
 h3 {
-    margin-bottom: $base-spacing-unit/4;
-    text-transform: uppercase;
-    color: $alt-font-color;
     font-weight: 400;
 }
 
