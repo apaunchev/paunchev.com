@@ -32,13 +32,13 @@
     <body>
         <header class="page-head" role="banner">
             <div class="container">
-                <a class="site-logo{% if page.url == url %} site-logo--current{% endif %}" href="{{ site.pages.home.url }}">
+                <a class="site-logo" href="/">
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Angel Paunchev" width="80" height="80">
                 </a>
 
                 <nav class="site-nav" role="navigation">
                     {% for page in site.pages %}
-                        {% if page.slug != 'home' %}
+                        {% if page.slug != 'about' %}
                             <a href="{{ page.url }}"{% if page.url == url %} class="site-nav--current"{% endif %}>{{ page.title }}</a>
                         {% endif %}
                     {% endfor %}
