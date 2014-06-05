@@ -1,8 +1,9 @@
 /*------------------------------------*\
-    #PAGE-FOOT
+    #MIXINS
 \*------------------------------------*/
 
-.page-foot {
-    @extend %wrap;
-    text-align: center;
+@mixin mq($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
 }

@@ -3,10 +3,55 @@
 \*------------------------------------*/
 
 .page-content {
-    @extend %section;
-    display: block;
+    @extend %wrap;
 
-    @media (max-width: 30.0625em) {
-        padding: $base-spacing-unit 0;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        @include space(margin-top, 1.5);
+        @include space(margin-bottom, 1.5);
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        background-image: linear-gradient(45deg, rgba(234, 234, 234, 0.3), rgba(234, 234, 234, 1), rgba(234, 234, 234, 0.3));
+    }
+}
+
+.posts-list {
+    margin: 0;
+    list-style-type: none;
+
+    li {
+        @extend %margin-bottom;
+    }
+
+    .entry__title {
+        > a {
+            text-decoration: none;
+        }
+    }
+}
+
+.entry__head {
+    @extend %margin-bottom;
+}
+
+.entry__body {}
+
+.entry__title {}
+
+.entry__meta {
+    color: $silver-chalice;
+    text-transform: uppercase;
+    @include font-size(16px);
+}
+
+.entry--post {
+    .entry__body {
+        > p:first-of-type {
+            @include font-size(20px);
+        }
     }
 }

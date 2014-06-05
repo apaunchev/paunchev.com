@@ -3,28 +3,22 @@
 \*------------------------------------*/
 
 html {
-    background-color: $foot-bg-color;
+    border-top: .5em solid #f1f1f1;
+    border-bottom: .5em solid #f1f1f1;
     font-family: Lato, sans-serif;
-    color: $base-font-color;
+    color: $trout;
     -webkit-font-smoothing: antialiased;
 
-    @media (max-width: 30.0625em) {
-        font-size: 87.5%;
+    @include mq($page-width) {
+        font-size: 90%;
     }
 }
 
-.container {
-    @extend %clearfix;
+body {
+    @include space(padding);
+}
+
+%wrap {
     max-width: $page-width;
     margin: 0 auto;
-    padding: 0 $base-spacing-unit/2;
-}
-
-%section {
-    padding: $base-spacing-unit*2 0;
-    background-color: $base-bg-color;
-
-    @media (max-width: 30.0625em) {
-        padding: $base-spacing-unit 0;
-    }
 }

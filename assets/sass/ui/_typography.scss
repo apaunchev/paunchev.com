@@ -5,46 +5,78 @@
 /**
  * Headings
  */
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1px;
+}
 
-    > small {
-        margin-left: $base-spacing-unit/4;
-        font-size: 75%;
-        color: $alt-font-color;
-
-        a {
-            color: inherit;
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: $accent-color;
-            }
-
-            &:after {
-                content: " »";
-            }
-        }
-    }
+h1, h2 {
+    margin-bottom: 0;
 }
 
 h3 {
+    @include space(margin-bottom, 0.25);
     font-weight: 400;
 }
 
 
 /**
+ * Links
+ */
+a {
+    font-weight: 700;
+    color: $cerulean;
+
+    &:hover {
+        color: darken($cerulean, 10);
+    }
+
+    &:active {
+        color: $carrot-orange;
+    }
+}
+
+
+/**
+ * Images
+ */
+figure {
+    @include space(margin-top, 2);
+    @include space(margin-right, -2);
+    @include space(margin-bottom, 2);
+    @include space(margin-left, -2);
+    text-align: center;
+
+    @include mq(48em) {
+        @include space(margin-top);
+        @include space(margin-right, -1);
+        @include space(margin-bottom);
+        @include space(margin-left, -1);
+    }
+}
+
+figcaption {
+    color: $silver-chalice;
+    font-size: 85%;
+}
+
+/**
  * Quotes
  */
 blockquote {
-    margin-left: 0;
-    padding-left: $base-spacing-unit;
-    border-left: 4px solid $border-color;
-    color: $alt-font-color;
+    @include space(margin-top, 2);
+    @include space(margin-right, -2);
+    @include space(margin-bottom, 2);
+    @include space(margin-left, -2);
+    text-align: center;
+    font-size: 125%;
+    font-style: italic;
 
-    @media (max-width: 30.0625em) {
-        padding-left: $base-spacing-unit/2;
+    @include mq(48em) {
+        @include space(margin-top);
+        @include space(margin-bottom);
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 115%;
     }
 }
 
@@ -54,89 +86,21 @@ q {
 
 
 /**
- * Images
+ * Misc
  */
-figure {
-    margin: 0 0 $base-spacing-unit;
-
-    img {
-        max-width: 100% !important;
-        height: auto !important;
-        border-radius: $radius-size;
-    }
-
-    figcaption {
-        margin-top: $base-spacing-unit/2;
-        color: $alt-font-color;
-        @include font-size(14px);
-    }
-}
-
-
-/**
- * Lists
- */
-li {
-    > ul,
-    > ol {
-        margin-left: $base-spacing-unit;
-    }
-}
-
-
-/**
- * Links
- */
-a {
-    color: $accent-color;
-    text-decoration: underline;
-    transition: all 0.1s;
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: lighten($accent-color, 10);
-    }
-}
-
-
-/**
- * Rules
- */
-%sep {
-    width: 25%;
-    margin: $base-spacing-unit*2 auto;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    border-left: none;
-    border-right: none;
-
-    @media (max-width: 30.0625em) {
-        margin: $base-spacing-unit auto;
-    }
-}
-
 hr {
-    @extend %sep;
+    @include space(margin-top, 1.5);
+    @include space(margin-bottom, 1.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-top: 1px solid $gallery;
+    border-right: none;
+    border-bottom: 1px solid $gallery;
+    border-left: none;
 }
 
-
-/**
- * Paragraphs
- */
-.lead,
-%lead {
-    font-size: 1.125em;
-}
-
-.callout {
-    padding: $base-spacing-unit/2 $base-spacing-unit;
-    background-color: $foot-bg-color;
-    border-radius: $radius-size;
-    font-style: italic;
-    font-size: 0.875em;
-
-    @media (max-width: 30.0625em) {
-        padding: $base-spacing-unit/2;
-    }
+mark {
+    background-color: lighten($cerulean, 45);
+    color: inherit;
 }

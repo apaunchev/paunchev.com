@@ -3,54 +3,36 @@
 \*------------------------------------*/
 
 .page-head {
-    @extend %section;
-    padding-bottom: 0;
-}
-
-.site-logo {
-    float: left;
-
-    > img {
-        display: block;
-        width: $avatar-size;
-        height: $avatar-size;
-        background-image: url(/assets/images/avatar.jpg);
-        background-size: $avatar-size $avatar-size;
-        border-radius: $radius-size;
-
-        @media (max-width: 30.0625em) {
-            width: $avatar-size - 10px;
-            height: $avatar-size - 10px;
-            background-size: $avatar-size - 10px $avatar-size - 10px;
-        }
-    }
+    @extend %wrap;
 }
 
 .site-nav {
-    float: left;
+    @include space(margin-bottom);
 
     > a {
         display: inline-block;
-        margin-left: $base-spacing-unit*1.25;
-        text-decoration: none;
-        color: $dark-link-color;
-        font-weight: 700;
+        @include space(margin-left);
+        @include font-size(16px);
         line-height: $avatar-size;
+        text-transform: uppercase;
+        color: $trout;
+        text-decoration: none;
 
-        @media (max-width: 30.0625em) {
-            margin-left: $base-spacing-unit;
-            line-height: $avatar-size - 10px;
+        &.active {
+            color: $cerulean;
         }
 
-        &:hover,
-        &:active,
-        &:focus {
-            color: $accent-color;
+        &:hover {
+            color: $cerulean;
         }
-    }
 
-    .site-nav--current {
-        cursor: text;
-        color: $accent-color;
+        > img {
+            vertical-align: bottom;
+            border-radius: 100%;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }

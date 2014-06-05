@@ -31,31 +31,25 @@
 
     <body>
         <header class="page-head" role="banner">
-            <div class="container">
-                <a class="site-logo" href="/">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Angel Paunchev" width="80" height="80">
-                </a>
+            <a class="site-logo" href="/">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Angel Paunchev" width="60" height="60">
+            </a>
 
-                <nav class="site-nav" role="navigation">
-                    {% for page in site.pages %}
-                        {% if page.slug != 'about' %}
-                            <a href="{{ page.url }}"{% if page.url == url %} class="site-nav--current"{% endif %}>{{ page.title }}</a>
-                        {% endif %}
-                    {% endfor %}
-                </nav>
-            </div>
+            <nav class="site-nav" role="navigation">
+                {% for page in site.pages %}
+                    {% if page.slug != 'about' %}
+                        <a href="{{ page.url }}"{% if page.url == url %} class="site-nav--current"{% endif %}>{{ page.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </nav>
         </header>
 
         <main class="page-content" role="main">
-            <div class="container">
-                {{ content }}
-            </div>
+            {{ content }}
         </main>
 
         <footer class="page-foot" role="contentinfo">
-            <div class="container">
-                <p><a href="https://twitter.com/apaunchev" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @apaunchev</a></p>
-            </div>
+            <div><a href="https://twitter.com/apaunchev" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @apaunchev</a></div>
         </footer>
 
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

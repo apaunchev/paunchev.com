@@ -1,17 +1,22 @@
 /*------------------------------------*\
     #STYLE.CSS
+
+    CONTENTS:
+    #PAGE
+    #PAGE-HEAD
+    #PAGE-CONTENT
+    #PAGE-FOOT
+    #TYPOGRAPHY
 \*------------------------------------*/
 
 // Variables and framework.
 @import "vars";
 @import "initcss";
 
-
 // Custom imports.
-@import "ui/page",
-        "ui/typography",
+@import "ui/mixins",
+        "ui/page",
         "ui/page-head",
         "ui/page-content",
         "ui/page-foot",
-        "ui/posts",
-        "ui/portfolio";
+        "ui/typography";
