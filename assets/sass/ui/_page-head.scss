@@ -4,11 +4,20 @@
 
 .page-head {
     @extend %wrap;
+    @extend %margin-bottom;
+    @extend %clearfix;
+}
+
+.site-logo {
+    float: left;
+    width: $avatar-size;
+    height: $avatar-size;
+    background-image: url(/assets/images/avatar.jpg);
+    background-size: $avatar-size $avatar-size;
+    border-radius: 100%;
 }
 
 .site-nav {
-    @include space(margin-bottom);
-
     > a {
         display: inline-block;
         @include space(margin-left);
@@ -16,23 +25,14 @@
         line-height: $avatar-size;
         text-transform: uppercase;
         color: $trout;
+        font-weight: 400;
         text-decoration: none;
 
-        &.active {
-            color: $cerulean;
-        }
-
+        &.is-active,
         &:hover {
             color: $cerulean;
         }
-
-        > img {
-            vertical-align: bottom;
-            border-radius: 100%;
-        }
-
-        &:first-child {
-            margin-left: 0;
-        }
     }
 }
+
+

@@ -10,23 +10,28 @@
         <link rel="dns-prefetch" href="//themes.googleusercontent.com">
         <link rel="dns-prefetch" href="//platform.twitter.com">
 
-        <title>{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}</title>
+        <link rel="prerender" href="{{ site.permalink }}/posts">
+
+        <title>{% unless home? %}{{ title }} &ndash; {% endunless %}{{ site.title }}</title>
 
         <link rel="alternate" type="application/rss+xml" href="{{ site.feed_url }}">
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
         <link rel="stylesheet" href="/assets/css/style.css">
 
-        <meta property="og:image" content="{{ site.permalink }}/assets/images/og-image.jpg">
-        <meta property="og:title" content="{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}">
+        <meta property="og:title" content="{% unless home? %}{{ title }} &ndash; {% endunless %}{{ site.title }}">
         <meta property="og:site_name" content="{{ site.title }}">
         <meta property="og:url" content="{{ site.permalink }}{{ url }}">
         <meta property="og:description" content="{{ excerpt | strip_html | truncate: 150 }}">
+        <meta property="og:image" content="{{ site.permalink }}/assets/images/me.jpg">
+        {% if current.type == 'post' %}<meta property="og:type" content="article">{% endif %}
 
         <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@apaunchev">
         <meta name="twitter:creator" content="@apaunchev">
-        <meta name="twitter:title" content="{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}">
+        <meta name="twitter:title" content="{% unless home? %}{{ title }} &ndash; {% endunless %}{{ site.title }}">
         <meta name="twitter:description" content="{{ excerpt | strip_html | truncate: 150 }}">
+        <meta name="twitter:image" content="{{ site.permalink }}/assets/images/me.jpg">
     </head>
 
     <body>
@@ -36,9 +41,8 @@
             </a>
 
             <nav class="site-nav" role="navigation">
-                {% for page in site.pages %}
-                    <a href="{{ page.url }}"{% if page.url == url %} class="active"{% endif %}>{{ page.title }}</a>
-                {% endfor %}
+                <a href="/"{% if url == '/' or url == '/about' %} class="is-active"{% endif %}>About</a>
+                <a href="/posts"{% if url == '/posts' or parent.url == '/posts' %} class="is-active"{% endif %}>Posts</a>
             </nav>
         </header>
 
@@ -50,18 +54,18 @@
             <div><a href="https://twitter.com/apaunchev" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @apaunchev</a></div>
         </footer>
 
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
         <script>
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-10660049-1']);
-            _gaq.push(['_trackPageview']);
+            // Twitter
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+            // Google Analytics
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-10660049-1', 'paunchev.net');
+            ga('send', 'pageview');
         </script>
     </body>
 </html>
