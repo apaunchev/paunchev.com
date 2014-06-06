@@ -37,12 +37,12 @@
     <body>
         <header class="page-head" role="banner">
             <a class="site-logo" href="/">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Angel Paunchev" width="60" height="60">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Angel Paunchev" width="1" height="1">
             </a>
 
             <nav class="site-nav" role="navigation">
-                <a href="/"{% if url == '/' or url == '/about' %} class="is-active"{% endif %}>About</a>
-                <a href="/posts"{% if url == '/posts' or parent.url == '/posts' %} class="is-active"{% endif %}>Posts</a>
+                <a href="/"{% if url == '/' or url == '/about' %} class="is-active"{% endif %}>About</a><!--
+                --><a href="/posts"{% if url == '/posts' or parent.url == '/posts' %} class="is-active"{% endif %}>Posts</a>
             </nav>
         </header>
 

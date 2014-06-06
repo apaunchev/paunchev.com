@@ -20,12 +20,9 @@
 .site-nav {
     > a {
         display: inline-block;
-        @include space(margin-left);
-        @include font-size(16px);
+        @include space(margin-left, 1.25);
         line-height: $avatar-size;
-        text-transform: uppercase;
         color: $trout;
-        font-weight: 400;
         text-decoration: none;
 
         &.is-active,
