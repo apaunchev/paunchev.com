@@ -22,7 +22,7 @@
         <meta property="og:title" content="{% unless home? %}{{ title }} &ndash; {% endunless %}{{ site.title }}">
         <meta property="og:site_name" content="{{ site.title }}">
         <meta property="og:url" content="{{ site.permalink }}{{ url }}">
-        <meta property="og:description" content="{{ excerpt | strip_html | truncate: 150 }}">
+        <meta property="og:description" content="{{ current.meta.description }}">
         <meta property="og:image" content="{{ site.permalink }}/assets/images/me.jpg">
         {% if current.type == 'post' %}<meta property="og:type" content="article">{% endif %}
 
@@ -30,7 +30,7 @@
         <meta name="twitter:site" content="@apaunchev">
         <meta name="twitter:creator" content="@apaunchev">
         <meta name="twitter:title" content="{% unless home? %}{{ title }} &ndash; {% endunless %}{{ site.title }}">
-        <meta name="twitter:description" content="{{ excerpt | strip_html | truncate: 150 }}">
+        <meta name="twitter:description" content="{{ current.meta.description }}">
         <meta name="twitter:image" content="{{ site.permalink }}/assets/images/me.jpg">
     </head>
 
