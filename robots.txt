@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://paunchev.net/sitemap.xml
+Disallow:

@@ -1,0 +1,7 @@
+<li class="c-list__item">
+    {% if post.external_url %}
+    <a href="{{ post.external_url }}" onclick="_gaq.push(['_trackpageview', '{{ post.url }}']);">{{ post.title }}</a>
+    {% else %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+</li>

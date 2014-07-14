@@ -1,0 +1,126 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+%pull-content {
+    @include space(margin-top, 1.5);
+    @include space(margin-bottom, 1.5);
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+
+    @include mq($page-width) {
+        @include space(margin-top);
+        @include space(margin-bottom);
+    }
+}
+
+/**
+ * Headings
+ */
+
+h1, h2, h3 {
+    @include space(margin-top, 1.5);
+    @include space(margin-bottom, .5);
+    letter-spacing: -1px;
+    font-weight: 500;
+
+    &:after {
+        content: "—";
+        display: block;
+        color: $base-text-color;
+    }
+}
+
+
+/**
+ * Links
+ */
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: $color-links;
+
+    &:hover {
+        color: $color-links-hover;
+    }
+}
+
+
+/**
+ * Images
+ */
+
+figure {
+    @extend %pull-content;
+
+    > img {
+        border-radius: .25em;
+    }
+}
+
+figcaption {
+    @include font-size($small-size);
+    color: $color-grey;
+    text-align: right;
+}
+
+
+/**
+ * Quotes
+ */
+
+blockquote {
+    @extend %pull-content;
+    font-size: 125%;
+
+    @include mq($page-width) {
+        font-size: 115%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .source {
+        display: block;
+        text-align: right;
+    }
+}
+
+q {
+    font-style: italic;
+}
+
+/**
+ * Misc
+ */
+
+strong, b,
+dt {
+    font-weight: 500;
+}
+
+hr {
+    @include space(margin-top, 1.5);
+    @include space(margin-bottom, 1.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-top: 1px solid $color-grey-light;
+    border-right: none;
+    border-bottom: 1px solid $color-grey-light;
+    border-left: none;
+}
+
+mark {
+    background-color: lighten($color-blue, 45);
+    color: inherit;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}

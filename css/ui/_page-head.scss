@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #PAGE-HEAD
+\*------------------------------------*/
+
+.page-title {
+    margin-top: 0;
+    @include font-size($base-font-size);
+
+    > a {
+        color: $base-text-color;
+        text-decoration: none;
+    }
+
+    &:after {
+        content: "";
+    }
+}

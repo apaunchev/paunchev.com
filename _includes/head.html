@@ -1,12 +1,30 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, minimal-ui">
 
+    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+    <link rel="stylesheet" href="{{ "/css/style.min.css" | prepend: site.baseurl }}">
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
+    <meta property="og:image" content="{{ site.url }}/images/me.jpg">
+    {% if page.meta %}<meta property="og:description" content="{{ page.meta }}">{% endif %}
+    {% if page.date %}<meta property="og:type" content="article">{% endif %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@apaunchev">
+    <meta name="twitter:creator" content="@apaunchev">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}">
+    {% if page.meta %}<meta name="twitter:description" content="{{ page.meta }}">{% endif %}
+    <meta name="twitter:image" content="{{ site.url }}/images/me.jpg">
+
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url | append: '/' }}">
 </head>
