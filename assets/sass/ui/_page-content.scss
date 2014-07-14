@@ -2,52 +2,35 @@
     #PAGE-CONTENT
 \*------------------------------------*/
 
-.page-content {
-    @extend %wrap;
-
-    &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        @include space(margin-top, 1.5);
-        @include space(margin-bottom, 1.5);
-        margin-left: auto;
-        margin-right: auto;
-        border: none;
-        background-image: linear-gradient(45deg, rgba(234, 234, 234, 0.3), rgba(234, 234, 234, 1), rgba(234, 234, 234, 0.3));
-    }
-}
-
-.posts-list {
-    margin: 0;
+.c-list {
+    margin-left: 0;
     list-style-type: none;
 
-    li {
-        @extend %margin-bottom;
-    }
-
-    .entry__title {
-        > a {
-            text-decoration: none;
+    &.c-list--spaced {
+        .c-list__item {
+            @include space(margin-bottom, .5);
         }
     }
 }
 
-.entry__head {
-    @extend %margin-bottom;
-}
+    .c-list__item {
+        @include space(margin-bottom, .1);
 
-.entry__meta {
-    color: $silver-chalice;
-    text-transform: uppercase;
-    @include font-size(16px);
-}
-
-.entry--post {
-    .entry__body {
-        > p:first-of-type {
-            @include font-size(20px);
+        p:last-of-type {
+            margin-bottom: 0;
         }
+    }
+
+    .c-list__date {
+        color: $color-grey;
+        text-transform: uppercase;
+        @include font-size($small-size);
+        font-weight: 300;
+    }
+
+.page-nav {
+    > a {
+        color: $base-text-color;
+        text-decoration: none;
     }
 }

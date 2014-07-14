@@ -1,18 +1,21 @@
-/**
- * Sizes
- */
-$base-font-size: 18px;
-$base-line-height: 27px;
-$page-width: 35em;
-$avatar-size: 75px;
+// Sizes.
+$page-width:         35em;
+$base-font-size:     18px;
+$base-line-height:   28px;
 
+$heading-size-1:     $base-font-size + 8px;
+$heading-size-2:     $base-font-size + 4px;
+$heading-size-3:     $base-font-size + 2px;
 
-/**
- * Colours
- */
-$cerulean: #1193e5;
-$carrot-orange: #f28f1b;
-$butterfly-bush: #6a4c96;
-$trout: #525868;
-$silver-chalice: #9a9a9a;
-$gallery: #eaeaea;
+$small-size:         $base-font-size - 2px;
+
+// Colours.
+$color-black:        #444;
+$color-grey:         #999;
+$color-grey-light:   #e3e3e3;
+$color-blue:         #1193e5;
+$color-blue-dark:    #0d75b6;
+
+$base-text-color:    $color-black;
+$color-links:        $color-blue;
+$color-links-hover:  $color-blue-dark;

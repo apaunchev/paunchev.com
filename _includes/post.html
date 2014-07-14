@@ -1,13 +1,11 @@
-<article class="entry entry--post">
-    <header class="entry__head">
-        <h1>{{ current.title }}</h1>
+<article class="entry">
+    <h1>{{ current.title }}</h1>
 
-        <p class="entry__meta">
-            <time datetime="{{ current.date | date_to_xmlschema }}">{{ current.date | date: "%e %B %Y" }}</time>
-        </p>
-    </header>
+    {{ current.body }}
 
-    <div class="entry__body">
-        {{ current.body }}
-    </div>
+    <p><i>— <time datetime="{{ current.date | date_to_xmlschema }}">{{ current.date | date: "%e %B %Y" }}</time></i></p>
+
+    <nav class="page-nav">
+        <a href="/writing">&larr; Back to archive</a>
+    </nav>
 </article>

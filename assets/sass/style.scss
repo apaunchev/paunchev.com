@@ -2,15 +2,17 @@
     #STYLE.CSS
 \*------------------------------------*/
 
+// Vendor styles.
+@import "vendor/fonts",
+        "vendor/normalize.css";
+
+// Frameworks.
 @import "vars",
         "initcss",
         "mixins";
 
-@import "vendor/fonts",
-        "vendor/normalize";
-
+// Custom UI styles.
 @import "ui/page",
         "ui/page-head",
         "ui/page-content",
-        "ui/page-foot",
         "ui/typography";
