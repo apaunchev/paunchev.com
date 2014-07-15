@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 html {
-    border-top: .5em solid lighten($color-grey-light, 5);
-    border-bottom: .5em solid lighten($color-grey-light, 5);
+    border-top: .5em solid $color-grey-light;
+    border-bottom: .5em solid $color-grey-light;
     color: $base-text-color;
     font-family: Ubuntu, sans-serif;
     font-weight: 300;
@@ -12,26 +12,11 @@ html {
 }
 
 body {
-
-    @include space(padding-top);
-    @include space(padding-right);
-    @include space(padding-bottom);
-    @include space(padding-left);
-
-    @include mq($page-width) {
-        @include space(padding-top, 2);
-        @include space(padding-bottom, 2);
-    }
+    @include space(padding);
 }
 
 .page {
     max-width: $page-width;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
-    flex-direction: column;
-
-    @include mq($page-width) {
-        flex-direction: row;
-    }
 }

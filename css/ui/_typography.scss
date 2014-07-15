@@ -23,31 +23,20 @@ h1, h2, h3 {
     @include space(margin-top, 1.5);
     @include space(margin-bottom, .5);
     letter-spacing: -1px;
-
-    &:after {
-        content: "—";
-        display: block;
-        color: $base-text-color;
-    }
+    font-weight: 500;
 }
 
-.entry--post {
-    h2, h3 {
+.entry--page {
+    h1, h2, h3 {
+        @include font-size($base-font-size);
+
         &:after {
-            content: "";
+            content: "—";
+            display: block;
+            color: $base-text-color;
         }
     }
-
-    h3 {
-        font-weight: 500;
-        color: $color-grey;
-    }
 }
-
-h1 {
-    margin-top: 0;
-}
-
 
 /**
  * Links
