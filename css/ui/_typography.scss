@@ -3,15 +3,15 @@
 \*------------------------------------*/
 
 %pull-content {
-    @include space(margin-top, 1.5);
-    @include space(margin-bottom, 1.5);
+    @include space(margin-top);
+    @include space(margin-bottom);
     margin-left: 0;
     margin-right: 0;
     font-style: italic;
 
     @include mq($page-width) {
-        @include space(margin-top);
-        @include space(margin-bottom);
+        @include space(margin-top, 1.5);
+        @include space(margin-bottom, 1.5);
     }
 }
 
@@ -23,13 +23,29 @@ h1, h2, h3 {
     @include space(margin-top, 1.5);
     @include space(margin-bottom, .5);
     letter-spacing: -1px;
-    font-weight: 500;
 
     &:after {
         content: "—";
         display: block;
         color: $base-text-color;
     }
+}
+
+.entry--post {
+    h2, h3 {
+        &:after {
+            content: "";
+        }
+    }
+
+    h3 {
+        font-weight: 500;
+        color: $color-grey;
+    }
+}
+
+h1 {
+    margin-top: 0;
 }
 
 
@@ -41,6 +57,7 @@ a {
     font-weight: 500;
     text-decoration: underline;
     color: $color-links;
+    transition: color .1s ease-in-out;
 
     &:hover {
         color: $color-links-hover;
@@ -61,7 +78,7 @@ figure {
 }
 
 figcaption {
-    @include font-size($small-size);
+    @include font-size($small-font-size);
     color: $color-grey;
     text-align: right;
 }
@@ -73,13 +90,8 @@ figcaption {
 
 blockquote {
     @extend %pull-content;
-    font-size: 125%;
-
-    @include mq($page-width) {
-        font-size: 115%;
-        margin-left: 0;
-        margin-right: 0;
-    }
+    @include space(padding-left, .5);
+    border-left: .25em solid $color-grey-light;
 
     p:last-of-type {
         margin-bottom: 0;
@@ -87,7 +99,11 @@ blockquote {
 
     .source {
         display: block;
-        text-align: right;
+        text-indent: 0;
+
+        &:before {
+            content: "– ";
+        }
     }
 }
 
@@ -119,8 +135,4 @@ hr {
 mark {
     background-color: lighten($color-blue, 45);
     color: inherit;
-}
-
-.small-caps {
-    font-variant: small-caps;
 }

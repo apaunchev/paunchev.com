@@ -9,21 +9,18 @@ html {
     font-family: Ubuntu, sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
-
-    @include mq($page-width) {
-        font-size: 95%;
-    }
 }
 
 body {
-    @include space(padding-top, 2);
+
+    @include space(padding-top);
     @include space(padding-right);
-    @include space(padding-bottom, 2);
+    @include space(padding-bottom);
     @include space(padding-left);
 
     @include mq($page-width) {
-        @include space(padding-top);
-        @include space(padding-bottom);
+        @include space(padding-top, 2);
+        @include space(padding-bottom, 2);
     }
 }
 
@@ -31,4 +28,10 @@ body {
     max-width: $page-width;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($page-width) {
+        flex-direction: row;
+    }
 }

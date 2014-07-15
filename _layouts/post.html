@@ -3,12 +3,12 @@ layout: default
 ---
 
 <section class="page-content">
-    <div class="entry">
+    <div class="entry entry--post">
         <h1>{{ page.title }}</h1>
 
         {{ content }}
 
-        <p class="entry__meta"><i>— {{ page.date | date: "%-d %B %Y" }}</i></p>
+        <p class="entry__meta">— {{ page.date | date: "%-d %B %Y" }}</p>
     </div>
 
     <nav class="page-nav">

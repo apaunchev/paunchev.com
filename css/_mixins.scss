@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 @mixin mq($bp) {
-    @media (max-width: $bp) {
+    @media (min-width: $bp) {
         @content;
     }
 }

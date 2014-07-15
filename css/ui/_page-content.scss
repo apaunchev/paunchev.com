@@ -2,39 +2,27 @@
     #PAGE-CONTENT
 \*------------------------------------*/
 
-.c-list {
-    margin-left: 0;
-    list-style-type: none;
-
-    &.c-list--spaced {
-        .c-list__item {
-            @include space(margin-bottom, .5);
-        }
+.page-content {
+    @include mq($page-width) {
+        flex: 4;
     }
 }
 
+.c-list {
+    margin-left: 0;
+    list-style-type: none;
+}
+
     .c-list__item {
-        @include space(margin-bottom, .15);
+        @include space(margin-bottom, .5);
 
         p:last-of-type {
             margin-bottom: 0;
         }
     }
 
-    .c-list__date {
-        color: $color-grey;
-        text-transform: uppercase;
-        @include font-size($small-size);
-        font-weight: 300;
-    }
-
-.page-nav {
-    > a {
-        color: $base-text-color;
-        text-decoration: none;
-    }
-}
-
-.entry__meta {
-    color: $color-grey;
-}
+        .c-list__meta {
+            display: block;
+            color: $color-grey;
+            font-style: italic;
+        }

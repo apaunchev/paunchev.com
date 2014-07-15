@@ -2,16 +2,24 @@
     #PAGE-HEAD
 \*------------------------------------*/
 
+.page-head {
+    @include space(margin-bottom, 1.5);
+
+    @include mq($page-width) {
+        margin-bottom: 0;
+        @include space(margin-right, 1.5);
+        flex: 1;
+    }
+}
+
 .page-title {
     margin-top: 0;
+    margin-bottom: 0;
     @include font-size($base-font-size);
 
     > a {
         color: $base-text-color;
         text-decoration: none;
-    }
-
-    &:after {
-        content: "";
+        font-weight: 700;
     }
 }
