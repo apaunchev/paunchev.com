@@ -10,7 +10,7 @@ google-analytics-id: "UA-10660049-1"
 markdown: kramdown
 permalink: /:year/:month/:title
 timezone: Europe/Sofia
-exclude: ["config.codekit", "README.md"]
+exclude: ["config.codekit", "README.md", "Gemfile*", "*.scss"]
 gems:
   - jekyll-sitemap
 
