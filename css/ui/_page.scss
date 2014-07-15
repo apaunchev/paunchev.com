@@ -9,6 +9,10 @@ html {
     font-family: Ubuntu, sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+
+    @media (max-width: $page-width) {
+        font-size: 95%;
+    }
 }
 
 body {
