@@ -8,7 +8,7 @@
     @include space(margin-bottom);
     margin-left: 0;
 
-    @include mq($page-width) {
+    @include media-query($page-width) {
         @include space(margin-top, 1.5);
         @include space(margin-bottom, 1.5);
     }
@@ -19,22 +19,12 @@
  */
 
 h1, h2, h3 {
-    @include space(margin-top, 1.5);
-    @include space(margin-bottom, .5);
+    @include font-weight("bold");
     letter-spacing: -1px;
-    font-weight: 500;
 }
 
-.entry--page {
-    h1, h2, h3 {
-        @include font-size($base-font-size);
-
-        &:after {
-            content: "—";
-            display: block;
-            color: $base-text-color;
-        }
-    }
+h3 {
+    color: $color-grey-dark;
 }
 
 /**
@@ -42,7 +32,7 @@ h1, h2, h3 {
  */
 
 a {
-    font-weight: 500;
+    @include font-weight("bold");
     text-decoration: underline;
     color: $color-links;
     transition: color .1s ease-in-out;
@@ -64,7 +54,7 @@ figure {
     @include space(margin-right, -1);
     @include space(margin-left, -1);
 
-    @include mq($page-width) {
+    @include media-query($page-width) {
         @include space(margin-right, -1.5);
         @include space(margin-left, -1.5);
     }
@@ -111,7 +101,7 @@ q {
 
 strong, b,
 dt {
-    font-weight: 500;
+    @include font-weight("bold");
 }
 
 hr {

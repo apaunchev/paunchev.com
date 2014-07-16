@@ -6,44 +6,48 @@ description: "My name is Angel Paunchev, and I’m a developer from Bulgaria. I 
 
 <section class="page-content">
     <div class="entry entry--page">
-        <figure>
-            <img src="/images/me.jpg" alt="On a boat in the River Thames">
-            <figcaption>On a boat in the River Thames</figcaption>
-        </figure>
+        <header class="entry__head">
+            <h1 class="entry__title">About</h1>
+        </header>
 
-        <h1>{{ page.title }}</h1>
+        <div class="entry__body">
+            <p>My name is Angel Paunchev, and I’m a developer from Bulgaria. I <a href="/#build">build</a> tools for the web and <a href="/writing">write</a> about life, technology, and software development.</p>
 
-        <p>My name is Angel Paunchev, and I’m a developer from Bulgaria. I <a href="/#build">build</a> tools for the web and <a href="/writing">write</a> about life, technology, and software development.</p>
+            <figure>
+                <img src="/images/me.jpg" alt="On a boat in the River Thames">
+                <figcaption>On a boat in the River Thames</figcaption>
+            </figure>
 
-        <p>I’m a student at <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>; due to graduate in mid-2015 with a B.Sc. in Computing.</p>
+            <p>I’m a student at <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>; due to graduate in mid-2015 with a B.Sc. in Computing.</p>
 
-        <p>You can follow me on <a href="https://twitter.com/apaunchev">Twitter</a>, <a href="https://github.com/apaunchev">GitHub</a>, and <a href="http://instagram.com/apaunchev">Instagram</a>.</p>
+            <p>You can follow me on <a href="https://twitter.com/apaunchev">Twitter</a>, <a href="https://github.com/apaunchev">GitHub</a>, and <a href="http://instagram.com/apaunchev">Instagram</a>.</p>
 
-        <h2 id="build">Things I’ve recently built</h2>
+            <h2 id="build">Projects</h2>
 
-        <ol class="c-list">
-            <li class="c-list__item">
-                <a href="http://pravopis.be/">правопис.be</a>
-                <p>Check the spelling of commonly misspelled words and phrases.</p>
-            </li>
-            <li class="c-list__item">
-                <a href="https://github.com/apaunchev/initcss">initcss</a>
-                <p>Sass-based, object-oriented CSS framework.</p>
-            </li>
-        </ol>
+            <ol class="c-list">
+                <li class="c-list__item">
+                    <a href="http://pravopis.be/">правопис.be</a>
+                    <p>Check the spelling of commonly misspelled words and phrases.</p>
+                </li>
+                <li class="c-list__item">
+                    <a href="https://github.com/apaunchev/initcss">initcss</a>
+                    <p>Sass-based, object-oriented CSS framework.</p>
+                </li>
+            </ol>
 
-        <h2>Writing</h2>
+            <h2>Writing</h2>
 
-        <ul class="c-list">
-        {% for post in site.posts %}
-            {% if post.featured == true %}
-            {% include post-list-items.html %}
-            {% endif %}
-        {% endfor %}
-        </ul>
+            <ul class="c-list">
+            {% for post in site.posts %}
+                {% if post.featured == true %}
+                {% include post-list-items.html %}
+                {% endif %}
+            {% endfor %}
+            </ul>
+
+            <nav class="page-nav">
+                <a href="/writing/">View archive &rarr;</a>
+            </nav>
+        </div>
     </div>
-
-    <nav class="page-nav">
-        <a href="/writing/">View archive &rarr;</a>
-    </nav>
 </section>

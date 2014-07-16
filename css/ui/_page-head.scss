@@ -4,12 +4,6 @@
 
 .page-head {}
 
-.page-title {
-    margin-top: 0;
-    @include font-size($base-font-size);
-
-    > a {
-        color: $base-text-color;
-        text-decoration: none;
+    .page-title {
+        @extend .page-nav;
     }
-}

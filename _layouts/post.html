@@ -4,12 +4,17 @@ layout: default
 
 <section class="page-content">
     <div class="entry entry--post">
-        <h1>{{ page.title }}</h1>
+        <header class="entry__head">
+            <h1 class="entry__title">{{ page.title }}</h1>
+            <p class="entry__meta">— {{ page.date | date: "%-d %B %Y" }}</p>
+        </header>
 
-        {{ content }}
-
-        <p class="entry__meta">— {{ page.date | date: "%-d %B %Y" }}</p>
+        <div class="entry__body">
+            {{ content }}
+        </div>
     </div>
+
+    <hr>
 
     <nav class="page-nav">
         <a href="/writing/">&larr; Back to archive</a>
