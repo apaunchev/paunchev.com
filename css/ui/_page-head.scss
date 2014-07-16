@@ -2,8 +2,69 @@
     #PAGE-HEAD
 \*------------------------------------*/
 
-.page-head {}
+.page-head {
+    @extend %clearfix;
+    @extend %animated;
+    @extend %fadeInDown;
+    @include space(margin-bottom);
+    @include space(padding-bottom, .5);
+    border-bottom: 1px solid $color-grey-light;
+
+    @include media-query($page-width) {
+        @include space(margin-bottom, 1.5);
+    }
+
+    a {
+        font-size: inherit;
+        color: $base-text-color;
+        text-decoration: none;
+    }
+}
 
     .page-title {
-        @extend .page-nav;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: inherit;
+    }
+
+    .site-nav {
+        float: right;
+
+        > a {
+            position: relative;
+            @include space(margin-left);
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: -$base-spacing-unit + 10px;
+                background-color: $color-links;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all .3s cubic-bezier(0.325, -0.075, 0, 1.65);
+
+                @include media-query($page-width) {
+                    bottom: -$base-spacing-unit + 6px;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover,
+            &:active,
+            &:focus,
+            &.active {
+                color: $color-links;
+
+                &:before {
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+            }
+        }
     }

@@ -6,14 +6,16 @@ $base-line-height:    28px;
 $heading-size-1:      32px;
 $heading-size-2:      24px;
 $heading-size-3:      21px;
+$heading-size-4:      $base-font-size;
 
 $small-font-size:     $base-font-size - 2px;
+
+$border-radius:       .25em;
 
 
 // Colours.
 $color-black:         #444;
-$color-grey:          #888;
-$color-grey-dark:     #666;
+$color-grey:          #777;
 $color-grey-light:    #e6e6e6;
 $color-blue:          #1193e5;
 $color-blue-dark:     #0d75b6;

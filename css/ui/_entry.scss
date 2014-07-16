@@ -5,7 +5,7 @@
 .entry {}
 
     .entry__head {
-        @extend %margin-bottom;
+        @include space(margin-bottom);
     }
 
     .entry__body {}
@@ -13,11 +13,13 @@
     .entry__foot {}
 
     .entry__title {
+        margin-top: 0;
         margin-bottom: 0;
     }
 
     .entry__meta {
         margin-bottom: 0;
         color: $color-grey;
-        font-style: italic;
+        @include font-size($small-font-size);
+        text-transform: uppercase;
     }
