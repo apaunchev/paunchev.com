@@ -27,5 +27,5 @@
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
 
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url | append: '/' }}">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
 </head>
