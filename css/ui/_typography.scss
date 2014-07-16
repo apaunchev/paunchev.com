@@ -2,12 +2,11 @@
     #TYPOGRAPHY
 \*------------------------------------*/
 
-%pull-content {
+%spaced {
     @include space(margin-top);
+    margin-right: 0;
     @include space(margin-bottom);
     margin-left: 0;
-    margin-right: 0;
-    font-style: italic;
 
     @include mq($page-width) {
         @include space(margin-top, 1.5);
@@ -48,7 +47,9 @@ a {
     color: $color-links;
     transition: color .1s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         color: $color-links-hover;
     }
 }
@@ -59,18 +60,21 @@ a {
  */
 
 figure {
-    @extend %pull-content;
+    @extend %spaced;
+    @include space(margin-right, -1);
+    @include space(margin-left, -1);
 
-    > img {
-        border-radius: .25em;
+    @include mq($page-width) {
+        @include space(margin-right, -1.5);
+        @include space(margin-left, -1.5);
     }
 }
 
-figcaption {
-    @include font-size($small-font-size);
-    color: $color-grey;
-    text-align: right;
-}
+    figcaption {
+        @include font-size($small-font-size);
+        color: $color-grey;
+        text-align: center;
+    }
 
 
 /**
@@ -78,9 +82,10 @@ figcaption {
  */
 
 blockquote {
-    @extend %pull-content;
-    @include space(padding-left, .5);
+    @extend %spaced;
+    @include space(padding-left);
     border-left: .25em solid $color-grey-light;
+    color: $color-grey-dark;
 
     p:last-of-type {
         margin-bottom: 0;
@@ -110,18 +115,7 @@ dt {
 }
 
 hr {
-    @include space(margin-top, 1.5);
-    @include space(margin-bottom, 1.5);
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    border-top: 1px solid $color-grey-light;
-    border-right: none;
-    border-bottom: 1px solid $color-grey-light;
-    border-left: none;
-}
-
-mark {
-    background-color: lighten($color-blue, 45);
-    color: inherit;
+    border: 0;
+    height: .1em;
+    background: linear-gradient(90deg, transparent, $color-grey-light, transparent);
 }
