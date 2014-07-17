@@ -27,7 +27,7 @@ $color-links-hover:   $color-blue-dark;
 
 // Breakpoints.
 $breakpoints: (
-    "palm"          "screen and (max-width: 700px)",
+    "palm"          "screen and (max-width: 45.5625em)",
     "lap"           "screen and (min-width: 720px) and (max-width: 1023px)",
     "lap-and-up"    "screen and (min-width: 720px)",
     "portable"      "screen and (max-width: 1023px)",

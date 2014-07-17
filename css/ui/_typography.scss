@@ -80,8 +80,14 @@ a {
 
 figure {
     @extend %spaced;
-    margin-right: 0;
-    margin-left: 0;
+    @include space(margin-right, -1.5);
+    @include space(margin-left, -1.5);
+    text-align: center;
+
+    @include media-query(palm) {
+        @include space(margin-right, -.75);
+        @include space(margin-left, -.75);
+    }
 
     > img {
         border-radius: $border-radius;
@@ -91,7 +97,6 @@ figure {
     figcaption {
         @include font-size($small-font-size);
         color: $color-grey;
-        text-align: center;
     }
 
 
