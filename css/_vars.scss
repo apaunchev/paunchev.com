@@ -23,3 +23,14 @@ $color-blue-dark:     #0d75b6;
 $base-text-color:     $color-black;
 $color-links:         $color-blue;
 $color-links-hover:   $color-blue-dark;
+
+
+// Breakpoints.
+$breakpoints: (
+    "palm"          "screen and (max-width: 700px)",
+    "lap"           "screen and (min-width: 720px) and (max-width: 1023px)",
+    "lap-and-up"    "screen and (min-width: 720px)",
+    "portable"      "screen and (max-width: 1023px)",
+    "desk"          "screen and (min-width: 1024px)"
+    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+);

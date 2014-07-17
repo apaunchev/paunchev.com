@@ -10,13 +10,17 @@ html {
     @include font-weight("regular");
     -webkit-font-smoothing: antialiased;
 
-    @media (max-width: $page-width) {
+    @include media-query(palm) {
         font-size: 95%;
     }
 }
 
 body {
     @include space(padding);
+
+    @include media-query(palm) {
+        @include space(padding, .75);
+    }
 }
 
 .page {

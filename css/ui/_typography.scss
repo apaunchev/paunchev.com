@@ -3,14 +3,14 @@
 \*------------------------------------*/
 
 %spaced {
-    @include space(margin-top);
+    @include space(margin-top, 1.5);
     margin-right: 0;
-    @include space(margin-bottom);
+    @include space(margin-bottom, 1.5);
     margin-left: 0;
 
-    @include media-query($page-width) {
-        @include space(margin-top, 1.5);
-        @include space(margin-bottom, 1.5);
+    @include media-query(palm) {
+        @include space(margin-top);
+        @include space(margin-bottom);
     }
 }
 
@@ -19,13 +19,13 @@
  */
 
 h1, h2, h3 {
-    @include space(margin-top);
+    @include space(margin-top, 1.5);
     @include space(margin-bottom, .5);
     @include font-weight("bold");
     letter-spacing: -1px;
 
-    @include media-query($page-width) {
-        @include space(margin-top, 1.5);
+    @include media-query(palm) {
+        @include space(margin-top);
     }
 }
 
@@ -80,13 +80,8 @@ a {
 
 figure {
     @extend %spaced;
-    @include space(margin-right, -1);
-    @include space(margin-left, -1);
-
-    @include media-query($page-width) {
-        @include space(margin-right, -1.5);
-        @include space(margin-left, -1.5);
-    }
+    margin-right: 0;
+    margin-left: 0;
 
     > img {
         border-radius: $border-radius;

@@ -2,14 +2,6 @@
     #MIXINS
 \*------------------------------------*/
 
-// Media queries.
-@mixin media-query($bp) {
-    @media (min-width: $bp) {
-        @content;
-    }
-}
-
-
 // Font weights.
 @mixin font-weight($font-weight) {
 
