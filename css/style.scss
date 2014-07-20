@@ -2,20 +2,86 @@
     #STYLE.CSS
 \*------------------------------------*/
 
-// Vendor styles.
-@import "vendor/fonts",
-        "vendor/normalize";
+/**
+ * #SETTINGS
+ */
+$inuit-base-font-size:   18px;
+$inuit-base-line-height: 28px;
+$inuit-base-text-color:  #444;
+@import "../bower_components/inuit-defaults/settings.defaults";
 
-// Frameworks.
-@import "vars",
-        "initcss",
-        "mixins";
+@import "settings.global";
+@import "settings.colors";
+@import "../bower_components/inuit-responsive-settings/_settings.responsive";
+@import "settings.responsive";
 
-// Custom UI styles.
-@import "ui/page",
-        "ui/page-head",
-        "ui/page-content",
-        "ui/entry",
-        "ui/typography",
-        "ui/animations",
-        "ui/code-syntax";
+
+
+
+
+/**
+ * #TOOLS
+ */
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "tools.mixins";
+@import "../bower_components/inuit-responsive-tools/_tools.responsive";
+@import "tools.aliases";
+
+
+
+
+
+/**
+ * #GENERIC
+ */
+@import "generic.fonts";
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+@import "../bower_components/inuit-reset/generic.reset";
+@import "../bower_components/inuit-shared/generic.shared";
+
+
+
+
+
+/**
+ * #BASE
+ */
+@import "../bower_components/inuit-page/base.page";
+@import "base.page";
+
+$inuit-heading-size-1: 32px;
+$inuit-heading-size-2: 24px;
+$inuit-heading-size-3: 21px;
+$inuit-heading-size-4: $inuit-base-font-size;
+@import "../bower_components/inuit-headings/base.headings";
+
+@import "base.type";
+@import "../bower_components/inuit-lists/base.lists";
+@import "../bower_components/inuit-images/base.images";
+@import "base.quotes";
+
+
+
+
+
+/**
+ * #COMPONENTS
+ */
+@import "components.page-head";
+@import "components.page-content";
+@import "components.entry";
+@import "components.pull-quote";
+@import "components.animations";
+@import "components.code-syntax";
+@import "components.buttons";
+
+
+
+
+
+/**
+ * #TRUMPS
+ */
+@import "../bower_components/inuit-clearfix/trumps.clearfix";

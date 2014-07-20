@@ -5,7 +5,7 @@
 .entry {}
 
     .entry__head {
-        @include space(margin-bottom);
+        @extend %margin-bottom;
     }
 
     .entry__body {}
@@ -18,8 +18,8 @@
     }
 
     .entry__meta {
+        @extend %small;
         margin-bottom: 0;
-        color: $color-grey;
-        @include font-size($small-font-size);
+        color: $color-grey-light;
         text-transform: uppercase;
     }

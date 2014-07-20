@@ -1,0 +1,144 @@
+/*------------------------------------*\
+    #TYPE
+\*------------------------------------*/
+
+/**
+ * Re-use spacing of certain elements.
+ */
+%spaced {
+    margin-top: $spacing-unit--large;
+    margin-right: 0;
+    margin-bottom: $spacing-unit--large;
+    margin-left: 0;
+
+    @include media-query(palm) {
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+
+
+
+
+/**
+ * Headings.
+ */
+h1, h2, h3 {
+    margin-top: $spacing-unit--large;
+    margin-bottom: $spacing-unit--small;
+    @include font-weight(bold);
+    letter-spacing: -1px;
+
+    @include media-query(palm) {
+        margin-top: $spacing-unit;
+    }
+}
+
+h3 {
+    color: $color-grey-light;
+}
+
+
+
+
+
+/**
+ * Emboldened elements.
+ */
+a,
+strong, b,
+dt {
+    @include font-weight(bold);
+}
+
+
+
+
+
+/**
+ * Code-like elements.
+ */
+code, kbd, samp {
+    font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+pre {
+    @extend %small;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;
+}
+
+
+
+
+
+/**
+ * Small type.
+ */
+small,
+.small,
+%small {
+    @include font-size($inuit-base-font-size - 2px);
+}
+
+
+
+
+
+/**
+ * Links
+ */
+a {
+    @include font-weight(bold);
+    text-decoration: underline;
+    color: $color-links;
+    transition: all .1s ease-in-out;
+
+    @include attention() {
+        color: $color-links-hover;
+    }
+}
+
+
+
+
+
+/**
+ * Images.
+ */
+figure {
+    @extend %spaced;
+    margin-right: -$spacing-unit--large;
+    margin-left: -$spacing-unit--large;
+    text-align: center;
+
+    @include media-query(palm) {
+        margin-right: -$spacing-unit--small;
+        margin-left: -$spacing-unit--small;
+    }
+
+    > img {
+        border-radius: $base-round;
+    }
+}
+
+    figcaption {
+        @extend %small;
+        color: $color-grey-light;
+    }
+
+
+
+
+
+/**
+ * Horizontal rule.
+ */
+hr {
+    @extend %spaced;
+    height: 1px;
+    border: 0;
+    background: linear-gradient(90deg, white, $color-grey-ui, white);
+}

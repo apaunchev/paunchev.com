@@ -6,19 +6,22 @@
     @extend %clearfix;
     @extend %animated;
     @extend %fadeInDown;
-    @include space(margin-bottom, 1.5);
-    @include space(padding-bottom, .5);
-    border-bottom: 1px solid $color-grey-light;
+    margin-bottom: $spacing-unit;
+    padding-bottom: $spacing-unit--small;
+    border-bottom: 1px solid $color-grey-ui;
 
     @include media-query(palm) {
-        @include space(margin-bottom);
+        margin-bottom: $spacing-unit--small;
     }
 
     a {
-        font-size: inherit;
-        color: $base-text-color;
+        color: $color-site-nav;
         text-decoration: none;
         letter-spacing: -1px;
+
+        @include attention() {
+            color: $color-links;
+        }
     }
 }
 
@@ -29,12 +32,17 @@
         font-size: inherit;
     }
 
+
     .site-nav {
         float: right;
 
         > a {
             position: relative;
-            @include space(margin-left);
+            margin-left: $spacing-unit;
+
+            &:first-child {
+                margin-left: 0;
+            }
 
             &:before {
                 content: "";
@@ -42,24 +50,26 @@
                 width: 100%;
                 height: 1px;
                 left: 0;
-                bottom: -$base-spacing-unit + 6px;
+                bottom: -$spacing-unit + 6px;
                 background-color: $color-links;
                 visibility: hidden;
                 transform: scaleX(0);
                 transition: all .3s cubic-bezier(0.325, -0.075, 0, 1.65);
 
                 @include media-query(palm) {
-                    bottom: -$base-spacing-unit + 9px;
+                    bottom: -$spacing-unit + 7px;
                 }
             }
 
-            &:first-child {
-                margin-left: 0;
+            @include attention() {
+                color: $color-links;
+
+                &:before {
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
             }
 
-            &:hover,
-            &:active,
-            &:focus,
             &.active {
                 color: $color-links;
 

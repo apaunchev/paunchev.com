@@ -3,12 +3,8 @@
 \*------------------------------------*/
 
 html {
-    border-top: .5em solid $color-grey-light;
-    border-bottom: .5em solid $color-grey-light;
-    color: $base-text-color;
     font-family: Ubuntu, sans-serif;
-    @include font-weight("regular");
-    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
 
     @include media-query(palm) {
         font-size: 95%;
@@ -16,10 +12,10 @@ html {
 }
 
 body {
-    @include space(padding);
+    padding: $spacing-unit;
 
     @include media-query(palm) {
-        @include space(padding, .75);
+        padding: $spacing-unit--small;
     }
 }
 

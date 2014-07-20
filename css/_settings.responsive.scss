@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #SETTINGS-RESPONSIVE
+\*------------------------------------*/
+
+$breakpoints: (
+    "palm"          "screen and (max-width: 759px)",
+    "lap"           "screen and (min-width: 760px) and (max-width: 1023px)",
+    "lap-and-up"    "screen and (min-width: 760px)",
+    "portable"      "screen and (max-width: 1023px)",
+    "desk"          "screen and (min-width: 1024px)"
+    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+);

@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #PULL-QUOTE
+\*------------------------------------*/
+
+.pull-quote {
+    @include font-size(20px);
+    color: $color-quote;
+    padding-left: halve($spacing-unit);
+    border-left: halve($spacing-unit) solid $color-tint;
+    font-style: italic;
+
+    @include media-query(lap-and-up) {
+        margin-left: -$spacing-unit;
+    }
+
+}
+
+    .pull-quote__source {
+        font-style: normal;
+    }
