@@ -2,10 +2,7 @@
     #PAGE-CONTENT
 \*------------------------------------*/
 
-.page-content {
-    @extend %animated;
-    @extend %fadeIn;
-}
+.page-content {}
 
 .c-list {
     margin-left: 0;

@@ -4,8 +4,6 @@
 
 .page-head {
     @extend %clearfix;
-    @extend %animated;
-    @extend %fadeInDown;
     margin-bottom: $spacing-unit;
     padding-bottom: $spacing-unit--small;
     border-bottom: 1px solid $color-grey-ui;

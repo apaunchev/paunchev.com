@@ -5,11 +5,11 @@
 // Font weights.
 @mixin font-weight($font-weight) {
 
-    @if ($font-weight == "regular") {
+    @if ($font-weight == "light") {
         font-weight: 300;
     }
 
-    @if ($font-weight == "bold") {
+    @if ($font-weight == "medium") {
         font-weight: 500;
     }
 

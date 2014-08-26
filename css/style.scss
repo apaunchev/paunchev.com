@@ -35,7 +35,6 @@ $inuit-base-text-color:  #444;
 /**
  * #GENERIC
  */
-@import "generic.fonts";
 @import "../bower_components/inuit-normalize/generic.normalize";
 @import "../bower_components/inuit-box-sizing/generic.box-sizing";
 @import "../bower_components/inuit-reset/generic.reset";
@@ -73,7 +72,6 @@ $inuit-heading-size-4: $inuit-base-font-size;
 @import "components.page-content";
 @import "components.entry";
 @import "components.pull-quote";
-@import "components.animations";
 @import "components.code-syntax";
 @import "components.buttons";
 

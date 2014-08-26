@@ -25,9 +25,7 @@
  * Headings.
  */
 h1, h2, h3 {
-    margin-top: $spacing-unit--large;
-    margin-bottom: $spacing-unit--small;
-    @include font-weight(bold);
+    @include font-weight(medium);
     letter-spacing: -1px;
 
     @include media-query(palm) {
@@ -49,7 +47,7 @@ h3 {
 a,
 strong, b,
 dt {
-    @include font-weight(bold);
+    @include font-weight(medium);
 }
 
 
@@ -91,7 +89,7 @@ small,
  * Links
  */
 a {
-    @include font-weight(bold);
+    @include font-weight(medium);
     text-decoration: underline;
     color: $color-links;
     transition: all .1s ease-in-out;
