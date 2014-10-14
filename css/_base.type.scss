@@ -27,10 +27,6 @@
 h1, h2, h3 {
     @include font-weight(medium);
     letter-spacing: -1px;
-
-    @include media-query(palm) {
-        margin-top: $spacing-unit;
-    }
 }
 
 h3 {

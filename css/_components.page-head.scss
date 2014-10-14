@@ -3,17 +3,8 @@
 \*------------------------------------*/
 
 .page-head {
-    @extend %clearfix;
-    margin-bottom: $spacing-unit;
-    padding-bottom: $spacing-unit--small;
-    border-bottom: 1px solid $color-grey-ui;
-
-    @include media-query(palm) {
-        margin-bottom: $spacing-unit--small;
-    }
-
     a {
-        color: $color-site-nav;
+        color: $inuit-base-text-color;
         text-decoration: none;
         letter-spacing: -1px;
 
@@ -24,19 +15,21 @@
 }
 
     .page-title {
-        float: left;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: inherit;
+        @include font-size(21px);
     }
 
-
     .site-nav {
-        float: right;
+        margin-top: $spacing-unit--small;
+        border-top: 1px solid $color-grey-ui;
 
         > a {
             position: relative;
+            display: inline-block;
+            margin-top: -1px;
             margin-left: $spacing-unit;
+            color: $color-site-nav;
+            @include font-weight(light);
+            line-height: $spacing-unit*1.75;
 
             &:first-child {
                 margin-left: 0;
@@ -47,16 +40,12 @@
                 position: absolute;
                 width: 100%;
                 height: 1px;
+                top: 0;
                 left: 0;
-                bottom: -$spacing-unit + 6px;
                 background-color: $color-links;
                 visibility: hidden;
                 transform: scaleX(0);
                 transition: all .3s cubic-bezier(0.325, -0.075, 0, 1.65);
-
-                @include media-query(palm) {
-                    bottom: -$spacing-unit + 7px;
-                }
             }
 
             @include attention() {

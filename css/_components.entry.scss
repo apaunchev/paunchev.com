@@ -5,7 +5,8 @@
 .entry {}
 
     .entry__head {
-        @extend %margin-bottom;
+        text-align: center;
+        @extend %spaced;
     }
 
     .entry__body {}

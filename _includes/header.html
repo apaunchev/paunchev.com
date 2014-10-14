@@ -1,8 +1,9 @@
 <header class="page-head">
-    <h1 class="page-title"><a href="/">@apaunchev</a></h1>
+    <a class="page-title" href="/">Angel Paunchev</a>
 
     <nav class="site-nav">
         <a{% if page.url == "/" %} class="active"{% endif %} href="/">About</a><!--
-        --><a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/">Writing</a>
+        --><a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/">Writing</a><!--
+        --><a{% if page.url == "/quotes/" %} class="active"{% endif %} href="/quotes/">Quotes</a>
     </nav>
 </header>
