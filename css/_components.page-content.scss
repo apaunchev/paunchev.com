@@ -2,7 +2,10 @@
     #PAGE-CONTENT
 \*------------------------------------*/
 
-.page-content {}
+.page-content {
+    max-width: $content-width;
+    margin: 0 auto;
+}
 
 .c-list {
     margin-left: 0;
@@ -24,9 +27,3 @@
         .c-list__meta {
             display: block;
         }
-
-.page-nav {
-    > a {
-        @extend .btn;
-    }
-}

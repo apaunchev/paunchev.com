@@ -1,52 +1,36 @@
 ---
 layout: default
 permalink: /
-description: "I’m a developer from Bulgaria. I make web and iOS apps and write about software development, technology, and life."
+description: "I’m a web and iOS developer from Bulgaria. I also write about software development, technology, and life."
 ---
 
-<section class="page-content">
-    <div class="entry entry--page">
-        <header class="entry__head">
-            <h1 class="entry__title">About</h1>
-        </header>
+<div class="entry entry--page">
+    <figure>
+        <img src="/images/me.jpg" alt="On a boat in the River Thames">
+    </figure>
 
-        <p>My name is Angel Paunchev, and I’m a developer from Bulgaria. I make web and iOS <a href="#apps">apps</a>. I also <a href="/writing">write</a> about software development, technology, and life.</p>
+    <p>My name is Angel Paunchev, and I’m a web and iOS developer from Bulgaria. I also <a href="/writing">write</a> about software development, technology, and life.</p>
 
-        <figure>
-            <img src="/images/me.jpg" alt="On a boat in the River Thames">
-        </figure>
+    <p>I’m due to graduate in 2015 with a BSc (Hons) in Computing from <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>.</p>
 
-        <p>I’m due to graduate in 2015 with a BSc (Hons) in Computing from <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>.</p>
+    <p>You can follow me on <a href="https://twitter.com/apaunchev">Twitter</a>, <a href="https://github.com/apaunchev">GitHub</a>, and <a href="https://www.linkedin.com/in/apaunchev">LinkedIn</a>.</p>
 
-        <p>You can follow me on <a href="https://twitter.com/apaunchev">Twitter</a>, <a href="https://github.com/apaunchev">GitHub</a>, and <a href="https://www.linkedin.com/in/apaunchev">LinkedIn</a>.</p>
+    <h2 id="apps">Projects</h2>
 
-        <hr>
+    <ol class="c-list">
+        <li class="c-list__item">
+            <a href="http://pravopis.be/">pravopis.be &raquo;</a>
+            <p>Check the spelling of commonly misspelled words and phrases (in Bulgarian)</p>
+        </li>
+    </ol>
 
-        <h2 id="apps">Apps</h2>
+    <h2>Writing</h2>
 
-        <ol class="c-list">
-            <li class="c-list__item">
-                <a href="http://pravopis.be/">pravopis.be &raquo;</a>
-                <p>Check the spelling of commonly misspelled words and phrases (in Bulgarian)</p>
-            </li>
-        </ol>
-
-        <hr>
-
-        <h2>Writing</h2>
-
-        <ul class="c-list">
-        {% for post in site.posts %}
-            {% if post.featured == true %}
-            {% include post-list-items.html %}
-            {% endif %}
-        {% endfor %}
-        </ul>
-    </div>
-
-    <hr>
-
-    <nav class="page-nav">
-        <a href="/writing/">View archive &rarr;</a>
-    </nav>
-</section>
+    <ul class="c-list">
+    {% for post in site.posts %}
+        {% if post.featured == true %}
+        {% include post-list-items.html %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>

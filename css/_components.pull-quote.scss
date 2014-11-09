@@ -3,18 +3,21 @@
 \*------------------------------------*/
 
 .pull-quote {
-    @include font-size(20px);
+    @extend %spaced;
+    margin-right: -5rem;
+    margin-left: -5rem;
+    @include font-size(30px, false);
     color: $color-quote;
-    padding-left: halve($spacing-unit);
-    border-left: halve($spacing-unit) solid $color-tint;
     font-style: italic;
 
-    @include media-query(lap-and-up) {
-        margin-left: -$spacing-unit;
+    @include media-query(palm) {
+        margin-right: 0;
+        margin-left: 0;
     }
-
 }
 
     .pull-quote__source {
+        display: block;
         font-style: normal;
+        @include font-size(18px);
     }

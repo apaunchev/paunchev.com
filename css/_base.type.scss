@@ -104,8 +104,8 @@ a {
  */
 figure {
     @extend %spaced;
-    margin-right: -$spacing-unit--large;
-    margin-left: -$spacing-unit--large;
+    margin-right: -5em;
+    margin-left: -5em;
     text-align: center;
 
     @include media-query(palm) {
@@ -132,7 +132,10 @@ figure {
  */
 hr {
     @extend %spaced;
-    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    width: 25%;
     border: 0;
-    background: linear-gradient(90deg, white, $color-grey-ui, white);
+    background: #eee;
 }

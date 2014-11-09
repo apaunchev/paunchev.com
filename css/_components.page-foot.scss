@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #PAGE-FOOT
+\*------------------------------------*/
+
+.page-foot {
+    margin-top: $spacing-unit--large*1.5;
+    padding-top: $spacing-unit--small;
+    border-top: 1px solid $color-grey-ui;
+    @include font-size(16px);
+
+    @include media-query(palm) {
+        margin-top: $spacing-unit*1.5;
+    }
+}
