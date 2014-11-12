@@ -8,7 +8,14 @@
     border-top: 1px solid $color-grey-ui;
     @include font-size(16px);
 
+    > :last-child {
+        margin-bottom: 0;
+    }
+
     @include media-query(palm) {
         margin-top: $spacing-unit*1.5;
+        margin-right: -$spacing-unit--small;
+        margin-left: -$spacing-unit--small;
+        text-align: center;
     }
 }

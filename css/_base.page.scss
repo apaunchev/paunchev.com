@@ -7,7 +7,7 @@ html {
     @include font-weight(light);
 
     @include media-query(palm) {
-        font-size: 95%;
+        font-size: 1em;
     }
 }
 

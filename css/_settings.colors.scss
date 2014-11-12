@@ -3,11 +3,11 @@
 //\*------------------------------------*/
 
 $color-grey:            #444;
-$color-grey-light:      #777;
+$color-grey-light:      #888;
+$color-grey-x-light:    #a3a3a3;
 $color-grey-ui:         #ddd;
 $color-blue:            #1193e5;
 $color-blue-dark:       #0d75b6;
-$color-tint:            rgba(0, 0, 0, 0.025);
 
 
 
@@ -23,7 +23,7 @@ $inuit-base-text-color: $color-grey;
 // Links.
 $color-links:           $color-blue;
 $color-links-hover:     $color-blue-dark;
-$color-links-nav:       $color-grey-light;
+$color-links-nav:       $color-grey-x-light;
 
 
 

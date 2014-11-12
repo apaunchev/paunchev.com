@@ -9,9 +9,9 @@
 
     a {
         @include font-size(16px);
-        line-height: 45px;
         @include font-weight(light);
         text-transform: uppercase;
+        line-height: 45px;
         text-decoration: none;
         letter-spacing: -1px;
         color: $color-grey;
@@ -19,6 +19,12 @@
         @include media-query(palm) {
             line-height: 35px;
         }
+    }
+
+    @include media-query(palm) {
+        margin-right: -$spacing-unit--small;
+        margin-left: -$spacing-unit--small;
+        text-align: center;
     }
 }
 
@@ -29,7 +35,7 @@
             display: inline-block;
             max-width: 45px;
             border-radius: 100%;
-            margin-right: 0.4em;
+            margin-right: $spacing-unit--small/2;
             padding: 2px;
             box-shadow: 0 0 0 1px $color-grey-ui;
             transition: all .1s ease-in-out;
@@ -44,6 +50,12 @@
                 box-shadow: 0 0 0 2px $color-links;
             }
         }
+
+        @include media-query(palm) {
+            float: none;
+            display: block;
+            margin-bottom: $spacing-unit--small/2;
+        }
     }
 
     .site-nav {
@@ -54,6 +66,10 @@
             display: inline-block;
             margin-left: $spacing-unit;
             color: $color-links-nav;
+
+            &:first-child {
+                margin-left: 0;
+            }
 
             &:after {
                 content: "";
@@ -66,13 +82,19 @@
                 visibility: hidden;
                 transform: scaleX(0);
                 transition: all 0.3s cubic-bezier(0.325, -0.075, 0, 1.65);
+
+                @include media-query(palm) {
+                    bottom: -($spacing-unit--small + 1px);
+                }
             }
 
             @include media-query(palm) {
-                margin-left: $spacing-unit--small;
+                margin-left: $spacing-unit/1.5;
             }
 
             @include attention() {
+                color: $color-links;
+
                 &:after {
                     visibility: visible;
                     transform: scaleX(1);
@@ -80,10 +102,16 @@
             }
 
             &.active {
+                color: $color-links;
+
                 &:after {
                     visibility: visible;
                     transform: scaleX(1);
                 }
             }
+        }
+
+        @include media-query(palm) {
+            float: none;
         }
     }
