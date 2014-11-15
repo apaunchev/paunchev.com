@@ -5,8 +5,7 @@
     </a>
 
     <nav class="site-nav">
-        <a{% if page.url == "/" %} class="active"{% endif %} href="/">About</a><!--
-        --><a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/">Writing</a><!--
-        --><a{% if page.url == "/quotes/" %} class="active"{% endif %} href="/quotes/">Quotes</a>
+        <a{% if page.url == "/" %} class="active"{% endif %} href="/"><i class="fa fa-user"></i> About</a><!--
+        --><a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/"><i class="fa fa-book"></i> Writing</a>
     </nav>
 </header>
