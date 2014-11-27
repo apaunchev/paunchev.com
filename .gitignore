@@ -3,3 +3,4 @@ _site/
 bower_components/
 _drafts/
 *.codekit
+serve
