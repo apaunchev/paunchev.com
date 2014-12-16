@@ -9,11 +9,11 @@ I’m an introvert. Here’s what you should know about it.
 
 **Being an introvert means that interacting with people for extended periods of time exhausts me and I often need time alone to regain my energy.**
 
-Going to social gatherings can be extremely draining for me, especially if I have to be around people I don’t know. This is why I sometimes prefer staying at home to going out. I need a healthy balance between socialising and alone time.
+Going to social gatherings can be extremely draining for me, especially if I have to be around people I don’t know. This is why I sometimes prefer staying in to going out. I need a healthy balance between socialising and alone time.
 
 Spending time alone does not make me lonely. There are a ton of things I can do when I'm on my own that make me happy, but like most people, I can only do them so long before craving interaction with another human being.
 
-I don’t mind social interactions, but I usually don't initiate them either. In other words, I'm unlikely to start a conversation, but I’d be more than happy if you start one with me.
+I don’t mind social interactions, but I usually don't initiate them either. In other words, I'm unlikely to start a conversation, but I’d be more than happy if you started one with me.
 
 I don’t enjoy small talk; it feels fake and unnecessary. I’d much rather have meaningful conversations about things we’re both passionate about than tell you what I did last weekend. (Whatever it was, I was probably by myself, and I enjoyed every second of it.)
 
