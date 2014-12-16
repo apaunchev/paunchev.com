@@ -2,7 +2,6 @@
 layout: post
 title: "Най-поразителният факт"
 date: 2014-01-03 23:10:12
-featured: true
 description: "Нийл Тайсън споделя най-поразителния факт за Вселената"
 image: 2014-01-03-the-most-astounding-fact.jpg
 ---
