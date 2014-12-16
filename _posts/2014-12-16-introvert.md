@@ -7,7 +7,7 @@ description: "I wrote about what it’s like to be an introvert."
 
 I’m an introvert. Here’s what you should know about it.
 
-**Being an introvert means that interacting with people for extended periods of time exhausts me and I often need to be on my own for a while to regain my energy**.
+**Being an introvert means that interacting with people for extended periods of time exhausts me and I often need time alone to regain my energy.**
 
 Going to social gatherings can be extremely draining for me, especially if I have to be around people I don’t know. This is why I sometimes prefer staying at home to going out. I need a healthy balance between socialising and alone time.
 
