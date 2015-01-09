@@ -5,7 +5,7 @@ layout: default
 <div class="entry entry--post">
     <header class="entry__head">
         <h1 class="entry__title">{{ page.title }}</h1>
-        <p class="entry__meta">{{ page.date | date: "%-d %B %Y" }}</p>
+        <p class="entry__meta">{{ page.date | date: "%-d %B %Y" }} &middot; {{ content.size | readtime }} min</p>
     </header>
 
     <div class="entry__body">
