@@ -6,8 +6,7 @@
  * #SETTINGS
  */
 $inuit-base-font-size:   18px;
-$inuit-base-line-height: 28px;
-$inuit-base-text-color:  #444;
+$inuit-base-line-height: 27px;
 @import "../bower_components/inuit-defaults/settings.defaults";
 
 @import "settings.global";
@@ -72,6 +71,7 @@ $inuit-heading-size-4: $inuit-base-font-size;
 @import "components.page-foot";
 @import "components.entry";
 @import "components.pull-quote";
+@import "components.guide";
 // @import "components.code-syntax";
 
 

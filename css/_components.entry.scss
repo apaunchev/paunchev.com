@@ -23,3 +23,22 @@
         color: $color-grey-light;
         text-transform: uppercase;
     }
+
+.sidenote {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit--small;
+    background-color: rgba($color-links, 0.15);
+    border: 1px solid $color-links;
+    border-radius: 2px;
+    @include font-size(16px);
+
+    > p {
+        margin-bottom: 0;
+
+        > strong {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #GUIDE
+\*------------------------------------*/
+
+.guide {
+    margin: 0;
+    padding: 0;
+
+    .page-header {
+        background-color: $color-links;
+        color: white;
+
+        h1 {
+            @include font-size(60px);
+            letter-spacing: -3px;
+        }
+    }
+
+    .page-content {
+        // max-width: $page-width;
+    }
+}
