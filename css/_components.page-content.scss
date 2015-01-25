@@ -8,16 +8,12 @@
 }
 
 .c-list {
-    margin-left: 0;
     list-style-type: none;
+    margin-left: 0;
 }
 
     .c-list__item {
-        margin-bottom: $spacing-unit--small;
-
-        p:last-of-type {
-            margin-bottom: 0;
-        }
+        margin-bottom: $spacing-unit;
     }
 
         .c-list__title {

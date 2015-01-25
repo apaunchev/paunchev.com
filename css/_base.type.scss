@@ -160,7 +160,7 @@ blockquote {
  */
 a {
     @include font-weight(medium);
-    text-decoration: underline;
+    text-decoration: none;
     color: $color-links;
     transition: all .1s ease-in-out;
 
