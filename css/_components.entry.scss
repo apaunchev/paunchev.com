@@ -2,11 +2,13 @@
     #ENTRY
 \*------------------------------------*/
 
-.entry {}
+.entry {
+    @extend %spaced;
+}
 
     .entry__head {
-        text-align: center;
         @extend %spaced;
+        text-align: center;
     }
 
     .entry__body {}

@@ -10,16 +10,14 @@
 .c-list {
     list-style-type: none;
     margin-left: 0;
-}
 
-    .c-list__item {
-        margin-bottom: $spacing-unit;
+    .entry__title {
+        > a {
+            color: $inuit-base-text-color;
+
+            @include attention() {
+                color: $color-links;
+            }
+        }
     }
-
-        .c-list__title {
-            margin-bottom: 0;
-        }
-
-        .c-list__meta {
-            display: block;
-        }
+}
