@@ -14,6 +14,7 @@
     .entry__title {
         > a {
             color: $inuit-base-text-color;
+            text-decoration: none;
 
             @include attention() {
                 color: $color-links;
@@ -21,3 +22,11 @@
         }
     }
 }
+
+    .c-list__item {
+        &:not(:last-child):after {
+            @extend %hr;
+            content: " ";
+            display: block;
+        }
+    }

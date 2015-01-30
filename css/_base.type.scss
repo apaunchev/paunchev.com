@@ -160,7 +160,7 @@ blockquote {
  */
 a {
     @include font-weight(medium);
-    text-decoration: none;
+    text-decoration: underline;
     color: $color-links;
     transition: all .1s ease-in-out;
 
@@ -215,12 +215,13 @@ figure {
 /**
  * Horizontal rule.
  */
-hr {
+hr,
+%hr {
     @extend %spaced;
     margin-left: auto;
     margin-right: auto;
     height: 2px;
     width: 25%;
     border: 0;
-    background: #eee;
+    background-color: $color-grey-ui;
 }
