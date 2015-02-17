@@ -8,8 +8,6 @@
 $inuit-base-font-size:   18px;
 $inuit-base-line-height: 27px;
 @import "../bower_components/inuit-defaults/settings.defaults";
-
-@import "settings.global";
 @import "settings.colors";
 @import "../bower_components/inuit-responsive-settings/_settings.responsive";
 @import "settings.responsive";
@@ -48,13 +46,7 @@ $inuit-base-line-height: 27px;
  */
 @import "../bower_components/inuit-page/base.page";
 @import "base.page";
-
-$inuit-heading-size-1: 36px;
-$inuit-heading-size-2: 30px;
-$inuit-heading-size-3: 24px;
-$inuit-heading-size-4: $inuit-base-font-size;
 @import "../bower_components/inuit-headings/base.headings";
-
 @import "base.type";
 @import "../bower_components/inuit-lists/base.lists";
 @import "../bower_components/inuit-images/base.images";
@@ -70,8 +62,7 @@ $inuit-heading-size-4: $inuit-base-font-size;
 @import "components.page-content";
 @import "components.page-foot";
 @import "components.entry";
-@import "components.pull-quote";
-@import "components.guide";
+@import "components.buttons";
 // @import "components.code-syntax";
 
 
@@ -86,4 +77,10 @@ $inuit-heading-size-4: $inuit-base-font-size;
 // InstantClick
 #instantclick-bar {
     background: $color-links;
+}
+
+// Font Awesome
+.fa {
+    display: inline-block;
+    margin-right: $spacing-unit--small/4;
 }

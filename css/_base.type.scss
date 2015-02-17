@@ -17,6 +17,16 @@
     }
 }
 
+%pulled {
+    margin-right: -4rem;
+    margin-left: -4rem;
+
+    @include media-query(palm) {
+        margin-right: -$spacing-unit--small;
+        margin-left: -$spacing-unit--small;
+    }
+}
+
 
 
 
@@ -82,7 +92,7 @@ pre {
 small,
 .small,
 %small {
-    @include font-size($inuit-base-font-size - 2px);
+    @include font-size($base-font-size - 2px);
 }
 
 
@@ -156,6 +166,32 @@ blockquote {
 
 
 /**
+ * Pull quotes.
+ */
+.pull-quote {
+    @extend %spaced;
+    @extend %pulled;
+    @include font-size($inuit-heading-size-3, 1.5);
+    color: $color-grey;
+    font-style: italic;
+
+    @include media-query(palm) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+    .pull-quote__source {
+        display: block;
+        font-style: normal;
+        @include font-size(18px);
+    }
+
+
+
+
+
+/**
  * Links.
  */
 a {
@@ -189,23 +225,17 @@ ul {
  */
 figure {
     @extend %spaced;
-    margin-right: -5em;
-    margin-left: -5em;
+    @extend %pulled;
     text-align: center;
 
-    @include media-query(palm) {
-        margin-right: -$spacing-unit--small;
-        margin-left: -$spacing-unit--small;
-    }
-
     > img {
-        border-radius: $base-round;
+        border-radius: 4px;
     }
 }
 
     figcaption {
         @extend %small;
-        color: $color-grey-light;
+        color: $color-grey;
     }
 
 
@@ -221,7 +251,7 @@ hr,
     margin-left: auto;
     margin-right: auto;
     height: 2px;
-    width: 25%;
+    width: 100%;
     border: 0;
     background-color: $color-grey-ui;
 }

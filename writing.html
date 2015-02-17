@@ -5,12 +5,15 @@ show_title: true
 permalink: /writing/
 description: "I write about software, technology, and the human condition."
 ---
-<ol class="c-list">
-{% for post in site.posts %}
-    <li class="c-list__item">
-        <h2 class="entry__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="entry__meta">{{ post.date | date: "%-d %B %Y" }} &middot; <span title="{{ post.content | number_of_words }} words">{{ post.content | reading_time }}</span></p>
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </li>
-{% endfor %}
+<ol class="entry-list">
+    {% for post in site.posts %}
+        <li>
+            <h2 class="entry__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="entry__meta">{{ post.date | date: "%-d %B %Y" }} &middot; <span title="{{ post.content | number_of_words }} words">{{ post.content | reading_time }}</span></p>
+            {% if post.description %}
+                <p class="entry__content">{{ post.description }}</p>
+            {% endif %}
+            <p class="entry__more"><a href="{{ post.url }}">Cotinue reading »</a></p>
+        </li>
+    {% endfor %}
 </ol>

@@ -2,25 +2,78 @@
     #ENTRY
 \*------------------------------------*/
 
+.entry-list {
+    list-style-type: none;
+    margin: 0;
+
+    > li {
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $spacing-unit--large;
+
+            @include media-query(palm) {
+                margin-bottom: $spacing-unit;
+            }
+        }
+    }
+
+    .entry__title {
+        > a {
+            color: $inuit-base-text-color;
+            text-decoration: none;
+
+            @include attention() {
+                color: $color-links;
+            }
+        }
+    }
+
+    .entry__meta {}
+
+    .entry__more {
+        > a {
+            @extend %btn;
+            @extend %btn--small;
+            @include font-size(12px);
+        }
+    }
+}
+
 .entry {
-    @extend %spaced;
+    @extend %centred;
+    max-width: $content-width;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
 
     .entry__head {
-        @extend %spaced;
+        margin-bottom: $spacing-unit--large;
         text-align: center;
+
+        @include media-query(palm) {
+            margin-bottom: $spacing-unit;
+        }
     }
-
-    .entry__body {}
-
-    .entry__foot {}
 
     .entry__title {
         margin-bottom: 0;
     }
 
     .entry__meta {
-        color: $color-grey-light;
+        @extend %small;
+        color: $color-grey;
+        text-transform: uppercase;
+    }
+
+    .entry__body {
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
 .sidenote {

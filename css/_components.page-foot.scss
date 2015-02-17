@@ -3,17 +3,25 @@
 \*------------------------------------*/
 
 .page-foot {
-    padding-top: $spacing-unit--small;
-    border-top: 1px solid $color-grey-ui;
-    @include font-size(16px);
+    @extend %clearfix;
+    @extend %small;
+    padding: $spacing-unit;
+    background-color: $base-text-color;
+    color: white;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+    a {
+        color: white;
 
-    @include media-query(palm) {
-        margin-right: -$spacing-unit--small;
-        margin-left: -$spacing-unit--small;
-        text-align: center;
+        @include attention() {
+            color: $color-links;
+        }
+
+        &.social-link {
+            @include font-size(20px, 16px);
+
+            &:not(:first-child) {
+                margin-left: $spacing-unit--small/2;
+            }
+        }
     }
 }

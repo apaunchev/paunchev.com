@@ -1,11 +1,11 @@
 <header class="page-head">
-    <a class="page-logo" href="/">
-        <img src="{{ site.email | get_gravatar }}" alt="Angel Paunchev">
-        Angel Paunchev
-    </a>
-
-    <nav class="site-nav">
-        <a{% if page.url == "/" %} class="active"{% endif %} href="/"><i class="fa fa-user"></i> About</a><!--
-        --><a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/"><i class="fa fa-book"></i> Writing</a>
-    </nav>
+    <div class="col">
+        <a class="site-logo" href="/" accesskey="h"><img src="{{ site.email | get_gravatar }}" alt="Angel Paunchev"></a>
+    </div>
+    <div class="col">
+        <nav class="site-nav">
+            <a{% if page.url == "/" %} class="active"{% endif %} href="/" accesskey="a"><i class="fa fa-user"></i> About</a>
+            <a{% if page.url == "/writing/" or page.date %} class="active"{% endif %} href="/writing/" accesskey="w"><i class="fa fa-book"></i> Writing</a>
+        </nav>
+    </div>
 </header>

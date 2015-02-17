@@ -2,32 +2,22 @@
 //    #COLORS
 //\*------------------------------------*/
 
-$color-grey:            #111;
-$color-grey-light:      #888;
-$color-grey-x-light:    #a3a3a3;
+$color-black:           #222;
+$color-grey:            #787878;
 $color-grey-ui:         #ddd;
-$color-blue:            #1193e5;
-$color-blue-dark:       #0d75b6;
+$color-red:             #df6f68;
 
 
 
 
 
 // Page.
-$inuit-base-text-color: $color-grey;
+$inuit-base-text-color: $color-black;
 
 
 
 
 
 // Links.
-$color-links:           $color-blue;
-$color-links-hover:     $color-blue-dark;
-$color-links-nav:       $color-grey-x-light;
-
-
-
-
-
-// Quotes.
-$color-quote:           $color-grey-light;
+$color-links:           $color-red;
+$color-links-hover:     rgba($color-red, .85);
