@@ -47,7 +47,7 @@ $avatar-size--small: 40px;
             @include font-size($base-font-size - 2px, $avatar-size);
 
             &:not(:first-child) {
-                margin-left: 1.75em;
+                margin-left: 2em;
             }
 
             &.active {
