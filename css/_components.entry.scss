@@ -14,6 +14,12 @@
         &:not(:last-child) {
             margin-bottom: $spacing-unit--large;
 
+            &:after {
+                content: "";
+                display: block;
+                @extend %hr;
+            }
+
             @include media-query(palm) {
                 margin-bottom: $spacing-unit;
             }
