@@ -199,10 +199,10 @@ AddDefaultCharset utf-8
     Options +FollowSymlinks
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
-  # RewriteBase /
+    RewriteBase /
 
-  # Redirect date-based permalinks.
-  RewriteRule ^\d{4,}/\d{2,}/\d{2,}(/.*)$ $1 [R=301,L]
+    # Redirect date-based permalinks.
+    RewriteRule ^\d{4,}/\d{2,}(/.*)$ writing$1 [R=301,L]
 </IfModule>
 
 # ------------------------------------------------------------------------------
