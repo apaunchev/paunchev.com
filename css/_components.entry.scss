@@ -51,10 +51,6 @@
 .entry {
     @extend %centred;
     max-width: $content-width;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
 }
 
     .entry__head {
