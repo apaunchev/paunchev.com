@@ -8,7 +8,7 @@ google-analytics-id: "UA-10660049-1"
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:title
+permalink: writing/:title
 timezone: Europe/Sofia
 exclude: ["config.codekit", "README.md", "Gemfile*", "*.scss", "bower_components/"]
 gems:
