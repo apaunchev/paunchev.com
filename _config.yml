@@ -12,8 +12,6 @@ markdown: kramdown
 permalink: writing/:title
 timezone: Europe/Sofia
 exclude: ["config.codekit", "README.md", "Gemfile*", "*.scss", "bower_components/"]
-gems:
-  - jekyll-sitemap
 
 # Glynn settings
 ftp_host: "paunchev.net"
