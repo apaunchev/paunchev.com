@@ -1,14 +1,19 @@
-# Site settings
-title: Angel Paunchev
-email: apaunchev@gmail.com
-description: ""
-baseurl: ""
-url: "http://paunchev.net"
-google-analytics-id: "UA-10660049-1"
-gravatar: e17e058f8ca028c6e00b9434715fa74a
+markdown: redcarpet
+highlighter: pygments
 
-# Build settings
-markdown: kramdown
+exclude: ['Gemfile*', 'bin/', 'bower_components/', '*.scss']
+
 permalink: writing/:title
 timezone: Europe/Sofia
-exclude: ["config.codekit", "README.md", "Gemfile*", "*.scss", "bower_components/"]
+
+title: Angel Paunchev
+description:
+url: http://paunchev.net
+
+author:
+    name: Angel Paunchev
+    twitter: apaunchev
+    email: apaunchev@gmail.com
+
+google-analytics-id: UA-10660049-1
+gravatar: e17e058f8ca028c6e00b9434715fa74a
