@@ -2,4 +2,5 @@
 _site/
 bower_components/
 _drafts/
+Gemfile.lock
 *.codekit
