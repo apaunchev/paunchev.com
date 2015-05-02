@@ -1,20 +1,50 @@
 ---
-layout: page
+layout: default
 permalink: /
-title: About
-show_title: true
-description: "My name is Angel Paunchev. I’m a web developer and student from Bulgaria."
+lastmod: 2015-05-02 12:00:00
+description: "Angel Paunchev is a web developer from Bulgaria."
 ---
-<figure>
-    <img src="/images/me.jpg" alt="On a boat in the River Thames">
-</figure>
+<article class="content content--home">
+    <header class="head intro">
+        <div class="intro-logo">
+            <a href="/"><img src="http://www.gravatar.com/avatar/{{ site.gravatar }}" alt="Angel Paunchev"></a>
+        </div>
+        <div class="intro-body">
+            <h1>Angel Paunchev is a web developer from Bulgaria.</h1>
+        </div>
+    </header>
 
-<p>My name is Angel Paunchev. I’m a web developer and student from Bulgaria.</p>
+    <h2>About</h2>
 
-<p>Currently in the final (Honours) year of a BSc Computing course at <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>, researching API design, REST, and web performance.</p>
+    <p>I’m currently in the final (Honours) year of a BSc Computing course at <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>.</p>
 
-<p>I’m interested in software engineering, specifically for the web and mobile platforms. I have an eye for aesthetics and appreciate good design.</p>
+    <p>I’m interested in software engineering, specifically for the web and mobile platforms. I have an eye for aesthetics and appreciate good design.</p>
 
-<p>I’m often fascinated by technology, science, and the ways they can be applied to push the human race forward. I’m determined to learn as much as I can about as much as I can.</p>
+    <p>I’m often fascinated by technology, science, and the ways they can be applied to push the human race forward. I’m determined to learn as much as I can about as much as I can.</p>
 
-<p>Most recently, I’ve been experimenting with iOS development and collecting <a href="http://photos.paunchev.net">Instagram photos I wish I had taken</a>.</p>
+    <h2>Writing</h2>
+
+    <ul>
+        {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Projects</h2>
+
+    <ul>
+        {% for project in site.data.projects %}
+            <li><a href="{{ project.url }}">{{ project.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>Social</h2>
+
+    <ul>
+        {% for social in site.data.social %}
+            <li><a href="{{ social.url }}">{{ social.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    {% include foot.html %}
+</article>

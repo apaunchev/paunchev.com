@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #FOOT
+\*------------------------------------*/
+
+.foot {
+    margin-top: $spacing-unit--large;
+    border-top: 1px solid #ccc;
+    @extend %small;
+
+    p {
+        margin-bottom: 0;
+    }
+}
