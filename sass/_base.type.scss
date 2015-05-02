@@ -1,0 +1,133 @@
+/*------------------------------------*\
+    #TYPE
+\*------------------------------------*/
+
+// Headings.
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    line-height: 1.25;
+}
+
+// Emboldened elements.
+strong, b,
+dt {
+    font-weight: 600;
+}
+
+// Small type.
+small,
+.small,
+%small {
+    @include font-size($small-font-size);
+}
+
+// Code-like elements.
+code, kbd, samp {
+    font-family: Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+pre {
+    @extend %small;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;
+}
+
+// Links.
+a {
+    color: $base-text-color;
+    text-decoration: none;
+    border-bottom: 1px solid $colour-alt;
+    transition: all .1s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $colour-links;
+    }
+}
+
+// Lists.
+ul {
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+        &:before {
+            content: "— ";
+            color: $colour-alt;
+        }
+    }
+}
+
+// Inline quotes.
+q {
+    quotes: "‘" "’" "“" "”";
+
+    &:before {
+        content: open-quote;
+    }
+
+    &:after {
+        content: close-quote;
+    }
+
+}
+
+// Block quotes.
+blockquote {
+    margin-left: 0;
+    padding-left: $spacing-unit;
+    border-left: 1px solid $colour-links;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    quotes: "“" "”";
+
+    p {
+        &:before {
+            content: open-quote;
+        }
+
+        &:after {
+            content: no-close-quote;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+
+            &:after {
+                content: close-quote;
+            }
+
+        }
+
+    }
+
+    q {
+        quotes: "‘" "’";
+
+        &:before {
+            content: open-quote;
+        }
+
+        &:after {
+            content: close-quote;
+        }
+
+    }
+
+}
+
+// Horizontal rule.
+hr,
+%hr {
+    margin: $spacing-unit--large auto;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    background-color: $colour-alt;
+}

@@ -2,28 +2,10 @@
 /*------------------------------------*\
     #STYLE.CSS
 \*------------------------------------*/
-/**
- * #SETTINGS
- */
 /*!
  * inuitcss, by @csswizardry
  *
  * github.com/inuitcss | inuitcss.com
- */
-/*------------------------------------*\
-    #SETTINGS-RESPONSIVE
-\*------------------------------------*/
-/**
- * #TOOLS
- */
-/*------------------------------------*\
-    #MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
-    #ALIASES
-\*------------------------------------*/
-/**
- * #GENERIC
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -37,13 +19,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -52,18 +36,34 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -71,14 +71,17 @@ audio, canvas, progress, video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
-  display: none; }
+[hidden],
+template {
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -86,13 +89,16 @@ audio:not([controls]) {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent; }
+  background: transparent;
+}
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
-  outline: 0; }
+a:active,
+a:hover {
+  outline: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -100,19 +106,23 @@ a:active, a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
-  font-weight: bold; }
+b,
+strong {
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -120,35 +130,42 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Address styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -156,13 +173,15 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -170,28 +189,34 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Contain overflow in all browsers.
  */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /* Forms
    ========================================================================== */
@@ -205,19 +230,25 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -225,8 +256,10 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
-  text-transform: none; }
+button,
+select {
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -235,31 +268,40 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
-  cursor: default; }
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * It's recommended that you don't attempt to style these elements.
@@ -268,19 +310,23 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
@@ -290,18 +336,19 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * Define consistent border, margin, and padding.
@@ -309,7 +356,8 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -319,20 +367,23 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Tables
    ========================================================================== */
@@ -341,10 +392,13 @@ optgroup {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-td, th {
-  padding: 0; }
+td,
+th {
+  padding: 0;
+}
 
 /*------------------------------------*\
     #BOX-SIZING
@@ -356,67 +410,13 @@ td, th {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
-/*------------------------------------*\
-    #RESET
-\*------------------------------------*/
-/**
- * As well as using normalize.css, it is often advantageous to remove all
- * margins from certain elements.
- */
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, form, fieldset, legend, figure, table, th, td, caption, hr {
-  margin: 0;
-  padding: 0; }
-
-/**
- * Give a help cursor to elements that give extra info on `:hover`.
- */
-abbr[title], dfn[title] {
-  cursor: help; }
-
-/**
- * Remove underlines from potentially troublesome elements.
- */
-u, ins {
-  text-decoration: none; }
-
-/**
- * Apply faux underlines to inserted text via `border-bottom`.
- */
-ins {
-  border-bottom: 1px solid; }
-
-/*------------------------------------*\
-    #SHARED
-\*------------------------------------*/
-/**
- * Where `margin-bottom` is concerned,this value will be the same as the
- * base line-height. This allows us to keep a consistent vertical rhythm.
- * As per: csswizardry.com/2012/06/single-direction-margin-declarations
- */
-h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote, p, address, hr, table, fieldset, figure, pre {
-  margin-bottom: 27px;
-  margin-bottom: 1.5rem; }
-
-/**
- * Where `margin-left` is concerned we want to try and indent certain elements
- * by a consistent amount. Define that amount once,here.
- */
-ul, ol, dd {
-  margin-left: 54px;
-  margin-left: 3rem; }
-
-/**
- * #BASE
- */
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
@@ -435,12 +435,12 @@ ul, ol, dd {
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-  font-size: 1.125em;
+  font-size: 1em;
   /* [1] */
   line-height: 1.5;
   /* [1] */
   background-color: #fff;
-  color: #222;
+  color: #333;
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
@@ -452,42 +452,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   /* [5] */
   -webkit-font-smoothing: antialiased;
-  /* [5] */ }
-
-/*------------------------------------*\
-    #PAGE
-\*------------------------------------*/
-html {
-  background-color: #222;
-  font-family: Ubuntu, sans-serif;
-  font-weight: 300; }
-  @media screen and (max-width: 44.9375em) {
-    html {
-      font-size: 90%; } }
-
-.wrapper {
-  max-width: 50em; }
-
-.wrapper, .entry {
-  margin-right: auto;
-  margin-left: auto; }
-
-.col {
-  width: 50%;
-  float: left; }
-  .col p {
-    margin: 0; }
-  .col:last-child {
-    text-align: right; }
-  @media screen and (max-width: 44.9375em) {
-    .col {
-      float: none;
-      width: 100%;
-      text-align: center; }
-      .col:first-child {
-        margin-bottom: 14px; }
-      .col:last-child {
-        text-align: center; } }
+  /* [5] */
+}
 
 /*------------------------------------*\
     #HEADINGS
@@ -496,198 +462,47 @@ html {
  * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
  * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  */
-h1, .alpha {
-  font-size: 36px;
-  font-size: 2rem;
-  line-height: 1.5; }
-
-h2, .beta {
+h1,
+.alpha {
   font-size: 30px;
-  font-size: 1.66667rem;
-  line-height: 1.8; }
+  font-size: 1.875rem;
+  line-height: 1.6;
+}
 
-h3, .gamma {
+h2,
+.beta {
   font-size: 24px;
-  font-size: 1.33333rem;
-  line-height: 1.125; }
+  font-size: 1.5rem;
+  line-height: 1;
+}
 
-h4, .delta {
+h3,
+.gamma {
   font-size: 20px;
-  font-size: 1.11111rem;
-  line-height: 1.35; }
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
 
-h5, .epsilon {
+h4,
+.delta {
   font-size: 16px;
-  font-size: 0.88889rem;
-  line-height: 1.6875; }
-
-h6, .zeta {
-  font-size: 14px;
-  font-size: 0.77778rem;
-  line-height: 1.92857; }
-
-/*------------------------------------*\
-    #TYPE
-\*------------------------------------*/
-/**
- * Re-use spacing of certain elements.
- */
-.pull-quote, figure, hr, .entry-list > li:not(:last-child):after {
-  margin-top: 54px;
-  margin-right: 0;
-  margin-bottom: 54px;
-  margin-left: 0; }
-  @media screen and (max-width: 44.9375em) {
-    .pull-quote, figure, hr, .entry-list > li:not(:last-child):after {
-      margin-top: 27px;
-      margin-bottom: 27px; } }
-
-.pull-quote, figure {
-  margin-right: -4rem;
-  margin-left: -4rem; }
-  @media screen and (max-width: 44.9375em) {
-    .pull-quote, figure {
-      margin-right: -14px;
-      margin-left: -14px; } }
-
-/**
- * Headings.
- */
-h1, h2, h3 {
-  font-weight: 500;
-  letter-spacing: -1px; }
-
-/**
- * Paragraphs.
- */
-.lead, .lede {
-  font-size: 20px;
-  font-size: 1.11111rem;
-  line-height: 1.35; }
-
-/**
- * Emboldened elements.
- */
-a, strong, b, dt {
-  font-weight: 500; }
-
-/**
- * Code-like elements.
- */
-code, kbd, samp {
-  font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; }
-
-pre {
-  white-space: pre;
-  word-wrap: normal;
-  overflow: auto; }
-
-/**
- * Small type.
- */
-small, .small, pre, figcaption, .page-foot, .entry__meta {
-  font-size: 16px;
-  font-size: 0.88889rem;
-  line-height: 1.6875; }
-
-/**
- * Inline quotes.
- */
-q {
-  quotes: "‘" "’" "“" "”"; }
-  q:before {
-    content: open-quote; }
-  q:after {
-    content: close-quote; }
-
-/**
- * Block quotes.
- */
-blockquote {
-  quotes: "“" "”"; }
-  blockquote p:before {
-    content: open-quote; }
-  blockquote p:after {
-    content: no-close-quote; }
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
-    blockquote p:last-of-type:after {
-      content: close-quote; }
-  blockquote q {
-    quotes: "‘" "’"; }
-    blockquote q:before {
-      content: open-quote; }
-    blockquote q:after {
-      content: close-quote; }
-
-/**
- * Pull quotes.
- */
-.pull-quote {
-  font-size: 24px;
-  font-size: 1.33333rem;
-  line-height: 1.5;
-  color: #787878;
-  font-style: italic; }
-  @media screen and (max-width: 44.9375em) {
-    .pull-quote {
-      margin-right: 0;
-      margin-left: 0; } }
-
-.pull-quote__source {
-  display: block;
-  font-style: normal;
-  font-size: 18px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
-/**
- * Links.
- */
-a {
-  font-weight: 500;
-  text-decoration: underline;
-  color: #df6f68;
-  transition: all .1s ease-in-out; }
-  a:hover, a:active, a:focus {
-    color: rgba(223, 111, 104, 0.85); }
+h5,
+.epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
-/**
- * Lists.
- */
-ul {
-  list-style-type: square; }
-
-/**
- * Images.
- */
-figure {
-  text-align: center; }
-  figure > img {
-    border-radius: 4px; }
-
-figcaption {
-  color: #787878; }
-
-/**
- * Horizontal rule.
- */
-hr, .entry-list > li:not(:last-child):after {
-  margin-left: auto;
-  margin-right: auto;
-  height: 2px;
-  width: 100%;
-  border: 0;
-  background-color: #ddd; }
-
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
-/**
- * Remove extra vertical spacing when nesting lists.
- */
-li > ul, li > ol {
-  margin-bottom: 0; }
+h6,
+.zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
 
 /*------------------------------------*\
     #IMAGES
@@ -705,212 +520,292 @@ img {
   font-style: italic;
   /* [2] */
   vertical-align: middle;
-  /* [3] */ }
+  /* [3] */
+}
 
 /**
  * If a `width` and/or `height` attribute have been explicitly defined, let’s
  * not make the image fluid.
  */
-img[width], img[height] {
-  max-width: none; }
+img[width],
+img[height] {
+  max-width: none;
+}
 
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
 /**
- * #COMPONENTS
+ * Remove extra vertical spacing when nesting lists.
  */
-/*------------------------------------*\
-    #PAGE-HEAD
-\*------------------------------------*/
-.page-head {
-  padding: 14px 27px;
-  background-color: white; }
-  @media screen and (max-width: 44.9375em) {
-    .page-head {
-      padding: 14px; } }
-
-.site-logo {
-  display: inline-block; }
-  .site-logo > img {
-    display: inline-block;
-    max-width: 50px;
-    padding: 2px;
-    border-radius: 100%;
-    box-shadow: 0 0 0 1px #ddd;
-    transition: box-shadow .1s ease-in-out; }
-  .site-logo:hover > img, .site-logo:active > img, .site-logo:focus > img {
-    box-shadow: 0 0 0 2px #df6f68; }
-
-.site-nav {
-  font-size: 0; }
-  .site-nav > a {
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #222;
-    letter-spacing: -1px;
-    font-size: 16px;
-    font-size: 0.88889rem;
-    line-height: 50px; }
-    .site-nav > a:not(:first-child) {
-      margin-left: 2em; }
-    .site-nav > a.active {
-      color: #df6f68; }
-      .site-nav > a.active:after {
-        visibility: visible;
-        transform: scaleX(1); }
-    .site-nav > a:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      bottom: -15px;
-      left: 0;
-      background-color: #df6f68;
-      visibility: hidden;
-      transform: scaleX(0);
-      transition: all .3s cubic-bezier(0.325, -0.075, 0, 1.65); }
-    .site-nav > a:hover, .site-nav > a:active, .site-nav > a:focus {
-      color: #df6f68; }
-      .site-nav > a:hover:after, .site-nav > a:active:after, .site-nav > a:focus:after {
-        visibility: visible;
-        transform: scaleX(1); }
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
 
 /*------------------------------------*\
-    #PAGE-CONTENT
+    #PARAGRAPHS
 \*------------------------------------*/
-.page-content {
-  padding: 54px 27px;
-  background-color: #fff;
-  border-top: 1px solid #eaeaea; }
-  @media screen and (max-width: 44.9375em) {
-    .page-content {
-      padding: 27px 14px; } }
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+.lede {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+}
 
 /*------------------------------------*\
-    #PAGE-FOOT
+    #TYPE
 \*------------------------------------*/
-.page-foot {
-  padding: 27px;
-  background-color: #222;
-  border-top: 2px solid #df6f68;
-  color: white; }
-  .page-foot a {
-    color: white; }
-    .page-foot a:hover, .page-foot a:active, .page-foot a:focus {
-      color: #df6f68; }
-    .page-foot a.social-link {
-      font-size: 20px;
-      font-size: 1.11111rem;
-      line-height: 16px; }
-      .page-foot a.social-link:not(:first-child) {
-        margin-left: 7px; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
 
-/*------------------------------------*\
-    #ENTRY
-\*------------------------------------*/
-.entry-list {
+h1 {
+  line-height: 1.25;
+}
+
+strong, b,
+dt {
+  font-weight: 600;
+}
+
+small,
+.small,
+pre,
+.foot {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+
+code, kbd, samp {
+  font-family: Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: all .1s ease-in-out;
+          transition: all .1s ease-in-out;
+}
+a:hover, a:active, a:focus {
+  border-color: #df6f68;
+}
+
+ul {
+  padding-left: 0;
   list-style-type: none;
-  margin: 0; }
-  .entry-list > li > :last-child {
-    margin-bottom: 0; }
-  .entry-list > li:not(:last-child) {
-    margin-bottom: 54px; }
-    .entry-list > li:not(:last-child):after {
-      content: "";
-      display: block; }
-    @media screen and (max-width: 44.9375em) {
-      .entry-list > li:not(:last-child) {
-        margin-bottom: 27px; } }
-  .entry-list .entry__title > a {
-    color: #222;
-    text-decoration: none; }
-    .entry-list .entry__title > a:hover, .entry-list .entry__title > a:active, .entry-list .entry__title > a:focus {
-      color: #df6f68; }
-  .entry-list .entry__more > a {
-    font-size: 12px;
-    font-size: 0.66667rem;
-    line-height: 2.25; }
+}
+ul li:before {
+  content: "— ";
+  color: #ccc;
+}
 
-.entry {
-  max-width: 36em; }
+q {
+  quotes: "‘" "’" "“" "”";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
 
-.entry__head {
-  margin-bottom: 54px;
-  text-align: center; }
-  @media screen and (max-width: 44.9375em) {
-    .entry__head {
-      margin-bottom: 27px; } }
+blockquote {
+  margin-left: 0;
+  padding-left: 24px;
+  border-left: 1px solid #df6f68;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  quotes: "“" "”";
+}
+blockquote p:before {
+  content: open-quote;
+}
+blockquote p:after {
+  content: no-close-quote;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+blockquote p:last-of-type:after {
+  content: close-quote;
+}
+blockquote q {
+  quotes: "‘" "’";
+}
+blockquote q:before {
+  content: open-quote;
+}
+blockquote q:after {
+  content: close-quote;
+}
 
-.entry__title {
-  margin-bottom: 0; }
+hr {
+  margin: 48px auto;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  background-color: #ccc;
+}
 
-.entry__meta {
-  color: #787878;
-  text-transform: uppercase; }
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+html {
+  font-family: "Source Serif Pro", serif;
+  color: #333;
+}
 
-.entry__body > :last-child {
-  margin-bottom: 0; }
+.container {
+  padding: 3em;
+}
+@media screen and (max-width: 63.9375em) {
+  .container {
+    padding: 1.5em;
+  }
+}
+
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+  .content {
+    padding-right: 55%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .content {
+    padding-right: 65%;
+  }
+}
+
+.content--home h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+.content--home h2 {
+  margin-top: 48px;
+  margin-bottom: -6px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+@media screen and (max-width: 44.9375em) {
+  .content--home h2 {
+    margin-top: 24px;
+  }
+}
 
 .sidenote {
-  margin-top: 27px;
-  margin-bottom: 27px;
-  padding: 14px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 12px;
   background-color: rgba(223, 111, 104, 0.15);
   border: 1px solid #df6f68;
-  border-radius: 2px;
-  font-size: 16px;
-  font-size: 0.88889rem;
-  line-height: 1.6875; }
-  .sidenote > p {
-    margin-bottom: 0; }
-    .sidenote > p > strong {
-      display: block;
-      text-transform: uppercase; }
-
-/*------------------------------------*\
-    #BUTTONS
-\*------------------------------------*/
-.btn, .entry-list .entry__more > a, .btn--ui {
-  display: inline-block;
-  padding: 6px 20px;
-  background-color: rgba(223, 111, 104, 0.85);
   border-radius: 4px;
-  color: white;
+}
+.sidenote h4 {
+  margin: 0;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: all .1s ease-in-out;
-  text-align: center; }
-  .btn:hover, .btn:active, .btn:focus, .entry-list .entry__more > a:hover, .btn--ui:hover, .entry-list .entry__more > a:active, .btn--ui:active, .entry-list .entry__more > a:focus, .btn--ui:focus {
-    background-color: rgba(223, 111, 104, 0.7); }
+}
+.sidenote p {
+  margin: 0;
+}
 
-.btn--small, .entry-list .entry__more > a {
-  padding: 4px 12px; }
-
-.btn--ui:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
-.btn--ui:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
-.btn--ui:not(:first-child) {
-  margin-left: 1px; }
-
-/**
- * #TRUMPS
- */
 /*------------------------------------*\
-    #CLEARFIX
+    #INTRO
 \*------------------------------------*/
-/**
- * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
- * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
- * over and over in your markup.
- */
-.clearfix:after, .wrapper:after, .page-head:after, .page-foot:after {
-  content: "";
-  display: table;
-  clear: both; }
+.intro,
+.intro-body {
+  overflow: hidden;
+  zoom: 1;
+}
 
-.fa {
+.intro-logo,
+.intro-body {
+  display: table-cell;
+  vertical-align: top;
+}
+@media screen and (max-width: 63.9375em) {
+  .intro-logo,
+  .intro-body {
+    display: block;
+  }
+}
+
+.intro-logo {
+  vertical-align: middle;
+  padding-right: 12px;
+}
+.intro-logo > a {
   display: inline-block;
-  margin-right: 3.5px; }
+  border-bottom: none;
+}
+.intro-logo > a > img {
+  display: block;
+  max-width: 64px;
+  border-radius: 100%;
+}
+@media screen and (max-width: 63.9375em) {
+  .intro-logo {
+    padding-right: 0;
+  }
+}
+
+/*------------------------------------*\
+    #FOOT
+\*------------------------------------*/
+.foot {
+  margin-top: 48px;
+  border-top: 1px solid #ccc;
+}
+.foot p {
+  margin-bottom: 0;
+}
+
+/*------------------------------------*\
+    #COVER
+\*------------------------------------*/
+.cover {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: top center;
+  background-size: cover;
+  border-left: 1px solid #ccc;
+}
+.cover > img {
+  display: none;
+}
+@media screen and (max-width: 44.9375em) {
+  .cover {
+    position: relative;
+    min-height: 50vh;
+  }
+}
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+  .cover {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .cover {
+    width: 60%;
+  }
+}

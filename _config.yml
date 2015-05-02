@@ -1,19 +1,13 @@
 markdown: redcarpet
 highlighter: pygments
 
-exclude: ['Gemfile*', 'bin/', 'bower_components/', '*.scss']
+exclude: ['Gemfile*', 'bower_components/', 'node_modules/', '*.scss', 'gulpfile.js', 'serve.sh', '*.codekit', 'README*']
 
 permalink: writing/:title
 timezone: Europe/Sofia
 
 title: Angel Paunchev
-description:
 url: http://paunchev.net
-
-author:
-    name: Angel Paunchev
-    twitter: apaunchev
-    email: apaunchev@gmail.com
 
 google-analytics-id: UA-10660049-1
 gravatar: e17e058f8ca028c6e00b9434715fa74a

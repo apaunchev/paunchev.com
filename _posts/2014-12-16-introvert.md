@@ -2,6 +2,7 @@
 layout: post
 title: "Introvert"
 date: 2014-12-16 12:00:00
+lastmod: 2014-12-16 12:00:00
 description: "I wrote about what it’s like to be an introvert."
 ---
 
@@ -27,9 +28,7 @@ I don’t mind when you cancel plans. You have to be somewhere else and we can�
 
 [Daniel Miles](http://www.quora.com/What-does-it-feel-like-to-be-an-introvert/answer/Daniel-Miles-2) has described what being an introvert is like a lot better than I can:
 
-<blockquote class="pull-quote">
-	<p>As an introvert, interacting with other people feels like exercise. I feel better about myself every time I do it; it makes me stronger and healthier. It also exhausts me, and if I do it too much I feel sore and cramped. But if I go too long without it, I feel sluggish and stifled. Ultimately, it is the space between that energizes and sustains me. And some days, I just don't feel like working out and would rather sit on my ass and read a book by myself.</p>
-</blockquote>
+> As an introvert, interacting with other people feels like exercise. I feel better about myself every time I do it; it makes me stronger and healthier. It also exhausts me, and if I do it too much I feel sore and cramped. But if I go too long without it, I feel sluggish and stifled. Ultimately, it is the space between that energizes and sustains me. And some days, I just don't feel like working out and would rather sit on my ass and read a book by myself.
 
 ---
 

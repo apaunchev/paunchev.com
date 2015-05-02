@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+html {
+    font-family: "Source Serif Pro", serif;
+    color: #333;
+}
+
+.container {
+    padding: 3em;
+
+    @include media-query(portable) {
+        padding: 1.5em;
+    }
+}
