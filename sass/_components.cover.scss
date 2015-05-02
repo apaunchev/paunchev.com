@@ -19,6 +19,7 @@
     @include media-query(palm) {
         position: relative;
         min-height: 50vh;
+        border-left: none;
     }
 
     @include media-query(lap) {

@@ -797,6 +797,7 @@ html {
   .cover {
     position: relative;
     min-height: 50vh;
+    border-left: none;
   }
 }
 @media screen and (min-width: 45em) and (max-width: 63.9375em) {
