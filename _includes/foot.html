@@ -1,4 +1,4 @@
-{% assign cover = site.data.covers[0] %}
+{% assign cover = site.data.covers[site.cover] %}
 <footer class="foot">
     <p>{% if page.lastmod %}Last updated: {{ page.lastmod | date: '%d %B %Y' }}.<br>{% endif %}
     Image by <a href="{{ cover.url }}">NASA Earth Observatory</a>.</p>

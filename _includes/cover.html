@@ -1,4 +1,4 @@
-{% assign cover = site.data.covers[0] %}
+{% assign cover = site.data.covers[site.cover] %}
 <div class="cover" style="background-image: url(/images/{{ cover.src }})">
     <img src="/images/{{ cover.src }}" alt="{{ cover.alt }}" />
 </div>
