@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /
-lastmod: 2015-05-02 12:00:00
+lastmod: 2015-05-25 12:00:00
 description: "Angel Paunchev is a web developer from Bulgaria."
 ---
 <article class="content content--home">
@@ -30,19 +30,11 @@ description: "Angel Paunchev is a web developer from Bulgaria."
         {% endfor %}
     </ul>
 
-    <h2>Projects</h2>
+    <h2>Elsewhere</h2>
 
     <ul>
-        {% for project in site.data.projects %}
-            <li><a href="{{ project.url }}">{{ project.name }}</a></li>
-        {% endfor %}
-    </ul>
-
-    <h2>Social</h2>
-
-    <ul>
-        {% for social in site.data.social %}
-            <li><a href="{{ social.url }}">{{ social.name }}</a></li>
+        {% for link in site.data.elsewhere %}
+            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
         {% endfor %}
     </ul>
 
