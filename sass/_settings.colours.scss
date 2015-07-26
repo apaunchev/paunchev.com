@@ -1,12 +1,12 @@
 // /*------------------------------------*\
-//     #COLOURS
+//   #COLOURS
 // \*------------------------------------*/
 
-$colour-red:           #df6f68;
-$colour-black:          #111;
+$colour-blue:           #3498db;
+$colour-black:          #333;
 $colour-grey:           #ccc;
 
-$inuit-base-text-color: $colour-black;
+$base-text-color:       $colour-black;
+$alt-text-color:        $colour-grey;
 
-$colour-links:          $colour-red;
-$colour-alt:            $colour-grey;
+$colour-links:          $colour-blue;

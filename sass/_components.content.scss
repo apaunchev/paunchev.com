@@ -1,48 +1,37 @@
 /*------------------------------------*\
-    #CONTENT
+  #CONTENT
 \*------------------------------------*/
 
-.content {
-    @include media-query(lap) {
-        padding-right: $cover-lap-width + 5%;
-    }
+.page--home {
+  h1 {
+    margin-bottom: $spacing-unit--large;
+    font-weight: 400;
+    @include font-size(30px);
+    line-height: 1.25;
+  }
 
-    @include media-query(desk) {
-        padding-right: $cover-desk-width + 5%;
-    }
-}
-
-.content--home {
-    h1 {
-        @include font-size($heading-size-2, 1.25);
-        font-weight: 400;
-    }
-
-    h2 {
-        margin-top: $spacing-unit--large;
-        margin-bottom: -$spacing-unit--small/2;
-        @include font-size($heading-size-3, 1.25);
-
-        @include media-query(palm) {
-            margin-top: $spacing-unit;
-        }
-    }
+  h2 {
+    margin-top: $spacing-unit--large;
+    margin-bottom: -$spacing-unit/2.5;
+    @include font-size(20px);
+  }
 }
 
 .sidenote {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    padding: $spacing-unit--small;
-    background-color: rgba($colour-links, 0.15);
-    border: 1px solid $colour-links;
-    border-radius: 4px;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  padding: $spacing-unit--small;
+  background-color: rgba($colour-links, 0.15);
+  border: 1px solid $colour-links;
+  border-radius: 4px;
 
-    h4 {
-        margin: 0;
-        text-transform: uppercase;
-    }
+  h4 {
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }

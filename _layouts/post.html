@@ -2,15 +2,11 @@
 layout: default
 ---
 <nav>
-    <a href="/">&larr; home</a>
+  <a href="/">&laquo; home</a>
 </nav>
 
-<article class="content">
-    <header class="head">
-        <h1>{{ page.title }}</h1>
-    </header>
+<article class="post">
+  <h1>{{ page.title }}</h1>
 
-    {{ content }}
-
-    {% include foot.html %}
+  {{ content }}
 </article>

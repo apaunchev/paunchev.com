@@ -1,8 +1,10 @@
 /*------------------------------------*\
-    #STYLE.CSS
+  #STYLE.CSS
 \*------------------------------------*/
 
 @import "../bower_components/inuit-defaults/settings.defaults";
+$inuit-base-font-size:   18px;
+$inuit-base-line-height: 27px;
 @import "../bower_components/inuit-responsive-settings/settings.responsive";
 
 @import "../bower_components/inuit-functions/tools.functions";
@@ -13,10 +15,10 @@
 @import "../bower_components/inuit-box-sizing/generic.box-sizing";
 
 @import "../bower_components/inuit-page/base.page";
-$inuit-heading-size-1:  30px;
-$inuit-heading-size-2:  24px;
-$inuit-heading-size-3:  20px;
-$inuit-heading-size-4:  16px;
+$inuit-heading-size-1: 36px;
+$inuit-heading-size-2: 30px;
+$inuit-heading-size-3: 24px;
+$inuit-heading-size-4: 18px;
 @import "../bower_components/inuit-headings/base.headings";
 @import "../bower_components/inuit-images/base.images";
 @import "../bower_components/inuit-lists/base.lists";
@@ -31,6 +33,4 @@ $inuit-heading-size-4:  16px;
 
 @import "components.page";
 @import "components.content";
-@import "components.intro";
 @import "components.foot";
-@import "components.cover";

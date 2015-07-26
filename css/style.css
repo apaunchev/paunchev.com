@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    #STYLE.CSS
+  #STYLE.CSS
 \*------------------------------------*/
 /*!
  * inuitcss, by @csswizardry
@@ -372,13 +372,9 @@ th {
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 /*------------------------------------*\
@@ -399,7 +395,7 @@ html {
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-  font-size: 1em;
+  font-size: 1.125em;
   /* [1] */
   line-height: 1.5;
   /* [1] */
@@ -425,34 +421,34 @@ html {
  * Headings 1–6.
  */
 h1 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6; }
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 1.5; }
 
 h2 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
+  font-size: 30px;
+  font-size: 1.6666666667rem;
+  line-height: 1.8; }
 
 h3 {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2; }
+  font-size: 24px;
+  font-size: 1.3333333333rem;
+  line-height: 1.125; }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h5 {
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-size: 0.8888888889rem;
+  line-height: 1.6875; }
 
 h6 {
   font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.7142857143; }
+  font-size: 0.7777777778rem;
+  line-height: 1.9285714286; }
 
 /*------------------------------------*\
     #IMAGES
@@ -502,19 +498,17 @@ li > ol {
  * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
  */
 .lede {
-  font-size: 18px;
+  font-size: 20.25px;
   font-size: 1.125rem;
   line-height: 1.3333333333; }
 
 /*------------------------------------*\
-    #TYPE
+  #TYPE
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600; }
-
-h1 {
-  line-height: 1.25; }
+  font-weight: 400;
+  color: #000; }
 
 strong, b,
 dt {
@@ -524,9 +518,9 @@ small,
 .small,
 pre,
 .foot {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.7142857143; }
+  font-size: 16px;
+  font-size: 0.8888888889rem;
+  line-height: 1.6875; }
 
 code, kbd, samp {
   font-family: Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; }
@@ -540,9 +534,10 @@ a {
   color: #333;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
-  transition: all .1s ease-in-out; }
+  -webkit-transition: all .1s ease-in-out;
+          transition: all .1s ease-in-out; }
   a:hover, a:active, a:focus {
-    border-color: #df6f68; }
+    border-color: #3498db; }
 
 ul {
   padding-left: 0;
@@ -561,7 +556,7 @@ q {
 blockquote {
   margin-left: 0;
   padding-left: 24px;
-  border-left: 1px solid #df6f68;
+  border-left: 1px solid #3498db;
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
   quotes: "“" "”"; }
@@ -588,118 +583,66 @@ hr {
   background-color: #ccc; }
 
 /*------------------------------------*\
-    #PAGE
+  #PAGE
 \*------------------------------------*/
 html {
+  position: relative;
   font-family: "Source Serif Pro", serif;
-  color: #333; }
+  font-size: 18px; }
 
-.container {
-  padding: 3em; }
-  @media screen and (max-width: 63.9375em) {
-    .container {
-      padding: 1.5em; } }
+html:before {
+  position: absolute;
+  content: '';
+  width: .5em;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+
+html:before {
+  background: -webkit-linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%);
+  background: linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%); }
+
+body {
+  max-width: 45em;
+  padding: 5% 7.5%; }
+  @media screen and (min-width: 64em) {
+    body {
+      padding: 2.5% 5%; } }
 
 /*------------------------------------*\
-    #CONTENT
+  #CONTENT
 \*------------------------------------*/
-@media screen and (min-width: 45em) and (max-width: 63.9375em) {
-  .content {
-    padding-right: 55%; } }
-@media screen and (min-width: 64em) {
-  .content {
-    padding-right: 65%; } }
-
-.content--home h1 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.25;
-  font-weight: 400; }
-.content--home h2 {
-  margin-top: 48px;
-  margin-bottom: -6px;
-  font-size: 20px;
-  font-size: 1.25rem;
+.page--home h1 {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 30px;
+  font-size: 1.6666666667rem;
+  line-height: 1.8;
   line-height: 1.25; }
-  @media screen and (max-width: 44.9375em) {
-    .content--home h2 {
-      margin-top: 24px; } }
+.page--home h2 {
+  margin-top: 48px;
+  margin-bottom: -9.6px;
+  font-size: 20px;
+  font-size: 1.1111111111rem;
+  line-height: 1.35; }
 
 .sidenote {
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 12px;
-  background-color: rgba(223, 111, 104, 0.15);
-  border: 1px solid #df6f68;
+  background-color: rgba(52, 152, 219, 0.15);
+  border: 1px solid #3498db;
   border-radius: 4px; }
   .sidenote h4 {
     margin: 0;
+    font-weight: 600;
     text-transform: uppercase; }
   .sidenote p {
     margin: 0; }
 
 /*------------------------------------*\
-    #INTRO
-\*------------------------------------*/
-.intro,
-.intro-body {
-  overflow: hidden;
-  zoom: 1; }
-
-.intro-logo,
-.intro-body {
-  display: table-cell;
-  vertical-align: top; }
-  @media screen and (max-width: 63.9375em) {
-    .intro-logo,
-    .intro-body {
-      display: block; } }
-
-.intro-logo {
-  vertical-align: middle;
-  padding-right: 12px; }
-  .intro-logo > a {
-    display: inline-block;
-    border-bottom: none; }
-    .intro-logo > a > img {
-      display: block;
-      max-width: 64px;
-      border-radius: 100%; }
-  @media screen and (max-width: 63.9375em) {
-    .intro-logo {
-      padding-right: 0; } }
-
-/*------------------------------------*\
-    #FOOT
+  #FOOT
 \*------------------------------------*/
 .foot {
   margin-top: 48px;
   border-top: 1px solid #ccc; }
-  .foot p {
-    margin-bottom: 0; }
-
-/*------------------------------------*\
-    #COVER
-\*------------------------------------*/
-.cover {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-position: top center;
-  background-size: cover;
-  border-left: 1px solid #ccc; }
-  .cover > img {
-    display: none; }
-  @media screen and (max-width: 44.9375em) {
-    .cover {
-      position: relative;
-      min-height: 50vh;
-      border-left: none; } }
-  @media screen and (min-width: 45em) and (max-width: 63.9375em) {
-    .cover {
-      width: 50%; } }
-  @media screen and (min-width: 64em) {
-    .cover {
-      width: 60%; } }

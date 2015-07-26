@@ -1,22 +1,16 @@
 ---
 layout: default
 permalink: /
+page_class: page--home
 lastmod: 2015-05-25 12:00:00
 description: "Angel Paunchev is a web developer from Bulgaria."
 ---
-<article class="content content--home">
-    <header class="head intro">
-        <div class="intro-logo">
-            <a href="/"><img src="http://www.gravatar.com/avatar/{{ site.gravatar }}" alt="Angel Paunchev"></a>
-        </div>
-        <div class="intro-body">
-            <h1>Angel Paunchev is a web developer from Bulgaria.</h1>
-        </div>
-    </header>
+<article class="post">
+    <h1>Angel Paunchev is a<br>web developer from Bulgaria.</h1>
 
     <h2>About</h2>
 
-    <p>I’m currently in the final (Honours) year of a BSc Computing course at <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a>.</p>
+    <p>In 2015, I graduated from <a href="http://www.gcu.ac.uk/">Glasgow Caledonian University</a> with a BSc in Computing.</p>
 
     <p>I’m interested in software engineering, specifically for the web and mobile platforms. I have an eye for aesthetics and appreciate good design.</p>
 
@@ -30,13 +24,11 @@ description: "Angel Paunchev is a web developer from Bulgaria."
         {% endfor %}
     </ul>
 
-    <h2>Elsewhere</h2>
+    <h2>Links</h2>
 
     <ul>
-        {% for link in site.data.elsewhere %}
+        {% for link in site.data.links %}
             <li><a href="{{ link.url }}">{{ link.name }}</a></li>
         {% endfor %}
     </ul>
-
-    {% include foot.html %}
 </article>
