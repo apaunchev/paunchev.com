@@ -119,9 +119,14 @@ blockquote {
 // Horizontal rule.
 hr,
 %hr {
-  margin: $spacing-unit--large auto;
+  margin: $spacing-unit auto;
   height: 1px;
   width: 100%;
   border: 0;
   background-color: $alt-text-color;
+
+  @include media-query(lap-and-up) {
+    margin-top: $spacing-unit--large;
+    margin-bottom: $spacing-unit--large;
+  }
 }

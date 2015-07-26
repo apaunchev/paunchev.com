@@ -4,16 +4,29 @@
 
 .page--home {
   h1 {
-    margin-bottom: $spacing-unit--large;
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
     font-weight: 400;
-    @include font-size(30px);
+    @include font-size(24px);
     line-height: 1.25;
+
+    @include media-query(lap-and-up) {
+      @include font-size(30px);
+      line-height: 1.25;
+      margin-bottom: $spacing-unit--large;
+    }
   }
 
   h2 {
-    margin-top: $spacing-unit--large;
+    margin-top: $spacing-unit;
     margin-bottom: -$spacing-unit/2.5;
-    @include font-size(20px);
+    @include font-size(18px);
+
+    @include media-query(lap-and-up) {
+      @include font-size(20px);
+      margin-top: $spacing-unit--large;
+      margin-bottom: -$spacing-unit/2.5;
+    }
   }
 }
 
