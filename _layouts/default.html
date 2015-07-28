@@ -3,11 +3,7 @@
   {% include head.html %}
 
   <body class="page{% if page.page_class %} {{ page.page_class }}{% endif %}">
-    <main class="content">
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
+    {{ content }}
 
     {% include scripts.html %}
   </body>
