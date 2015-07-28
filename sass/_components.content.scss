@@ -30,21 +30,19 @@
   }
 }
 
-.sidenote {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
-  padding: $spacing-unit--small;
-  background-color: rgba($colour-links, 0.15);
-  border: 1px solid $colour-links;
-  border-radius: 4px;
+.note {
+  margin: $spacing-unit 0;
+  padding: $spacing-unit/1.5;
+  background-color: rgba($colour-links, .25);
+  border: 5px solid rgba($colour-links, .15);
+  color: #494949;
+  font-style: italic;
 
-  h4 {
-    margin: 0;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  p {
+  > p {
     margin: 0;
   }
+}
+
+.sep {
+  color: $alt-text-color;
 }

@@ -395,7 +395,7 @@ html {
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-  font-size: 1.125em;
+  font-size: 1em;
   /* [1] */
   line-height: 1.5;
   /* [1] */
@@ -422,33 +422,33 @@ html {
  */
 h1 {
   font-size: 36px;
-  font-size: 2rem;
-  line-height: 1.5; }
+  font-size: 2.25rem;
+  line-height: 1.3333333333; }
 
 h2 {
   font-size: 30px;
-  font-size: 1.6666666667rem;
-  line-height: 1.8; }
+  font-size: 1.875rem;
+  line-height: 1.6; }
 
 h3 {
   font-size: 24px;
-  font-size: 1.3333333333rem;
-  line-height: 1.125; }
+  font-size: 1.5rem;
+  line-height: 1; }
 
 h4 {
   font-size: 18px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-size: 1.125rem;
+  line-height: 1.3333333333; }
 
 h5 {
   font-size: 16px;
-  font-size: 0.8888888889rem;
-  line-height: 1.6875; }
+  font-size: 1rem;
+  line-height: 1.5; }
 
 h6 {
   font-size: 14px;
-  font-size: 0.7777777778rem;
-  line-height: 1.9285714286; }
+  font-size: 0.875rem;
+  line-height: 1.7142857143; }
 
 /*------------------------------------*\
     #IMAGES
@@ -498,7 +498,7 @@ li > ol {
  * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
  */
 .lede {
-  font-size: 20.25px;
+  font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.3333333333; }
 
@@ -518,9 +518,9 @@ small,
 .small,
 pre,
 .foot {
-  font-size: 16px;
-  font-size: 0.8888888889rem;
-  line-height: 1.6875; }
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857143; }
 
 code, kbd, samp {
   font-family: Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; }
@@ -557,8 +557,6 @@ blockquote {
   margin-left: 0;
   padding-left: 24px;
   border-left: 1px solid #3498db;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.5);
   quotes: "“" "”"; }
   blockquote p:before {
     content: open-quote; }
@@ -576,73 +574,108 @@ blockquote {
       content: close-quote; }
 
 hr {
-  margin: 48px auto;
+  margin: 24px auto;
   height: 1px;
   width: 100%;
   border: 0;
   background-color: #ccc; }
+  @media screen and (min-width: 45em) {
+    hr {
+      margin-top: 48px;
+      margin-bottom: 48px; } }
 
 /*------------------------------------*\
   #PAGE
 \*------------------------------------*/
 html {
   position: relative;
-  font-family: "Source Serif Pro", serif;
-  font-size: 18px; }
+  font-family: "Source Serif Pro", serif; }
 
 html:before {
   position: absolute;
   content: '';
-  width: .5em;
+  width: auto;
+  height: .5em;
   top: 0;
-  bottom: 0;
+  right: 0;
+  bottom: auto;
   left: 0; }
+  @media screen and (min-width: 45em) {
+    html:before {
+      width: .5em;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      left: 0; } }
 
 html:before {
-  background: -webkit-linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%);
-  background: linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%); }
+  background: -webkit-linear-gradient(0deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%);
+  background: linear-gradient(90deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%); }
+  @media screen and (min-width: 45em) {
+    html:before {
+      background: -webkit-linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%);
+      background: linear-gradient(45deg, #1abc9c 10%, #2ecc71 10%, #2ecc71 12.5%, #3498db 12.5%, #3498db 28%, #9b59b6 28%, #9b59b6 35%, #34495e 35%, #34495e 60%, #f1c40f 60%, #f1c40f 69%, #e67e22 69%, #e67e22 83%, #e74c3c 83%, #e74c3c 88%, #e74c3c 96%, #95a5a6 96%); } }
 
 body {
   max-width: 45em;
-  padding: 5% 7.5%; }
-  @media screen and (min-width: 64em) {
+  padding: 48px 24px; }
+  @media screen and (min-width: 45em) {
     body {
-      padding: 2.5% 5%; } }
+      padding: 48px 60px; } }
 
 /*------------------------------------*\
   #CONTENT
 \*------------------------------------*/
 .page--home h1 {
-  margin-bottom: 48px;
-  font-weight: 400;
-  font-size: 30px;
-  font-size: 1.6666666667rem;
-  line-height: 1.8;
-  line-height: 1.25; }
-.page--home h2 {
-  margin-top: 48px;
-  margin-bottom: -9.6px;
-  font-size: 20px;
-  font-size: 1.1111111111rem;
-  line-height: 1.35; }
-
-.sidenote {
-  margin-top: 24px;
+  margin-top: 0;
   margin-bottom: 24px;
-  padding: 12px;
-  background-color: rgba(52, 152, 219, 0.15);
-  border: 1px solid #3498db;
-  border-radius: 4px; }
-  .sidenote h4 {
-    margin: 0;
-    font-weight: 600;
-    text-transform: uppercase; }
-  .sidenote p {
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  line-height: 1.25; }
+  @media screen and (min-width: 45em) {
+    .page--home h1 {
+      font-size: 30px;
+      font-size: 1.875rem;
+      line-height: 1.6;
+      line-height: 1.25;
+      margin-bottom: 48px; } }
+.page--home h2 {
+  margin-top: 24px;
+  margin-bottom: -9.6px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333; }
+  @media screen and (min-width: 45em) {
+    .page--home h2 {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-top: 48px;
+      margin-bottom: -9.6px; } }
+
+.note {
+  margin: 24px 0;
+  padding: 16px;
+  background-color: rgba(52, 152, 219, 0.25);
+  border: 5px solid rgba(52, 152, 219, 0.15);
+  color: #494949;
+  font-style: italic; }
+  .note > p {
     margin: 0; }
+
+.sep {
+  color: #ccc; }
 
 /*------------------------------------*\
   #FOOT
 \*------------------------------------*/
 .foot {
-  margin-top: 48px;
+  margin-top: 24px;
   border-top: 1px solid #ccc; }
+  .foot p {
+    margin-bottom: 0; }
+  @media screen and (min-width: 45em) {
+    .foot {
+      margin-top: 48px; } }
