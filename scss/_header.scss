@@ -1,0 +1,41 @@
+.header {
+    @include desktop {
+        padding-top: 2rem;
+        display: flex;
+    }
+
+    .name {
+        margin-bottom: .5rem;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+
+    .nav {
+        @include desktop {
+            flex: 1;
+            text-align: right;
+        }
+    }
+
+    a {
+        display: inline-block;
+        margin-right: 1.5rem;
+        text-decoration: none;
+        border: none;
+        line-height: 2;
+
+        &.active {
+            color: $c-links;
+        }
+
+        @include attention {
+            color: $c-links;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

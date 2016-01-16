@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $c-page-background;
+    color: $c-body;
+    font-family: $f-primary;
+    font-size: $s-body;
+    line-height: $s-line-height;
+}
+
+%centered {
+    max-width: $s-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header,
+.footer {
+    @extend %centered;
+    padding: 1rem;
+    font-size: $s-body - 2px;
+}
+
+.text {
+    @extend %centered;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
