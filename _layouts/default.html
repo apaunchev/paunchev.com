@@ -1,8 +1,43 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+    <head>
+        <meta charset="utf-8">
 
-  <body class="page{% if page.page_class %} {{ page.page_class }}{% endif %}">
-    {{ content }}
-  </body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="og:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}">
+        <meta property="og:image" content="https://s.gravatar.com/avatar/e17e058f8ca028c6e00b9434715fa74a?s=240">
+        <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+        {% if page.url %}<meta property="og:url" content="{{ site.url }}{{ page.url }}">{% endif %}
+        {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
+        {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@apaunchev">
+        <meta name="twitter:creator" content="@apaunchev">
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}">
+        <meta name="twitter:image:src" content="https://s.gravatar.com/avatar/e17e058f8ca028c6e00b9434715fa74a?s=240">
+        {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
+
+        <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/atom.xml">
+        <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+    </head>
+
+    <body{% if page.page_class %} class="{{ page.page_class}}"{% endif %}>
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </body>
 </html>

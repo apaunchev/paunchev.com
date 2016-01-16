@@ -1,0 +1,19 @@
+@mixin desktop {
+    @media (min-width: #{$s-desktop-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$s-tablet-width}) {
+        @content;
+    }
+}
+
+@mixin attention {
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
