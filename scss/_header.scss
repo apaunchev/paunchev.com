@@ -5,30 +5,28 @@
     }
 
     .name {
+        flex-grow: 1;
         margin-bottom: .5rem;
+
+        > a {
+            color: $c-headings;
+
+            @include attention {
+                color: black;
+            }
+        }
 
         @include desktop {
             margin-bottom: 0;
         }
     }
 
-    .nav {
-        @include desktop {
-            flex: 1;
-            text-align: right;
-        }
-    }
-
     a {
-        display: inline-block;
         margin-right: 1.5rem;
         text-decoration: none;
         border: none;
+        color: $c-meta;
         line-height: 2;
-
-        &.active {
-            color: $c-links;
-        }
 
         @include attention {
             color: $c-links;
