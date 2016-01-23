@@ -1,0 +1,64 @@
+@import "vars";
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    background-color: $c-quote-background;
+    color: white;
+    font-family: $f-quote;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.quote {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.quote-text {
+    margin-top: 0;
+    font-size: 2rem;
+    quotes: "“" "”" "‘" "’";
+
+    &:before {
+        content: open-quote;
+        color: $c-quote-accent;
+    }
+
+    &:after {
+        content: close-quote;
+        color: $c-quote-accent;
+    }
+
+    @include tablet {
+        font-size: 3rem;
+    }
+}
+
+.quote-author {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &:before {
+        content: "—";
+        color: $c-quote-accent;
+    }
+
+    @include desktop {
+        font-size: 2.5rem;
+    }
+}
