@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+
+html {
+  background-color: #22313f;
+  color: white;
+  font-family: Lora, Georgia, serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
+
+.quote {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center; }
+
+.quote-text {
+  margin-top: 0;
+  font-size: 2rem;
+  quotes: "“" "”" "‘" "’"; }
+  .quote-text:before {
+    content: open-quote;
+    color: #ff9e00; }
+  .quote-text:after {
+    content: close-quote;
+    color: #ff9e00; }
+  @media (min-width: 768px) {
+    .quote-text {
+      font-size: 3rem; } }
+
+.quote-author {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .quote-author:before {
+    content: "—";
+    color: #ff9e00; }
+  @media (min-width: 1024px) {
+    .quote-author {
+      font-size: 2.5rem; } }
