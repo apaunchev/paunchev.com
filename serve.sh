@@ -1,2 +1,2 @@
 #!/bin/sh
-bundle exec jekyll serve --watch --drafts --safe
+bundle exec jekyll serve --watch --drafts --profile
