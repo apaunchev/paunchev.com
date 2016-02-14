@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 
 exclude: ['Gemfile*', 'bower_components/', 'node_modules/', '*.scss', 'gulpfile.js', 'serve.sh', '*.codekit', 'README*']
