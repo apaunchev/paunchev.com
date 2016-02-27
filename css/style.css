@@ -126,6 +126,7 @@ body {
   font-weight: normal; }
 
 .book-author {
+  display: block;
   margin: 0;
   padding: 0 1.5rem;
   font-style: normal;
