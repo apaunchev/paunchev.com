@@ -3,8 +3,15 @@ highlighter: rouge
 
 exclude: ['Gemfile*', 'bower_components/', 'node_modules/', '*.scss', 'gulpfile.js', 'serve.sh', '*.codekit', 'README*']
 
-permalink: writing/:title
-timezone: Europe/Sofia
+name: Angel Paunchev
+description: Angel Paunchev is a web developer from Bulgaria.
 
-title: Angel Paunchev
 url: http://paunchev.net
+permalink: :title
+timezone: Europe/Sofia
+locale: en-GB
+
+logo: /images/me.jpg
+
+author:
+    twitter: apaunchev
