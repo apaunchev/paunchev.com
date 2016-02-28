@@ -1,17 +1,18 @@
-.page--articles {
+.page--writing,
+.page--post {
     .header {
-        a[href="/articles"] {
+        a[href="/writing"] {
             color: $c-links;
         }
     }
 }
 
-.articles {
+.posts {
     list-style-type: none;
     padding: 0;
 }
 
-.article {
+.post {
     margin-bottom: 1rem;
 
     @include desktop {
