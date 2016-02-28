@@ -9,8 +9,12 @@ body {
     background-color: $c-page-background;
     color: $c-body;
     font-family: $f-primary;
-    font-size: $s-body;
+    font-size: $s-body - 2px;
     line-height: $s-line-height;
+
+    @include desktop {
+        font-size: $s-body;
+    }
 }
 
 %centered {
@@ -23,11 +27,6 @@ body {
 .footer {
     @extend %centered;
     padding: 1rem;
-    font-size: $s-body - 2px;
-
-    @include desktop {
-        font-size: $s-body;
-    }
 }
 
 .text {

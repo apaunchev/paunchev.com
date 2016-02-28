@@ -9,8 +9,11 @@ body {
   background-color: #fff;
   color: #444;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5; }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px; } }
 
 .header,
 .footer, .text {
@@ -20,12 +23,7 @@ body {
 
 .header,
 .footer {
-  padding: 1rem;
-  font-size: 16px; }
-  @media (min-width: 1024px) {
-    .header,
-    .footer {
-      font-size: 18px; } }
+  padding: 1rem; }
 
 .text {
   margin-top: 1rem;
@@ -39,15 +37,9 @@ body {
 @media (min-width: 1024px) {
   .header {
     padding-top: 2rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex; } }
 .header .name {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   margin-bottom: .5rem; }
   .header .name > a {
     color: #222; }
@@ -94,7 +86,6 @@ body {
     right: 0;
     border-radius: 100%;
     background-color: none;
-    -webkit-transition: all .1s linear;
     transition: all .1s linear; }
   .avatar:hover:before, .avatar:active:before, .avatar:focus:before {
     background-color: rgba(255, 0, 56, 0.5); }
@@ -102,22 +93,23 @@ body {
     .avatar {
       width: 120px; } }
 
-.page--articles .header a[href="/articles"] {
+.page--writing .header a[href="/writing"],
+.page--post .header a[href="/writing"] {
   color: crimson; }
 
-.articles {
+.posts {
   list-style-type: none;
   padding: 0; }
 
-.article {
+.post {
   margin-bottom: 1rem; }
   @media (min-width: 1024px) {
-    .article {
+    .post {
       margin-bottom: 2rem; } }
-  .article a {
+  .post a {
     display: block;
     text-decoration: none; }
-  .article em {
+  .post em {
     display: block;
     color: #7c7c7c; }
 
@@ -125,13 +117,8 @@ body {
   color: crimson; }
 
 .library {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  flex-wrap: wrap; }
 
 .book {
   width: 50%;
@@ -177,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 0 0 2rem;
-  font-size: 24px;
-  text-align: center; }
+  font-size: 24px; }
   @media (min-width: 1024px) {
     h1 {
       margin-bottom: 3rem;
-      font-size: 32px; } }
+      font-size: 32px;
+      text-align: center; } }
 
 h2 {
   font-size: 20px; }
@@ -208,7 +195,6 @@ ol.no-bullets {
 a {
   color: #444;
   text-decoration: underline;
-  -webkit-transition: color .1s linear;
   transition: color .1s linear; }
   a:hover, a:active, a:focus {
     color: crimson; }
