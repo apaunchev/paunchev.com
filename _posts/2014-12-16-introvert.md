@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Introvert"
+title: Introvert
 date: 2014-12-16 12:00:00
 lastmod: 2014-12-16 12:00:00
-description: "I wrote about what it’s like to be an introvert."
 ---
-
 I’m an introvert. Here’s what you should know about it.
 
 **Being an introvert means that interacting with people for extended periods of time exhausts me and I often need time alone to regain my energy.**
