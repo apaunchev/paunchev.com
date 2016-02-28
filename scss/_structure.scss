@@ -24,10 +24,20 @@ body {
     @extend %centered;
     padding: 1rem;
     font-size: $s-body - 2px;
+
+    @include desktop {
+        font-size: $s-body;
+    }
 }
 
 .text {
     @extend %centered;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 0 1rem;
+
+    @include desktop {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }

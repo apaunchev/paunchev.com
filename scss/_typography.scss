@@ -4,13 +4,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem;
     font-size: 24px;
     text-align: center;
 
     @include desktop {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         font-size: 32px;
     }
 }
@@ -43,12 +42,11 @@ ol.no-bullets {
 
 a {
     color: $c-body;
-    text-decoration: none;
-    border-bottom: 1px solid $c-meta;
-    transition: all .1s linear;
+    text-decoration: underline;
+    transition: color .1s linear;
 
     @include attention {
-        border-color: $c-links;
+        color: $c-links;
     }
 }
 

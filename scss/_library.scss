@@ -1,6 +1,6 @@
 .page--library {
     .header {
-        a[href="/library/"] {
+        a[href="/library"] {
             color: $c-links;
         }
     }
@@ -14,11 +14,7 @@
 .book {
     width: 50%;
     margin-bottom: 2rem;
-    border: 0;
-
-    @include attention {
-        color: $c-links;
-    }
+    text-decoration: none;
 
     @include tablet {
         width: 25%;

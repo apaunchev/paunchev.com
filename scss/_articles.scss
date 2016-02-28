@@ -1,3 +1,11 @@
+.page--articles {
+    .header {
+        a[href="/articles"] {
+            color: $c-links;
+        }
+    }
+}
+
 .articles {
     list-style-type: none;
     padding: 0;
@@ -6,19 +14,17 @@
 .article {
     margin-bottom: 1rem;
 
-    a, em {
-        display: block;
+    @include desktop {
+        margin-bottom: 2rem;
     }
 
     a {
-        border-bottom: 0;
-
-        @include attention {
-            color: $c-links;
-        }
+        display: block;
+        text-decoration: none;
     }
 
     em {
+        display: block;
         color: $c-meta;
     }
 }
