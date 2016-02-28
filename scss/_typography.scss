@@ -6,11 +6,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 32px;
+    font-size: 24px;
+    text-align: center;
 
     @include desktop {
         margin-bottom: 4rem;
-        font-size: 48px;
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-size: 20px;
+
+    @include desktop {
+        font-size: 24px;
     }
 }
 
@@ -20,6 +29,10 @@ h3 {
     font-size: 16px;
     text-transform: uppercase;
     color: $c-meta;
+
+    @include desktop {
+        font-size: 18px;
+    }
 }
 
 ul.no-bullets,
