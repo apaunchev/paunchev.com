@@ -1,0 +1,24 @@
+.articles {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article {
+    margin-bottom: 1rem;
+
+    a, em {
+        display: block;
+    }
+
+    a {
+        border-bottom: 0;
+
+        @include attention {
+            color: $c-links;
+        }
+    }
+
+    em {
+        color: $c-meta;
+    }
+}
