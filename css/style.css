@@ -8,7 +8,7 @@ body {
   padding: 0;
   background-color: #fff;
   color: #444;
-  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5; }
 
@@ -30,9 +30,15 @@ body {
 @media (min-width: 1024px) {
   .header {
     padding-top: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; } }
 .header .name {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-bottom: .5rem; }
   .header .name > a {
     color: #222; }
@@ -79,6 +85,7 @@ body {
     right: 0;
     border-radius: 100%;
     background-color: none;
+    -webkit-transition: all .1s linear;
     transition: all .1s linear; }
   .avatar:hover:before, .avatar:active:before, .avatar:focus:before {
     background-color: rgba(255, 0, 56, 0.5); }
@@ -86,12 +93,32 @@ body {
     .avatar {
       width: 120px; } }
 
+.articles {
+  list-style-type: none;
+  padding: 0; }
+
+.article {
+  margin-bottom: 1rem; }
+  .article a, .article em {
+    display: block; }
+  .article a {
+    border-bottom: 0; }
+    .article a:hover, .article a:active, .article a:focus {
+      color: crimson; }
+  .article em {
+    color: #7c7c7c; }
+
 .page--library .header a[href="/library/"] {
   color: crimson; }
 
 .library {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .book {
   width: 50%;
@@ -140,11 +167,18 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 32px; }
+  font-size: 24px;
+  text-align: center; }
   @media (min-width: 1024px) {
     h1 {
       margin-bottom: 4rem;
-      font-size: 48px; } }
+      font-size: 32px; } }
+
+h2 {
+  font-size: 20px; }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 24px; } }
 
 h3 {
   margin-top: 2rem;
@@ -152,6 +186,9 @@ h3 {
   font-size: 16px;
   text-transform: uppercase;
   color: #7c7c7c; }
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: 18px; } }
 
 ul.no-bullets,
 ol.no-bullets {
@@ -162,6 +199,7 @@ a {
   color: #444;
   text-decoration: none;
   border-bottom: 1px solid #7c7c7c;
+  -webkit-transition: all .1s linear;
   transition: all .1s linear; }
   a:hover, a:active, a:focus {
     border-color: crimson; }
