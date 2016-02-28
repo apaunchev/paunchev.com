@@ -9,7 +9,7 @@ description: Angel Paunchev is a web developer from Bulgaria.
 url: http://paunchev.net
 permalink: :title
 timezone: Europe/Sofia
-locale: en-GB
+locale: en_GB
 
 logo: /images/me.jpg
 
