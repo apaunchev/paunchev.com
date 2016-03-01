@@ -3,7 +3,7 @@ layout: post
 title: Fixed mindset vs growth mindset
 date: 2016-02-27 12:00:00
 lastmod: 2016-02-27 12:00:00
-excerpt: You should know about the difference between a fixed mindset and a growth mindset.
+excerpt: You should know about the difference between having a fixed mindset and having a growth mindset.
 ---
 One of the most important concepts I’ve learned recently is the difference between having a fixed mindset and having a growth mindset.
 
