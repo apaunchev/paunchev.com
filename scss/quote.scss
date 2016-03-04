@@ -58,7 +58,7 @@ body {
         color: $c-quote-accent;
     }
 
-    @include desktop {
+    @include tablet {
         font-size: 2.5rem;
     }
 }

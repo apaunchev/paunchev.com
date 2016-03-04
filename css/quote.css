@@ -40,7 +40,7 @@ body {
   .quote-text:after {
     content: close-quote;
     color: #ff9e00; }
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .quote-text {
       font-size: 3rem; } }
 
@@ -52,6 +52,6 @@ body {
   .quote-author:before {
     content: "—";
     color: #ff9e00; }
-  @media (min-width: 1024px) {
+  @media (min-width: 750px) {
     .quote-author {
       font-size: 2.5rem; } }

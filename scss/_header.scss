@@ -1,7 +1,10 @@
 .header {
-    @include desktop {
-        padding-top: 2rem;
+    text-align: center;
+
+    @include tablet {
         display: flex;
+        text-align: left;
+        padding-top: 2rem;
     }
 
     .name {
@@ -10,13 +13,14 @@
 
         > a {
             color: $c-headings;
+            font-weight: 700;
 
             @include attention {
                 color: black;
             }
         }
 
-        @include desktop {
+        @include tablet {
             margin-bottom: 0;
         }
     }

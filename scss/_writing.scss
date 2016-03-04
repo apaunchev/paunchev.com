@@ -15,7 +15,7 @@
 .post {
     margin-bottom: 1rem;
 
-    @include desktop {
+    @include tablet {
         margin-bottom: 2rem;
     }
 
