@@ -51,7 +51,8 @@ body {
             flex-grow: 1;
     margin-bottom: .5rem; }
     .header .name > a {
-      color: #222; }
+      color: #222;
+      font-weight: 500; }
       .header .name > a:hover, .header .name > a:active, .header .name > a:focus {
         color: black; }
     @media (min-width: 750px) {
@@ -235,4 +236,4 @@ blockquote {
     margin-bottom: 0; }
 
 b, strong {
-  font-weight: 600; }
+  font-weight: 500; }
