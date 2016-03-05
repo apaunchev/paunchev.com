@@ -7,7 +7,7 @@ body {
   padding: 0;
   background-color: #fff;
   color: #444;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 750px) {
@@ -34,7 +34,8 @@ body {
       margin-bottom: 2rem; } }
 
 .header {
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
   @media (min-width: 750px) {
     .header {
       display: -webkit-box;
@@ -50,8 +51,7 @@ body {
             flex-grow: 1;
     margin-bottom: .5rem; }
     .header .name > a {
-      color: #222;
-      font-weight: 700; }
+      color: #222; }
       .header .name > a:hover, .header .name > a:active, .header .name > a:focus {
         color: black; }
     @media (min-width: 750px) {
@@ -71,6 +71,7 @@ body {
 .copyright {
   margin: 0;
   padding-top: 1rem;
+  font-size: 16px;
   color: #7c7c7c;
   border-top: 1px solid #e3e3e3; }
 
@@ -182,28 +183,28 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 0 0 2rem;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center; }
   @media (min-width: 750px) {
     h1 {
       margin-bottom: 3rem;
-      font-size: 32px; } }
+      font-size: 36px; } }
 
 h2 {
-  font-size: 20px; }
+  font-size: 24px; }
   @media (min-width: 750px) {
     h2 {
-      font-size: 24px; } }
+      font-size: 32px; } }
 
 h3 {
   margin-top: 2rem;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #7c7c7c; }
   @media (min-width: 750px) {
     h3 {
-      font-size: 18px; } }
+      font-size: 21px; } }
 
 ul.no-bullets,
 ol.no-bullets {
@@ -232,3 +233,6 @@ blockquote {
   quotes: "“" "”"; }
   blockquote p:last-of-type {
     margin-bottom: 0; }
+
+b, strong {
+  font-weight: 600; }

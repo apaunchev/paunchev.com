@@ -8,7 +8,7 @@ body {
     background-color: $c-page-background;
     color: $c-body;
     font-family: $f-primary;
-    font-size: $s-body - 2px;
+    font-size: $s-body-small;
     line-height: $s-line-height;
 
     @include tablet {
