@@ -1,6 +1,5 @@
 .header {
     text-align: center;
-    font-size: $s-body-small;
 
     @include tablet {
         display: flex;
@@ -14,7 +13,7 @@
 
         > a {
             color: $c-headings;
-            font-weight: 500;
+            font-weight: 700;
 
             @include attention {
                 color: black;
@@ -27,7 +26,7 @@
     }
 
     a {
-        margin-right: 1.5rem;
+        margin-right: 2rem;
         text-decoration: none;
         border: none;
         color: $c-meta;
