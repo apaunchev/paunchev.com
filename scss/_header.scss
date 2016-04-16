@@ -12,11 +12,10 @@
         margin-bottom: .5rem;
 
         > a {
-            color: $c-headings;
-            font-weight: 700;
+            color: black;
 
             @include attention {
-                color: black;
+                color: $c-headings;
             }
         }
 
