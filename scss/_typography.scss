@@ -4,13 +4,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
     font-size: 24px;
-    text-align: center;
 
     @include tablet {
-        margin-bottom: 3rem;
-        font-size: 32px;
+        margin-bottom: 2rem;
+        font-size: 36px;
     }
 }
 
@@ -18,7 +17,7 @@ h2 {
     font-size: 21px;
 
     @include tablet {
-        font-size: 24px;
+        font-size: 27px;
     }
 }
 
@@ -41,12 +40,12 @@ ol.no-bullets {
 }
 
 a {
-    color: $c-body;
-    text-decoration: underline;
-    transition: color .1s linear;
+    color: $c-links;
+    text-decoration: none;
 
     @include attention {
-        color: $c-links;
+        color: $c-body;
+        text-decoration: underline;
     }
 }
 

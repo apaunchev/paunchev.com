@@ -39,3 +39,11 @@ body {
         margin-bottom: 2rem;
     }
 }
+
+.page--home {
+    .header {
+        a[href="/"] {
+            color: $c-links;
+        }
+    }
+}

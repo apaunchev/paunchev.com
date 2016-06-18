@@ -33,37 +33,23 @@ body {
       margin-top: 2rem;
       margin-bottom: 2rem; } }
 
+.page--home .header a[href="/"] {
+  color: crimson; }
+
 .header {
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 750px) {
     .header {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      text-align: left;
-      padding-top: 2rem; } }
-  .header .name {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin-bottom: .5rem; }
-    .header .name > a {
-      color: black; }
-      .header .name > a:hover, .header .name > a:active, .header .name > a:focus {
-        color: #222; }
-    @media (min-width: 750px) {
-      .header .name {
-        margin-bottom: 0; } }
+      padding-top: 2rem;
+      text-align: right; } }
   .header a {
     margin-right: 2rem;
     text-decoration: none;
     border: none;
-    color: #7c7c7c;
+    color: #444;
     line-height: 2; }
     .header a:hover, .header a:active, .header a:focus {
-      color: crimson; }
+      color: #444; }
     .header a:last-child {
       margin-right: 0; }
 
@@ -114,15 +100,13 @@ body {
   padding: 0; }
 
 .post {
-  margin-bottom: 1rem; }
+  font-size: 18px;
+  margin-bottom: 10px; }
   @media (min-width: 750px) {
     .post {
-      margin-bottom: 2rem; } }
-  .post a {
-    display: block;
-    text-decoration: none; }
-  .post em {
-    display: block;
+      margin-bottom: 15px;
+      font-size: 20px; } }
+  .post small {
     color: #7c7c7c; }
 
 .page--library .header a[href="/library"] {
@@ -156,6 +140,10 @@ body {
   @media (min-width: 1334px) {
     .book {
       width: 25%; } }
+  .book:hover, .book:active, .book:focus {
+    text-decoration: none; }
+    .book:hover .book-title, .book:active .book-title, .book:focus .book-title {
+      color: crimson; }
 
 .book-cover {
   width: 100%;
@@ -172,6 +160,7 @@ body {
 
 .book-title {
   display: block;
+  color: #444;
   font-weight: normal; }
 
 .book-author {
@@ -184,19 +173,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #222; }
 
 h1 {
-  margin: 0 0 2rem;
-  font-size: 24px;
-  text-align: center; }
+  margin: 0 0 1rem;
+  font-size: 24px; }
   @media (min-width: 750px) {
     h1 {
-      margin-bottom: 3rem;
-      font-size: 32px; } }
+      margin-bottom: 2rem;
+      font-size: 36px; } }
 
 h2 {
   font-size: 21px; }
   @media (min-width: 750px) {
     h2 {
-      font-size: 24px; } }
+      font-size: 27px; } }
 
 h3 {
   margin-top: 2rem;
@@ -214,12 +202,11 @@ ol.no-bullets {
   padding-left: 0; }
 
 a {
-  color: #444;
-  text-decoration: underline;
-  -webkit-transition: color .1s linear;
-  transition: color .1s linear; }
+  color: crimson;
+  text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: crimson; }
+    color: #444;
+    text-decoration: underline; }
 
 hr {
   margin: 2rem auto;
