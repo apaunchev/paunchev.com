@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Introvert
-date: 2014-12-16 12:00:00
-lastmod: 2014-12-16 12:00:00
+date: 2014-12-16 14:00:00 +02:00
+layout: post
+lastmod: 2014-12-16 14:00:00 +02:00
 ---
+
 I’m an introvert. Here’s what you should know about it.
 
 **Being an introvert means that interacting with people for extended periods of time exhausts me and I often need time alone to regain my energy.**
