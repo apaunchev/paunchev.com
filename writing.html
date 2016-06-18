@@ -4,13 +4,4 @@ page_class: page--writing
 lastmod: 2016-02-27 12:00:00
 title: Writing
 ---
-<ul class="posts">
-    {% for post in site.posts %}
-        <li class="post">
-            <a href="{{ post.url }}">
-                {{ post.title }}
-                <em>{{ post.date | date: "%B %Y" }}</em>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% include writing.html %}
