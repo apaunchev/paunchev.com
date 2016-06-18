@@ -1,29 +1,21 @@
 ---
-title: paunchev.net
-timezone: Europe/Sofia
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 markdown: kramdown
 highlighter: rouge
-exclude:
-- Gemfile*
-- bower_components/
-- node_modules/
-- "*.scss"
-- gulpfile.js
-- serve.sh
-- "*.codekit"
-- README*
+exclude: 
+  - "Gemfile*"
+  - "bower_components/"
+  - "node_modules/"
+  - "*.scss"
+  - "gulpfile.js"
+  - "serve.sh"
+  - "*.codekit"
+  - "README*"
+title: paunchev.net
 name: Angel Paunchev
 description: Angel Paunchev is a software developer from Bulgaria.
 url: http://paunchev.net
-permalink: title
-locale: en_GB
-logo: "/images/me.jpg"
+permalink: :title
+timezone: Europe/Sofia
+logo: /images/me.jpg
 author:
   twitter: apaunchev
