@@ -4,11 +4,7 @@ permalink: library
 page_class: page--library
 title: Library
 ---
-<section class="text">
-    <p>Books I’ve read and recommend.</p>
-</section>
-
-<section class="library">
+<section class="library full-width">
     {% for book in site.data.books %}
     <a class="book" href="{{ book.url }}">
         <div class="book-cover">

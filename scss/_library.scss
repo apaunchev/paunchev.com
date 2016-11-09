@@ -9,12 +9,11 @@
 .library {
     @extend %centered;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
 
     @include tablet {
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 2rem;
     }
 }
@@ -22,17 +21,18 @@
 .book {
     width: 50%;
     padding: 0 .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
+    border-bottom: none;
 
     @include tablet {
         width: 33.333%;
     }
 
     @include desktop {
-        width: 25%;
+        width: 20%;
     }
 
     @include attention {
