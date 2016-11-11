@@ -47,7 +47,7 @@ body {
 .page--home {
     .header {
         a[href="/"] {
-            color: $c-links;
+            font-weight: bold;
         }
     }
 }

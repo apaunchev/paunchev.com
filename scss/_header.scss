@@ -1,20 +1,21 @@
 .header {
-    text-align: left;
-
     @include tablet {
         padding-top: 3rem;
     }
 
+    nav {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $c-borders;
+    }
+
     a {
-        margin-right: 2rem;
+        padding-bottom: 1rem;
+        margin-right: 3rem;
         text-decoration: none;
         border: none;
-        color: #898989;
-        font-size: $s-body-small;
-        text-transform: uppercase;
 
         @include attention {
-            color: $c-body;
+            color: $c-links;
         }
 
         &:last-child {
