@@ -1,3 +1,1 @@
-# paunchev.net
-
-My personal site’s uncompiled Jekyll source code.
+# [paunchev.net](http://paunchev.net)
