@@ -47,9 +47,11 @@ body {
   border-bottom: 1px solid #e3e3e3; }
 .header a {
   padding-bottom: 1rem;
-  margin-right: 3rem;
+  margin-right: 2.4rem;
   text-decoration: none;
-  border: none; }
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px; }
   .header a:hover, .header a:active, .header a:focus {
     color: crimson; }
   .header a:last-child {
@@ -91,7 +93,7 @@ body {
     background-color: rgba(255, 0, 56, 0.5); }
   @media (min-width: 750px) {
     .avatar {
-      width: 120px; } }
+      width: 140px; } }
 
 .page--articles .header a[href="/articles"],
 .page--post .header a[href="/articles"] {

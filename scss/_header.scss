@@ -10,9 +10,11 @@
 
     a {
         padding-bottom: 1rem;
-        margin-right: 3rem;
+        margin-right: 2.4rem;
         text-decoration: none;
         border: none;
+        text-transform: uppercase;
+        font-size: $s-body-small;
 
         @include attention {
             color: $c-links;
