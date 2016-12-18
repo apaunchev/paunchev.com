@@ -1,1 +1,0 @@
-# [paunchev.net](http://paunchev.net)
