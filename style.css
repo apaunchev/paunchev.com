@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 2rem;
+    font: 1rem/1.75 -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.page header {
+    margin-bottom: 4rem;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-top: 0;
+}
+
+.page main {
+    margin-bottom: 4rem;
+    max-width: 30rem;
+}
+
+.page footer {
+    color: dimgray;
+}
+
+.page footer p {
+    display: inline-block;
+    margin: 0 1.75rem 0 0;
+    line-height: 2.5;
+}
+
+a {
+    color: dimgrey;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: crimson;
+}
+
+@media (min-width: 750px) {
+    html {
+        padding: 4rem;
+    }
+}
