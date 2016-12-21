@@ -1,15 +1,31 @@
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 html {
-    padding: 2rem;
+    box-sizing: border-box;
     font: 1rem/1.75 -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.page {
+    min-height: 100%;
+    max-width: 35rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .page header {
+    flex: 1;
     margin-bottom: 4rem;
 }
 
@@ -17,16 +33,11 @@ html {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1rem;
-    font-weight: 500;
 }
 
 .subtitle {
     margin-top: 0;
-}
-
-.page main {
     margin-bottom: 4rem;
-    max-width: 30rem;
 }
 
 .page footer {
@@ -40,7 +51,7 @@ html {
 }
 
 a {
-    color: dimgrey;
+    color: grey;
 }
 
 a:hover,
@@ -50,7 +61,7 @@ a:focus {
 }
 
 @media (min-width: 750px) {
-    html {
+    .page {
         padding: 4rem;
     }
 }
