@@ -60,6 +60,10 @@ a:focus {
     color: crimson;
 }
 
+ul {
+    list-style-type: square;
+}
+
 @media (min-width: 750px) {
     .page {
         padding: 4rem;
