@@ -18,7 +18,7 @@ html {
 
 .page {
     min-height: 100%;
-    max-width: 35rem;
+    max-width: 40rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -29,15 +29,15 @@ html {
     margin-bottom: 4rem;
 }
 
-.title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
+.lead {
+    font-size: large;
 }
 
-.subtitle {
-    margin-top: 0;
-    margin-bottom: 4rem;
+.photo {
+    float: right;
+    width: 80px;
+    border-radius: 100%;
+    margin: 1rem 0 1rem 1.25rem;
 }
 
 .page footer {
@@ -63,5 +63,9 @@ a:focus {
 @media (min-width: 750px) {
     .page {
         padding: 4rem;
+    }
+
+    .photo {
+        width: 100px;
     }
 }
