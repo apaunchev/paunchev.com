@@ -1,0 +1,3 @@
+[submodule "finances"]
+	path = finances
+	url = https://github.com/apaunchev/finances
