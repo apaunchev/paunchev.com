@@ -2,7 +2,7 @@
   "name": "paunchev.net",
   "version": "1.0.0",
   "scripts": {
-    "start": "browser-sync start --server --files '*.css, *.html, *.js'"
+    "start": "browser-sync start --server --files '*.css, *.html'"
   },
   "devDependencies": {
     "browser-sync": "^2.18.5"
