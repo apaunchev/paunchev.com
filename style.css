@@ -1,0 +1,32 @@
+html {
+  font-family: -apple-system, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: 25rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 45rem) {
+  body {
+    padding: 3rem;
+  }
+}
+
+.title {
+  margin: 0 0 -1rem;
+  font-weight: 600;
+}
+
+a {
+  color: #e7040f;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: black;
+}
