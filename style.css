@@ -1,32 +1,41 @@
 html {
+  background-color: #222;
+  color: #bbb;
   font-family: -apple-system, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  max-width: 25rem;
   padding: 1rem;
 }
 
 @media screen and (min-width: 45rem) {
   body {
-    padding: 3rem;
+    padding: 2rem;
   }
 }
 
 .title {
   margin: 0 0 -1rem;
-  font-weight: 600;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.subtitle a {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.subtitle a:hover,
+.subtitle a:active,
+.subtitle a:focus {
+  color: white;
 }
 
 a {
-  color: #e7040f;
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: black;
+  color: white;
 }
