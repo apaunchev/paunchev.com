@@ -1,6 +1,6 @@
 html {
-  background-color: #222;
-  color: #bbb;
+  background-color: #151515;
+  color: white;
   font-family: -apple-system, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -21,21 +21,33 @@ body {
   margin: 0 0 -1rem;
 }
 
-.title a {
-  text-decoration: none;
-}
-
-.subtitle a {
-  color: #b1b1b1;
-  text-decoration: none;
-}
-
-.subtitle a:hover,
-.subtitle a:active,
-.subtitle a:focus {
-  color: white;
-}
-
 a {
   color: white;
+  border-bottom: 1px solid #6c6c6c;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  border-color: #8a8a8a;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
