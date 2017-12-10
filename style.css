@@ -8,10 +8,13 @@
 body {
   margin: 2rem;
   background-color: #fff;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fade-in;
 }
 
 main {
-  max-width: 30rem;
+  max-width: 500px;
 }
 
 h1 {
@@ -35,5 +38,15 @@ a {
 
   body {
     margin: 4rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
