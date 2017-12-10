@@ -1,14 +1,12 @@
 * {
-  font-family: -apple-system, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #faefde;
+  font: 18px/1.5 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: #222;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  margin: 1.5rem;
-  background-color: #2b3844;
+  margin: 2rem;
+  background-color: #fff;
 }
 
 main {
@@ -16,13 +14,17 @@ main {
 }
 
 h1 {
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
-  color: #f66169;
 }
 
 h1 + p {
   margin-top: 0;
+}
+
+a {
+  color: #f02311;
 }
 
 @media (min-width: 600px) {
@@ -31,6 +33,6 @@ h1 + p {
   }
 
   body {
-    margin: 3rem;
+    margin: 4rem;
   }
 }
