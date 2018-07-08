@@ -1,52 +1,102 @@
-* {
-  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
-    Roboto, "Helvetica Neue", sans-serif;
-  color: #222;
-  -webkit-font-smoothing: antialiased;
+:root {
+  --text-color: #444;
+  --meta-color: #b0b0b0;
+  --background-color: #fff;
+  --text-size: 18px;
+  --unit-size: 18px;
+  --content-width: 960px;
 }
 
 body {
-  margin: 2rem;
-  background-color: #fff;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: fade-in;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--text-size);
+  line-height: 1.5;
+  padding: 6vw;
 }
 
-main {
-  max-width: 500px;
+.site-header {
+  padding: 2vw 0;
+  max-width: var(--content-width);
 }
 
-h1 {
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0;
+.site-title {
+  margin: 0;
+  font-size: var(--text-size);
+  font-weight: 700;
 }
 
-h1 + p {
-  margin-top: 0;
+.site-title a[href] {
+  color: var(--text-color);
 }
 
-a {
-  color: #f02311;
+.site-content {
+  padding: 2vw 0;
+  max-width: var(--content-width);
 }
 
-@media (min-width: 600px) {
-  * {
-    font-size: 20px;
+.profile-photo img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.site-footer {
+  padding: 2vw 0;
+  max-width: var(--content-width);
+}
+
+.site-footer h2 {
+  margin: 0;
+}
+
+.horizontal-link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-link-list li {
+  padding-left: var(--unit-size);
+}
+
+.horizontal-link-list li:first-child {
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--text-size);
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a[href] {
+  color: var(--text-color);
+  border-bottom: 1px solid var(--meta-color);
+  text-decoration: none;
+}
+
+a[href]:hover {
+  text-decoration: none;
+  border-color: var(--text-color);
+}
+
+@media only screen and (min-width: 812px) {
+  .profile-photo {
+    float: right;
+    padding: var(--unit-size) 0 var(--unit-size) calc(var(--unit-size) * 4);
   }
 
-  body {
-    margin: 4rem;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+  .profile-photo img {
+    width: 128px;
   }
 }
