@@ -1,5 +1,5 @@
 {
-  "name": "paunchev.net",
+  "name": "paunchev.space",
   "version": "1.0.0",
   "scripts": {
     "dev": "browser-sync start --server --files \"*.css, *.html\""

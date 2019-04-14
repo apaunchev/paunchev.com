@@ -1,16 +1,7 @@
 :root {
-  --primary-color: #444;
-  --secondary-color: #c0c0c0;
+  --primary-text-color: #444;
+  --secondary-text-color: #1e90ff;
   --background-color: #fff;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-  text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -20,87 +11,66 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
-  padding: 0;
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.8rem;
-  line-height: 1.6;
-  color: var(--primary-color);
-}
-
-.container {
-  padding: 3rem;
-  max-width: 68rem;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 section {
-  margin-bottom: 3rem;
+  padding: 2em;
+  max-width: 35em;
 }
 
 .lead {
-  font-size: 2rem;
-}
-
-.photo {
-  width: 8rem;
-  margin-bottom: 1.5rem;
-  border-radius: 2px;
-}
-
-.vertical-list {
-  margin: 0 0 1.5rem;
-  padding: 0;
-  list-style-type: none;
-}
-
-.vertical-list li {
-  margin-bottom: 1.5rem;
-}
-
-.horizontal-list {
-  display: flex;
-  margin: 0 0 1.5rem;
-  padding: 0;
-  list-style-type: none;
-}
-
-.horizontal-list li {
-  margin-left: 1.5rem;
-}
-
-.horizontal-list li:first-child {
-  margin-left: 0;
+  font-size: 20px;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.8rem;
-  font-weight: 500;
+h2 {
+  margin-top: 2em;
+  font-size: 1em;
 }
 
 img {
-  vertical-align: bottom;
+  max-width: 100px;
+  border-radius: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  display: flex;
+  margin: 0.3em 0;
+}
+
+ul li span {
+  display: block;
+  width: calc(100% - 100px);
+}
+
+ul li span:first-child {
+  width: 100px;
 }
 
 a[href] {
-  color: var(--primary-color);
-  border-bottom: 1px solid var(--secondary-color);
+  color: var(--primary-text-color);
+  border-bottom: 1px solid var(--secondary-text-color);
   text-decoration: none;
 }
 
 a[href]:hover {
   text-decoration: none;
-  border-color: var(--primary-color);
+  color: var(--secondary-text-color);
 }
 
-@media only screen and (min-width: 812px) {
-  .container {
-    padding: 6rem;
+@media (min-width: 1000px) {
+  section {
+    margin: 3em;
   }
 }
