@@ -26,13 +26,12 @@ section {
 }
 
 .lead {
-  font-size: 20px;
+  font-size: 1.3em;
 }
 
-h1,
 h2 {
   margin-top: 2em;
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
 img {
@@ -42,20 +41,20 @@ img {
 
 ul {
   padding-left: 0;
+  list-style-type: none;
 }
 
 ul li {
-  display: flex;
-  margin: 0.3em 0;
-}
-
-ul li span {
   display: block;
-  width: calc(100% - 100px);
+  margin: 1em 0;
 }
 
-ul li span:first-child {
-  width: 100px;
+ul li div {
+  width: 100%;
+}
+
+ul li div:first-child {
+  width: 100%;
 }
 
 a[href] {
@@ -69,8 +68,21 @@ a[href]:hover {
   color: var(--secondary-text-color);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 720px) {
   section {
     margin: 3em;
+  }
+
+  ul li {
+    display: flex;
+    margin: 0.3em 0;
+  }
+
+  ul li div {
+    width: calc(100% - 6.5em);
+  }
+
+  ul li div:first-child {
+    width: 6.5em;
   }
 }
