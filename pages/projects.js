@@ -6,9 +6,9 @@ export default () => (
   <Layout>
     <h1>Projects</h1>
     <p>
-      In my spare time I like to work on side projects – little tools or
-      websites that solve a particular problem. Whenever the result is
-      presentable, I tend to make it public here.
+      This is a selection of projects that I recently worked on and am happy to
+      showcase. They solve a particular problem I had in a way that makes sense
+      to me.
     </p>
     {projects.map((p, i) => (
       <Project key={i} {...p} />
