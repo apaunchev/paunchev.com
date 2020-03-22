@@ -1,5 +1,5 @@
 export default ({
-  id: name,
+  name,
   description,
   url,
   repo = false,
