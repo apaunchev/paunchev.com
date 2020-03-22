@@ -1,7 +1,13 @@
-export default ({ id, description, url, repo = false, img = `${id}.png` }) => (
+export default ({
+  id: name,
+  description,
+  url,
+  repo = false,
+  img = `${name}.png`
+}) => (
   <div className="Project">
-    <h2 className="Project__title" id={id}>
-      <a href={`#${id}`}>{id}</a>
+    <h2 className="Project__title" id={name}>
+      <a href={`#${name}`}>{name}</a>
     </h2>
     <p className="Project__description">{description}</p>
     <p className="Project__links">
