@@ -184,16 +184,14 @@ blockquote {
 
 .Bookmark:hover,
 .Bookmark:focus {
-  cursor: pointer;
   text-decoration: none;
-  color: var(--font-color-secondary);
 }
 
-.Bookmark__title {
-  font-weight: 500;
-  font-size: 1.125rem;
+.Bookmark:hover .Bookmark__title {
+  text-decoration: underline;
 }
 
 .Bookmark__url {
   color: var(--font-color-secondary);
+  text-decoration: none;
 }
