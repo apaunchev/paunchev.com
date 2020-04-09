@@ -30,12 +30,4 @@ export default [
     repo: "apaunchev/Teamboard",
     img: "Teamboard.png"
   },
-  {
-    name: "MyTimeOff",
-    description:
-      "MyTimeOff is a planning tool for your vacations. You can use it to mark the days you would like to take off in a yearly calendar view. You can also bookmark special days (like public holidays) which will not count towards your planned days.",
-    url: "https://apaunchev.github.io/MyTimeOff/",
-    repo: "apaunchev/MyTimeOff",
-    img: "MyTimeOff.png"
-  }
 ];
