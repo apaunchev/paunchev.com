@@ -13,8 +13,8 @@ export default () => (
       future of digital event experiences.
     </p>
     <p>
-      I make tools to solve everyday problems; from managing personal finances,
-      to planning vacations, to visualizing work output, and more.{" "}
+      I make single-purpose web applications to solve everyday problems; from
+      managing personal finances to visualizing work output, and more.{" "}
       <Link href="/projects">
         <a>See projects →</a>
       </Link>
