@@ -16,14 +16,14 @@ export default () => (
       I make single-purpose web applications to solve everyday problems; from
       managing personal finances to visualizing work output, and more.{" "}
       <Link href="/projects">
-        <a>See projects →</a>
+        <a className="arrowed">See projects</a>
       </Link>
     </p>
     <p>
       I collect interesting and useful articles, guides, and snippets for future
       reference.{" "}
       <Link href="/bookmarks">
-        <a>See bookmarks →</a>
+        <a className="arrowed">See bookmarks</a>
       </Link>
     </p>
     <p>

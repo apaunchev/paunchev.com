@@ -3,7 +3,7 @@ export default ({
   description,
   url,
   repo = false,
-  img = `${name}.png`
+  img = `${name}.png`,
 }) => (
   <div className="Project">
     <h2 className="Project__title" id={name}>
@@ -11,9 +11,15 @@ export default ({
     </h2>
     <p className="Project__description">{description}</p>
     <p className="Project__links">
-      {url ? <a href={url}>View website →</a> : null}
+      {url ? (
+        <a className="arrowed" href={url}>
+          View website
+        </a>
+      ) : null}
       {repo ? (
-        <a href={`https://github.com/${repo}`}>View on GitHub →</a>
+        <a className="arrowed" href={`https://github.com/${repo}`}>
+          View on GitHub
+        </a>
       ) : null}
     </p>
     <p>

@@ -59,6 +59,14 @@ a:focus {
   text-decoration: underline;
 }
 
+.arrowed {
+  white-space: nowrap;
+}
+
+.arrowed::after {
+  content: " →";
+}
+
 h1 {
   margin-top: 0;
   margin-bottom: 1.5rem;
