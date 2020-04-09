@@ -11,7 +11,7 @@ export default [
     name: "Spender",
     description:
       "Spender is an app that helps you track how much you spend on subscriptions such as streaming services, mobile carriers, broadband and more. It will break down your spending per week, month or year, and will automatically convert currencies when needed.",
-    url: "https://spender.netlify.com/",
+    url: "https://spender.netlify.app/",
     repo: "apaunchev/Spender",
     img: "Spender.png"
   },
