@@ -1,11 +1,11 @@
 export default [
   {
-    name: "Budget planner",
+    name: "Budgeter",
     description:
-      "Budget planner is a personal finance tool designed to help you build healthy financial habits by visualizing your income, expenses and savings all in one place.",
-    url: "https://apaunchev.github.io/budget-planner/",
-    repo: "apaunchev/budget-planner",
-    img: "budget-planner.png"
+      "Budgeter is a personal finance tool designed to help you build healthy financial habits by visualizing your income, expenses and savings all in one place.",
+    url: "https://apaunchev.github.io/Budgeter",
+    repo: "apaunchev/Budgeter",
+    img: "Budgeter.png",
   },
   {
     name: "Spender",
