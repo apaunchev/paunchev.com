@@ -10,6 +10,11 @@ export default ({
       <a href={`#${name}`}>{name}</a>
     </h2>
     <p className="Project__description">{description}</p>
+    <p>
+      <a href={url}>
+        <img src={`/images/${img}`} />
+      </a>
+    </p>
     <p className="Project__links">
       {url ? (
         <a className="arrowed" href={url}>
@@ -21,11 +26,6 @@ export default ({
           View on GitHub
         </a>
       ) : null}
-    </p>
-    <p>
-      <a href={url}>
-        <img src={`/images/${img}`} />
-      </a>
     </p>
   </div>
 );
