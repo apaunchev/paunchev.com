@@ -2,7 +2,7 @@
   --background-color: #fff;
   --border-color: #ddd;
   --font-color-primary: #232323;
-  --font-color-secondary: #607d8b;
+  --font-color-secondary: #6b69d6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,7 +10,7 @@
     --background-color: #000205;
     --border-color: #cacaca;
     --font-color-primary: #f6f6f6;
-    --font-color-secondary: #bcbec2;
+    --font-color-secondary: #6b69d6;
   }
 }
 
