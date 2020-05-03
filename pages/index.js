@@ -5,31 +5,26 @@ export default () => (
   <Layout>
     <h1>About</h1>
     <p>
-      Hi! 👋 I build software in Sofia, Bulgaria. This is my space on the
-      internet.
+      👋 I build software in Sofia, Bulgaria. This is my space on the internet.
     </p>
     <p>
-      I work at <a href="https://spotme.com/">SpotMe</a> where we shape the
-      future of digital event experiences.
-    </p>
-    <p>
-      I make single-purpose web applications to solve everyday problems; from
-      managing personal finances to visualizing work output, and more.{" "}
+      As a hobby I make single-purpose web applications that solve a problem I
+      had; from managing personal finances to visualizing work output, and more.{" "}
       <Link href="/projects">
         <a className="arrowed">See projects</a>
       </Link>
     </p>
     <p>
-      I collect interesting and useful articles, guides, and snippets for future
-      reference.{" "}
+      I also collect articles and other interesting resources, just because it
+      is fun to go back to them in the future.{" "}
       <Link href="/bookmarks">
         <a className="arrowed">See bookmarks</a>
       </Link>
     </p>
     <p>
-      You may find more information about me on{" "}
-      <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a> and{" "}
-      <a href="https://www.goodreads.com/apaunchev">Goodreads</a>.
+      Read more about me on{" "}
+      <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a>, or{" "}
+      <a href="mailto:apaunchev@gmail.com">get in touch</a>.
     </p>
   </Layout>
 );
