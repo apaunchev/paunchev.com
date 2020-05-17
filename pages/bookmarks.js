@@ -1,8 +1,17 @@
-import Layout from "../components/Layout";
 import Bookmark from "../components/Bookmark";
-import bookmarks from "../data/bookmarks";
+import Layout from "../components/Layout";
+import { BASE_URL } from "../constants";
 
-export default () => (
+export async function getServerSideProps() {
+  const res = await fetch(`${BASE_URL}/api/pocket`);
+  const bookmarks = await res.json();
+
+  return {
+    props: { bookmarks },
+  };
+}
+
+export default ({ bookmarks }) => (
   <Layout>
     <h1>Bookmarks</h1>
     <div className="Bookmarks">
