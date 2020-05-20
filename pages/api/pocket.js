@@ -5,6 +5,13 @@ const pocket = new GetPocket({
   access_token: process.env.POCKET_ACCESS_TOKEN,
 });
 
+const colors = [
+  "rgb(251, 207, 213)",
+  "rgb(254, 237, 208)",
+  "rgb(187, 231, 229)",
+  "rgb(143, 213, 252)",
+];
+
 const cache = {
   lastFetch: null,
   data: [],
@@ -46,6 +53,9 @@ export default async (req, res) => {
         title: bookmark.resolved_title,
         url: bookmark.resolved_url,
         time_added: bookmark.time_added,
+        image: bookmark.top_image_url,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        excerpt: bookmark.excerpt,
       }))
       .sort((a, b) => b.time_added - a.time_added);
 

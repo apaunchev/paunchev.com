@@ -13,11 +13,13 @@ export async function getServerSideProps() {
 
 export default ({ bookmarks }) => (
   <Layout>
-    <h1>Bookmarks</h1>
-    <div className="Bookmarks">
-      {bookmarks.map((b, i) => (
-        <Bookmark key={i} {...b} />
-      ))}
+    <div className="Page Page--wide">
+      <h1>Bookmarks</h1>
+      <div className="Bookmarks">
+        {bookmarks.map((b, i) => (
+          <Bookmark key={i} {...b} />
+        ))}
+      </div>
     </div>
   </Layout>
 );

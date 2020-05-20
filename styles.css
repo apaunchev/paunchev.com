@@ -38,7 +38,6 @@ body {
 }
 
 main {
-  max-width: 45rem;
   padding: 2rem 1.5rem 4rem;
 }
 
@@ -68,15 +67,13 @@ a:focus {
 }
 
 h1 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 0rem;
+  margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -89,10 +86,18 @@ blockquote {
   font-size: 1.125rem;
 }
 
+.Page {
+  max-width: 35rem;
+}
+
+.Page--wide {
+  max-width: 70rem;
+}
+
 .Header {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 .Header__left {
@@ -113,7 +118,7 @@ blockquote {
 }
 
 .Title {
-  margin-bottom: 0rem;
+  margin: 0;
   font-size: 1.25rem;
 }
 
@@ -173,26 +178,51 @@ blockquote {
 
 .Bookmarks {
   display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
 }
 
 .Bookmark {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.5rem;
+}
+
+.Bookmark a {
   color: var(--font-color-primary);
   text-decoration: none;
 }
 
-.Bookmark > * {
-  margin: 0;
+.Bookmark__image {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  height: 18rem;
+  min-height: 18rem;
 }
 
-.Bookmark:hover,
-.Bookmark:focus {
-  text-decoration: none;
+.Bookmark__image__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Bookmark__image__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.Bookmark__title {
+  margin: 0;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .Bookmark:hover .Bookmark__title {
@@ -200,6 +230,15 @@ blockquote {
 }
 
 .Bookmark__url {
+  margin: 0 0 0.25rem;
   color: var(--font-color-secondary);
   text-decoration: none;
+}
+
+.Bookmark__excerpt {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
