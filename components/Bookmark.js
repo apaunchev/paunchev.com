@@ -1,10 +1,10 @@
 export default ({ title, url, image, color, excerpt }) => (
-  <div className="Bookmark">
+  <div className="GridItem">
     <a href={url}>
-      <figure className="Bookmark__image">
-        <div className="Bookmark__image__container">
+      <figure className="GridItem__image">
+        <div className="GridItem__image__container">
           <div
-            className="Bookmark__image__image"
+            className="GridItem__image__image"
             style={
               image
                 ? { backgroundImage: `url(${image})` }
@@ -13,13 +13,13 @@ export default ({ title, url, image, color, excerpt }) => (
           />
         </div>
       </figure>
-      <h2 className="Bookmark__title" title={title}>
+      <h2 className="GridItem__title" title={title}>
         {title}
       </h2>
-      <p className="Bookmark__url arrowed">
+      <p className="GridItem__url arrowed">
         {new URL(url).hostname || "View website"}
       </p>
-      <p className="Bookmark__excerpt">{excerpt}</p>
+      <p className="GridItem__description">{excerpt}</p>
     </a>
   </div>
 );

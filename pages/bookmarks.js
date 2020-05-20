@@ -15,7 +15,7 @@ export default ({ bookmarks }) => (
   <Layout>
     <div className="Page Page--wide">
       <h1>Bookmarks</h1>
-      <div className="Bookmarks">
+      <div className="Grid">
         {bookmarks.map((b, i) => (
           <Bookmark key={i} {...b} />
         ))}

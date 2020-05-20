@@ -176,37 +176,37 @@ blockquote {
   max-width: 100%;
 }
 
-.Bookmarks {
+.Grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1.5rem;
 }
 
-.Bookmark {
+.GridItem {
   display: flex;
   flex-direction: column;
   margin: 0 0 1.5rem;
 }
 
-.Bookmark a {
+.GridItem a {
   color: var(--font-color-primary);
   text-decoration: none;
 }
 
-.Bookmark__image {
+.GridItem__image {
   margin: 0 0 0.5rem;
   padding: 0;
   height: 18rem;
   min-height: 18rem;
 }
 
-.Bookmark__image__container {
+.GridItem__image__container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.Bookmark__image__image {
+.GridItem__image__image {
   position: absolute;
   top: 0;
   left: 0;
@@ -216,7 +216,7 @@ blockquote {
   background-position: center;
 }
 
-.Bookmark__title {
+.GridItem__title {
   margin: 0;
   font-size: 1.25rem;
   display: -webkit-box;
@@ -225,17 +225,17 @@ blockquote {
   overflow: hidden;
 }
 
-.Bookmark:hover .Bookmark__title {
+.GridItem:hover .GridItem__title {
   text-decoration: underline;
 }
 
-.Bookmark__url {
+.GridItem__url {
   margin: 0 0 0.25rem;
   color: var(--font-color-secondary);
   text-decoration: none;
 }
 
-.Bookmark__excerpt {
+.GridItem__description {
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 3;
