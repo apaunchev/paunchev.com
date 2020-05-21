@@ -5,26 +5,8 @@ const pocket = new GetPocket({
   access_token: process.env.POCKET_ACCESS_TOKEN,
 });
 
-const colors = [
-  "rgb(251, 207, 213)",
-  "rgb(254, 237, 208)",
-  "rgb(187, 231, 229)",
-  "rgb(143, 213, 252)",
-];
-
-const cache = {
-  lastFetch: null,
-  data: [],
-};
-
 const getBookmarks = () =>
-  new Promise((resolve, reject) => {
-    const timeSinceLastFetch = Date.now() - cache.lastFetch;
-
-    if (timeSinceLastFetch <= 3600000) {
-      return resolve(cache.data);
-    }
-
+  new Promise((resolve, reject) =>
     pocket.get(
       {
         favorite: "1",
@@ -35,14 +17,10 @@ const getBookmarks = () =>
           return reject(err);
         }
 
-        const bookmarks = res.list || [];
-        cache.lastFetch = Date.now();
-        cache.data = bookmarks;
-
-        return resolve(bookmarks);
+        return resolve(res.list || []);
       }
-    );
-  });
+    )
+  );
 
 export default async (req, res) => {
   try {
@@ -50,14 +28,14 @@ export default async (req, res) => {
     const bookmarks = Object.keys(response)
       .map((key) => response[key])
       .map((bookmark) => ({
+        id: bookmark.item_id,
         title: bookmark.resolved_title,
         url: bookmark.resolved_url,
-        time_added: bookmark.time_added,
-        image: bookmark.top_image_url,
-        color: colors[Math.floor(Math.random() * colors.length)],
+        timeAdded: bookmark.time_added,
+        imageSrc: bookmark.top_image_url,
         excerpt: bookmark.excerpt,
       }))
-      .sort((a, b) => b.time_added - a.time_added);
+      .sort((a, b) => b.timeAdded - a.timeAdded);
 
     res.status(200).json(bookmarks);
   } catch (error) {

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./Header";
 
-export default ({ children, title = "Angel Paunchev" }) => (
+export default ({ children, title }) => (
   <>
     <Head>
       <meta charSet="UTF-8" />
@@ -25,7 +25,7 @@ export default ({ children, title = "Angel Paunchev" }) => (
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
-      <title>{title}</title>
+      <title>{title ? `${title} - Angel Paunchev` : "Angel Paunchev"}</title>
     </Head>
     <main>
       <Header />

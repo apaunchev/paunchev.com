@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "src": "/images/(.*)",
+      "headers": { "cache-control": "s-maxage=604800" },
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "headers": { "cache-control": "s-maxage=3600" },
+      "dest": "/api/$1"
+    }
+  ]
+}

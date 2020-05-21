@@ -1,31 +1,16 @@
-export default ({
-  name,
-  description,
-  url,
-  repo = false,
-  img = `${name}.png`,
-}) => (
-  <div className="Project">
-    <h2 className="Project__title" id={name}>
-      <a href={`#${name}`}>{name}</a>
-    </h2>
-    <p className="Project__description">{description}</p>
-    <p>
-      <a href={url}>
-        <img src={`/images/${img}`} />
+import Link from "next/link";
+import Image from "./Image";
+
+export default ({ id, name, description, imageSrc }) => (
+  <div>
+    <Link href="/projects/[id]" as={`/projects/${id}`}>
+      <a className="BlockLink">
+        <Image className="BlockLink__image" src={imageSrc} />
+        <h2 className="BlockLink__title clamped clamped--1" title={name}>
+          {name} →
+        </h2>
       </a>
-    </p>
-    <p className="Project__links">
-      {url ? (
-        <a className="arrowed" href={url}>
-          View website
-        </a>
-      ) : null}
-      {repo ? (
-        <a className="arrowed" href={`https://github.com/${repo}`}>
-          View on GitHub
-        </a>
-      ) : null}
-    </p>
+    </Link>
+    <p className="mt-5 clamped clamped--3">{description}</p>
   </div>
 );

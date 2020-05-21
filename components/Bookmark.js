@@ -1,25 +1,16 @@
-export default ({ title, url, image, color, excerpt }) => (
-  <div className="GridItem">
-    <a href={url}>
-      <figure className="GridItem__image">
-        <div className="GridItem__image__container">
-          <div
-            className="GridItem__image__image"
-            style={
-              image
-                ? { backgroundImage: `url(${image})` }
-                : { backgroundColor: color }
-            }
-          />
-        </div>
-      </figure>
-      <h2 className="GridItem__title" title={title}>
+import Image from "./Image";
+
+export default ({ title, url, imageSrc, excerpt }) => (
+  <div>
+    <a className="BlockLink" href={url}>
+      <Image className="BlockLink__image" src={imageSrc} />
+      <h2 className="BlockLink__title clamped clamped--1" title={title}>
         {title}
       </h2>
-      <p className="GridItem__url arrowed">
+      <p className="BlockLink__url arrowed">
         {new URL(url).hostname || "View website"}
       </p>
-      <p className="GridItem__description">{excerpt}</p>
     </a>
+    <p className="mt-5 clamped clamped--3">{excerpt}</p>
   </div>
 );
