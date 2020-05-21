@@ -3,12 +3,14 @@
     {
       "src": "/images/(.*)",
       "headers": { "cache-control": "s-maxage=604800" },
-      "dest": "/images/$1"
+      "dest": "/images/$1",
+      "continue": true
     },
     {
       "src": "/api/(.*)",
       "headers": { "cache-control": "s-maxage=3600" },
-      "dest": "/api/$1"
+      "dest": "/api/$1",
+      "continue": true
     }
   ]
 }
