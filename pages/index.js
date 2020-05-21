@@ -1,7 +1,12 @@
 import Layout from "../components/Layout";
 
+const pageInfo = {
+  title: "About",
+  description: "I make software for the web. This is my space on the internet.",
+};
+
 export default () => (
-  <Layout>
+  <Layout {...pageInfo}>
     <div className="Page">
       <h1>About</h1>
       <p>

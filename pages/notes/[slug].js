@@ -7,8 +7,13 @@ export default ({ frontmatter, markdownBody }) => {
     return null;
   }
 
+  const pageInfo = {
+    title: frontmatter.title,
+    description: frontmatter.summary || markdownBody.substring(0, 200),
+  };
+
   return (
-    <Layout title={frontmatter.title}>
+    <Layout {...pageInfo}>
       <div className="Page">
         <article>
           <h1>{frontmatter.title}</h1>

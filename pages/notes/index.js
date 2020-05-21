@@ -3,18 +3,17 @@ import Link from "next/link";
 import Image from "../../components/Image";
 import Layout from "../../components/Layout";
 
+const pageInfo = {
+  title: "Notes",
+  description:
+    "A non-chronological and ever-evolving collection of notes, mostly addressed to myself.",
+};
+
 export default ({ notes }) => (
-  <Layout title="Notes">
+  <Layout {...pageInfo}>
     <div className="Page Page--wide">
-      <h1>Notes</h1>
-      <p className="lead">
-        This is a non-chronological and ever-evolving collection of notes,
-        mostly addressed to myself. A{" "}
-        <a className="arrowed" href="https://joelhooks.com/digital-garden">
-          digital garden
-        </a>{" "}
-        of sorts.
-      </p>
+      <h1>{pageInfo.title}</h1>
+      <p className="lead">{pageInfo.description}</p>
       <div className="Grid">
         {notes.map((note) => (
           <article key={note.slug}>
