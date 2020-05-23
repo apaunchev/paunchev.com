@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const pageInfo = {
   title: "About",
@@ -10,12 +11,12 @@ export default () => (
     <div className="Page">
       <h1>About</h1>
       <p>
-        👋 Hi, I’m Angel. I make software for the web. This is my space on the
+        👋 Hi, I am Angel. I make software for the web. This is my space on the
         internet.
       </p>
       <p>
-        I’ve been building websites for over 10 years. I specialize in front-end
-        development (which makes me{" "}
+        I have been building websites for over 10 years; I specialize in
+        front-end web development (which makes me{" "}
         <a
           className="arrowed"
           href="https://css-tricks.com/the-all-powerful-front-end-developer/"
@@ -26,19 +27,32 @@ export default () => (
         user and the developer.
       </p>
       <p>
-        In my free time I work on pet projects, play video games, read books,
-        and try to be a decent human being as much as possible.
+        In my free time I work on pet{" "}
+        <Link href="/projects">
+          <a>projects</a>
+        </Link>
+        , play video games, read{" "}
+        <a
+          className="arrowed"
+          href="https://www.goodreads.com/user/show/40107870-angel-paunchev"
+        >
+          books
+        </a>
+        , and try to be a decent human being as much as possible.
       </p>
       <p className="flex-row">
+        <a className="arrowed" href="mailto:apaunchev@gmail.com">
+          Email
+        </a>
         <a className="arrowed" href="https://github.com/apaunchev">
           GitHub
         </a>
         <a className="arrowed" href="https://www.linkedin.com/in/apaunchev/">
           LinkedIn
         </a>
-        <a className="arrowed" href="mailto:apaunchev@gmail.com">
-          Email
-        </a>
+        <Link href="/cv">
+          <a>CV →</a>
+        </Link>
       </p>
     </div>
   </Layout>

@@ -4,7 +4,7 @@ title: "Fixed vs growth mindset"
 
 There is one very important concept that I think everyone should learn as early in life as possible, and that is the difference between having a fixed mindset and having a growth mindset.
 
-People with a fixed mindset believe that if they are good or bad at something, it's because they were born that way and that’s just part of who they are.
+People with a fixed mindset believe that if they are good or bad at something, it’s because they were born that way and that’s just part of who they are.
 
 People with a growth mindset believe that they can get good at anything, because their abilities are entirely dependent on their actions.
 

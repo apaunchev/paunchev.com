@@ -3,6 +3,7 @@
   --border-color: #ddd;
   --font-color-primary: #232323;
   --font-color-secondary: #6b69d6;
+  --font-color-meta: #737373;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
     --border-color: #cacaca;
     --font-color-primary: #f6f6f6;
     --font-color-secondary: #6b69d6;
+    --font-color-meta: #737373;
   }
 }
 
@@ -65,9 +67,21 @@ h1 {
 }
 
 h2 {
-  margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+section h2 {
+  border-bottom: 2px solid black;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 blockquote {
@@ -164,6 +178,10 @@ figure img {
   margin-bottom: 0.5rem;
 }
 
+.BlockLink__title {
+  margin: 0;
+}
+
 .BlockLink:hover,
 .BlockLink:focus {
   text-decoration: none;
@@ -203,6 +221,7 @@ figure img {
 
 .flex-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-row > * {
@@ -240,11 +259,33 @@ figure img {
   -webkit-line-clamp: 3;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mt-5 {
   margin-top: 0.5rem;
 }
 
-.lead {
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.text-lead {
   margin: 1.5rem 0;
   font-size: 1.125rem;
+}
+
+.text-meta {
+  color: var(--font-color-meta);
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
 }

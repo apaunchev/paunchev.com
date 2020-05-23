@@ -13,7 +13,7 @@ export default ({ notes }) => (
   <Layout {...pageInfo}>
     <div className="Page Page--wide">
       <h1>{pageInfo.title}</h1>
-      <p className="lead">{pageInfo.description}</p>
+      <p className="text-lead">{pageInfo.description}</p>
       <div className="Grid">
         {notes.map((note) => (
           <article key={note.slug}>
