@@ -30,7 +30,8 @@ export default ({ notes }) => (
               </a>
             </Link>
             <p className="mt-5 clamped clamped--3">
-              {note.frontmatter.summary || note.markdownBody.substring(0, 200)}
+              {note.frontmatter.summary ||
+                note.markdownBody.substring(0, 200).trim()}
             </p>
           </article>
         ))}
