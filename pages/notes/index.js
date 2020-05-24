@@ -7,7 +7,7 @@ import { shuffle } from "../../constants";
 const pageInfo = {
   title: "Notes",
   description:
-    "A non-chronological and ever-evolving collection of notes, mostly addressed to myself.",
+    "A non-chronological, ever-evolving collection of notes. Mostly addressed to myself.",
 };
 
 export default ({ notes }) => (
