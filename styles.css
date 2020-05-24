@@ -2,17 +2,17 @@
   --background-color: #fff;
   --border-color: #ddd;
   --font-color-primary: #232323;
-  --font-color-secondary: #6b69d6;
-  --font-color-meta: #737373;
+  --font-color-secondary: #ab0a41;
+  --font-color-meta: #585858;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #000205;
+    --background-color: #252525;
     --border-color: #cacaca;
-    --font-color-primary: #f6f6f6;
-    --font-color-secondary: #6b69d6;
-    --font-color-meta: #737373;
+    --font-color-primary: #e2e2e2;
+    --font-color-secondary: #ff99bd;
+    --font-color-meta: #b3b3b3;
   }
 }
 
@@ -72,7 +72,7 @@ h2 {
 }
 
 section h2 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--font-color-primary);
 }
 
 h3 {
@@ -87,9 +87,9 @@ h4 {
 blockquote {
   margin: 1rem 0;
   padding: 0 1rem 0 1rem;
-  border-left: 0.25rem solid var(--border-color);
-  color: var(--font-color-secondary);
+  border-left: 0.25rem solid var(--font-color-secondary);
   font-size: 1.125rem;
+  font-style: italic;
 }
 
 figure {
