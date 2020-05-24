@@ -24,7 +24,9 @@ export default ({ notes }) => (
                   className="BlockLink__image"
                   src={note.frontmatter.imageSrc}
                 />
-                <h2 className="BlockLink__title">{note.frontmatter.title} →</h2>
+                <h2 className="BlockLink__title clamped clamped--1">
+                  {note.frontmatter.title} →
+                </h2>
               </a>
             </Link>
             <p className="mt-5 clamped clamped--3">
