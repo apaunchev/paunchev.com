@@ -18,7 +18,7 @@ export default ({ frontmatter, markdownBody }) => {
         <article>
           <h1>{frontmatter.title}</h1>
           <div>
-            <ReactMarkdown source={markdownBody} />
+            <ReactMarkdown source={markdownBody} escapeHtml={false} />
           </div>
         </article>
       </div>
