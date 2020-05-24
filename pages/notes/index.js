@@ -2,6 +2,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "../../components/Image";
 import Layout from "../../components/Layout";
+import { shuffle } from "../../constants";
 
 const pageInfo = {
   title: "Notes",
@@ -56,7 +57,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      notes,
+      notes: shuffle(notes),
     },
   };
 }
