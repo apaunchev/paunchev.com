@@ -1,16 +1,13 @@
 {
-  "routes": [
+  "headers": [
     {
-      "src": "/images/(.*)",
-      "headers": { "cache-control": "s-maxage=604800" },
-      "dest": "/images/$1",
-      "continue": true
-    },
-    {
-      "src": "/api/(.*)",
-      "headers": { "cache-control": "s-maxage=3600" },
-      "dest": "/api/$1",
-      "continue": true
+      "source": "/api/pocket",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=60"
+        }
+      ]
     }
   ]
 }
