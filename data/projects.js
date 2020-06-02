@@ -1,5 +1,13 @@
 export default [
   {
+    id: "it-salaries",
+    name: "IT Salaries",
+    description: "Keep track of salary levels on the Bulgarian IT job market.",
+    url: "https://it-salaries-bulgaria.now.sh",
+    repoUrl: "https://github.com/apaunchev/IT-Salaries-Bulgaria",
+    imageSrc: "/images/projects/ITSalaries.png",
+  },
+  {
     id: "spender",
     name: "Spender",
     description:
