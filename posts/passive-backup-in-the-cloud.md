@@ -1,5 +1,6 @@
 ---
 title: "Passive backup in the cloud"
+postedAt: "2020-05-24"
 ---
 
 For a long time I have been looking for a workflow that would enable me to:

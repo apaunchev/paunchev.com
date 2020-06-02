@@ -1,5 +1,6 @@
 ---
 title: "Fixed vs growth mindset"
+postedAt: "2020-05-20"
 ---
 
 There is one very important concept that I think everyone should learn as early in life as possible, and that is the difference between having a fixed mindset and having a growth mindset.

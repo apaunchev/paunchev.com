@@ -2,36 +2,35 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "../../components/Image";
 import Layout from "../../components/Layout";
-import { shuffle } from "../../constants";
 
 const pageInfo = {
-  title: "Notes",
+  title: "Writing",
   description:
-    "A non-chronological, ever-evolving collection of notes. Mostly addressed to myself.",
+    "Short posts and articles. Mostly written for myself, but I hope you find something useful too.",
 };
 
-export default ({ notes }) => (
+export default ({ posts }) => (
   <Layout {...pageInfo}>
     <div className="Page Page--wide">
       <h1>{pageInfo.title}</h1>
       <p className="text-lead">{pageInfo.description}</p>
       <div className="Grid">
-        {notes.map((note) => (
-          <article key={note.slug}>
-            <Link href="/notes/[slug]" as={`/notes/${note.slug}`}>
+        {posts.map((post) => (
+          <article key={post.slug}>
+            <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
               <a className="BlockLink">
                 <Image
                   className="BlockLink__image"
-                  src={note.frontmatter.imageSrc}
+                  src={post.frontmatter.imageSrc}
                 />
                 <h2 className="BlockLink__title clamped clamped--1">
-                  {note.frontmatter.title} →
+                  {post.frontmatter.title} →
                 </h2>
               </a>
             </Link>
             <p className="mt-5 clamped clamped--3">
-              {note.frontmatter.summary ||
-                note.markdownBody.substring(0, 200).trim()}
+              {post.frontmatter.summary ||
+                post.markdownBody.substring(0, 200).trim()}
             </p>
           </article>
         ))}
@@ -41,7 +40,7 @@ export default ({ notes }) => (
 );
 
 export async function getStaticProps() {
-  const notes = ((context) => {
+  const posts = ((context) => {
     const keys = context.keys();
     const values = keys.map(context);
 
@@ -56,11 +55,16 @@ export async function getStaticProps() {
         slug,
       };
     });
-  })(require.context("../../notes", true, /\.md$/));
+  })(require.context("../../posts", true, /\.md$/));
 
   return {
     props: {
-      notes: shuffle(notes),
+      posts: posts
+        .filter((n) => n.frontmatter.postedAt)
+        .sort(
+          (a, b) =>
+            new Date(b.frontmatter.postedAt) - new Date(a.frontmatter.postedAt)
+        ),
     },
   };
 }

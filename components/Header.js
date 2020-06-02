@@ -14,8 +14,8 @@ export default () => (
         <Link href="/projects">
           <a>Projects</a>
         </Link>
-        <Link href="/notes">
-          <a>Notes</a>
+        <Link href="/posts">
+          <a>Writing</a>
         </Link>
         <Link href="/bookmarks">
           <a>Bookmarks</a>

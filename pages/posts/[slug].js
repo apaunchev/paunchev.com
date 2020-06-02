@@ -17,6 +17,9 @@ export default ({ frontmatter, markdownBody }) => {
       <div className="Page">
         <article>
           <h1>{frontmatter.title}</h1>
+          {frontmatter.updatedAt ? (
+            <p>Last updated: {frontmatter.updatedAt}.</p>
+          ) : null}
           <div>
             <ReactMarkdown source={markdownBody} escapeHtml={false} />
           </div>
@@ -28,7 +31,7 @@ export default ({ frontmatter, markdownBody }) => {
 
 export async function getStaticProps(context) {
   const { slug } = context.params;
-  const content = await import(`../../notes/${slug}.md`);
+  const content = await import(`../../posts/${slug}.md`);
   const data = matter(content.default);
 
   return {
@@ -44,8 +47,8 @@ export async function getStaticPaths() {
     const keys = context.keys();
 
     return keys.map((key) => key.replace(/^.*[\\\/]/, "").slice(0, -3));
-  })(require.context("../../notes", true, /\.md$/));
-  const paths = slugs.map((slug) => `/notes/${slug}`);
+  })(require.context("../../posts", true, /\.md$/));
+  const paths = slugs.map((slug) => `/posts/${slug}`);
 
   return {
     paths,
