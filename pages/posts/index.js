@@ -4,7 +4,7 @@ import Image from "../../components/Image";
 import Layout from "../../components/Layout";
 
 const pageInfo = {
-  title: "Writing",
+  title: "Articles",
   description:
     "Short posts and articles. Mostly written for myself, but I hope you find something useful too.",
 };
