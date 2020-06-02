@@ -6,7 +6,7 @@ export default [
       "Spender is a personal finance app that helps you track how much you spend on subscriptions and other fixed expenses.",
     url: "https://spender.netlify.app",
     repoUrl: "https://github.com/apaunchev/Spender",
-    imageSrc: "/images/Spender.png",
+    imageSrc: "/images/projects/Spender.png",
   },
   {
     id: "daily-splash",
@@ -16,7 +16,7 @@ export default [
     url:
       "https://chrome.google.com/webstore/detail/daily-splash/mhllelegiafiipppnijnbombjinhceho",
     repoUrl: "https://github.com/apaunchev/DailySplash",
-    imageSrc: "/images/DailySplash.jpg",
+    imageSrc: "/images/projects/DailySplash.jpg",
   },
   {
     id: "gitobserve",
@@ -25,7 +25,7 @@ export default [
       "GitObserve is a tool for tracking open pull requests and releases across multiple GitHub repositories.",
     url: "https://apaunchev.github.io/GitObserve",
     repoUrl: "https://github.com/apaunchev/GitObserve",
-    imageSrc: "/images/GitObserve.png",
+    imageSrc: "/images/projects/GitObserve.png",
   },
   {
     id: "budgeter",
@@ -34,7 +34,7 @@ export default [
       "Budgeter is a personal finance app that helps you build healthy financial habits by visualizing your income, expenses and savings in one place.",
     url: "https://apaunchev.github.io/Budgeter",
     repoUrl: "https://github.com/apaunchev/Budgeter",
-    imageSrc: "/images/Budgeter.png",
+    imageSrc: "/images/projects/Budgeter.png",
   },
   {
     id: "teamboard",
@@ -43,6 +43,6 @@ export default [
       "Teamboard is a dashboard app that can be used to aggregate and visualize metrics about a software development organization.",
     url: "https://github.com/apaunchev/Teamboard",
     repoUrl: "https://github.com/apaunchev/Teamboard",
-    imageSrc: "/images/Teamboard.png",
+    imageSrc: "/images/projects/Teamboard.png",
   },
 ];
