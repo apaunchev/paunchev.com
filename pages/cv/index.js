@@ -31,6 +31,18 @@ export default () => (
           <ol className="list-unstyled">
             <li>
               <h3 className="mb-0">
+                eBag{" "}
+                <small>
+                  (<a href="https://ebag.bg">ebag.bg</a>)
+                </small>
+              </h3>
+              <ol className="list-unstyled">
+                <h4 className="mt-5 mb-0">Lead Front-End Developer</h4>
+                <p className="my-0 text-meta">June 2020 – present</p>
+              </ol>
+            </li>
+            <li>
+              <h3 className="mb-0">
                 SpotMe{" "}
                 <small>
                   (<a href="https://spotme.com">spotme.com</a>)
