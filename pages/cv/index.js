@@ -22,7 +22,7 @@ export default () => (
             front-end web development. I aim for simple yet effective solutions
             that bring joy to both the user and the developer. I have also been
             in charge of development teams and, working closely with product and
-            project management, have succesfully delivered web and mobile
+            project management, have successfully delivered web and mobile
             solutions to customers around the world.
           </p>
         </section>
@@ -37,7 +37,7 @@ export default () => (
                 </small>
               </h3>
               <ol className="list-unstyled">
-                <h4 className="mt-5 mb-0">Lead Front-End Developer</h4>
+                <h4 className="mt-5 mb-0">Lead Front-end Engineer</h4>
                 <p className="my-0 text-meta">June 2020 – present</p>
               </ol>
             </li>
@@ -51,67 +51,31 @@ export default () => (
               <ol className="list-unstyled">
                 <h4 className="mt-5 mb-0">Team Lead, Packages</h4>
                 <p className="my-0 text-meta">Nov 2018 – Apr 2020</p>
-                <ul className="mt-5">
-                  <li>
-                    Lead a software engineering team responsible for developing
-                    and supporting 100+ software packages built on top of a
-                    JavaScript/iOS/Android platform
-                  </li>
-                  <li>
-                    Collaborate with product managers, designers and architects
-                    to translate stories into effective technical solutions
-                  </li>
-                  <li>
-                    Plan and execute software releases; manage team dependencies
-                    and resolve post-release defects
-                  </li>
-                  <li>
-                    Implement features and bug fixes; perform code reviews,
-                    coach team members
-                  </li>
-                  <li>
-                    Implement Scrum from scratch; facilitate standups,
-                    plannings, demos and retrospectives; complete 12+ sprints
-                    with stable velocity rates
-                  </li>
-                </ul>
+                <p className="mt-5">
+                  Lead a development team responsible for an ecosystem of 100+
+                  software packages built on top of a web/mobile platform.
+                  Collaborate with product managers, designers and architects on
+                  delivering features and platform improvements. Plan and
+                  execute releases; manage team dependencies and resolve
+                  post-release defects. Facilitate scrum meetings, coach team
+                  members and perform code reviews.
+                </p>
                 <h4 className="mb-0">Customization Manager</h4>
                 <p className="my-0 text-meta">Jun 2016 – Oct 2018</p>
-                <ul className="mt-5">
-                  <li>
-                    Lead a software development team within the professional
-                    services department
-                  </li>
-                  <li>
-                    Collaborate with project implementation managers to
-                    translate complex customer requirements into effective
-                    technical solutions
-                  </li>
-                  <li>
-                    Drive the implementation of internal software components and
-                    features, from initial design to long-term maintenance
-                  </li>
-                  <li>
-                    Implement features and bug fixes; perform code reviews,
-                    coach team members
-                  </li>
-                </ul>
+                <p className="mt-5">
+                  Lead a development team and collaborate with project
+                  management to deliver customized features for clients and
+                  internal teams. Drive implementation – from initial design, to
+                  development, to delivery, to long-term maintenance. Coach team
+                  members and perform code reviews.
+                </p>
                 <h4 className="mb-0">Customization Developer</h4>
                 <p className="my-0 text-meta">Aug 2015 – May 2016</p>
-                <ul className="mt-5">
-                  <li>
-                    Develop customized software components using AngularJS,
-                    Node.js, CouchDB
-                  </li>
-                  <li>
-                    Liaise between services and engineering teams to resolve
-                    technical issues on production systems
-                  </li>
-                  <li>
-                    Implement fixes and improvements based on recurring support
-                    cases
-                  </li>
-                </ul>
+                <p className="mt-5">
+                  Develop customized features for clients and internal teams
+                  using AngularJS, Node.js, CouchDB. Support internal teams in
+                  delivering the perfect experience.
+                </p>
               </ol>
             </li>
           </ol>
