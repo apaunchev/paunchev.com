@@ -9,14 +9,15 @@
     "export": "yarn build && next export"
   },
   "dependencies": {
+    "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
     "next": "^9.4.0",
     "node-getpocket": "^1.0.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
-    "raw-loader": "^4.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-markdown": "^4.3.1"
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2"
   }
 }

@@ -1,9 +1,7 @@
 ---
 title: "Know your worth"
-postedAt: "2020-06-01"
-summary: "I shipped a new website called IT Salaries. It is targeted at the Bulgarian IT community and offers a way to keep track of current salary levels, both across the market and for specific positions and companies."
+date: "2020-06-01T12:00:00.000Z"
 ---
-
 I shipped a new website called [IT Salaries](https://it-salaries-bulgaria.now.sh). It is targeted at the Bulgarian IT community and offers a way to keep track of current salary levels, both across the market and for specific positions and companies. Read on to understand why and how I built it.
 
 ## Why

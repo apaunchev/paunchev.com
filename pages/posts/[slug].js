@@ -1,57 +1,48 @@
-import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
+import Post from "../../components/Post";
+import markdownToHtml from "../../lib/markdownToHtml";
+import { getAllPosts, getPostBySlug } from "../../lib/posts";
 
-export default ({ frontmatter, markdownBody }) => {
-  if (!frontmatter) {
-    return null;
-  }
-
+export default ({ post }) => {
   const pageInfo = {
-    title: frontmatter.title,
-    description: frontmatter.summary || markdownBody.substring(0, 200),
+    title: post?.title,
+    description: post?.summary,
   };
 
   return (
     <Layout {...pageInfo}>
       <div className="Page">
-        <article>
-          <h1>{frontmatter.title}</h1>
-          {frontmatter.updatedAt ? (
-            <p>Last updated: {frontmatter.updatedAt}.</p>
-          ) : null}
-          <div>
-            <ReactMarkdown source={markdownBody} escapeHtml={false} />
-          </div>
-        </article>
+        <Post post={post} />
       </div>
     </Layout>
   );
 };
 
-export async function getStaticProps(context) {
-  const { slug } = context.params;
-  const content = await import(`../../posts/${slug}.md`);
-  const data = matter(content.default);
+export async function getStaticProps({ params }) {
+  const post = getPostBySlug(params.slug, ["title", "date", "slug", "content"]);
+  const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
-      frontmatter: data.data,
-      markdownBody: data.content,
+      post: {
+        ...post,
+        content,
+      },
     },
   };
 }
 
 export async function getStaticPaths() {
-  const slugs = ((context) => {
-    const keys = context.keys();
-
-    return keys.map((key) => key.replace(/^.*[\\\/]/, "").slice(0, -3));
-  })(require.context("../../posts", true, /\.md$/));
-  const paths = slugs.map((slug) => `/posts/${slug}`);
+  const posts = getAllPosts(["slug"]);
 
   return {
-    paths,
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      };
+    }),
     fallback: false,
   };
 }

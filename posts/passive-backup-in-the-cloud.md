@@ -1,8 +1,7 @@
 ---
 title: "Passive backup in the cloud"
-postedAt: "2020-05-24"
+date: "2020-05-24T12:00:00.000Z"
 ---
-
 For a long time I have been looking for a workflow that would enable me to:
 
 1. Have a fresh backup of my project files at all times
