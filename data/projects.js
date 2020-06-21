@@ -8,15 +8,6 @@ export default [
     imageSrc: "/images/projects/ITSalaries.png",
   },
   {
-    id: "spender",
-    name: "Spender",
-    description:
-      "Spender is a personal finance app that helps you track how much you spend on subscriptions and other fixed expenses.",
-    url: "https://spender.netlify.app",
-    repoUrl: "https://github.com/apaunchev/Spender",
-    imageSrc: "/images/projects/Spender.png",
-  },
-  {
     id: "daily-splash",
     name: "Daily Splash",
     description:
@@ -27,13 +18,13 @@ export default [
     imageSrc: "/images/projects/DailySplash.jpg",
   },
   {
-    id: "gitobserve",
-    name: "GitObserve",
+    id: "spender",
+    name: "Spender",
     description:
-      "GitObserve is a tool for tracking open pull requests and releases across multiple GitHub repositories.",
-    url: "https://apaunchev.github.io/GitObserve",
-    repoUrl: "https://github.com/apaunchev/GitObserve",
-    imageSrc: "/images/projects/GitObserve.png",
+      "Spender is a personal finance app that helps you track how much you spend on subscriptions and other fixed expenses.",
+    url: "https://spender.netlify.app",
+    repoUrl: "https://github.com/apaunchev/Spender",
+    imageSrc: "/images/projects/Spender.png",
   },
   {
     id: "budgeter",
@@ -43,6 +34,15 @@ export default [
     url: "https://apaunchev.github.io/Budgeter",
     repoUrl: "https://github.com/apaunchev/Budgeter",
     imageSrc: "/images/projects/Budgeter.png",
+  },
+  {
+    id: "gitobserve",
+    name: "GitObserve",
+    description:
+      "GitObserve is a tool for tracking open pull requests and releases across multiple GitHub repositories.",
+    url: "https://apaunchev.github.io/GitObserve",
+    repoUrl: "https://github.com/apaunchev/GitObserve",
+    imageSrc: "/images/projects/GitObserve.png",
   },
   {
     id: "teamboard",
