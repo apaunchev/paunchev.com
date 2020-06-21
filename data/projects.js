@@ -39,7 +39,7 @@ export default [
     id: "gitobserve",
     name: "GitObserve",
     description:
-      "GitObserve is a tool for tracking open pull requests and releases across multiple GitHub repositories.",
+      "GitObserve is a tool for tracking open pull requests across multiple GitHub repositories.",
     url: "https://apaunchev.github.io/GitObserve",
     repoUrl: "https://github.com/apaunchev/GitObserve",
     imageSrc: "/images/projects/GitObserve.png",
