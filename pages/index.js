@@ -32,12 +32,9 @@ export default () => (
           <a>projects</a>
         </Link>
         , play video games, read{" "}
-        <a
-          className="arrowed"
-          href="https://www.goodreads.com/user/show/40107870-angel-paunchev"
-        >
-          books
-        </a>
+        <Link href="/books">
+          <a>books</a>
+        </Link>
         , and try to be a decent human being as much as possible.
       </p>
       <p className="flex-row">

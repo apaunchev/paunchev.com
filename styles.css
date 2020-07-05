@@ -248,6 +248,21 @@ figcaption {
   text-decoration: underline;
 }
 
+.Book {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.Book__cover {
+  width: 100px;
+  height: 150px;
+  margin-right: 1rem;
+}
+
+.Book__details > * {
+  margin: 0;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
