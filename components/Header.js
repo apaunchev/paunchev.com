@@ -15,7 +15,10 @@ export default () => (
           <a>Projects</a>
         </Link>
         <Link href="/posts">
-          <a>Writing</a>
+          <a>Blog</a>
+        </Link>
+        <Link href="/books">
+          <a>Books</a>
         </Link>
         <Link href="/bookmarks">
           <a>Bookmarks</a>
