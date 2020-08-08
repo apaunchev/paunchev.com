@@ -1,6 +1,6 @@
 import Image from "./Image";
 
-export default ({ title, url, imageSrc, excerpt }) => (
+const Bookmark = ({ title, url, imageSrc, excerpt }) => (
   <div>
     <a className="BlockLink" href={url}>
       <Image className="BlockLink__image" src={imageSrc} />
@@ -14,3 +14,5 @@ export default ({ title, url, imageSrc, excerpt }) => (
     <p className="mt-5 clamped clamped--3">{excerpt}</p>
   </div>
 );
+
+export default Bookmark;

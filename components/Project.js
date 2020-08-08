@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "./Image";
 
-export default ({ id, name, description, imageSrc }) => (
+const Project = ({ id, name, description, imageSrc }) => (
   <div>
     <Link href="/projects/[id]" as={`/projects/${id}`}>
       <a className="BlockLink">
@@ -14,3 +14,5 @@ export default ({ id, name, description, imageSrc }) => (
     <p className="mt-5 clamped clamped--3">{description}</p>
   </div>
 );
+
+export default Project;

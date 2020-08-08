@@ -1,7 +1,7 @@
-import { format, parseISO } from "date-fns";
+const DateFormater = ({ dateString, locale = "en-GB", options = {} }) => (
+  <time dateTime={dateString}>
+    {new Date(dateString).toLocaleDateString(locale, options)}
+  </time>
+);
 
-export default function DateFormater({ dateString }) {
-  const date = parseISO(dateString);
-
-  return <time dateTime={dateString}>{format(date, "d LLLL, yyyy")}</time>;
-}
+export default DateFormater;

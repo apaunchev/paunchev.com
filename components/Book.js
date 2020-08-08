@@ -1,4 +1,7 @@
-export default ({ rating, book }) => {
+import DateFormater from "./DateFormatter";
+import { isEmpty } from "../lib/utils";
+
+const Book = ({ rating, finished, started, book }) => {
   rating =
     rating !== "0" ? `${"★".repeat(rating)}${"☆".repeat(5 - rating)}` : null;
 
@@ -15,9 +18,20 @@ export default ({ rating, book }) => {
         <p>
           <a href={book.url}>{book.title}</a>
         </p>
-        <p>{book.author}</p>
-        {rating && <p>{rating}</p>}
+        <p>Author: {book.author}</p>
+        {!isEmpty(finished) ? (
+          <p>
+            Finished: <DateFormater dateString={finished} />
+          </p>
+        ) : !isEmpty(started) ? (
+          <p>
+            Started: <DateFormater dateString={started} />
+          </p>
+        ) : null}
+        {rating ? <p>My rating: {rating}</p> : null}
       </div>
     </div>
   );
 };
+
+export default Book;

@@ -11,7 +11,7 @@ const getRandomColor = () => {
   return colors[Math.floor(Math.random() * colors.length)];
 };
 
-export default ({ src, ...rest }) => {
+const Image = ({ src, ...rest }) => {
   const [color, setColor] = useState(null);
 
   useEffect(() => setColor(getRandomColor()), []);
@@ -31,3 +31,5 @@ export default ({ src, ...rest }) => {
     </figure>
   );
 };
+
+export default Image;

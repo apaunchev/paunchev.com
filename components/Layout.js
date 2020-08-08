@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./Header";
 
-export default ({ children, title, description }) => (
+const Layout = ({ children, title, description }) => (
   <>
     <Head>
       <meta charSet="utf-8" />
@@ -33,3 +33,5 @@ export default ({ children, title, description }) => (
     </main>
   </>
 );
+
+export default Layout;

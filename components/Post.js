@@ -1,6 +1,6 @@
 import DateFormater from "./DateFormatter";
 
-export default ({ post }) => (
+const Post = ({ post }) => (
   <article key={post.slug} className="Post">
     <h1 className="my-0">{post.title}</h1>
     <div className="text-meta">
@@ -9,3 +9,5 @@ export default ({ post }) => (
     <div dangerouslySetInnerHTML={{ __html: post.content }} />
   </article>
 );
+
+export default Post;

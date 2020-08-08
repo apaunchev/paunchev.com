@@ -1,6 +1,6 @@
-import Link from "./Link";
+import SiteLink from "./SiteLink";
 
-export default () => (
+const Header = () => (
   <header className="Header">
     <div>
       <img className="Avatar" src="/images/me.jpg" alt="Photo of Angel" />
@@ -8,22 +8,24 @@ export default () => (
     <div>
       <h1 className="Title">Angel Paunchev</h1>
       <nav className="Navigation">
-        <Link href="/">
+        <SiteLink href="/">
           <a>About</a>
-        </Link>
-        <Link href="/projects">
+        </SiteLink>
+        <SiteLink href="/projects">
           <a>Projects</a>
-        </Link>
-        <Link href="/posts">
+        </SiteLink>
+        <SiteLink href="/posts">
           <a>Blog</a>
-        </Link>
-        <Link href="/books">
+        </SiteLink>
+        <SiteLink href="/books">
           <a>Books</a>
-        </Link>
-        <Link href="/bookmarks">
+        </SiteLink>
+        <SiteLink href="/bookmarks">
           <a>Bookmarks</a>
-        </Link>
+        </SiteLink>
       </nav>
     </div>
   </header>
 );
+
+export default Header;

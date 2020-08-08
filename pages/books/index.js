@@ -7,7 +7,7 @@ const pageInfo = {
   description: "Books I am currently reading or have read previously.",
 };
 
-export default ({ currently, previously }) => (
+const BooksPage = ({ currently, previously }) => (
   <Layout {...pageInfo}>
     <div className="Page">
       <h1>{pageInfo.title}</h1>
@@ -53,3 +53,5 @@ export async function getServerSideProps() {
     props: { currently, previously },
   };
 }
+
+export default BooksPage;

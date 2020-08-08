@@ -6,7 +6,7 @@ const pageInfo = {
   description: "I make software for the web. This is my space on the internet.",
 };
 
-export default () => (
+const Page = () => (
   <Layout {...pageInfo}>
     <div className="Page">
       <h1>About</h1>
@@ -54,3 +54,5 @@ export default () => (
     </div>
   </Layout>
 );
+
+export default Page;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DateFormater from "./DateFormatter";
 
-export default ({ post }) => (
+const PostPreview = ({ post }) => (
   <article key={post.slug} className="PostPreview">
     <h2 className="my-0">
       <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
@@ -13,3 +13,5 @@ export default ({ post }) => (
     </div>
   </article>
 );
+
+export default PostPreview;

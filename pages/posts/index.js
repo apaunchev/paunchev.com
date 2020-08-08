@@ -8,7 +8,7 @@ const pageInfo = {
     "Short notes and articles. Mostly written for myself, but I hope you find something useful too.",
 };
 
-export default ({ posts }) => (
+const PostsPage = ({ posts }) => (
   <Layout {...pageInfo}>
     <div className="Page">
       <h1>{pageInfo.title}</h1>
@@ -27,3 +27,5 @@ export async function getStaticProps() {
     props: { posts },
   };
 }
+
+export default PostsPage;

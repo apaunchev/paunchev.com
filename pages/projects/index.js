@@ -8,7 +8,7 @@ const pageInfo = {
     "I make websites and apps as a hobby. They solve a particular problem I had in a way that makes sense to me.",
 };
 
-export default () => (
+const ProjectsPage = () => (
   <Layout {...pageInfo}>
     <div className="Page Page--wide">
       <h1>{pageInfo.title}</h1>
@@ -21,3 +21,5 @@ export default () => (
     </div>
   </Layout>
 );
+
+export default ProjectsPage;

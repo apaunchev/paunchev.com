@@ -3,7 +3,7 @@ import Post from "../../components/Post";
 import markdownToHtml from "../../lib/markdownToHtml";
 import { getAllPosts, getPostBySlug } from "../../lib/posts";
 
-export default ({ post }) => {
+const PostPage = ({ post }) => {
   const pageInfo = {
     title: post?.title,
     description: post?.summary,
@@ -46,3 +46,5 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export default PostPage;

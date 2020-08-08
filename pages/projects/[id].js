@@ -1,7 +1,9 @@
 import Layout from "../../components/Layout";
 import projects from "../../data/projects";
 
-export default ({ project: { name, url, repoUrl, description, imageSrc } }) => {
+const ProjectPage = ({
+  project: { name, url, repoUrl, description, imageSrc },
+}) => {
   const pageInfo = {
     title: name,
     description,
@@ -54,3 +56,5 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export default ProjectPage;

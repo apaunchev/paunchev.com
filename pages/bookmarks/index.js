@@ -8,7 +8,7 @@ const pageInfo = {
     "I collect articles and other resources that inspired me or taught me something new. Just like old photos, it is nice to revisit these in the future.",
 };
 
-export default ({ bookmarks }) => (
+const BookmarksPage = ({ bookmarks }) => (
   <Layout {...pageInfo}>
     <div className="Page Page--wide">
       <h1>{pageInfo.title}</h1>
@@ -30,3 +30,5 @@ export async function getServerSideProps() {
     props: { bookmarks },
   };
 }
+
+export default BookmarksPage;

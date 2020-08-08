@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default () => (
+const CVPage = () => (
   <>
     <Head>
       <meta charSet="utf-8" />
@@ -112,3 +112,5 @@ export default () => (
     </main>
   </>
 );
+
+export default CVPage;
