@@ -11,45 +11,31 @@ const Page = () => (
     <div className="Page">
       <h1>About</h1>
       <p>
-        👋 Hi, I am Angel. I make software for the web. This is my space on the
+        Hi, I am Angel. I make software for the web. This is my space on the
         internet.
       </p>
       <p>
         I have been building websites for over 10 years; I specialize in
-        front-end web development (which makes me{" "}
-        <a
-          className="arrowed"
-          href="https://css-tricks.com/the-all-powerful-front-end-developer/"
-        >
-          all-powerful
-        </a>
-        ). I aim for simple yet effective solutions that bring joy to both the
-        user and the developer.
-      </p>
-      <p>
-        In my free time I work on pet{" "}
+        front-end web development. I aim for simple yet effective solutions that
+        bring joy to both the user and the developer. Outside of work, I
+        practice this on various side{" "}
         <Link href="/projects">
           <a>projects</a>
         </Link>
-        , play video games, read{" "}
-        <Link href="/books">
-          <a>books</a>
-        </Link>
-        , and try to be a decent human being as much as possible.
+        .
       </p>
-      <p className="flex-row">
-        <a className="arrowed" href="mailto:apaunchev@gmail.com">
-          Email
-        </a>
-        <a className="arrowed" href="https://github.com/apaunchev">
-          GitHub
-        </a>
-        <a className="arrowed" href="https://www.linkedin.com/in/apaunchev/">
-          LinkedIn
-        </a>
-        <Link href="/cv">
-          <a>CV →</a>
-        </Link>
+      <p>
+        This website is an ever-changing collection of personal{" "}
+        <Link href="/posts">
+          <a>notes</a>
+        </Link>{" "}
+        and{" "}
+        <Link href="/bookmarks">
+          <a>resources</a>
+        </Link>{" "}
+        that inspired me or taught me something new. Its primary audience is a
+        future version of me. In the meantime, I hope there is something
+        interesting here for you too.
       </p>
     </div>
   </Layout>
