@@ -3,16 +3,13 @@ import PostPreview from "../../components/PostPreview";
 import { getAllPosts } from "../../lib/posts";
 
 const pageInfo = {
-  title: "Writing",
-  description:
-    "Short notes and articles. Mostly written for myself, but I hope you find something useful too.",
+  title: "Notes",
 };
 
 const PostsPage = ({ posts }) => (
   <Layout {...pageInfo}>
     <div className="Page">
       <h1>{pageInfo.title}</h1>
-      <p className="text-lead">{pageInfo.description}</p>
       {posts.map((post) => (
         <PostPreview key={post.slug} post={post} />
       ))}

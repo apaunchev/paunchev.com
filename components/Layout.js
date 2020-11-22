@@ -25,7 +25,7 @@ const Layout = ({ children, title, description }) => (
       />
       <link rel="manifest" href="/site.webmanifest" />
       <title>{title} – Angel Paunchev</title>
-      <meta name="description" content={description} />
+      {description ? <meta name="description" content={description} /> : null}
     </Head>
     <main>
       <Header />
