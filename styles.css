@@ -232,7 +232,16 @@ figcaption {
 
 .PostPreview {
   padding: 1.5rem 0;
-  border-top: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.PostPreview:first-of-type {
+  padding-top: 0;
+}
+
+.PostPreview:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .PostPreview h2 {
