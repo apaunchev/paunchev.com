@@ -167,7 +167,7 @@ figcaption {
   margin-right: 0;
 }
 
-.Navigation a.selected {
+.Navigation a.active {
   color: var(--font-color-primary);
   text-decoration: none;
 }
