@@ -1,9 +1,9 @@
 export default [
   {
-    id: "it-salaries-bulgaria",
-    name: "IT Salaries Bulgaria",
+    id: "salaree",
+    name: "Salaree",
     description: "Keep track of salary levels on the Bulgarian IT job market.",
-    url: "https://it-salaries-bulgaria.now.sh",
+    url: "https://salaree.now.sh",
   },
   {
     id: "typequick",

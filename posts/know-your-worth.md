@@ -2,7 +2,7 @@
 title: "Know your worth"
 date: "2020-06-01T12:00:00.000Z"
 ---
-I shipped a new website called [IT Salaries](https://it-salaries-bulgaria.now.sh). It is targeted at the Bulgarian IT community and offers a way to keep track of current salary levels, both across the market and for specific positions and companies. Read on to understand why and how I built it.
+I shipped a new website called [Salaree](https://salaree.now.sh). It is targeted at the Bulgarian IT community and offers a way to keep track of current salary levels, both across the market and for specific positions and companies. Read on to understand why and how I built it.
 
 ## Why
 
@@ -16,7 +16,7 @@ I have been thinking how this data could be used for good.
 
 ## How
 
-I built [IT Salaries](https://it-salaries-bulgaria.now.sh) as a simple website that downloads all IT listings with disclosed salaries from Jobs.bg and lets the user analyze this data. (It could be argued that having only this subset does not give an accurate picture of the entire market, but that is where we are today, and it is still a good start.)
+I built [Salaree](https://salaree.now.sh) as a simple website that downloads all IT listings with disclosed salaries from Jobs.bg and lets the user analyze this data. (It could be argued that having only this subset does not give an accurate picture of the entire market, but that is where we are today, and it is still a good start.)
 
 I wanted to give the user ways to search and filter this data (which is practically impossible on Jobs.bg), so they could verify, for example, how much a support analyst or a software engineer could earn. Probably the biggest challenge is the fact that the content is not curated and therefore is very inconsistent in language and spelling, making it difficult to find what you are looking for. I will keep working on adding smarter filters to try and solve this problem.
 
@@ -24,8 +24,8 @@ One useful feature I built in is that all gross amounts will be converted into t
 
 I also included some basic statistics such as highest/average/median/lowest salaries. These should be taken with a grain of salt as they are based on the lower end of salary ranges and the real industry numbers might differ.
 
-The website is built with [Next.js](https://nextjs.org/), using [Ant Design](https://ant.design/), and hosted on [Vercel](https://vercel.com/).
+The website is built with [Next.js](https://nextjs.org/), using [Firestore](https://firebase.google.com/docs/firestore) for data persistence and [Ant Design](https://ant.design/) for layout. Hosted on [Vercel](https://vercel.com/).
 
 ## Conclusion
 
-If all this sounds relevant to you, please check out [IT Salaries](https://it-salaries-bulgaria.now.sh). It is not a commercial project and is only meant to serve the community and raise awareness of what you could expect on the Bulgarian IT job market.
+If all this sounds relevant to you, please check out [Salaree](https://salaree.now.sh). It is not a commercial project and is only meant to serve the community and raise awareness of what you could expect on the Bulgarian IT job market.
