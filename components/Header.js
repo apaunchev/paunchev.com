@@ -1,42 +1,61 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const Header = () => {
+const routes = {
+  about: {
+    href: '/',
+    activePaths: ['/'],
+    title: 'About',
+  },
+  portfolio: {
+    href: '/portfolio',
+    activePaths: ['/portfolio'],
+    title: 'Portfolio',
+  },
+  library: {
+    href: '/library',
+    activePaths: ['/library'],
+    title: 'Library',
+  },
+};
+
+function NavLink({ href, activePaths, title }) {
   const router = useRouter();
 
   return (
-    <header className="Header">
-      <div>
-        <img className="Avatar" src="/images/me.jpg" alt="Photo of Angel" />
+    <Link href={href}>
+      <a
+        className={
+          activePaths.includes(router.pathname)
+            ? 'mr-4 text-lg text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
+            : 'mr-4 text-lg color-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 focus:text-gray-900 focus:border-opacity-100 transition'
+        }
+      >
+        {title}
+      </a>
+    </Link>
+  );
+}
+
+export default function Header() {
+  return (
+    <header className="flex items-center">
+      <div className="mr-8">
+        <Image
+          src="/me.png"
+          alt="Photo of the author"
+          width={72}
+          height={72}
+          quality={100}
+          className="rounded-full"
+        />
       </div>
-      <div>
-        <h1 className="Title">Angel Paunchev</h1>
-        <nav className="Navigation">
-          <Link href="/">
-            <a className={router.pathname === "/" ? "active" : ""}>About</a>
-          </Link>
-          <Link href="/projects">
-            <a className={router.pathname === "/projects" ? "active" : ""}>
-              Projects
-            </a>
-          </Link>
-          <Link href="/posts">
-            <a className={router.pathname === "/posts" ? "active" : ""}>
-              Notes
-            </a>
-          </Link>
-          <Link href="/bookmarks">
-            <a className={router.pathname === "/bookmarks" ? "active" : ""}>
-              Bookmarks
-            </a>
-          </Link>
-          <Link href="/cv">
-            <a>CV</a>
-          </Link>
-        </nav>
-      </div>
+      <nav className="flex">
+        {Object.keys(routes).map(key => (
+          <NavLink key={key} {...routes[key]} />
+        ))}
+      </nav>
     </header>
   );
-};
-
-export default Header;
+}

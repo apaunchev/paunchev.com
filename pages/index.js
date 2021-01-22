@@ -1,44 +1,45 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
+import Link from 'next/link';
+import Layout from '@/components/Layout';
+import PageHeader from '@/components/PageHeader';
 
-const pageInfo = {
-  title: "About",
-  description: "I make software for the web. This is my space on the internet.",
-};
-
-const Page = () => (
-  <Layout {...pageInfo}>
-    <div className="Page">
-      <h1>About</h1>
-      <p>
-        Hi, I am Angel. I make software for the web. This is my space on the
-        internet.
-      </p>
-      <p>
-        I have been building websites for over 10 years; I specialize in
-        front-end web development. I aim for simple yet effective solutions that
-        bring joy to both the user and the developer. Outside of work, I
-        practice this on various side{" "}
-        <Link href="/projects">
-          <a>projects</a>
-        </Link>
-        .
-      </p>
-      <p>
-        This website is an ever-changing collection of personal{" "}
-        <Link href="/posts">
-          <a>notes</a>
-        </Link>{" "}
-        and{" "}
-        <Link href="/bookmarks">
-          <a>resources</a>
-        </Link>{" "}
-        that inspired me or taught me something new. Its primary audience is a
-        future version of me. In the meantime, I hope there is something
-        interesting here for you too.
-      </p>
-    </div>
-  </Layout>
-);
-
-export default Page;
+export default function About() {
+  return (
+    <Layout>
+      <PageHeader
+        title="Hi, I am Angel–"
+        subtitle="a software engineer with over 10 years of experience in building websites."
+      />
+      <article className="prose prose-purple lg:prose-lg">
+        <p>
+          I specialize in front-end web development with a focus on UI
+          frameworks, performance, and making websites easier to use.
+        </p>
+        <p>
+          I use this website as a{' '}
+          <Link href="/portfolio">
+            <a>portfolio</a>
+          </Link>{' '}
+          and a{' '}
+          <Link href="/library">
+            <a>library</a>
+          </Link>
+          .
+        </p>
+        <p className="flex">
+          <a className="mr-4" href="/">
+            Email
+          </a>
+          <Link href="/resume">
+            <a className="mr-4">Résumé</a>
+          </Link>
+          <a className="mr-4" href="/">
+            LinkedIn
+          </a>
+          <a className="mr-4" href="/">
+            GitHub
+          </a>
+        </p>
+      </article>
+    </Layout>
+  );
+}

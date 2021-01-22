@@ -1,0 +1,45 @@
+{
+  "types": ["site", "article", "book", "podcast"],
+  "data": [
+    {
+      "type": "article",
+      "title": "Everything Easy is Hard Again",
+      "description": "Let’s be more like that tortoise: diligent, direct, and purposeful.",
+      "author": "Frank Chimero",
+      "url": "https://frankchimero.com/blog/2018/everything-easy/"
+    },
+    {
+      "type": "site",
+      "title": "Frank Chimero",
+      "image": {
+        "width": 0,
+        "height": 0,
+        "src": "https://frankchimero.com/icons/icon-1200x628.png"
+      },
+      "url": "https://frankchimero.com"
+    },
+    {
+      "type": "podcast",
+      "title": "Cortex",
+      "author": "CGP Grey, Myke Hurley",
+      "image": {
+        "width": 1400,
+        "height": 1400,
+        "src": "https://relayfm.s3.amazonaws.com/uploads/broadcast/image/17/broadcast_artwork_cortex_artwork.png"
+      },
+      "url": "https://www.relay.fm/cortex"
+    },
+    {
+      "type": "book",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "description": "Is there anything more dangerous than dissatisfied and irresponsible gods who don’t know what they want?",
+      "image": {
+        "width": 312,
+        "height": 475,
+        "src": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg"
+      },
+      "url": "https://www.goodreads.com/book/show/23692271-sapiens"
+    }
+  ]
+}
