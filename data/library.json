@@ -9,23 +9,13 @@
       "url": "https://frankchimero.com/blog/2018/everything-easy/"
     },
     {
-      "type": "site",
-      "title": "Frank Chimero",
-      "image": {
-        "width": 0,
-        "height": 0,
-        "src": "https://frankchimero.com/icons/icon-1200x628.png"
-      },
-      "url": "https://frankchimero.com"
-    },
-    {
       "type": "podcast",
       "title": "Cortex",
       "author": "CGP Grey, Myke Hurley",
       "image": {
-        "width": 1400,
-        "height": 1400,
-        "src": "https://relayfm.s3.amazonaws.com/uploads/broadcast/image/17/broadcast_artwork_cortex_artwork.png"
+        "src": "/podcasts/cortex.png",
+        "width": 0,
+        "height": 0
       },
       "url": "https://www.relay.fm/cortex"
     },
@@ -35,11 +25,146 @@
       "author": "Yuval Noah Harari",
       "description": "Is there anything more dangerous than dissatisfied and irresponsible gods who don’t know what they want?",
       "image": {
-        "width": 312,
-        "height": 475,
-        "src": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg"
+        "src": "/books/sapiens.jpg",
+        "width": 80,
+        "height": 122
       },
       "url": "https://www.goodreads.com/book/show/23692271-sapiens"
+    },
+    {
+      "type": "person",
+      "title": "Frank Chimero",
+      "url": "https://frankchimero.com",
+      "image": {
+        "src": "/people/frank-chimero.jpg",
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "person",
+      "url": "https://allenpike.com/",
+      "title": "Allen Pike",
+      "image": {
+        "src": "/people/allen-pike.jpg",
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "person",
+      "url": "https://www.julie.design/",
+      "title": "Julie Chabin"
+    },
+    {
+      "type": "person",
+      "url": "https://varun.ca/",
+      "title": "Varun Vachhar"
+    },
+    {
+      "type": "person",
+      "url": "https://tonsky.me/",
+      "title": "Nikita Prokopov"
+    },
+    {
+      "type": "person",
+      "url": "https://destroytoday.com/",
+      "title": "Jonnie Hallman"
+    },
+    {
+      "type": "person",
+      "url": "https://paco.sh/",
+      "title": "Paco Coursey"
+    },
+    {
+      "type": "person",
+      "url": "https://www.philipcdavis.com/",
+      "title": "Philip Davis"
+    },
+    {
+      "type": "person",
+      "url": "https://leerob.io/",
+      "title": "Lee Robinson"
+    },
+    {
+      "type": "person",
+      "url": "https://macwright.com/",
+      "title": "Mac Wright"
+    },
+    {
+      "type": "person",
+      "url": "https://sarahdayan.dev/",
+      "title": "Sarah Dayan"
+    },
+    {
+      "type": "person",
+      "url": "https://paulrobertlloyd.com/",
+      "title": "Paul Robert Lloyd"
+    },
+    {
+      "type": "person",
+      "url": "https://joshwcomeau.com/",
+      "title": "Josh W Comeau"
+    },
+    {
+      "type": "person",
+      "url": "https://stevenwestmoreland.com/",
+      "title": "Steven Westmoreland"
+    },
+    {
+      "type": "person",
+      "url": "https://brianlovin.com/",
+      "title": "Brian Lovin"
+    },
+    {
+      "type": "person",
+      "url": "https://alexkondov.com/",
+      "title": "Alex Kondov"
+    },
+    {
+      "type": "person",
+      "url": "https://mxstbr.com/",
+      "title": "Max Stoiber"
+    },
+    {
+      "type": "person",
+      "url": "https://chriscoyier.net/",
+      "title": "Chris Coyier"
+    },
+    {
+      "type": "person",
+      "url": "https://paulstamatiou.com/",
+      "title": "Paul Stamatiou"
+    },
+    {
+      "type": "person",
+      "url": "https://wesbos.com/",
+      "title": "Wes Bos"
+    },
+    {
+      "type": "person",
+      "url": "https://www.taniarascia.com",
+      "title": "Tania Rascia"
+    },
+    {
+      "type": "person",
+      "url": "https://www.chriscollins.me",
+      "title": "Chris Collins"
+    },
+    {
+      "type": "person",
+      "url": "https://remysharp.com/",
+      "title": "Remy Sharp"
+    },
+    {
+      "type": "person",
+      "url": "https://rsms.me/",
+      "title": "Rasmus Andersson"
+    },
+    {
+      "type": "person",
+      "url": "https://daneden.me/",
+      "title": "Daniel Eden"
     }
   ]
 }
