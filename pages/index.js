@@ -7,7 +7,7 @@ export default function About() {
     <Layout>
       <PageHeader
         title="Hi, I am Angel–"
-        subtitle="a software engineer with over 10 years of experience in building websites."
+        subtitle="a software engineer with over ten years of experience in building digital products."
       />
       <article className="prose prose-purple lg:prose-lg">
         <p>
