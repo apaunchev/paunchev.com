@@ -28,8 +28,8 @@ function NavLink({ href, activePaths, title }) {
       <a
         className={
           activePaths.includes(router.pathname)
-            ? 'mr-6 text-lg text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
-            : 'mr-6 text-lg color-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 focus:text-gray-900 focus:border-opacity-100 transition'
+            ? 'mr-6 text-xl text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
+            : 'mr-6 text-xl color-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 transition'
         }
       >
         {title}
@@ -45,8 +45,8 @@ export default function Header() {
         <Image
           src="/me.png"
           alt="Photo of the author"
-          width={72}
-          height={72}
+          width={96}
+          height={96}
           quality={100}
           className="rounded-full"
         />
