@@ -11,8 +11,8 @@ const pageInfo = {
 export default function Portfolio() {
   return (
     <Layout {...pageInfo}>
-      <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
-      <div className="max-w-prose">
+      <div className="max-w-xl">
+        <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
         {projects.data.map(project => (
           <ProjectCard key={project.id} {...project} />
         ))}

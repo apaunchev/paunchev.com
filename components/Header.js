@@ -15,7 +15,7 @@ const routes = {
   },
   library: {
     href: '/library',
-    activePaths: ['/library'],
+    activePaths: ['/library', '/library/[type]'],
     title: 'Library',
   },
 };
@@ -28,8 +28,8 @@ function NavLink({ href, activePaths, title }) {
       <a
         className={
           activePaths.includes(router.pathname)
-            ? 'mr-6 text-xl text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
-            : 'mr-6 text-xl color-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 transition'
+            ? 'mr-6 pb-1 text-xl text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
+            : 'mr-6 pb-1 text-xl text-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 transition'
         }
       >
         {title}

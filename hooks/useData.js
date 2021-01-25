@@ -5,15 +5,11 @@ const useData = (data, type) => {
 
   useEffect(() => {
     if (!type) {
-      if (items !== data) {
-        setItems(data);
-        return;
-      }
+      setItems(data);
+      return;
     }
 
-    const filtered = data.filter(item => item.type === type);
-
-    setItems(filtered);
+    setItems(data.filter(item => item.type === type));
   }, [type]);
 
   return { items, type };
