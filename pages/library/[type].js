@@ -4,12 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import LibraryGrid from '@/components/LibraryGrid';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
-
-const pageInfo = {
-  title: 'Library',
-  description:
-    'A public library of sorts, showcasing briliant content from around the web.',
-};
+import { pageInfo } from './';
 
 export default function LibraryType() {
   const router = useRouter();

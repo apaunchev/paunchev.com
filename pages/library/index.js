@@ -4,10 +4,10 @@ import LibraryGrid from '@/components/LibraryGrid';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
 
-const pageInfo = {
+export const pageInfo = {
   title: 'Library',
   description:
-    'A public library of sorts, showcasing briliant content from around the web.',
+    'A digital library showcasing briliant content from around the web.',
 };
 
 const defaultType = 'article';
