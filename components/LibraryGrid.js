@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LibraryItem from './LibraryItem';
+import LibraryItem from '@/components/LibraryItem';
 
 const typesMap = {
   article: 'Articles',
