@@ -9,7 +9,12 @@ export default function LibraryItem({
   url,
 }) {
   return (
-    <a className="group" href={url} target="_blank" rel="noopener">
+    <a
+      className="border-none focus:ring-2 ring-purple-600"
+      href={url}
+      target="_blank"
+      rel="noopener"
+    >
       <div className="flex flex-col">
         <div className="flex w-full">
           {image ? (
@@ -23,12 +28,16 @@ export default function LibraryItem({
             </figure>
           ) : null}
           <div className="flex flex-col flex-1">
-            <p className="text-2xl text-purple-600 font-semibold group-hover:text-gray-700">
-              {title}
-            </p>
-            <p className="font-semibold">{author}</p>
-            {description ? <p className="mt-1">{description}</p> : null}
-            {quote ? <p className="mt-1 italic">‘{quote}’</p> : null}
+            <h2 className="text-xl lg:text-xl font-semibold">{title}</h2>
+            <h3 className="text-lg text-gray-600 dark:text-gray-400">
+              {author}
+            </h3>
+            {description ? (
+              <p className="mt-1 mb-0 text-base">{description}</p>
+            ) : null}
+            {quote ? (
+              <p className="mt-1 mb-0 italic text-base">‘{quote}’</p>
+            ) : null}
           </div>
         </div>
       </div>

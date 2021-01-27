@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ['./pages/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
+  darkMode: 'media',
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -11,5 +11,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [],
 };

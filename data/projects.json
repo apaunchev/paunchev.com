@@ -3,32 +3,20 @@
     {
       "id": "salaree",
       "name": "Salaree",
-      "description": "Keep track of salary levels on the Bulgarian IT job market.",
+      "description": "A job ads aggregator with a focus on salaries on the Bulgarian market.",
       "url": "https://salaree.now.sh"
     },
     {
       "id": "typequick",
       "name": "TypeQuick",
-      "description": "Practice and measure your typing speed over time.",
+      "description": "A web app for practicing and improving your typing speed over time.",
       "url": "https://typequick.vercel.app"
-    },
-    {
-      "id": "daily-splash",
-      "name": "Daily Splash",
-      "description": "Customize your Chrome new tab page with a beautiful photo and widgets.",
-      "url": "https://chrome.google.com/webstore/detail/daily-splash/mhllelegiafiipppnijnbombjinhceho"
     },
     {
       "id": "spender",
       "name": "Spender",
-      "description": "Track how much you spend on subscriptions.",
+      "description": "A budgeting web app designed to show how much of your money goes towards recurring expenses.",
       "url": "https://spender.netlify.app"
-    },
-    {
-      "id": "gitobserve",
-      "name": "GitObserve",
-      "description": "Track open pull requests across your GitHub repositories.",
-      "url": "https://apaunchev.github.io/GitObserve"
     }
   ]
 }

@@ -28,8 +28,8 @@ function NavLink({ href, activePaths, title }) {
       <a
         className={
           activePaths.includes(router.pathname)
-            ? 'mr-6 pb-1 text-xl text-gray-900 border-b-2 border-purple-600 border-opacity-100 transition'
-            : 'mr-6 pb-1 text-xl text-gray-500 border-b-2 border-gray-900 border-opacity-20 hover:text-gray-900 hover:border-opacity-100 transition'
+            ? 'mr-4 lg:mr-5 pb-1 lg:text-lg border-purple-600'
+            : 'mr-4 lg:mr-5 pb-1 lg:text-lg'
         }
       >
         {title}
@@ -41,16 +41,17 @@ function NavLink({ href, activePaths, title }) {
 export default function Header() {
   return (
     <header className="flex items-center">
-      <div className="mr-8">
-        <Image
-          src="/me.png"
-          alt="Photo of the author"
-          width={96}
-          height={96}
-          quality={100}
-          className="rounded-full"
-        />
-      </div>
+      <Link href="/">
+        <a className="border-none">
+          <img
+            src="/me.png"
+            alt="Photo of the author"
+            width={200}
+            height={200}
+            className="mr-5 lg:mr-6 w-16 lg:w-20 rounded-full"
+          />
+        </a>
+      </Link>
       <nav className="flex">
         {Object.keys(routes).map(key => (
           <NavLink key={key} {...routes[key]} />

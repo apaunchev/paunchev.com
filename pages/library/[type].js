@@ -5,6 +5,7 @@ import LibraryGrid from '@/components/LibraryGrid';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
 import { pageInfo } from './';
+import { PageWide } from '@/components/Page';
 
 export default function LibraryType() {
   const router = useRouter();
@@ -17,10 +18,10 @@ export default function LibraryType() {
 
   return (
     <Layout {...pageInfo}>
-      <div className="max-w-7xl">
+      <PageWide>
         <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
         <LibraryGrid items={items} activeType={type} />
-      </div>
+      </PageWide>
     </Layout>
   );
 }
