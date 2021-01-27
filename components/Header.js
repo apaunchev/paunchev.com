@@ -1,42 +1,61 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-const Header = () => {
+const routes = {
+  about: {
+    href: '/',
+    activePaths: ['/'],
+    title: 'About',
+  },
+  portfolio: {
+    href: '/portfolio',
+    activePaths: ['/portfolio'],
+    title: 'Portfolio',
+  },
+  library: {
+    href: '/library',
+    activePaths: ['/library', '/library/[type]'],
+    title: 'Library',
+  },
+};
+
+function NavLink({ href, activePaths, title }) {
   const router = useRouter();
 
   return (
-    <header className="Header">
-      <div>
-        <img className="Avatar" src="/images/me.jpg" alt="Photo of Angel" />
-      </div>
-      <div>
-        <h1 className="Title">Angel Paunchev</h1>
-        <nav className="Navigation">
-          <Link href="/">
-            <a className={router.pathname === "/" ? "active" : ""}>About</a>
-          </Link>
-          <Link href="/projects">
-            <a className={router.pathname === "/projects" ? "active" : ""}>
-              Projects
-            </a>
-          </Link>
-          <Link href="/posts">
-            <a className={router.pathname === "/posts" ? "active" : ""}>
-              Notes
-            </a>
-          </Link>
-          <Link href="/bookmarks">
-            <a className={router.pathname === "/bookmarks" ? "active" : ""}>
-              Bookmarks
-            </a>
-          </Link>
-          <Link href="/cv">
-            <a>CV</a>
-          </Link>
-        </nav>
-      </div>
+    <Link href={href}>
+      <a
+        className={
+          activePaths.includes(router.pathname)
+            ? 'mr-4 lg:mr-5 pb-1 lg:text-lg border-purple-600'
+            : 'mr-4 lg:mr-5 pb-1 lg:text-lg'
+        }
+      >
+        {title}
+      </a>
+    </Link>
+  );
+}
+
+export default function Header() {
+  return (
+    <header className="flex items-center">
+      <Link href="/">
+        <a className="border-none">
+          <img
+            src="/me.png"
+            alt="Photo of the author"
+            width={200}
+            height={200}
+            className="mr-5 lg:mr-6 w-16 lg:w-20 rounded-full"
+          />
+        </a>
+      </Link>
+      <nav className="flex">
+        {Object.keys(routes).map(key => (
+          <NavLink key={key} {...routes[key]} />
+        ))}
+      </nav>
     </header>
   );
-};
-
-export default Header;
+}

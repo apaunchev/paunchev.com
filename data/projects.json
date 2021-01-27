@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "salaree",
+      "name": "Salaree",
+      "description": "A job ads aggregator with a focus on salaries on the Bulgarian market.",
+      "url": "https://salaree.now.sh"
+    },
+    {
+      "id": "typequick",
+      "name": "TypeQuick",
+      "description": "A web app for practicing and improving your typing speed over time.",
+      "url": "https://typequick.vercel.app"
+    },
+    {
+      "id": "spender",
+      "name": "Spender",
+      "description": "A budgeting web app designed to show how much of your money goes towards recurring expenses.",
+      "url": "https://spender.netlify.app"
+    }
+  ]
+}
