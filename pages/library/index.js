@@ -1,9 +1,9 @@
 import Layout from '@/components/Layout';
-import PageHeader from '@/components/PageHeader';
 import LibraryGrid from '@/components/LibraryGrid';
+import { PageWide } from '@/components/Page';
+import PageHeader from '@/components/PageHeader';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
-import { PageWide } from '@/components/Page';
 
 export const pageInfo = {
   title: 'Library',

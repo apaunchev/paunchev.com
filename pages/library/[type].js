@@ -1,11 +1,11 @@
-import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
-import PageHeader from '@/components/PageHeader';
 import LibraryGrid from '@/components/LibraryGrid';
+import { PageWide } from '@/components/Page';
+import PageHeader from '@/components/PageHeader';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
+import { useRouter } from 'next/router';
 import { pageInfo } from './';
-import { PageWide } from '@/components/Page';
 
 export default function LibraryType() {
   const router = useRouter();
