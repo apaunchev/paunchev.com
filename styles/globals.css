@@ -8,7 +8,7 @@
   }
 
   a {
-    @apply text-gray-900 dark:text-gray-200 border-b-2 hover:border-purple-600 focus:border-purple-600 focus:outline-none transition;
+    @apply text-gray-900 dark:text-gray-200 border-b-2 dark:border-gray-600 hover:border-purple-600 focus:border-purple-600 focus:outline-none transition;
   }
 
   p {

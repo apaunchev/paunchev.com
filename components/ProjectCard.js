@@ -2,7 +2,7 @@ export default function ProjectCard({ name, description, url }) {
   return (
     <a
       href={url}
-      className="p-3 border-2"
+      className="p-3 border-2 dark:border-gray-600"
       target="_blank"
       rel="noopener noreferrer"
     >
