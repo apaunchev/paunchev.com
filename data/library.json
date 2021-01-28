@@ -2,6 +2,23 @@
   "types": ["personal-site", "article", "book"],
   "data": [
     {
+      "type": "article",
+      "title": "You'll Figure It Out",
+      "author": "Andy Weissman",
+      "quote": "(…) give the people who work for you a chance to resolve complex issues on their own.",
+      "url": "http://blog.aweissman.com/2021/01/youll-figure-it-out_18.html"
+    },
+    {
+      "type": "personal-site",
+      "title": "Aleksandr Hovhannisyan",
+      "url": "https://www.aleksandrhovhannisyan.com/",
+      "image": {
+        "src": "/people/aleksandr-hovhannisyan.webp",
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
       "type": "personal-site",
       "title": "Frank Chimero",
       "url": "https://frankchimero.com",
