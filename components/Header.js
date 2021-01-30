@@ -19,6 +19,16 @@ const routes = {
   },
 };
 
+function Navigation() {
+  return (
+    <nav className="flex">
+      {Object.keys(routes).map(key => (
+        <NavLink key={key} {...routes[key]} />
+      ))}
+    </nav>
+  );
+}
+
 function NavLink({ href, activePaths, title }) {
   const router = useRouter();
 
@@ -37,25 +47,27 @@ function NavLink({ href, activePaths, title }) {
   );
 }
 
+function AvatarLink() {
+  return (
+    <Link href="/">
+      <a className="inline-block mr-5 lg:mr-6 border-none">
+        <img
+          src="/me.png"
+          alt="Photo of the author"
+          width={200}
+          height={200}
+          className="w-16 lg:w-20 rounded-full"
+        />
+      </a>
+    </Link>
+  );
+}
+
 export default function Header() {
   return (
     <header className="flex items-center">
-      <Link href="/">
-        <a className="border-none">
-          <img
-            src="/me.png"
-            alt="Photo of the author"
-            width={200}
-            height={200}
-            className="mr-5 lg:mr-6 w-16 lg:w-20 rounded-full"
-          />
-        </a>
-      </Link>
-      <nav className="flex">
-        {Object.keys(routes).map(key => (
-          <NavLink key={key} {...routes[key]} />
-        ))}
-      </nav>
+      <AvatarLink />
+      <Navigation />
     </header>
   );
 }
