@@ -7,10 +7,14 @@ const pageInfo = {
   description: 'Weekend projects for fun and learning.',
 };
 
-function ProjectsList() {
+function ProjectsList({ projects }) {
+  if (!projects.length) {
+    return null;
+  }
+
   return (
     <div className="flex flex-col space-y-4">
-      {projects.data.map(project => (
+      {projects.map(project => (
         <ProjectCard key={project.id} {...project} />
       ))}
     </div>
@@ -20,7 +24,7 @@ function ProjectsList() {
 export default function Portfolio() {
   return (
     <PageLayout {...pageInfo}>
-      <ProjectsList />
+      <ProjectsList projects={projects.data} />
     </PageLayout>
   );
 }
