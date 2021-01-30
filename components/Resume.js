@@ -31,14 +31,36 @@ export default function Resume() {
   return (
     <div>
       <p>
-        I specialize in front-end web development with a focus on UI frameworks,
-        performance, and making the web easier to use.
+        I specialize in front-end development and strive to deliver meaningful
+        user experiences on the web and mobile.
       </p>
       <p>
-        I have also been in charge of development teams and, working together
-        with product and project management, have delivered web and mobile
-        solutions to thousands of people around the world.
+        I navigate complex business domains, helping teams to meet targets and
+        bring value to customers. I approach everything with a growth mindset
+        and try to inspire and mentor others along the way.
       </p>
+      <Separator />
+      <Header>Specialties</Header>
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:text-lg">
+        <ul>
+          <li>JavaScript</li>
+          <li>React/Next.js</li>
+          <li>Build tools</li>
+          <li>Unit testing</li>
+        </ul>
+        <ul>
+          <li>HTML</li>
+          <li>Sass/CSS-in-JS</li>
+          <li>CSS architecture</li>
+          <li>Accessibility</li>
+        </ul>
+        <ul>
+          <li>Node.js/Express</li>
+          <li>Web services</li>
+          <li>Security</li>
+          <li>Performance</li>
+        </ul>
+      </div>
       <Separator />
       <Header>Employment</Header>
       <ResumeList>
