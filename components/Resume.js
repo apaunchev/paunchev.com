@@ -20,7 +20,7 @@ function ResumeItem({ title, place, url, period }) {
         <span className="mx-1 text-gray-400 dark:text-gray-600">@</span>
         <a href={url}>{place}</a>
       </div>
-      <div className="mt-1 text-sm lg:text-base text-gray-400 dark:text-gray-600">
+      <div className="mt-1 text-sm lg:text-base text-gray-500 dark:text-gray-400">
         {period}
       </div>
     </li>
