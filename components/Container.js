@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '@/components/Header';
 
-export default function Layout({ children, title, description }) {
+export default function Container({ children, title, description }) {
   return (
     <>
       <Head>

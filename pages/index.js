@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+import Container from '@/components/Container';
 import { Page } from '@/components/Page';
 import PageHeader from '@/components/PageHeader';
 import Resume from '@/components/Resume';
@@ -10,7 +10,7 @@ const pageInfo = {
 
 export default function About() {
   return (
-    <Layout {...pageInfo}>
+    <Container {...pageInfo}>
       <Page>
         <PageHeader
           title="Hi, I’m Angel—"
@@ -18,6 +18,6 @@ export default function About() {
         />
         <Resume />
       </Page>
-    </Layout>
+    </Container>
   );
 }

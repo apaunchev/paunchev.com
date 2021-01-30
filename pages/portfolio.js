@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+import Container from '@/components/Container';
 import { Page } from '@/components/Page';
 import PageHeader from '@/components/PageHeader';
 import ProjectCard from '@/components/ProjectCard';
@@ -11,7 +11,7 @@ const pageInfo = {
 
 export default function Portfolio() {
   return (
-    <Layout {...pageInfo}>
+    <Container {...pageInfo}>
       <Page>
         <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
         <div className="flex flex-col space-y-4">
@@ -20,6 +20,6 @@ export default function Portfolio() {
           ))}
         </div>
       </Page>
-    </Layout>
+    </Container>
   );
 }

@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+import Container from '@/components/Container';
 import LibraryGrid from '@/components/LibraryGrid';
 import { PageWide } from '@/components/Page';
 import PageHeader from '@/components/PageHeader';
@@ -17,11 +17,11 @@ export default function Library() {
   const { items } = useData(library.data, defaultType);
 
   return (
-    <Layout {...pageInfo}>
+    <Container {...pageInfo}>
       <PageWide>
         <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
         <LibraryGrid items={items} activeType={defaultType} />
       </PageWide>
-    </Layout>
+    </Container>
   );
 }
