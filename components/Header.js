@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const routes = {
   about: {
@@ -50,13 +51,14 @@ function NavLink({ href, activePaths, title }) {
 function AvatarLink() {
   return (
     <Link href="/">
-      <a className="inline-block mr-5 lg:mr-6 border-none">
-        <img
+      <a className="inline-block mr-5 lg:mr-6 border-none w-16 lg:w-20">
+        <Image
           src="/me.png"
           alt="Photo of the author"
-          width={200}
-          height={200}
-          className="w-16 lg:w-20 rounded-full"
+          width={80}
+          height={80}
+          quality={100}
+          className="rounded-full"
         />
       </a>
     </Link>
