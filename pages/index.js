@@ -1,5 +1,4 @@
 import Container from '@/components/Container';
-import { Page } from '@/components/Page';
 import PageHeader from '@/components/PageHeader';
 import Resume from '@/components/Resume';
 
@@ -11,13 +10,13 @@ const pageInfo = {
 export default function About() {
   return (
     <Container {...pageInfo}>
-      <Page>
+      <div className="max-w-lg lg:max-w-xl space-y-5 md:space-y-6 lg:space-y-7">
         <PageHeader
           title="Hi, I’m Angel—"
           subtitle="a software engineer with over ten years of experience in building digital products."
         />
         <Resume />
-      </Page>
+      </div>
     </Container>
   );
 }

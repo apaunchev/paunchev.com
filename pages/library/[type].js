@@ -1,9 +1,7 @@
-import Container from '@/components/Container';
 import LibraryGrid from '@/components/LibraryGrid';
-import { PageWide } from '@/components/Page';
-import PageHeader from '@/components/PageHeader';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
+import LibraryLayout from '@/layouts/library';
 import { useRouter } from 'next/router';
 import { pageInfo } from './';
 
@@ -17,11 +15,8 @@ export default function LibraryType() {
   }
 
   return (
-    <Container {...pageInfo}>
-      <PageWide>
-        <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
-        <LibraryGrid items={items} activeType={type} />
-      </PageWide>
-    </Container>
+    <LibraryLayout {...pageInfo}>
+      <LibraryGrid items={items} activeType={type} />
+    </LibraryLayout>
   );
 }

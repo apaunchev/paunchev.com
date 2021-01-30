@@ -1,9 +1,7 @@
-import Container from '@/components/Container';
 import LibraryGrid from '@/components/LibraryGrid';
-import { PageWide } from '@/components/Page';
-import PageHeader from '@/components/PageHeader';
 import library from '@/data/library.json';
 import useData from '@/hooks/useData';
+import LibraryLayout from '@/layouts/library';
 
 export const pageInfo = {
   title: 'Library',
@@ -17,11 +15,8 @@ export default function Library() {
   const { items } = useData(library.data, defaultType);
 
   return (
-    <Container {...pageInfo}>
-      <PageWide>
-        <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
-        <LibraryGrid items={items} activeType={defaultType} />
-      </PageWide>
-    </Container>
+    <LibraryLayout {...pageInfo}>
+      <LibraryGrid items={items} activeType={defaultType} />
+    </LibraryLayout>
   );
 }
