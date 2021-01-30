@@ -62,8 +62,8 @@
       "url": "https://www.goodreads.com/book/show/36185940-factfulness",
       "image": {
         "src": "/books/factfulness.jpeg",
-        "width": 80,
-        "height": 120
+        "width": 96,
+        "height": 148
       }
     },
     {
@@ -74,8 +74,8 @@
       "url": "https://www.goodreads.com/book/show/18170143-an-astronaut-s-guide-to-life-on-earth",
       "image": {
         "src": "/books/an-astronauts-guide-to-life-on-earth.jpg",
-        "width": 80,
-        "height": 120
+        "width": 96,
+        "height": 148
       }
     },
     {
@@ -189,8 +189,8 @@
       "quote": "Practice does not make perfect. It is practice, followed by a night of sleep, that leads to perfection.",
       "image": {
         "src": "/books/why-we-sleep.jpeg",
-        "width": 80,
-        "height": 120
+        "width": 96,
+        "height": 148
       },
       "url": "https://www.goodreads.com/book/show/36234689-why-we-sleep"
     },
@@ -273,8 +273,8 @@
       "url": "https://www.goodreads.com/book/show/17204679-man-s-search-for-meaning",
       "image": {
         "src": "/books/mans-search-for-meaning.jpg",
-        "width": 80,
-        "height": 120
+        "width": 96,
+        "height": 148
       }
     },
     {
@@ -335,8 +335,8 @@
       "url": "https://www.goodreads.com/book/show/36526392-the-sun-does-shine",
       "image": {
         "src": "/books/the-sun-does-shine.jpg",
-        "width": 80,
-        "height": 120
+        "width": 96,
+        "height": 148
       }
     },
     {

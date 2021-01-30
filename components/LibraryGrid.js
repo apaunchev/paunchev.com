@@ -18,7 +18,7 @@ function LibraryItem({ title, author, description, quote, image, url }) {
       <div className="flex flex-col">
         <div className="flex w-full">
           {image ? (
-            <figure className="mr-4">
+            <figure className="mr-4 w-20">
               <Image
                 src={image.src}
                 width={image.width}
