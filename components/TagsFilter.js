@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 
 export function TagsFilter({ tagsMap = {}, onFilterClick }) {
-  const router = useRouter();
+  const { query, pathname } = useRouter();
 
   const handleClick = (e, filter) => {
     e.preventDefault();
@@ -13,22 +13,22 @@ export function TagsFilter({ tagsMap = {}, onFilterClick }) {
 
   return (
     <nav className="flex space-x-4 lg:text-lg whitespace-nowrap overflow-x-auto bg-white dark:bg-gray-900 py-4 sticky top-0 z-10">
-      <span>Filter:</span>
+      <span className="font-semibold">Filter:</span>
       <a
-        className={!router.query.tag ? activeClasses : null}
-        href="/"
+        className={!query.tag ? activeClasses : null}
+        href={pathname}
         onClick={handleClick}
       >
         All
       </a>
       {Object.keys(tagsMap).map(tag => {
-        const isActive = router.query.tag === tag;
+        const isActive = query.tag === tag;
 
         return (
           <a
             className={isActive ? activeClasses : null}
             key={tag}
-            href="/"
+            href={`${pathname}/?tag=${tag}`}
             onClick={e => handleClick(e, tag)}
           >
             {tagsMap[tag]}
