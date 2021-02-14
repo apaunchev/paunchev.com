@@ -10,7 +10,7 @@ const pageInfo = {
 export default function About() {
   return (
     <Container {...pageInfo}>
-      <div className="max-w-lg lg:max-w-xl space-y-5 md:space-y-6 lg:space-y-7">
+      <div className="max-w-lg lg:max-w-xl space-y-4 md:space-y-6 lg:space-y-8">
         <PageHeader
           title="Hi, I’m Angel—"
           subtitle="a software engineer with over ten years of experience in building digital products."

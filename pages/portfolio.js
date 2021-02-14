@@ -1,30 +1,20 @@
-import ProjectCard from '@/components/ProjectCard';
-import projects from '@/data/projects.json';
+import projects from '@/data/projects';
 import PageLayout from '@/layouts/page';
+import ContentCard from '@/components/ContentCard';
 
 const pageInfo = {
   title: 'Portfolio',
   description: 'Weekend projects for fun and learning.',
 };
 
-function ProjectsList({ projects }) {
-  if (!projects.length) {
-    return null;
-  }
-
-  return (
-    <div className="flex flex-col space-y-4">
-      {projects.map(project => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
-    </div>
-  );
-}
-
 export default function Portfolio() {
   return (
     <PageLayout {...pageInfo}>
-      <ProjectsList projects={projects.data} />
+      <div className="grid grid-cols-full gap-8 lg:gap-12">
+        {projects.map(project => (
+          <ContentCard key={project.title} {...project} />
+        ))}
+      </div>
     </PageLayout>
   );
 }

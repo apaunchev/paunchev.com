@@ -18,11 +18,16 @@ const routes = {
     activePaths: ['/library', '/library/[type]'],
     title: 'Library',
   },
+  snippets: {
+    href: '/snippets',
+    activePaths: ['/snippets', '/snippets/[slug]'],
+    title: 'Snippets',
+  },
 };
 
 function Navigation() {
   return (
-    <nav className="flex">
+    <nav className="flex space-x-4 py-4 overflow-x-auto">
       {Object.keys(routes).map(key => (
         <NavLink key={key} {...routes[key]} />
       ))}
@@ -32,18 +37,11 @@ function Navigation() {
 
 function NavLink({ href, activePaths, title }) {
   const router = useRouter();
+  const isActive = activePaths.includes(router.pathname);
 
   return (
     <Link href={href}>
-      <a
-        className={
-          activePaths.includes(router.pathname)
-            ? 'mr-4 lg:mr-5 pb-1 lg:text-lg border-purple-600'
-            : 'mr-4 lg:mr-5 pb-1 lg:text-lg'
-        }
-      >
-        {title}
-      </a>
+      <a className={isActive ? 'border-purple-600' : null}>{title}</a>
     </Link>
   );
 }
@@ -51,10 +49,10 @@ function NavLink({ href, activePaths, title }) {
 function AvatarLink() {
   return (
     <Link href="/">
-      <a className="inline-block mr-5 lg:mr-6 border-none w-16 lg:w-20">
+      <a className="block border-none flex-shrink-0 w-16 lg:w-20">
         <Image
           src="/me.png"
-          alt="Photo of the author"
+          alt=""
           width={80}
           height={80}
           quality={100}
@@ -67,7 +65,7 @@ function AvatarLink() {
 
 export default function Header() {
   return (
-    <header className="flex items-center">
+    <header className="flex items-center space-x-4 lg:text-lg">
       <AvatarLink />
       <Navigation />
     </header>

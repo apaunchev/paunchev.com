@@ -4,9 +4,9 @@ import PageHeader from '@/components/PageHeader';
 export default function PageLayout({ children, title, description }) {
   return (
     <Container title={title} description={description}>
-      <div className="max-w-lg lg:max-w-xl space-y-5 md:space-y-6 lg:space-y-7">
+      <div className="space-y-4 lg:space-y-6">
         <PageHeader title={title} subtitle={description} />
-        {children}
+        <section className="flex flex-col space-y-3">{children}</section>
       </div>
     </Container>
   );
