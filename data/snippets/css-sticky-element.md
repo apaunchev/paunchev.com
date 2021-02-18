@@ -6,7 +6,7 @@ tags:
 
 ```css
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 ```

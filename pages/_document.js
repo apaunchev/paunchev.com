@@ -23,7 +23,7 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
         </Head>
-        <body className="px-6 py-6 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <body>
           <Main />
           <NextScript />
         </body>

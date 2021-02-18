@@ -1,6 +1,7 @@
 import projects from '@/data/projects';
 import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
+import PageGrid from '@/components/PageGrid';
 
 const pageInfo = {
   title: 'Portfolio',
@@ -10,11 +11,11 @@ const pageInfo = {
 export default function Portfolio() {
   return (
     <PageLayout {...pageInfo}>
-      <div className="grid grid-cols-full gap-8 lg:gap-12">
+      <PageGrid>
         {projects.map(project => (
           <ContentCard key={project.title} {...project} />
         ))}
-      </div>
+      </PageGrid>
     </PageLayout>
   );
 }

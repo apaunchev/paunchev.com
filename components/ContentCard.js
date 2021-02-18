@@ -11,13 +11,10 @@ export default function ContentCard({
   tags,
 }) {
   return (
-    <a
-      href={url}
-      className="group border-none focus:ring-2 ring-purple-600 ring-offset-4"
-    >
-      <article>
+    <a href={url}>
+      <div>
         {image ? (
-          <figure className="float-right mt-1 mb-1 ml-4 w-20">
+          <figure>
             <Image
               src={image.src}
               width={image.width}
@@ -26,22 +23,52 @@ export default function ContentCard({
             />
           </figure>
         ) : null}
-        {title ? (
-          <h2 className="text-xl font-semibold tracking-tight group-hover:text-purple-600">
-            {title}
-          </h2>
+        {title ? <h2>{title}</h2> : null}
+        {author ? <h3 className="meta">{author}</h3> : null}
+        {description ? <p>{description}</p> : null}
+        {quote ? (
+          <p>
+            <i>‘{quote}’</i>
+          </p>
         ) : null}
-        {author ? (
-          <h3 className="text-base text-gray-600 dark:text-gray-400">
-            {author}
-          </h3>
-        ) : null}
-        {description ? (
-          <p className="mt-1 mb-0 text-base">{description}</p>
-        ) : null}
-        {quote ? <p className="mt-1 mb-0 text-base italic">‘{quote}’</p> : null}
         <TagsList tags={tags} />
-      </article>
+      </div>
+      <style jsx>{`
+        a {
+          border: none;
+        }
+
+        a:hover h2,
+        a:focus h2 {
+          color: var(--color-links-active);
+        }
+
+        figure {
+          float: right;
+          margin: 0.25rem 0 0.25rem 1rem;
+          width: 5rem;
+        }
+
+        h2 {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+
+        h3 {
+          margin: 0;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          font-weight: 500;
+        }
+
+        p {
+          margin-top: 0.25rem;
+          margin-bottom: 0;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      `}</style>
     </a>
   );
 }

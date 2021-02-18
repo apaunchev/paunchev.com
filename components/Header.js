@@ -23,51 +23,87 @@ const routes = {
     activePaths: ['/snippets', '/snippets/[slug]'],
     title: 'Snippets',
   },
+  uses: {
+    href: '/uses',
+    activePaths: ['/uses'],
+    title: 'Uses',
+  },
 };
 
-function Navigation() {
-  return (
-    <nav className="flex space-x-4 py-4 overflow-x-auto">
-      {Object.keys(routes).map(key => (
-        <NavLink key={key} {...routes[key]} />
-      ))}
-    </nav>
-  );
-}
-
-function NavLink({ href, activePaths, title }) {
-  const router = useRouter();
-  const isActive = activePaths.includes(router.pathname);
-
-  return (
-    <Link href={href}>
-      <a className={isActive ? 'border-purple-600' : null}>{title}</a>
-    </Link>
-  );
-}
-
-function AvatarLink() {
-  return (
-    <Link href="/">
-      <a className="block border-none flex-shrink-0 w-16 lg:w-20">
-        <Image
-          src="/me.png"
-          alt=""
-          width={80}
-          height={80}
-          quality={100}
-          className="rounded-full"
-        />
-      </a>
-    </Link>
-  );
-}
-
 export default function Header() {
+  const router = useRouter();
+
   return (
-    <header className="flex items-center space-x-4 lg:text-lg">
-      <AvatarLink />
-      <Navigation />
+    <header>
+      <Link href="/">
+        <a>
+          <Image
+            src="/me.png"
+            alt=""
+            width={80}
+            height={80}
+            quality={100}
+            className="rounded"
+          />
+        </a>
+      </Link>
+      <nav>
+        {Object.keys(routes).map(key => {
+          const { href, activePaths, title } = routes[key];
+
+          return (
+            <Link key={key} href={href}>
+              <a
+                className={
+                  activePaths.includes(router.pathname) ? 'active' : null
+                }
+              >
+                {title}
+              </a>
+            </Link>
+          );
+        })}
+      </nav>
+      <style jsx>{`
+        header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+        }
+
+        header > a {
+          display: flex;
+          border: none;
+          flex-shrink: 0;
+          width: 4rem;
+        }
+
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        nav > a {
+          margin-top: 0.25rem;
+          margin-left: 1rem;
+        }
+
+        nav > a:hover,
+        nav > a:focus,
+        nav > a.active {
+          border-color: var(--color-links-active);
+        }
+
+        @media (min-width: 1024px) {
+          header {
+            margin-bottom: 2.5rem;
+          }
+
+          header > a {
+            width: 5rem;
+          }
+        }
+      `}</style>
     </header>
   );
 }

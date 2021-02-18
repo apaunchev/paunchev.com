@@ -5,6 +5,7 @@ import { hyphenize } from '@/lib/helpers';
 import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
 import { TagsFilter } from '@/components/TagsFilter';
+import PageGrid from '@/components/PageGrid';
 
 const pageInfo = {
   title: 'Snippets',
@@ -59,7 +60,7 @@ export default function Snippets({ snippets }) {
   return (
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={snippetTypesMap} onFilterClick={handleSetFilter} />
-      <div className="grid grid-cols-full gap-8 lg:gap-12">
+      <PageGrid>
         {filteredData.map(snippet => (
           <ContentCard
             key={snippet?.slug}
@@ -69,7 +70,7 @@ export default function Snippets({ snippets }) {
             url={`/snippets/${snippet?.slug}`}
           />
         ))}
-      </div>
+      </PageGrid>
     </PageLayout>
   );
 }

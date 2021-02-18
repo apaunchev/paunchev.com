@@ -5,6 +5,7 @@ import { hyphenize } from '@/lib/helpers';
 import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
 import { TagsFilter } from '@/components/TagsFilter';
+import PageGrid from '@/components/PageGrid';
 
 export const pageInfo = {
   title: 'Library',
@@ -57,11 +58,11 @@ export default function Library() {
   return (
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
-      <div className="grid grid-cols-full gap-8 lg:gap-12">
+      <PageGrid>
         {filteredData.map(item => (
           <ContentCard key={item.url} {...item} />
         ))}
-      </div>
+      </PageGrid>
     </PageLayout>
   );
 }

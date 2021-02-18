@@ -1,16 +1,26 @@
 export default function PageHeader({ title, subtitle }) {
   return (
-    <div className="flex flex-col lg:space-y-2">
-      {title ? (
-        <h1 className="font-extrabold text-3xl lg:text-4xl tracking-tight">
-          {title}
-        </h1>
-      ) : null}
-      {subtitle ? (
-        <p className="my-0 text-xl lg:text-2xl text-gray-700 dark:text-gray-400">
-          {subtitle}
-        </p>
-      ) : null}
-    </div>
+    <header>
+      {title ? <h1>{title}</h1> : null}
+      {subtitle ? <p className="meta">{subtitle}</p> : null}
+      <style jsx>{`
+        h1 {
+          margin-bottom: 0;
+        }
+
+        p {
+          margin: 0.25rem 0 0;
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+
+        @media (min-width: 1024px) {
+          p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+        }
+      `}</style>
+    </header>
   );
 }

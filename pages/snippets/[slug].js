@@ -13,6 +13,11 @@ export default function Snippet({ meta, content }) {
     <SnippetLayout {...pageInfo}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <TagsList tags={meta?.tags} />
+      <style jsx>{`
+        div {
+          margin: 1.5rem 0;
+        }
+      `}</style>
     </SnippetLayout>
   );
 }

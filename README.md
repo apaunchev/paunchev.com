@@ -2,7 +2,7 @@
 
 The code that powers my space on the internet.
 
-Built using [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/); deployed on [Vercel](https://vercel.com/).
+Built with [Next.js](https://nextjs.org/) and deployed on [Vercel](https://vercel.com/).
 
 ## Development
 
