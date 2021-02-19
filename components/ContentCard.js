@@ -1,3 +1,4 @@
+import css from 'styled-jsx/css';
 import Image from 'next/image';
 import { TagsList } from '@/components/TagsList';
 
@@ -33,42 +34,44 @@ export default function ContentCard({
         ) : null}
         <TagsList tags={tags} />
       </div>
-      <style jsx>{`
-        a {
-          border: none;
-        }
-
-        a:hover h2,
-        a:focus h2 {
-          color: var(--color-links-active);
-        }
-
-        figure {
-          float: right;
-          margin: 0.25rem 0 0.25rem 1rem;
-          width: 5rem;
-        }
-
-        h2 {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.75rem;
-        }
-
-        h3 {
-          margin: 0;
-          font-size: 1.125rem;
-          line-height: 1.75rem;
-          font-weight: 500;
-        }
-
-        p {
-          margin-top: 0.25rem;
-          margin-bottom: 0;
-          font-size: 1rem;
-          line-height: 1.5rem;
-        }
-      `}</style>
+      <style jsx>{styles}</style>
     </a>
   );
 }
+
+const styles = css`
+  a {
+    border: none;
+  }
+
+  a:hover h2,
+  a:focus h2 {
+    color: var(--color-links-active);
+  }
+
+  figure {
+    float: right;
+    margin: 0.25rem 0 0.25rem 1rem;
+    width: 5rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
+
+  p {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+`;

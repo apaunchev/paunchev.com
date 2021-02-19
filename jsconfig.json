@@ -6,7 +6,6 @@
       "@/layouts/*": ["layouts/*"],
       "@/data/*": ["data/*"],
       "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"]
     }
   }
 }

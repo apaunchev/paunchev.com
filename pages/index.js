@@ -1,3 +1,4 @@
+import css from 'styled-jsx/css';
 import Container from '@/components/Container';
 import PageHeader from '@/components/PageHeader';
 
@@ -89,33 +90,35 @@ export default function About() {
           </a>
         </p>
       </article>
-      <style jsx>{`
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 1rem;
-        }
-
-        .grid ul {
-          margin: 0;
-        }
-
-        ul,
-        ol {
-          list-style: none;
-          padding: 0;
-        }
-
-        ol li {
-          margin: 1rem 0;
-        }
-
-        @media (min-width: 1024px) {
-          .grid {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-          }
-        }
-      `}</style>
+      <style jsx>{styles}</style>
     </Container>
   );
 }
+
+const styles = css`
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .grid ul {
+    margin: 0;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  ol li {
+    margin: 1rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+`;

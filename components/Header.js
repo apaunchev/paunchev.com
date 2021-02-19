@@ -1,3 +1,4 @@
+import css from 'styled-jsx/css';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -64,46 +65,48 @@ export default function Header() {
           );
         })}
       </nav>
-      <style jsx>{`
-        header {
-          display: flex;
-          align-items: center;
-          margin-bottom: 1.5rem;
-        }
-
-        header > a {
-          display: flex;
-          border: none;
-          flex-shrink: 0;
-          width: 4rem;
-        }
-
-        nav {
-          display: flex;
-          flex-wrap: wrap;
-        }
-
-        nav > a {
-          margin-top: 0.25rem;
-          margin-left: 1rem;
-        }
-
-        nav > a:hover,
-        nav > a:focus,
-        nav > a.active {
-          border-color: var(--color-links-active);
-        }
-
-        @media (min-width: 1024px) {
-          header {
-            margin-bottom: 2.5rem;
-          }
-
-          header > a {
-            width: 5rem;
-          }
-        }
-      `}</style>
+      <style jsx>{styles}</style>
     </header>
   );
 }
+
+const styles = css`
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  header > a {
+    display: flex;
+    border: none;
+    flex-shrink: 0;
+    width: 4rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav > a {
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+  }
+
+  nav > a:hover,
+  nav > a:focus,
+  nav > a.active {
+    border-color: var(--color-links-active);
+  }
+
+  @media (min-width: 1024px) {
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    header > a {
+      width: 5rem;
+    }
+  }
+`;

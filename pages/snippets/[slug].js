@@ -1,3 +1,4 @@
+import css from 'styled-jsx/css';
 import SnippetLayout from '@/layouts/snippet';
 import markdownToHtml from '@/lib/markdown';
 import { getAllSnippets, getSnippetBySlug } from '@/lib/snippets';
@@ -13,14 +14,16 @@ export default function Snippet({ meta, content }) {
     <SnippetLayout {...pageInfo}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <TagsList tags={meta?.tags} />
-      <style jsx>{`
-        div {
-          margin: 1.5rem 0;
-        }
-      `}</style>
+      <style jsx>{styles}</style>
     </SnippetLayout>
   );
 }
+
+const styles = css`
+  div {
+    margin: 1.5rem 0;
+  }
+`;
 
 export async function getStaticProps({ params }) {
   const snippet = getSnippetBySlug(params.slug);
