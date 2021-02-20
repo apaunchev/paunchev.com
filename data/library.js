@@ -1,5 +1,13 @@
 export default [
   {
+    tags: ['articles'],
+    title: 'Cache-Control for Civilians',
+    author: 'Harry Roberts',
+    quote:
+      'The best request is the one that never happens: in the fight for fast websites, avoiding the network is far better than hitting the network at all.',
+    url: 'https://csswizardry.com/2019/03/cache-control-for-civilians/',
+  },
+  {
     tags: ['personal-sites'],
     title: 'Noah Stokes',
     url: 'https://esbueno.noahstokes.com/',
