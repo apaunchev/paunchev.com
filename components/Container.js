@@ -118,11 +118,6 @@ const styles = css.global`
     border-bottom: 3px solid var(--color-borders);
   }
 
-  ul,
-  ol {
-    padding-left: 1.25rem;
-  }
-
   small {
     font-size: 0.875rem;
     line-height: 1.25rem;
