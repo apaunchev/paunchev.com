@@ -1,21 +1,28 @@
-import projects from '@/data/projects';
-import PageLayout from '@/layouts/page';
-import ContentCard from '@/components/ContentCard';
-import PageGrid from '@/components/PageGrid';
+import css from 'styled-jsx/css';
+import ArticleLayout from '@/layouts/article';
+import PortfolioCard from '@/components/PortfolioCard';
+import projects from '@/data/portfolio';
 
 const pageInfo = {
   title: 'Portfolio',
-  description: 'Weekend projects for fun and learning.',
+  description: 'Personal projects for fun and learning.',
 };
 
 export default function Portfolio() {
   return (
-    <PageLayout {...pageInfo}>
-      <PageGrid>
+    <ArticleLayout {...pageInfo}>
+      <section>
         {projects.map(project => (
-          <ContentCard key={project.title} {...project} />
+          <PortfolioCard key={project.url} {...project} />
         ))}
-      </PageGrid>
-    </PageLayout>
+      </section>
+      <style jsx>{styles}</style>
+    </ArticleLayout>
   );
 }
+
+const styles = css`
+  section {
+    margin: 1.5rem 0;
+  }
+`;

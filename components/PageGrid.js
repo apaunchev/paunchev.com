@@ -12,7 +12,7 @@ export default function PageGrid({ children }) {
 const styles = css`
   section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 2rem;
     margin: 1.5rem 0;
   }

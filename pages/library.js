@@ -4,7 +4,7 @@ import data from '@/data/library';
 import { hyphenize } from '@/lib/helpers';
 import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
-import { TagsFilter } from '@/components/TagsFilter';
+import TagsFilter from '@/components/TagsFilter';
 import PageGrid from '@/components/PageGrid';
 
 export const pageInfo = {
@@ -59,9 +59,20 @@ export default function Library() {
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
       <PageGrid>
-        {filteredData.map(item => (
-          <ContentCard key={item.url} {...item} />
-        ))}
+        {filteredData.map(
+          ({ url, title, author, description, quote, image, tags }) => (
+            <ContentCard
+              key={url}
+              url={url}
+              title={title}
+              subtitle={author}
+              description={description}
+              quote={quote}
+              image={image}
+              tags={tags}
+            />
+          ),
+        )}
       </PageGrid>
     </PageLayout>
   );

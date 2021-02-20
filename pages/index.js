@@ -96,6 +96,10 @@ export default function About() {
 }
 
 const styles = css`
+  article {
+    max-width: 36rem;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

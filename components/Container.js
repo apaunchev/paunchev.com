@@ -9,18 +9,25 @@ export default function Container({ children, title, description }) {
         <title>{title ? `${title} – ` : null}Angel Paunchev</title>
         {description ? <meta name="description" content={description} /> : null}
       </Head>
-      <div>
+      <div className="container">
         <Header />
         <main>{children}</main>
       </div>
+      <style jsx>{localStyles}</style>
       <style jsx global>
-        {styles}
+        {globalStyles}
       </style>
     </>
   );
 }
 
-const styles = css.global`
+const localStyles = css`
+  .container {
+    max-width: 72rem;
+  }
+`;
+
+const globalStyles = css.global`
   :root {
     --gray-0: #111827;
     --gray-1: #374151;
@@ -70,10 +77,6 @@ const styles = css.global`
     color: var(--color-text-primary);
   }
 
-  article {
-    max-width: 32rem;
-  }
-
   a {
     color: var(--color-text-primary);
     border-bottom: 2px solid var(--color-borders);
@@ -91,24 +94,37 @@ const styles = css.global`
     font-size: 1.875rem;
     line-height: 2.25rem;
     letter-spacing: -0.025em;
-    font-weight: 800;
+    font-weight: 700;
   }
 
   h2,
   .h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     letter-spacing: -0.025em;
     font-weight: 600;
   }
 
   h3,
   .h3 {
-    margin-bottom: 0rem;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: -0.025em;
     font-weight: 600;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+  }
+
+  small,
+  .small {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   hr {
@@ -116,11 +132,6 @@ const styles = css.global`
     margin: 1.5rem 0;
     border: 0;
     border-bottom: 3px solid var(--color-borders);
-  }
-
-  small {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   b {
@@ -147,10 +158,6 @@ const styles = css.global`
       font-size: 1.125rem;
     }
 
-    article {
-      max-width: 36rem;
-    }
-
     h1,
     .h1 {
       font-size: 2.25rem;
@@ -169,14 +176,20 @@ const styles = css.global`
       line-height: 2rem;
     }
 
-    hr {
-      margin-top: 2.5rem;
-      margin-bottom: 2.5rem;
+    h4,
+    .h4 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
 
     small {
       font-size: 1rem;
       line-height: 1.5rem;
+    }
+
+    hr {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
     }
   }
 `;

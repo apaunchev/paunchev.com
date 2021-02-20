@@ -1,10 +1,10 @@
 import css from 'styled-jsx/css';
 import Image from 'next/image';
-import { TagsList } from '@/components/TagsList';
+import TagsList from '@/components/TagsList';
 
 export default function ContentCard({
   title,
-  author,
+  subtitle,
   description,
   quote,
   image,
@@ -12,30 +12,32 @@ export default function ContentCard({
   tags,
 }) {
   return (
-    <a href={url}>
-      <div>
-        {image ? (
-          <figure>
-            <Image
-              src={image.src}
-              width={image.width}
-              height={image.height}
-              alt={title}
-            />
-          </figure>
-        ) : null}
-        {title ? <h2>{title}</h2> : null}
-        {author ? <h3 className="meta">{author}</h3> : null}
-        {description ? <p>{description}</p> : null}
-        {quote ? (
-          <p>
-            <i>‘{quote}’</i>
-          </p>
-        ) : null}
-        <TagsList tags={tags} />
-      </div>
-      <style jsx>{styles}</style>
-    </a>
+    <article>
+      <a href={url}>
+        <div>
+          {image ? (
+            <figure>
+              <Image
+                src={image.src}
+                width={image.width}
+                height={image.height}
+                alt={title}
+              />
+            </figure>
+          ) : null}
+          {title ? <h2 className="h3">{title}</h2> : null}
+          {subtitle ? <h3 className="h4 meta">{subtitle}</h3> : null}
+          {description ? <p>{description}</p> : null}
+          {quote ? (
+            <p>
+              <i>‘{quote}’</i>
+            </p>
+          ) : null}
+          <TagsList tags={tags} />
+        </div>
+        <style jsx>{styles}</style>
+      </a>
+    </article>
   );
 }
 
@@ -57,19 +59,14 @@ const styles = css`
 
   h2 {
     margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   h3 {
     margin: 0;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 500;
   }
 
   p {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.5rem;

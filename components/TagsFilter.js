@@ -1,7 +1,7 @@
 import css from 'styled-jsx/css';
 import { useRouter } from 'next/router';
 
-export function TagsFilter({ tagsMap = {}, onFilterClick }) {
+export default function TagsFilter({ tagsMap = {}, onFilterClick }) {
   const { query, pathname } = useRouter();
 
   const handleClick = (e, filter) => {
@@ -11,45 +11,39 @@ export function TagsFilter({ tagsMap = {}, onFilterClick }) {
   };
 
   return (
-    <div>
-      <nav>
-        <b>Filter:</b>
-        <a
-          className={!query.tag ? 'active' : null}
-          href={pathname}
-          onClick={handleClick}
-        >
-          All
-        </a>
-        {Object.keys(tagsMap).map(tag => {
-          const isActive = query.tag === tag;
+    <nav>
+      <b>Filter:</b>
+      <a
+        className={!query.tag ? 'active' : null}
+        href={pathname}
+        onClick={handleClick}
+      >
+        All
+      </a>
+      {Object.keys(tagsMap).map(tag => {
+        const isActive = query.tag === tag;
 
-          return (
-            <a
-              className={isActive ? 'active' : null}
-              key={tag}
-              href={`${pathname}/?tag=${tag}`}
-              onClick={e => handleClick(e, tag)}
-            >
-              {tagsMap[tag]}
-            </a>
-          );
-        })}
-      </nav>
+        return (
+          <a
+            className={isActive ? 'active' : null}
+            key={tag}
+            href={`${pathname}/?tag=${tag}`}
+            onClick={e => handleClick(e, tag)}
+          >
+            {tagsMap[tag]}
+          </a>
+        );
+      })}
       <style jsx>{styles}</style>
-    </div>
+    </nav>
   );
 }
 
 const styles = css`
-  div {
-    display: flex;
-    margin: 1.5rem 0;
-  }
-
   nav {
     display: flex;
     flex-wrap: wrap;
+    margin: 1.5rem 0;
   }
 
   nav > * {

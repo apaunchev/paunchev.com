@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css';
 
-export function TagsList({ tags = [] }) {
+export default function TagsList({ tags = [] }) {
   if (!tags.length) {
     return null;
   }

@@ -4,7 +4,7 @@ import { getAllSnippets } from '@/lib/snippets';
 import { hyphenize } from '@/lib/helpers';
 import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
-import { TagsFilter } from '@/components/TagsFilter';
+import TagsFilter from '@/components/TagsFilter';
 import PageGrid from '@/components/PageGrid';
 
 const pageInfo = {
@@ -61,13 +61,13 @@ export default function Snippets({ snippets }) {
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={snippetTypesMap} onFilterClick={handleSetFilter} />
       <PageGrid>
-        {filteredData.map(snippet => (
+        {filteredData.map(({ slug, meta: { title, description, tags } }) => (
           <ContentCard
-            key={snippet?.slug}
-            title={snippet?.meta?.title}
-            description={snippet?.meta?.description}
-            tags={snippet?.meta?.tags}
-            url={`/snippets/${snippet?.slug}`}
+            key={slug}
+            title={title}
+            description={description}
+            tags={tags}
+            url={`/snippets/${slug}`}
           />
         ))}
       </PageGrid>
