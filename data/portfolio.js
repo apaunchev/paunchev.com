@@ -2,7 +2,7 @@ export default [
   {
     title: 'Salaree',
     description:
-      'A job ads aggregator with a focus on salaries on the Bulgarian market.',
+      'An aggregator for Bulgarian IT job postings with salary data.',
     url: 'https://salaree.now.sh',
     tags: ['next.js', 'firebase', 'ant-design'],
     image: {
