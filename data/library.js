@@ -1,5 +1,21 @@
 export default [
   {
+    tags: ['personal-sites'],
+    title: 'Pedro Duarte',
+    url: 'https://ped.ro/',
+    image: {
+      src: '/people/pedro-duarte.jpg',
+      width: 80,
+      height: 80,
+    },
+  },
+  {
+    tags: ['tools'],
+    title: 'Ray.so',
+    description: 'Create beautiful code',
+    url: 'https://ray.so/',
+  },
+  {
     tags: ['articles'],
     title: 'Cache-Control for Civilians',
     author: 'Harry Roberts',
