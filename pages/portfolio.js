@@ -11,18 +11,9 @@ const pageInfo = {
 export default function Portfolio() {
   return (
     <ArticleLayout {...pageInfo}>
-      <section>
-        {projects.map(project => (
-          <PortfolioCard key={project.url} {...project} />
-        ))}
-      </section>
-      <style jsx>{styles}</style>
+      {projects.map(project => (
+        <PortfolioCard key={project.url} {...project} />
+      ))}
     </ArticleLayout>
   );
 }
-
-const styles = css`
-  section {
-    margin: 1.5rem 0;
-  }
-`;

@@ -11,6 +11,10 @@ export default function PageHeader({ title, subtitle }) {
 }
 
 const styles = css`
+  header {
+    margin-bottom: 1rem;
+  }
+
   h1 {
     margin-bottom: 0;
   }
@@ -22,6 +26,10 @@ const styles = css`
   }
 
   @media (min-width: 1024px) {
+    header {
+      margin-bottom: 1.5rem;
+    }
+
     p {
       font-size: 1.5rem;
       line-height: 2rem;

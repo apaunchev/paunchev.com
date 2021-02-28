@@ -14,16 +14,9 @@ export default function Snippet({ meta, content }) {
     <SnippetLayout {...pageInfo}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <TagsList tags={meta?.tags} />
-      <style jsx>{styles}</style>
     </SnippetLayout>
   );
 }
-
-const styles = css`
-  div {
-    margin: 1.5rem 0;
-  }
-`;
 
 export async function getStaticProps({ params }) {
   const snippet = getSnippetBySlug(params.slug);

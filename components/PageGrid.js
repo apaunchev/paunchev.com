@@ -2,23 +2,22 @@ import css from 'styled-jsx/css';
 
 export default function PageGrid({ children }) {
   return (
-    <section>
+    <div>
       {children}
       <style jsx>{styles}</style>
-    </section>
+    </div>
   );
 }
 
 const styles = css`
-  section {
+  div {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 2rem;
-    margin: 1.5rem 0;
   }
 
   @media (min-width: 1024px) {
-    section {
+    div {
       gap: 3rem;
     }
   }
