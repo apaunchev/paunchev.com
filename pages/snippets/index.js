@@ -9,8 +9,7 @@ import PageGrid from '@/components/PageGrid';
 
 const pageInfo = {
   title: 'Snippets',
-  description:
-    'A collection of code or commands that make computers do things.',
+  description: 'Collection of code or commands that make computers do things.',
 };
 
 const snippetTypesMap = {

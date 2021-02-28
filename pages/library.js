@@ -10,7 +10,7 @@ import PageGrid from '@/components/PageGrid';
 export const pageInfo = {
   title: 'Library',
   description:
-    'A digital library linking to my favourite content around the web.',
+    'Digital library linking to my favourite content around the web.',
 };
 
 const contentTypesMap = {
