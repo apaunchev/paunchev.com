@@ -1,6 +1,16 @@
 export default [
   {
     tags: ['personal-sites'],
+    title: 'David Klein',
+    url: 'https://diklein.com/',
+    image: {
+      src: '/people/david-klein.jpg',
+      width: 80,
+      height: 80,
+    },
+  },
+  {
+    tags: ['personal-sites'],
     title: 'Pedro Duarte',
     url: 'https://ped.ro/',
     image: {
