@@ -28,7 +28,13 @@ export default function Library() {
       return true;
     }
 
-    return item?.tags?.includes(hyphenize(filter));
+    const tags = item?.tags;
+
+    if (!tags) {
+      return false;
+    }
+
+    return tags.includes(hyphenize(filter));
   });
 
   useEffect(() => {

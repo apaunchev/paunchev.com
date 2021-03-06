@@ -1,5 +1,7 @@
 ---
 title: Remove object property using the rest operator
+tags:
+  - javascript
 ---
 
 ```javascript

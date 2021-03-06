@@ -29,7 +29,13 @@ export default function Snippets({ snippets }) {
       return true;
     }
 
-    return snippet?.meta?.tags.includes(hyphenize(filter));
+    const tags = snippet?.meta?.tags;
+
+    if (!tags) {
+      return false;
+    }
+
+    return tags.includes(hyphenize(filter));
   });
 
   useEffect(() => {
