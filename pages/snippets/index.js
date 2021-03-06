@@ -19,6 +19,8 @@ const snippetTypesMap = {
   linux: 'Linux',
   npm: 'npm',
   windows: 'Windows',
+  nextjs: 'Next.js',
+  http: 'HTTP',
 };
 
 export default function Snippets({ snippets }) {

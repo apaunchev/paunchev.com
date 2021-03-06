@@ -134,7 +134,8 @@ const globalStyles = css.global`
     border-bottom: 3px solid var(--color-borders);
   }
 
-  b {
+  b,
+  strong {
     font-weight: 600;
   }
 
