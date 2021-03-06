@@ -63,30 +63,32 @@ export default function Wishlist() {
     });
   };
 
-  if (!data) {
-    return null;
-  }
-
   return (
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
-      <PageGrid>
-        {filteredData?.map(({ id, url, title, imageSrc, price, tags }) => (
-          <ContentCard
-            key={id}
-            url={url}
-            title={title}
-            subtitle={usdFormatter.format(price)}
-            image={{ src: imageSrc }}
-            tags={tags}
-          />
-        ))}
-      </PageGrid>
-      <hr />
-      <p>
-        Last updated:{' '}
-        {new Date(data?.createdAt._seconds * 1000).toLocaleDateString()}
-      </p>
+      {data ? (
+        <>
+          <PageGrid>
+            {filteredData?.map(({ id, url, title, imageSrc, price, tags }) => (
+              <ContentCard
+                key={id}
+                url={url}
+                title={title}
+                subtitle={usdFormatter.format(price)}
+                image={{ src: imageSrc }}
+                tags={tags}
+              />
+            ))}
+          </PageGrid>
+          <hr />
+          <p>
+            Last updated:{' '}
+            {new Date(data?.createdAt._seconds * 1000).toLocaleDateString()}
+          </p>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </PageLayout>
   );
 }
