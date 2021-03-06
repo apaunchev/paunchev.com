@@ -9,11 +9,6 @@ const routes = {
     activePaths: ['/'],
     title: 'About',
   },
-  portfolio: {
-    href: '/portfolio',
-    activePaths: ['/portfolio'],
-    title: 'Portfolio',
-  },
   library: {
     href: '/library',
     activePaths: ['/library', '/library/[type]'],
