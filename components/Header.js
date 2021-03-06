@@ -19,6 +19,11 @@ const routes = {
     activePaths: ['/library', '/library/[type]'],
     title: 'Library',
   },
+  photos: {
+    href: '/photos',
+    activePaths: ['/photos'],
+    title: 'Photos',
+  },
   snippets: {
     href: '/snippets',
     activePaths: ['/snippets', '/snippets/[slug]'],
@@ -44,7 +49,7 @@ export default function Header() {
             width={80}
             height={80}
             quality={100}
-            className="rounded"
+            className="rounded-full"
           />
         </a>
       </Link>
