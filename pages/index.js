@@ -24,8 +24,7 @@ export default function About() {
           bring value to customers. I approach everything with a growth mindset
           and try to inspire and mentor others along the way.
         </p>
-        <hr />
-        <h2 className="h3">Specialties</h2>
+        <h3>Specialties</h3>
         <div className="grid">
           <ul>
             <li>JavaScript</li>
@@ -46,39 +45,18 @@ export default function About() {
             <li>Performance</li>
           </ul>
         </div>
-        <hr />
-        <h2 className="h3">Employment</h2>
-        <ol>
-          <li>
-            <div>
-              Lead Front-end Engineer
-              <span className="meta"> @ </span>
-              <a href="https://www.ebag.bg/">eBag.bg</a>
-            </div>
-            <div className="meta">2020–</div>
-          </li>
-          <li>
-            <div>
-              Software Developer; Team Lead
-              <span className="meta"> @ </span>
-              <a href="https://spotme.com/">SpotMe</a>
-            </div>
-            <div className="meta">2015–2020</div>
-          </li>
-        </ol>
-        <hr />
-        <h2 className="h3">Education</h2>
-        <ol>
-          <li>
-            <div>
-              BSc Computing
-              <span className="meta"> @ </span>
-              <a href="https://www.gcu.ac.uk/">Glasgow Caledonian University</a>
-            </div>
-            <div className="meta">2011–2015</div>
-          </li>
-        </ol>
-        <hr />
+        <h2>This site</h2>
+        <p>
+          I primarily use this site as a long-term storage of digital
+          things—bookmarks, photos, snippets, <i>et cetera</i>. I also maintain
+          a short professional summary, for anyone interested in that side of
+          things.
+        </p>
+        <p>
+          But mostly this site is meant for myself. Everyone else is, of course,
+          welcome—I just cannot guarantee you will find anything useful here.
+        </p>
+        <h2>Elsewhere</h2>
         <p>
           <span>💻 </span>
           <a href="https://github.com/apaunchev">See code on GitHub</a>
