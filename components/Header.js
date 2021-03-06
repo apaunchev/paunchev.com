@@ -14,15 +14,20 @@ const routes = {
     activePaths: ['/library', '/library/[type]'],
     title: 'Library',
   },
-  photos: {
-    href: '/photos',
-    activePaths: ['/photos'],
-    title: 'Photos',
-  },
   snippets: {
     href: '/snippets',
     activePaths: ['/snippets', '/snippets/[slug]'],
     title: 'Snippets',
+  },
+  wishlist: {
+    href: '/wishlist',
+    activePaths: ['/wishlist'],
+    title: 'Wishlist',
+  },
+  photos: {
+    href: '/photos',
+    activePaths: ['/photos'],
+    title: 'Photos',
   },
   uses: {
     href: '/uses',

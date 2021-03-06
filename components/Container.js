@@ -138,6 +138,15 @@ const globalStyles = css.global`
     font-weight: 600;
   }
 
+  code {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: Inconsolata, Monaco, Consolas, 'Andale Mono',
+      'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+    font-style: normal;
+    word-break: break-word;
+  }
+
   .rounded-small {
     border-radius: 0.25rem;
   }
@@ -148,6 +157,10 @@ const globalStyles = css.global`
 
   .meta {
     color: var(--color-text-secondary);
+  }
+
+  .h-full {
+    height: 100%;
   }
 
   @media (min-width: 768px) {

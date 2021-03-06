@@ -11,21 +11,27 @@ export default function ContentCard({
   url,
   tags,
 }) {
+  const useImageComponent = image && image.width && image.height;
+
   return (
     <article>
       <a href={url}>
-        <div>
+        <div className="h-full">
           {image ? (
             <figure>
-              <Image
-                src={image.src}
-                width={image.width}
-                height={image.height}
-                alt={title}
-              />
+              {useImageComponent ? (
+                <Image
+                  src={image.src}
+                  width={image.width}
+                  height={image.height}
+                  alt={title}
+                />
+              ) : (
+                <img src={image.src} alt={title} />
+              )}
             </figure>
           ) : null}
-          {title ? <h2 className="h3">{title}</h2> : null}
+          {title ? <h2 className="h3 title">{title}</h2> : null}
           {subtitle ? <h3 className="h4 meta">{subtitle}</h3> : null}
           {description ? <p>{description}</p> : null}
           {quote ? (
@@ -57,6 +63,14 @@ const styles = css`
     width: 5rem;
   }
 
+  img {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
   h2 {
     margin: 0;
   }
@@ -70,5 +84,13 @@ const styles = css`
     margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 `;
