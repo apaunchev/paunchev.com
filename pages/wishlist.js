@@ -63,6 +63,10 @@ export default function Wishlist() {
     });
   };
 
+  if (!data) {
+    return null;
+  }
+
   return (
     <PageLayout {...pageInfo}>
       <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
