@@ -37,8 +37,8 @@ export default function About() {
         <ul>
           <li>JavaScript</li>
           <li>React/Next.js</li>
+          <li>Testing</li>
           <li>Build tools</li>
-          <li>Unit testing</li>
         </ul>
         <ul>
           <li>HTML</li>
