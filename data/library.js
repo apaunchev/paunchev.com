@@ -11,12 +11,12 @@ export default [
   },
   {
     tags: ['articles'],
-    title:
-      'Looks Good To Me: Making code reviews better for remote-first teams',
+    title: 'Looks Good To Me',
     author: 'James Donohue',
     quote:
       'Why do you do code reviews? Perhaps it’s company policy, just an automatic part of your process, but have you ever sat down with your team and asked what everyone hopes to get out of it?',
-    url: 'https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md',
+    url:
+      'https://medium.com/bbc-design-engineering/looks-good-to-me-making-code-reviews-better-for-remote-first-teams-95bd92ee4e27',
   },
   {
     tags: ['personal-sites'],
