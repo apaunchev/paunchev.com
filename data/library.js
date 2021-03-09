@@ -1,6 +1,25 @@
 export default [
   {
     tags: ['personal-sites'],
+    title: 'Chase McCoy',
+    url: 'https://chasem.co/',
+    image: {
+      src: '/people/chase-mccoy.jpg',
+      width: 80,
+      height: 80,
+    },
+  },
+  {
+    tags: ['articles'],
+    title:
+      'Looks Good To Me: Making code reviews better for remote-first teams',
+    author: 'James Donohue',
+    quote:
+      'Why do you do code reviews? Perhaps it’s company policy, just an automatic part of your process, but have you ever sat down with your team and asked what everyone hopes to get out of it?',
+    url: 'https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md',
+  },
+  {
+    tags: ['personal-sites'],
     title: 'David Klein',
     url: 'https://diklein.com/',
     image: {
