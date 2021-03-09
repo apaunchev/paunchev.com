@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
+import css from 'styled-jsx/css';
 import useSWR from 'swr';
 import fetcher from '@/lib/fetcher';
 import { hyphenize, usdFormatter } from '@/lib/helpers';
@@ -69,16 +70,31 @@ export default function Wishlist() {
       {data ? (
         <>
           <PageGrid>
-            {filteredData?.map(({ id, url, title, imageSrc, price, tags }) => (
-              <ContentCard
-                key={id}
-                url={url}
-                title={title}
-                subtitle={usdFormatter.format(price)}
-                image={{ src: imageSrc }}
-                tags={tags}
-              />
-            ))}
+            {filteredData?.map(
+              ({ id, url, title, imageSrc, price, oldPrice, tags }) => {
+                const priceLabel = (
+                  <div>
+                    {usdFormatter.format(price)}
+                    {oldPrice ? (
+                      <small className="old-price">
+                        {usdFormatter.format(oldPrice)}
+                      </small>
+                    ) : null}
+                  </div>
+                );
+
+                return (
+                  <ContentCard
+                    key={id}
+                    url={url}
+                    title={title}
+                    subtitle={priceLabel}
+                    image={{ src: imageSrc }}
+                    tags={tags}
+                  />
+                );
+              },
+            )}
           </PageGrid>
           <hr />
           <p>
@@ -87,8 +103,18 @@ export default function Wishlist() {
           </p>
         </>
       ) : (
-        <p>Loading...</p>
+        <p>
+          <i>Loading...</i>
+        </p>
       )}
+      <style jsx>{styles}</style>
     </PageLayout>
   );
 }
+
+const styles = css`
+  .old-price {
+    text-decoration: line-through;
+    margin-left: 0.25rem;
+  }
+`;
