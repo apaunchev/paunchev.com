@@ -1,7 +1,6 @@
 import css from 'styled-jsx/css';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const routes = {
   about: {
@@ -43,12 +42,11 @@ export default function Header() {
     <header>
       <Link href="/">
         <a>
-          <Image
+          <img
             src="/me.png"
             alt=""
             width={80}
             height={80}
-            quality={100}
             className="rounded-full"
           />
         </a>
