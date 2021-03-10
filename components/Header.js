@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <header>
       <Link href="/">
-        <a>
+        <a className="avatar-link">
           <img
             src="/me.png"
             alt=""
@@ -80,11 +80,16 @@ const styles = css`
     margin-bottom: 1.5rem;
   }
 
-  header > a {
-    display: flex;
+  .avatar-link {
+    display: block;
     border: none;
     flex-shrink: 0;
-    width: 4rem;
+  }
+
+  .avatar-link img {
+    display: block;
+    width: 70px;
+    height: 70px;
   }
 
   nav {
@@ -94,7 +99,7 @@ const styles = css`
 
   nav > a {
     margin-top: 0.25rem;
-    margin-left: 1rem;
+    margin-left: 1.25rem;
   }
 
   nav > a:hover,
@@ -108,8 +113,9 @@ const styles = css`
       margin-bottom: 2.5rem;
     }
 
-    header > a {
-      width: 5rem;
+    .avatar-link img {
+      width: 80px;
+      height: 80px;
     }
   }
 `;
