@@ -60,16 +60,14 @@ const styles = css`
   }
 
   .search-input {
-    margin-left: auto;
-    padding: 0.25rem 0.5rem;
     width: 15rem;
-    border: 1px solid var(--color-borders);
-    font-size: 1rem;
+    height: 1.5rem;
   }
 
   .tags {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
   }
 
   .tags > * {
@@ -78,5 +76,12 @@ const styles = css`
 
   .tags a.active {
     border-color: var(--color-links-active);
+  }
+
+  @media (min-width: 768px) {
+    .filters {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 `;

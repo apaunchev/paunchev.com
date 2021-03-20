@@ -47,6 +47,7 @@ const globalStyles = css.global`
     --color-page-background: white;
     --color-selection-bg: var(--purple-1);
     --color-selection-text: var(--gray-0);
+    --color-input-background: white;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -58,6 +59,7 @@ const globalStyles = css.global`
       --color-page-background: var(--gray-0);
       --color-selection-bg: var(--purple-1);
       --color-selection-text: var(--gray-0);
+      --color-input-background: var(--gray-1);
     }
   }
 
@@ -146,6 +148,15 @@ const globalStyles = css.global`
       'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
     font-style: normal;
     word-break: break-word;
+  }
+
+  input {
+    padding: 0.25rem 0.5rem;
+    background-color: var(--color-input-background);
+    border: 1px solid var(--color-borders);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: var(--color-text-primary);
   }
 
   .rounded-small {
