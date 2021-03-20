@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ext .js,.jsx components layouts lib pages"
   },
   "dependencies": {
     "firebase-admin": "^9.5.0",
@@ -21,6 +22,11 @@
     "swr": "^0.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.2.1"
   }
 }

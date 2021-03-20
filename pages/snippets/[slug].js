@@ -1,4 +1,3 @@
-import css from 'styled-jsx/css';
 import SnippetLayout from '@/layouts/snippet';
 import markdownToHtml from '@/lib/markdown';
 import { getAllSnippets, getSnippetBySlug } from '@/lib/snippets';
