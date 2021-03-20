@@ -1,11 +1,12 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import data from '@/data/library';
-import { hyphenize } from '@/lib/helpers';
-import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
-import TagsFilter from '@/components/TagsFilter';
+import ContentFilters from '@/components/ContentFilters';
 import PageGrid from '@/components/PageGrid';
+import data from '@/data/library';
+import { useFilteredData } from '@/hooks/useFilteredData';
+import PageLayout from '@/layouts/page';
+import { hyphenize } from '@/lib/helpers';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export const pageInfo = {
   title: 'Library',
@@ -13,7 +14,7 @@ export const pageInfo = {
     'Digital library linking to my favourite content around the web.',
 };
 
-const contentTypesMap = {
+const tagsMap = {
   articles: 'Articles',
   books: 'Books',
   'personal-sites': 'Personal sites',
@@ -22,62 +23,67 @@ const contentTypesMap = {
 
 export default function Library() {
   const router = useRouter();
-  const [filter, setFilter] = useState('');
-  const filteredData = data.filter(item => {
-    if (!filter) {
-      return true;
-    }
-
-    const tags = item?.tags;
-
-    if (!tags) {
-      return false;
-    }
-
-    return tags.includes(hyphenize(filter));
-  });
+  const [filteredData, { setFilterValue, setSearchValue }] = useFilteredData(
+    data,
+  );
 
   useEffect(() => {
     const tag = router.query.tag;
 
-    if (!tag || !contentTypesMap[hyphenize(tag)]) {
-      setFilter('');
+    if (!tag) {
+      setFilterValue('');
       return;
     }
 
-    setFilter(tag);
-  }, [router.query.tag]);
+    if (!tagsMap[hyphenize(tag)]) {
+      setFilterValue('');
+      router.push(router.pathname, undefined, { shallow: true });
+      return;
+    }
+
+    setFilterValue(tag);
+  }, [router]);
 
   const handleSetFilter = filter => {
-    setFilter(filter);
+    setFilterValue(filter);
 
     if (!filter) {
-      router.push('/library', undefined, { shallow: true });
+      router.push(router.pathname, undefined, { shallow: true });
       return;
     }
 
-    router.push(`/library/?tag=${hyphenize(filter)}`, undefined, {
+    router.push(`${router.pathname}/?tag=${hyphenize(filter)}`, undefined, {
       shallow: true,
     });
   };
 
   return (
     <PageLayout {...pageInfo}>
-      <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
+      <ContentFilters
+        tagsMap={tagsMap}
+        onFilterClick={handleSetFilter}
+        onSearchChange={e => setSearchValue(e.target.value)}
+      />
       <PageGrid>
-        {filteredData.map(
-          ({ url, title, author, description, quote, image, tags }) => (
-            <ContentCard
-              key={url}
-              url={url}
-              title={title}
-              subtitle={author}
-              description={description}
-              quote={quote}
-              image={image}
-              tags={tags}
-            />
-          ),
+        {filteredData.length ? (
+          filteredData.map(
+            ({ url, title, author, description, quote, image, tags }) => (
+              <ContentCard
+                key={url}
+                url={url}
+                title={title}
+                subtitle={author}
+                description={description}
+                quote={quote}
+                image={image}
+                tags={tags}
+              />
+            ),
+          )
+        ) : (
+          <p>
+            <i>Nothing found.</i>
+          </p>
         )}
       </PageGrid>
     </PageLayout>

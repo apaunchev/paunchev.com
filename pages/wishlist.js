@@ -1,13 +1,14 @@
-import { useEffect, useMemo, useState } from 'react';
-import { useRouter } from 'next/router';
-import css from 'styled-jsx/css';
-import useSWR from 'swr';
+import ContentCard from '@/components/ContentCard';
+import ContentFilters from '@/components/ContentFilters';
+import PageGrid from '@/components/PageGrid';
+import { useFilteredData } from '@/hooks/useFilteredData';
+import PageLayout from '@/layouts/page';
 import fetcher from '@/lib/fetcher';
 import { hyphenize, usdFormatter } from '@/lib/helpers';
-import PageLayout from '@/layouts/page';
-import PageGrid from '@/components/PageGrid';
-import ContentCard from '@/components/ContentCard';
-import TagsFilter from '@/components/TagsFilter';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import css from 'styled-jsx/css';
+import useSWR from 'swr';
 
 const pageInfo = {
   title: 'Wishlist',
@@ -15,85 +16,87 @@ const pageInfo = {
     'Public list of things I’d like to get someday. Updated automatically by robots.',
 };
 
-const contentTypesMap = {
+const tagsMap = {
   books: 'Books',
 };
 
 export default function Wishlist() {
-  const { data } = useSWR('/api/wishlist', fetcher);
   const router = useRouter();
-  const [filter, setFilter] = useState('');
-
-  const filteredData = useMemo(() => {
-    return data?.data.filter(item => {
-      if (!filter) {
-        return true;
-      }
-
-      const tags = item?.tags;
-
-      if (!tags) {
-        return false;
-      }
-
-      return tags.includes(hyphenize(filter));
-    });
-  }, [data, filter]);
+  const { data } = useSWR('/api/wishlist', fetcher);
+  const [filteredData, { setFilterValue, setSearchValue }] = useFilteredData(
+    data?.data,
+  );
 
   useEffect(() => {
     const tag = router.query.tag;
 
-    if (!tag || !contentTypesMap[hyphenize(tag)]) {
-      setFilter('');
+    if (!tag) {
+      setFilterValue('');
       return;
     }
 
-    setFilter(tag);
-  }, [router.query.tag]);
+    if (!tagsMap[hyphenize(tag)]) {
+      setFilterValue('');
+      router.push(router.pathname, undefined, { shallow: true });
+      return;
+    }
+
+    setFilterValue(tag);
+  }, [router]);
 
   const handleSetFilter = filter => {
-    setFilter(filter);
+    setFilterValue(filter);
 
     if (!filter) {
-      router.push('/wishlist', undefined, { shallow: true });
+      router.push(router.pathname, undefined, { shallow: true });
       return;
     }
 
-    router.push(`/wishlist/?tag=${hyphenize(filter)}`, undefined, {
+    router.push(`${router.pathname}/?tag=${hyphenize(filter)}`, undefined, {
       shallow: true,
     });
   };
 
   return (
     <PageLayout {...pageInfo}>
-      <TagsFilter tagsMap={contentTypesMap} onFilterClick={handleSetFilter} />
+      <ContentFilters
+        tagsMap={tagsMap}
+        onFilterClick={handleSetFilter}
+        onSearchChange={e => setSearchValue(e.target.value)}
+      />
       {data ? (
         <>
           <PageGrid>
-            {filteredData?.map(
-              ({ id, url, title, imageSrc, price, oldPrice, tags }) => {
-                const priceLabel = (
-                  <div>
-                    {usdFormatter.format(price)}
-                    {oldPrice ? (
-                      <small className="old-price">
-                        {usdFormatter.format(oldPrice)}
-                      </small>
-                    ) : null}
-                  </div>
-                );
+            {filteredData.length ? (
+              filteredData.map(
+                ({ id, url, title, imageSrc, price, oldPrice, tags }) => {
+                  const priceLabel = (
+                    <div>
+                      {usdFormatter.format(price)}
+                      {oldPrice ? (
+                        <small className="old-price">
+                          {usdFormatter.format(oldPrice)}
+                        </small>
+                      ) : null}
+                    </div>
+                  );
 
-                return (
-                  <ContentCard
-                    key={id}
-                    url={url}
-                    title={title}
-                    subtitle={priceLabel}
-                    image={{ src: imageSrc }}
-                    tags={tags}
-                  />
-                );
-              },
+                  return (
+                    <ContentCard
+                      key={id}
+                      url={url}
+                      title={title}
+                      subtitle={priceLabel}
+                      image={{ src: imageSrc }}
+                      tags={tags}
+                    />
+                  );
+                },
+              )
+            ) : (
+              <p>
+                <i>Nothing found.</i>
+              </p>
             )}
           </PageGrid>
           <hr />

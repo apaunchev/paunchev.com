@@ -1,18 +1,19 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { getAllSnippets } from '@/lib/snippets';
-import { hyphenize } from '@/lib/helpers';
-import PageLayout from '@/layouts/page';
 import ContentCard from '@/components/ContentCard';
-import TagsFilter from '@/components/TagsFilter';
+import ContentFilters from '@/components/ContentFilters';
 import PageGrid from '@/components/PageGrid';
+import { useFilteredData } from '@/hooks/useFilteredData';
+import PageLayout from '@/layouts/page';
+import { hyphenize } from '@/lib/helpers';
+import { getAllSnippets } from '@/lib/snippets';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const pageInfo = {
   title: 'Snippets',
   description: 'Collection of code or commands that make computers do things.',
 };
 
-const snippetTypesMap = {
+const tagsMap = {
   css: 'CSS',
   javascript: 'JavaScript',
   git: 'Git',
@@ -25,58 +26,63 @@ const snippetTypesMap = {
 
 export default function Snippets({ snippets }) {
   const router = useRouter();
-  const [filter, setFilter] = useState('');
-  const filteredData = snippets.filter(snippet => {
-    if (!filter) {
-      return true;
-    }
-
-    const tags = snippet?.meta?.tags;
-
-    if (!tags) {
-      return false;
-    }
-
-    return tags.includes(hyphenize(filter));
-  });
+  const [filteredData, { setFilterValue, setSearchValue }] = useFilteredData(
+    snippets,
+  );
 
   useEffect(() => {
     const tag = router.query.tag;
 
-    if (!tag || !snippetTypesMap[hyphenize(tag)]) {
-      setFilter('');
+    if (!tag) {
+      setFilterValue('');
       return;
     }
 
-    setFilter(tag);
-  }, [router.query.tag]);
+    if (!tagsMap[hyphenize(tag)]) {
+      setFilterValue('');
+      router.push(router.pathname, undefined, { shallow: true });
+      return;
+    }
+
+    setFilterValue(tag);
+  }, [router]);
 
   const handleSetFilter = filter => {
-    setFilter(filter);
+    setFilterValue(filter);
 
     if (!filter) {
-      router.push('/snippets', undefined, { shallow: true });
+      router.push(router.pathname, undefined, { shallow: true });
       return;
     }
 
-    router.push(`/snippets/?tag=${hyphenize(filter)}`, undefined, {
+    router.push(`${router.pathname}/?tag=${hyphenize(filter)}`, undefined, {
       shallow: true,
     });
   };
 
   return (
     <PageLayout {...pageInfo}>
-      <TagsFilter tagsMap={snippetTypesMap} onFilterClick={handleSetFilter} />
+      <ContentFilters
+        tagsMap={tagsMap}
+        onFilterClick={handleSetFilter}
+        onSearchChange={e => setSearchValue(e.target.value)}
+      />
       <PageGrid>
-        {filteredData.map(({ slug, meta: { title, description, tags } }) => (
-          <ContentCard
-            key={slug}
-            title={title}
-            description={description}
-            tags={tags}
-            url={`/snippets/${slug}`}
-          />
-        ))}
+        {filteredData.length ? (
+          filteredData.map(({ slug, title, description, tags }) => (
+            <ContentCard
+              key={slug}
+              title={title}
+              description={description}
+              tags={tags}
+              url={`/snippets/${slug}`}
+            />
+          ))
+        ) : (
+          <p>
+            <i>Nothing found.</i>
+          </p>
+        )}
       </PageGrid>
     </PageLayout>
   );
