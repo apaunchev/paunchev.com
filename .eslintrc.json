@@ -1,6 +1,6 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
-  "plugins": ["react"],
+  "plugins": ["react", "react-hooks"],
   "parser": "@babel/eslint-parser",
   "env": {
     "browser": true,
@@ -16,6 +16,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
