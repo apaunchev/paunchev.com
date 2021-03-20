@@ -6,6 +6,8 @@
       "@/layouts/*": ["layouts/*"],
       "@/data/*": ["data/*"],
       "@/lib/*": ["lib/*"],
+      "@/hooks/*": ["hooks/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
