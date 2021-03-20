@@ -7,7 +7,6 @@ import fetcher from '@/lib/fetcher';
 import { hyphenize, usdFormatter } from '@/lib/helpers';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import css from 'styled-jsx/css';
 import useSWR from 'swr';
 
 const pageInfo = {
@@ -68,31 +67,16 @@ export default function Wishlist() {
         <>
           <PageGrid>
             {filteredData.length ? (
-              filteredData.map(
-                ({ id, url, title, imageSrc, price, oldPrice, tags }) => {
-                  const priceLabel = (
-                    <div>
-                      {usdFormatter.format(price)}
-                      {oldPrice ? (
-                        <small className="old-price">
-                          {usdFormatter.format(oldPrice)}
-                        </small>
-                      ) : null}
-                    </div>
-                  );
-
-                  return (
-                    <ContentCard
-                      key={id}
-                      url={url}
-                      title={title}
-                      subtitle={priceLabel}
-                      image={{ src: imageSrc }}
-                      tags={tags}
-                    />
-                  );
-                },
-              )
+              filteredData.map(({ id, url, title, imageSrc, price, tags }) => (
+                <ContentCard
+                  key={id}
+                  url={url}
+                  title={title}
+                  subtitle={usdFormatter.format(price)}
+                  image={{ src: imageSrc }}
+                  tags={tags}
+                />
+              ))
             ) : (
               <p>
                 <i>Nothing found.</i>
@@ -110,14 +94,6 @@ export default function Wishlist() {
           <i>Loading...</i>
         </p>
       )}
-      <style jsx>{styles}</style>
     </PageLayout>
   );
 }
-
-const styles = css`
-  .old-price {
-    text-decoration: line-through;
-    margin-left: 0.25rem;
-  }
-`;
