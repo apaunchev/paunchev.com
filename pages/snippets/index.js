@@ -24,10 +24,10 @@ const tagsMap = {
   http: 'HTTP',
 };
 
-export default function Snippets({ snippets }) {
+export default function Snippets({ data }) {
   const router = useRouter();
   const [filteredData, { setFilterValue, setSearchValue }] = useFilteredData(
-    snippets,
+    data,
   );
 
   useEffect(() => {
@@ -89,11 +89,11 @@ export default function Snippets({ snippets }) {
 }
 
 export async function getStaticProps() {
-  const snippets = getAllSnippets();
+  const data = getAllSnippets();
 
   return {
     props: {
-      snippets,
+      data,
     },
   };
 }

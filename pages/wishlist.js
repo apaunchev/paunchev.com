@@ -1,18 +1,16 @@
 import ContentCard from '@/components/ContentCard';
 import ContentFilters from '@/components/ContentFilters';
 import PageGrid from '@/components/PageGrid';
+import data from '@/data/wishlist';
 import { useFilteredData } from '@/hooks/useFilteredData';
 import PageLayout from '@/layouts/page';
-import fetcher from '@/lib/fetcher';
 import { hyphenize, usdFormatter } from '@/lib/helpers';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import useSWR from 'swr';
 
 const pageInfo = {
   title: 'Wishlist',
-  description:
-    'Public list of things I’d like to get someday. Updated automatically by robots.',
+  description: 'Public list of things I’d like to get someday.',
 };
 
 const tagsMap = {
@@ -21,9 +19,8 @@ const tagsMap = {
 
 export default function Wishlist() {
   const router = useRouter();
-  const { data } = useSWR('/api/wishlist', fetcher);
   const [filteredData, { setFilterValue, setSearchValue }] = useFilteredData(
-    data?.data,
+    data,
   );
 
   useEffect(() => {
@@ -83,11 +80,6 @@ export default function Wishlist() {
               </p>
             )}
           </PageGrid>
-          <hr />
-          <p>
-            Last updated:{' '}
-            {new Date(data?.createdAt._seconds * 1000).toLocaleDateString()}
-          </p>
         </>
       ) : (
         <p>
