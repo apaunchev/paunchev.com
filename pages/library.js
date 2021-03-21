@@ -1,7 +1,7 @@
 import ContentCard from '@/components/ContentCard';
 import ContentFilters from '@/components/ContentFilters';
 import PageGrid from '@/components/PageGrid';
-import data from '@/data/library';
+import data from '@/data/library.json';
 import { useFilteredData } from '@/hooks/useFilteredData';
 import PageLayout from '@/layouts/page';
 import { hyphenize } from '@/lib/helpers';

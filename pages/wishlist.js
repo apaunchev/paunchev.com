@@ -1,7 +1,7 @@
 import ContentCard from '@/components/ContentCard';
 import ContentFilters from '@/components/ContentFilters';
 import PageGrid from '@/components/PageGrid';
-import data from '@/data/wishlist';
+import data from '@/data/wishlist.json';
 import { useFilteredData } from '@/hooks/useFilteredData';
 import PageLayout from '@/layouts/page';
 import { hyphenize, usdFormatter } from '@/lib/helpers';
@@ -60,32 +60,24 @@ export default function Wishlist() {
         onFilterClick={handleSetFilter}
         onSearchChange={e => setSearchValue(e.target.value)}
       />
-      {data ? (
-        <>
-          <PageGrid>
-            {filteredData.length ? (
-              filteredData.map(({ id, url, title, imageSrc, price, tags }) => (
-                <ContentCard
-                  key={id}
-                  url={url}
-                  title={title}
-                  subtitle={usdFormatter.format(price)}
-                  image={{ src: imageSrc }}
-                  tags={tags}
-                />
-              ))
-            ) : (
-              <p>
-                <i>Nothing found.</i>
-              </p>
-            )}
-          </PageGrid>
-        </>
-      ) : (
-        <p>
-          <i>Loading...</i>
-        </p>
-      )}
+      <PageGrid>
+        {filteredData.length ? (
+          filteredData.map(({ id, url, title, imageSrc, price, tags }) => (
+            <ContentCard
+              key={id}
+              url={url}
+              title={title}
+              subtitle={usdFormatter.format(price)}
+              image={{ src: imageSrc }}
+              tags={tags}
+            />
+          ))
+        ) : (
+          <p>
+            <i>Nothing found.</i>
+          </p>
+        )}
+      </PageGrid>
     </PageLayout>
   );
 }
