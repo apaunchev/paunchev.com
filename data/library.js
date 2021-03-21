@@ -1,5 +1,13 @@
 export default [
   {
+    tags: ['articles'],
+    title: 'Senior Engineers Build Consensus',
+    author: 'Ryan Lopopolo',
+    quote:
+      'Building consensus and embedding the idea that engineers would use the change to make good decisions for Stripe turned the four line PR into a self-serve strategic initiative.',
+    url: 'https://hyperbo.la/w/nemawashi/',
+  },
+  {
     tags: ['personal-sites'],
     title: 'Chase McCoy',
     url: 'https://chasem.co/',
