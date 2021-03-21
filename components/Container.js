@@ -178,13 +178,13 @@ const globalStyles = css.global`
     padding: 0.25rem 0.5rem;
     background-color: var(--color-input-background);
     border: 1px solid var(--color-borders);
-    border-radius: var(---rounded-radius);
+    border-radius: var(--rounded-radius);
     font-size: 1rem;
     color: var(--color-text-primary);
   }
 
   .rounded {
-    border-radius: var(---rounded-radius);
+    border-radius: var(--rounded-radius);
   }
 
   .meta {
