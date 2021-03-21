@@ -82,7 +82,7 @@ const globalStyles = css.global`
   a {
     color: var(--color-text-primary);
     border-bottom: 2px solid var(--color-borders);
-    transition: color, border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.2s, border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
   }
 
