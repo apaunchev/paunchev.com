@@ -3,16 +3,16 @@ import markdownToHtml from '@/lib/markdown';
 import { getAllSnippets, getSnippetBySlug } from '@/lib/snippets';
 import TagsList from '@/components/TagsList';
 
-export default function Snippet({ meta, content }) {
+export default function Snippet({ title, description, tags, content }) {
   const pageInfo = {
-    title: meta?.title,
-    description: meta?.description,
+    title: title,
+    description: description,
   };
 
   return (
     <SnippetLayout {...pageInfo}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      <TagsList tags={meta?.tags} />
+      <TagsList tags={tags} />
     </SnippetLayout>
   );
 }
