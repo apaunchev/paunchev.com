@@ -47,7 +47,7 @@ export default function Header() {
             alt=""
             width={80}
             height={80}
-            className="rounded-full"
+            className="rounded"
           />
         </a>
       </Link>
@@ -77,7 +77,7 @@ const styles = css`
   header {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: calc(var(--layout-gap) / 2);
   }
 
   .avatar-link {
@@ -98,21 +98,42 @@ const styles = css`
   }
 
   nav > a {
-    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
     margin-left: 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
   }
 
   nav > a:hover,
   nav > a:focus,
   nav > a.active {
     border-color: var(--color-links-active);
+    color: var(--color-text-primary);
+  }
+
+  @media (min-width: 768px) {
+    header {
+      margin: calc(var(--layout-gap) / 2);
+      flex-direction: column;
+      align-items: start;
+    }
+
+    nav {
+      margin-top: calc(var(--layout-gap) / 2);
+      flex-direction: column;
+    }
+
+    nav > a {
+      margin-bottom: 0.75rem;
+      margin-left: 0;
+      border-bottom: 0;
+      border-left: 2px solid var(--color-borders);
+      padding-left: 0.5rem;
+    }
   }
 
   @media (min-width: 1024px) {
-    header {
-      margin-bottom: 2.5rem;
-    }
-
     .avatar-link img {
       width: 80px;
       height: 80px;

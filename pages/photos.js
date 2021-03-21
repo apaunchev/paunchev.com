@@ -29,7 +29,7 @@ export default function Photos({ photos }) {
                         alt=""
                         layout="fill"
                         objectFit="cover"
-                        className="rounded-small"
+                        className="rounded"
                       />
                     </a>
                   </div>

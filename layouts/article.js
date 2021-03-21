@@ -16,6 +16,6 @@ export default function ArticleLayout({ children, title, description }) {
 
 const styles = css`
   article {
-    max-width: 36rem;
+    max-width: 60ch;
   }
 `;

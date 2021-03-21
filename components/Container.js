@@ -3,10 +3,18 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 
 export default function Container({ children, title, description }) {
+  let formattedTitle;
+
+  if (!title || title === 'About') {
+    formattedTitle = 'Angel Paunchev';
+  } else {
+    formattedTitle = `${title} – Angel Paunchev`;
+  }
+
   return (
     <>
       <Head>
-        <title>{title ? `${title} – ` : null}Angel Paunchev</title>
+        <title>{formattedTitle}</title>
         {description ? <meta name="description" content={description} /> : null}
       </Head>
       <div className="container">
@@ -23,7 +31,21 @@ export default function Container({ children, title, description }) {
 
 const localStyles = css`
   .container {
-    max-width: 72rem;
+    --layout-gap: 2.5rem;
+
+    max-width: calc((var(--layout-gap) * 2) + 72rem);
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+      margin: calc(var(--layout-gap) / 2 * -1);
+    }
+
+    main {
+      margin: calc(var(--layout-gap) / 2);
+      flex-grow: 1;
+    }
   }
 `;
 
@@ -48,6 +70,8 @@ const globalStyles = css.global`
     --color-selection-bg: var(--purple-1);
     --color-selection-text: var(--gray-0);
     --color-input-background: white;
+
+    --rounded-radius: 0.25rem;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -154,17 +178,13 @@ const globalStyles = css.global`
     padding: 0.25rem 0.5rem;
     background-color: var(--color-input-background);
     border: 1px solid var(--color-borders);
-    border-radius: 0.25rem;
+    border-radius: var(---rounded-radius);
     font-size: 1rem;
     color: var(--color-text-primary);
   }
 
-  .rounded-small {
-    border-radius: 0.25rem;
-  }
-
-  .rounded-full {
-    border-radius: 100%;
+  .rounded {
+    border-radius: var(---rounded-radius);
   }
 
   .meta {

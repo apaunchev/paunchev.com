@@ -25,6 +25,6 @@ export default function SnippetLayout({ children, title, description }) {
 
 const styles = css`
   article {
-    max-width: 36rem;
+    max-width: 60ch;
   }
 `;

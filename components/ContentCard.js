@@ -25,9 +25,10 @@ export default function ContentCard({
                   width={image.width}
                   height={image.height}
                   alt={title}
+                  className="rounded"
                 />
               ) : (
-                <img src={image.src} alt={title} />
+                <img src={image.src} alt={title} className="rounded" />
               )}
             </figure>
           ) : null}
@@ -50,6 +51,10 @@ export default function ContentCard({
 const styles = css`
   a {
     border: none;
+  }
+
+  h2 {
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   a:hover h2,

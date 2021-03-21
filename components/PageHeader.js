@@ -16,7 +16,7 @@ const styles = css`
   }
 
   h1 {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   p {
