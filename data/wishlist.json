@@ -17,7 +17,17 @@
     ],
     "title": "Of Mice and Men (Penguin Modern Classics)",
     "imageSrc": "https://images-na.ssl-images-amazon.com/images/I/41fIcPOUX+L._SX324_BO1,204,203,200_.jpg",
-    "price": 6.08
+    "price": 6.02
+  },
+  {
+    "id": "B0892TV9RJ",
+    "url": "https://www.amazon.com/dp/B0892TV9RJ/",
+    "tags": [
+      "books"
+    ],
+    "title": "Responsibility Rebellion: An Unconventional Approach to Personal Empowerment",
+    "imageSrc": "https://m.media-amazon.com/images/I/411ZP0NK0fL.jpg",
+    "price": 6.15
   },
   {
     "id": "B00K1XOV5G",
@@ -30,16 +40,6 @@
     "price": 7.56
   },
   {
-    "id": "B0892TV9RJ",
-    "url": "https://www.amazon.com/dp/B0892TV9RJ/",
-    "tags": [
-      "books"
-    ],
-    "title": "Responsibility Rebellion: An Unconventional Approach to Personal Empowerment",
-    "imageSrc": "https://m.media-amazon.com/images/I/411ZP0NK0fL.jpg",
-    "price": 7.98
-  },
-  {
     "id": "B0040JHNQG",
     "url": "https://www.amazon.com/dp/B0040JHNQG/",
     "tags": [
@@ -50,6 +50,16 @@
     "price": 9.34
   },
   {
+    "id": "B00UHIVH34",
+    "url": "https://www.amazon.com/dp/B00UHIVH34/",
+    "tags": [
+      "books"
+    ],
+    "title": "Triggers: Sparking positive change and making it last",
+    "imageSrc": "https://m.media-amazon.com/images/I/41BhQMNSDwL.jpg",
+    "price": 9.77
+  },
+  {
     "id": "B01DV1Y7D0",
     "url": "https://www.amazon.com/dp/B01DV1Y7D0/",
     "tags": [
@@ -58,16 +68,6 @@
     "title": "The Master and Margarita",
     "imageSrc": "https://m.media-amazon.com/images/I/51lLMPTPDDL.jpg",
     "price": 9.85
-  },
-  {
-    "id": "B00UHIVH34",
-    "url": "https://www.amazon.com/dp/B00UHIVH34/",
-    "tags": [
-      "books"
-    ],
-    "title": "Triggers: Sparking positive change and making it last",
-    "imageSrc": "https://m.media-amazon.com/images/I/41BhQMNSDwL.jpg",
-    "price": 9.91
   },
   {
     "id": "B005MJFA2W",
@@ -127,7 +127,7 @@
     ],
     "title": "The Unfair Advantage: How You Already Have What It Takes to Succeed",
     "imageSrc": "https://m.media-amazon.com/images/I/41h5E8srGRL.jpg",
-    "price": 11.05
+    "price": 11.04
   },
   {
     "id": "B07B9F83WM",
@@ -147,7 +147,7 @@
     ],
     "title": "The Design of Everyday Things: Revised and Expanded Edition",
     "imageSrc": "https://m.media-amazon.com/images/I/416Hql52NCL.jpg",
-    "price": 11.89
+    "price": 11.78
   },
   {
     "id": "B00DQ845EA",
@@ -167,7 +167,7 @@
     ],
     "title": "Endurance: A Year in Space, A Lifetime of Discovery",
     "imageSrc": "https://m.media-amazon.com/images/I/51ajHVSbRvL.jpg",
-    "price": 12.18
+    "price": 12.06
   },
   {
     "id": "B002RI9K5Y",
@@ -176,7 +176,7 @@
       "books"
     ],
     "title": "East of Eden (Penguin Modern Classics)",
-    "imageSrc": "data:image/webp;base64,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",
+    "imageSrc": "https://images-na.ssl-images-amazon.com/images/I/31zIC8lPixL._SX324_BO1,204,203,200_.jpg",
     "price": 12.66
   },
   {
@@ -196,8 +196,18 @@
       "books"
     ],
     "title": "Berlin: The Downfall 1945: The Number One Bestseller",
-    "imageSrc": "https://m.media-amazon.com/images/I/51ANkD9sJbL.jpg",
-    "price": 13.54
+    "imageSrc": "https://m.media-amazon.com/images/I/51ANkD9sJbL._SY346_.jpg",
+    "price": 13.41
+  },
+  {
+    "id": "B06XCGTKL8",
+    "url": "https://www.amazon.com/dp/B06XCGTKL8/",
+    "tags": [
+      "books"
+    ],
+    "title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
+    "imageSrc": "https://m.media-amazon.com/images/I/4100ugnKPbL.jpg",
+    "price": 14.14
   },
   {
     "id": "B07M6QPRRG",
@@ -210,16 +220,6 @@
     "price": 14.16
   },
   {
-    "id": "B06XCGTKL8",
-    "url": "https://www.amazon.com/dp/B06XCGTKL8/",
-    "tags": [
-      "books"
-    ],
-    "title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
-    "imageSrc": "https://m.media-amazon.com/images/I/4100ugnKPbL.jpg",
-    "price": 14.29
-  },
-  {
     "id": "B00RWKN8T6",
     "url": "https://www.amazon.com/dp/B00RWKN8T6/",
     "tags": [
@@ -228,6 +228,16 @@
     "title": "The Upside of Stress: Why stress is good for you (and how to get good at it)",
     "imageSrc": "https://m.media-amazon.com/images/I/51TnBDBWhCL.jpg",
     "price": 14.57
+  },
+  {
+    "id": "B007HLIUN4",
+    "url": "https://www.amazon.com/dp/B007HLIUN4/",
+    "tags": [
+      "books"
+    ],
+    "title": "Why Nations Fail: The Origins of Power, Prosperity and Poverty",
+    "imageSrc": "https://m.media-amazon.com/images/I/51JeLHW0ZUL.jpg",
+    "price": 14.6
   },
   {
     "id": "B0796SNDSK",
@@ -248,16 +258,6 @@
     "title": "Predictably Irrational: The Hidden Forces that Shape Our Decisions",
     "imageSrc": "https://m.media-amazon.com/images/I/51lwfg5zKkL.jpg",
     "price": 14.73
-  },
-  {
-    "id": "B007HLIUN4",
-    "url": "https://www.amazon.com/dp/B007HLIUN4/",
-    "tags": [
-      "books"
-    ],
-    "title": "Why Nations Fail: The Origins of Power, Prosperity and Poverty",
-    "imageSrc": "https://m.media-amazon.com/images/I/51JeLHW0ZUL.jpg",
-    "price": 14.74
   },
   {
     "id": "B082H35TV9",
@@ -317,7 +317,7 @@
     ],
     "title": "Lifespan: Why We Age—and Why We Don't Have To",
     "imageSrc": "https://m.media-amazon.com/images/I/51UPSMSI0EL.jpg",
-    "price": 18.09
+    "price": 17.92
   },
   {
     "id": "B071CTK28D",
@@ -327,7 +327,7 @@
     ],
     "title": "Principles: Life and Work",
     "imageSrc": "https://m.media-amazon.com/images/I/41Mq7Ss7lPL.jpg",
-    "price": 18.09
+    "price": 17.92
   },
   {
     "id": "B00JHIDON6",
@@ -337,6 +337,6 @@
     ],
     "title": "This Changes Everything: Capitalism vs. The Climate",
     "imageSrc": "https://m.media-amazon.com/images/I/51candKimoL.jpg",
-    "price": 18.09
+    "price": 17.92
   }
 ]
