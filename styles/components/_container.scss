@@ -1,0 +1,29 @@
+.container {
+  --layout-gap: 3rem;
+
+  @include breakpoint(sm) {
+    display: flex;
+    max-width: calc((var(--layout-gap) * 2) + 72rem);
+    margin: calc(var(--layout-gap) / 2 * -1);
+  }
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: calc(var(--layout-gap) / 2);
+
+  @include breakpoint(sm) {
+    margin: calc(var(--layout-gap) / 2);
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.container__main {
+  @include breakpoint(sm) {
+    margin: calc(var(--layout-gap) / 2);
+    flex-grow: 1;
+  }
+}

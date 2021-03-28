@@ -1,0 +1,12 @@
+.photo {
+  flex-shrink: 0;
+
+  a {
+    display: block;
+    border: 0;
+  }
+
+  img {
+    border-radius: var(--radius);
+  }
+}

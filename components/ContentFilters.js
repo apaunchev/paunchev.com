@@ -1,4 +1,3 @@
-import css from 'styled-jsx/css';
 import { useRouter } from 'next/router';
 
 export default function ContentFilters({
@@ -15,23 +14,29 @@ export default function ContentFilters({
   };
 
   return (
-    <div className="filters">
+    <div className="content-filters">
       <nav className="tags">
-        <b>Filter:</b>
+        <b className="tags__item">Filter:</b>
         <a
-          className={!query.tag ? 'active' : null}
+          className={
+            !query.tag ? 'tags__item tags__item--active' : 'tags__item'
+          }
           href={pathname}
           onClick={handleClick}
         >
           All
         </a>
         {Object.keys(tagsMap).map(tag => {
-          const isActive = query.tag === tag;
+          const classes = ['tags__item'];
+
+          if (query.tag === tag) {
+            classes.push('tags__item--active');
+          }
 
           return (
             <a
-              className={isActive ? 'active' : null}
               key={tag}
+              className={classes.join(' ')}
               href={`${pathname}/?tag=${tag}`}
               onClick={e => handleClick(e, tag)}
             >
@@ -41,67 +46,12 @@ export default function ContentFilters({
         })}
       </nav>
       <input
-        className="search-input"
+        className="search form-control"
         aria-label="Search"
         placeholder="Search"
         type="text"
         onChange={onSearchChange}
       />
-      <style jsx>{styles}</style>
     </div>
   );
 }
-
-const styles = css`
-  .filters {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.5rem 0;
-  }
-
-  .search-input {
-    width: 100%;
-    height: 1.25rem;
-    font-size: 0.85rem;
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-
-  .tags > * {
-    margin: 0 0.75rem 0.5rem 0;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .tags > a {
-    color: var(--color-text-secondary);
-  }
-
-  .tags > a:hover,
-  .tags > a:focus,
-  .tags > a.active {
-    border-color: var(--color-links-active);
-    color: var(--color-text-primary);
-  }
-
-  @media (min-width: 768px) {
-    .filters {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .tags {
-      margin-bottom: 0;
-    }
-
-    .search-input {
-      width: 15rem;
-      margin-left: 1rem;
-    }
-  }
-`;

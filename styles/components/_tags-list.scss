@@ -1,0 +1,15 @@
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--space-base) 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tags-list__item {
+  margin-right: var(--space-xs);
+  padding: var(--space-2xs) var(--space-xs);
+  background-color: var(--color-contrast-lower);
+  border-radius: var(--radius);
+  font-size: var(--text-xs);
+}

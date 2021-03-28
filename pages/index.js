@@ -1,4 +1,3 @@
-import css from 'styled-jsx/css';
 import ArticleLayout from '@/layouts/article';
 
 const pageInfo = {
@@ -13,16 +12,11 @@ export default function About() {
       <p>
         Welcome to my space on the internet. I primarily use this site as
         long-term storage for digital things—bookmarks, photos, snippets, and
-        more. I do this for practical and nostalgic reasons, and it has been
-        great.
+        more. I do this for practical and nostalgic reasons.
       </p>
       <p>
-        This site is also where I get to experiment with new trends and
-        technologies. For when I have the spare time, of course.
-      </p>
-      <p>
-        Lastly, I also maintain a short professional summary, for anyone
-        interested in that side of things.
+        This site is also where I experiment with new web trends and
+        technologies—thus, it’s a constant work in progress.
       </p>
       <h2>Professionally</h2>
       <p>
@@ -32,8 +26,13 @@ export default function About() {
         approach everything with a growth mindset and try to inspire and mentor
         others along the way.
       </p>
+      <p>
+        <a className="link" href="https://www.linkedin.com/in/apaunchev/">
+          Connect on LinkedIn
+        </a>
+      </p>
       <h3>Specialties</h3>
-      <div className="grid">
+      <div className="content-grid">
         <ul>
           <li>JavaScript</li>
           <li>React/Next.js</li>
@@ -53,44 +52,11 @@ export default function About() {
           <li>Performance</li>
         </ul>
       </div>
-      <h3>Elsewhere</h3>
       <p>
-        <span>💻 </span>
-        <a href="https://github.com/apaunchev">See code on GitHub</a>
+        <a className="link" href="https://github.com/apaunchev">
+          See code on GitHub
+        </a>
       </p>
-      <p>
-        <span>👋 </span>
-        <a href="https://www.linkedin.com/in/apaunchev/">Connect on LinkedIn</a>
-      </p>
-      <style jsx>{styles}</style>
     </ArticleLayout>
   );
 }
-
-const styles = css`
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .grid ul {
-    margin: 0;
-  }
-
-  .grid ul,
-  .grid ol {
-    list-style: none;
-    padding: 0;
-  }
-
-  .grid ol li {
-    margin: 1rem 0;
-  }
-
-  @media (min-width: 1024px) {
-    .grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-`;

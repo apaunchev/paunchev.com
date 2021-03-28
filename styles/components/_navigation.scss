@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint(sm) {
+    margin-top: calc(var(--layout-gap) / 2);
+    flex-direction: column;
+  }
+}
+
+.navigation__item {
+  margin-bottom: var(--space-xs);
+  margin-left: var(--space-lg);
+
+  &--active {
+    color: var(--color-contrast-higher);
+    border-color: var(--color-primary);
+  }
+
+  @include breakpoint(sm) {
+    margin-bottom: var(--space-sm);
+    margin-left: 0;
+    border-bottom: 0;
+    border-left: 2px solid var(--color-contrast-low);
+    padding-left: var(--space-xs);
+    font-size: var(--text-sm);
+
+    &--active {
+      color: var(--color-contrast-higher);
+      border-color: var(--color-primary);
+    }
+  }
+}

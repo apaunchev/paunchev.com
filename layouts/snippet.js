@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import css from 'styled-jsx/css';
 import Container from '@/components/Container';
 import PageHeader from '@/components/PageHeader';
 
@@ -13,18 +12,11 @@ export default function SnippetLayout({ children, title, description }) {
         />
       </Head>
       <Container title={title} description={description}>
-        <article>
+        <article className="article">
           <PageHeader title={title} subtitle={description} />
           {children}
         </article>
-        <style jsx>{styles}</style>
       </Container>
     </>
   );
 }
-
-const styles = css`
-  article {
-    max-width: 60ch;
-  }
-`;
