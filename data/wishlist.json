@@ -10,6 +10,16 @@
     "price": 5.17
   },
   {
+    "id": "B002RI9QJE",
+    "url": "https://www.amazon.com/dp/B002RI9QJE/",
+    "tags": [
+      "books"
+    ],
+    "title": "Predictably Irrational: The Hidden Forces that Shape Our Decisions",
+    "imageSrc": "https://m.media-amazon.com/images/I/51lwfg5zKkL.jpg",
+    "price": 5.52
+  },
+  {
     "id": "B002RI9VVM",
     "url": "https://www.amazon.com/dp/B002RI9VVM/",
     "tags": [
@@ -17,7 +27,7 @@
     ],
     "title": "Of Mice and Men (Penguin Modern Classics)",
     "imageSrc": "https://images-na.ssl-images-amazon.com/images/I/41fIcPOUX+L._SX324_BO1,204,203,200_.jpg",
-    "price": 6.02
+    "price": 6.01
   },
   {
     "id": "B0892TV9RJ",
@@ -27,7 +37,7 @@
     ],
     "title": "Responsibility Rebellion: An Unconventional Approach to Personal Empowerment",
     "imageSrc": "https://m.media-amazon.com/images/I/411ZP0NK0fL.jpg",
-    "price": 6.15
+    "price": 6.02
   },
   {
     "id": "B00K1XOV5G",
@@ -147,7 +157,7 @@
     ],
     "title": "The Design of Everyday Things: Revised and Expanded Edition",
     "imageSrc": "https://m.media-amazon.com/images/I/416Hql52NCL.jpg",
-    "price": 11.78
+    "price": 11.75
   },
   {
     "id": "B00DQ845EA",
@@ -196,8 +206,8 @@
       "books"
     ],
     "title": "Berlin: The Downfall 1945: The Number One Bestseller",
-    "imageSrc": "https://m.media-amazon.com/images/I/51ANkD9sJbL._SY346_.jpg",
-    "price": 13.41
+    "imageSrc": "https://m.media-amazon.com/images/I/51ANkD9sJbL.jpg",
+    "price": 13.37
   },
   {
     "id": "B06XCGTKL8",
@@ -207,7 +217,7 @@
     ],
     "title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
     "imageSrc": "https://m.media-amazon.com/images/I/4100ugnKPbL.jpg",
-    "price": 14.14
+    "price": 14.11
   },
   {
     "id": "B07M6QPRRG",
@@ -226,18 +236,8 @@
       "books"
     ],
     "title": "The Upside of Stress: Why stress is good for you (and how to get good at it)",
-    "imageSrc": "https://m.media-amazon.com/images/I/51TnBDBWhCL.jpg",
+    "imageSrc": "https://m.media-amazon.com/images/I/51TnBDBWhCL._SY346_.jpg",
     "price": 14.57
-  },
-  {
-    "id": "B007HLIUN4",
-    "url": "https://www.amazon.com/dp/B007HLIUN4/",
-    "tags": [
-      "books"
-    ],
-    "title": "Why Nations Fail: The Origins of Power, Prosperity and Poverty",
-    "imageSrc": "https://m.media-amazon.com/images/I/51JeLHW0ZUL.jpg",
-    "price": 14.6
   },
   {
     "id": "B0796SNDSK",
@@ -248,16 +248,6 @@
     "title": "Reboot: Leadership and the Art of Growing Up",
     "imageSrc": "https://m.media-amazon.com/images/I/41pMlRpg4BL.jpg",
     "price": 14.69
-  },
-  {
-    "id": "B002RI9QJE",
-    "url": "https://www.amazon.com/dp/B002RI9QJE/",
-    "tags": [
-      "books"
-    ],
-    "title": "Predictably Irrational: The Hidden Forces that Shape Our Decisions",
-    "imageSrc": "https://m.media-amazon.com/images/I/51lwfg5zKkL.jpg",
-    "price": 14.73
   },
   {
     "id": "B082H35TV9",
@@ -276,7 +266,7 @@
       "books"
     ],
     "title": "Humankind: A Hopeful History",
-    "imageSrc": "https://m.media-amazon.com/images/I/41RSzJtTD2L.jpg",
+    "imageSrc": "https://m.media-amazon.com/images/I/41RSzJtTD2L._SY346_.jpg",
     "price": 15.52
   },
   {
@@ -317,7 +307,7 @@
     ],
     "title": "Lifespan: Why We Age—and Why We Don't Have To",
     "imageSrc": "https://m.media-amazon.com/images/I/51UPSMSI0EL.jpg",
-    "price": 17.92
+    "price": 17.88
   },
   {
     "id": "B071CTK28D",
@@ -327,7 +317,7 @@
     ],
     "title": "Principles: Life and Work",
     "imageSrc": "https://m.media-amazon.com/images/I/41Mq7Ss7lPL.jpg",
-    "price": 17.92
+    "price": 17.88
   },
   {
     "id": "B00JHIDON6",
@@ -337,6 +327,6 @@
     ],
     "title": "This Changes Everything: Capitalism vs. The Climate",
     "imageSrc": "https://m.media-amazon.com/images/I/51candKimoL.jpg",
-    "price": 17.92
+    "price": 17.88
   }
 ]
