@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .js,.jsx components layouts lib pages hooks",
-    "scrape:wishlist": "node scrapers/wishlist.js"
+    "lint": "eslint --ext .js,.jsx components layouts lib pages hooks"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
