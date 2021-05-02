@@ -11,12 +11,12 @@ export default function About() {
     <ArticleLayout {...pageInfo}>
       <p>
         Welcome to my space on the internet. I primarily use this site as
-        long-term storage for digital things—bookmarks, photos, snippets, and
-        more. I do this for practical and nostalgic reasons.
+        long-term storage for digital things—bookmarks, snippets, notes, and
+        anything else I might want to revisit later.
       </p>
       <p>
-        This site is also where I experiment with new web trends and
-        technologies—thus, it’s a constant work in progress.
+        It is also where I experiment with web technologies, so this site
+        changes—and breaks—often.
       </p>
       <h2>Professionally</h2>
       <p>

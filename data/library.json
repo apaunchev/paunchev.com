@@ -1,5 +1,11 @@
 [
   {
+    "tags": ["personal-sites"],
+    "title": "Dave Rupert",
+    "url": "https://daverupert.com/",
+    "image": { "src": "/people/dave-rupert.jpg", "width": 80, "height": 80 }
+  },
+  {
     "tags": ["articles"],
     "title": "Senior Engineers Build Consensus",
     "author": "Ryan Lopopolo",
@@ -56,12 +62,6 @@
     "author": "Angelos Chalaris, Stefan Fejes",
     "description": "Short code snippets for all your development needs",
     "url": "https://www.30secondsofcode.org/"
-  },
-  {
-    "tags": ["personal-sites"],
-    "title": "Ryan J. Yost",
-    "url": "https://www.ryanjyost.com/",
-    "image": { "src": "/people/ryan-j-yost.jpg", "width": 80, "height": 80 }
   },
   {
     "tags": ["tools"],
@@ -273,12 +273,6 @@
     "url": "https://www.goodreads.com/book/show/36234689-why-we-sleep"
   },
   {
-    "tags": ["personal-sites"],
-    "url": "https://sarahdayan.dev/",
-    "title": "Sarah Dayan",
-    "image": { "src": "/people/sarah-dayan.jpg", "width": 80, "height": 80 }
-  },
-  {
     "url": "https://macwright.com/2019/08/25/side-projects.html",
     "tags": ["articles"],
     "title": "Finishing side projects",
@@ -437,12 +431,6 @@
       "width": 80,
       "height": 120
     }
-  },
-  {
-    "tags": ["personal-sites"],
-    "url": "https://mxb.dev/",
-    "title": "Max Böck",
-    "image": { "src": "/people/max-bock.jpg", "width": 80, "height": 80 }
   },
   {
     "tags": ["books"],

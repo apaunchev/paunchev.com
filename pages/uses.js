@@ -22,13 +22,13 @@ export default function Uses() {
             <li>500GB Samsung 850 EVO SSD</li>
             <li>Gigabyte GeForce RTX 2060 SUPER 8GB WINDFORCE OC</li>
             <li>NZXT S340</li>
-            <li>SeaSonic M12II 520W</li>
+            <li>Seasonic M12II 520W</li>
             <li>2x120mm ARCTIC F12 Pro</li>
           </ul>
         </li>
         <li>24″ Dell U2417H</li>
         <li>Logitech MX Master 3 / MX Anywhere 2S</li>
-        <li>Logitech MX Keys</li>
+        <li>Ducky One 2 SF</li>
         <li>Bose SoundLink Mini</li>
         <li>Sony WH-1000XM3</li>
       </ul>
