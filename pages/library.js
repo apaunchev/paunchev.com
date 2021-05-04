@@ -74,7 +74,13 @@ export default function Library() {
                 title={title}
                 subtitle={author}
                 description={description}
-                quote={quote}
+                extra={
+                  quote ? (
+                    <p>
+                      <i>‘{quote}’</i>
+                    </p>
+                  ) : null
+                }
                 image={image}
                 tags={tags}
               />

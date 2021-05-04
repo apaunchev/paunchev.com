@@ -5,9 +5,9 @@ export default function ContentCard({
   title,
   subtitle,
   description,
-  quote,
   image,
   url,
+  extra,
   tags,
 }) {
   const useImageComponent = image && image.width && image.height;
@@ -33,12 +33,10 @@ export default function ContentCard({
         {subtitle ? (
           <h3 className="content-card__subtitle">{subtitle}</h3>
         ) : null}
-        {description ? <p>{description}</p> : null}
-        {quote ? (
-          <p>
-            <i>‘{quote}’</i>
-          </p>
+        {description ? (
+          <p className="content-card__description">{description}</p>
         ) : null}
+        {extra}
         <TagsList tags={tags} />
       </a>
     </article>
