@@ -6,6 +6,7 @@
 @import 'base/shared';
 @import 'base/typography';
 @import 'base/forms';
+@import 'base/animations';
 
 @import 'components/container';
 @import 'components/page-header';
@@ -17,5 +18,7 @@
 @import 'components/article';
 @import 'components/content-card';
 @import 'components/content-filters';
+@import 'components/content-placeholder';
+@import 'components/extra-list';
 @import 'components/tags-list';
 @import 'components/link';
