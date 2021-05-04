@@ -1,5 +1,11 @@
 [
   {
+    "tags": ["tools"],
+    "title": "Iconic",
+    "description": "Free, “do wtf you want with” pixel-perfect icons.",
+    "url": "https://iconic.app/"
+  },
+  {
     "tags": ["personal-sites"],
     "title": "Dave Rupert",
     "url": "https://daverupert.com/",
@@ -38,12 +44,6 @@
     "image": { "src": "/people/pedro-duarte.jpg", "width": 80, "height": 80 }
   },
   {
-    "tags": ["tools"],
-    "title": "Ray.so",
-    "description": "Create beautiful code",
-    "url": "https://ray.so/"
-  },
-  {
     "tags": ["articles"],
     "title": "Cache-Control for Civilians",
     "author": "Harry Roberts",
@@ -79,23 +79,10 @@
   },
   {
     "tags": ["tools"],
-    "title": "HTML DOM",
-    "author": "Nguyen Huu Phuoc",
-    "description": "Common tasks of managing HTML DOM with vanilla JavaScript",
-    "url": "https://htmldom.dev/"
-  },
-  {
-    "tags": ["tools"],
     "title": "CSS Layout",
     "author": "Nguyen Huu Phuoc",
     "description": "A collection of popular layouts and patterns made with CSS",
     "url": "https://csslayout.io/"
-  },
-  {
-    "tags": ["tools"],
-    "title": "BGJar",
-    "description": "SVG background generator",
-    "url": "https://bgjar.com/"
   },
   {
     "tags": ["articles"],
