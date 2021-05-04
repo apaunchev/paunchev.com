@@ -1,8 +1,14 @@
 [
   {
     "tags": ["tools"],
+    "title": "Security Headers",
+    "description": "Quickly and easily assess the security of your HTTP response headers",
+    "url": "https://securityheaders.com/"
+  },
+  {
+    "tags": ["tools"],
     "title": "Iconic",
-    "description": "Free, “do wtf you want with” pixel-perfect icons.",
+    "description": "Free, “do wtf you want with” pixel-perfect icons",
     "url": "https://iconic.app/"
   },
   {
@@ -74,7 +80,7 @@
     "tags": ["tools"],
     "title": "BundlePhobia",
     "author": "Shubham Kanodia",
-    "description": "Find the cost of adding a npm package to your bundle.",
+    "description": "Find the cost of adding a npm package to your bundle",
     "url": "https://bundlephobia.com/"
   },
   {
