@@ -4,7 +4,7 @@ import { getPhotos } from '@/lib/photos';
 
 export const pageInfo = {
   title: 'Photos',
-  description: 'Photos of places I’ve been to and enjoyed.',
+  description: 'Amateur photos of places I’ve been to.',
 };
 
 export default function Photos({ photos }) {
