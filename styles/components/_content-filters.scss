@@ -1,7 +1,7 @@
 .content-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   margin: var(--space-base) 0;
 
   @include breakpoint(sm) {

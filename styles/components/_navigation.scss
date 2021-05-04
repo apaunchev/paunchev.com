@@ -1,6 +1,7 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  align-self: flex-start;
 
   @include breakpoint(sm) {
     margin-top: calc(var(--layout-gap) / 2);
