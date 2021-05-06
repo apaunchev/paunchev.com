@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .js,.jsx components layouts lib pages hooks"
+    "eslint": "eslint --ext .js,.jsx components hooks layouts lib pages",
+    "prettier": "prettier --end-of-line crlf --write components hooks layouts lib pages",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -25,7 +27,15 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "sass": "^1.32.12"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npm run eslint",
+      "npm run prettier"
+    ]
   }
 }
