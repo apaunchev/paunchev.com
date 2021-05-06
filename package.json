@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "eslint": "eslint --ext .js,.jsx components hooks layouts lib pages",
-    "prettier": "prettier --end-of-line crlf --write components hooks layouts lib pages",
+    "prettier": "prettier --write components hooks layouts lib pages",
     "stylelint": "stylelint \"styles/**/*.{css,scss}\"",
     "prepare": "husky install"
   },
