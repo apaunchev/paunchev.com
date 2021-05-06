@@ -42,7 +42,7 @@ export default function Library() {
     }
 
     setFilterValue(tag);
-  }, [router]);
+  }, [router, setFilterValue]);
 
   const handleSetFilter = filter => {
     setFilterValue(filter);

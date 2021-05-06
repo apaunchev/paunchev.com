@@ -45,7 +45,7 @@ export default function Snippets({ data }) {
     }
 
     setFilterValue(tag);
-  }, [router]);
+  }, [router, setFilterValue]);
 
   const handleSetFilter = filter => {
     setFilterValue(filter);
