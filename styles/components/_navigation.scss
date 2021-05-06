@@ -13,11 +13,6 @@
   margin-bottom: var(--space-xs);
   margin-left: var(--space-lg);
 
-  &--active {
-    color: var(--color-contrast-higher);
-    border-color: var(--color-primary);
-  }
-
   @include breakpoint(sm) {
     margin-bottom: var(--space-sm);
     margin-left: 0;
@@ -31,5 +26,10 @@
       color: var(--color-contrast-higher);
       border-color: var(--color-primary);
     }
+  }
+
+  &--active {
+    color: var(--color-contrast-higher);
+    border-color: var(--color-primary);
   }
 }

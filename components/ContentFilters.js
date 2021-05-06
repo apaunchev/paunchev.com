@@ -50,7 +50,7 @@ export default function ContentFilters({
       <div className="content-filters__item content-filters__item--push">
         <input
           id="search"
-          className="form-control search"
+          className="form-control form-control--search"
           aria-label="Search"
           placeholder="Search"
           type="text"

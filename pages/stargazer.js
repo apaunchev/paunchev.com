@@ -78,7 +78,7 @@ export default function Stargazer() {
           <select
             id="language"
             name="language"
-            className="form-control select"
+            className="form-control form-control--select"
             onChange={handleSetLanguage}
           >
             <option value="javascript">JavaScript</option>
@@ -95,7 +95,7 @@ export default function Stargazer() {
           <select
             id="period"
             name="period"
-            className="form-control select"
+            className="form-control form-control--select"
             onChange={handleSetPeriod}
           >
             <option value="day">Daily</option>
@@ -172,15 +172,24 @@ export default function Stargazer() {
               <div key={i} className="content-placeholder">
                 <div
                   className="line"
-                  style={{ width: '100%', height: '2rem' }}
+                  style={{
+                    width: '100%',
+                    height: '2rem',
+                  }}
                 />
                 <div
                   className="line"
-                  style={{ width: '50%', height: '1.75rem' }}
+                  style={{
+                    width: '50%',
+                    height: '1.75rem',
+                  }}
                 />
                 <div
                   className="line"
-                  style={{ width: '100%', height: '4rem' }}
+                  style={{
+                    width: '100%',
+                    height: '4rem',
+                  }}
                 />
                 <div className="line" style={{ width: '50%' }} />
                 <div className="line" style={{ width: '30%' }} />

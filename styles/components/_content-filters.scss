@@ -15,6 +15,14 @@
     column-gap: var(--space-xs);
     width: 100%;
 
+    @include breakpoint(sm) {
+      width: auto;
+
+      &--push {
+        margin-left: auto;
+      }
+    }
+
     .form-label {
       font-size: var(--text-sm);
       font-weight: 600;
@@ -25,14 +33,6 @@
 
       @include breakpoint(sm) {
         width: 15rem;
-      }
-    }
-
-    @include breakpoint(sm) {
-      width: auto;
-
-      &--push {
-        margin-left: auto;
       }
     }
   }
@@ -48,7 +48,7 @@
       font-size: var(--text-sm);
     }
 
-    a.tags__item--active {
+    .tags__item--active {
       border-color: var(--color-primary);
       color: var(--color-contrast-higher);
     }

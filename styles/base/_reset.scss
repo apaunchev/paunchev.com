@@ -1,5 +1,5 @@
 // Inspired by https://github.com/hankchizljaw/modern-css-reset.
-
+/* stylelint-disable */
 *,
 *::before,
 *::after {
@@ -49,7 +49,7 @@ input,
 button,
 textarea,
 select {
-  -webkit-appearance: none;
+  appearance: none;
   font: inherit;
 }
 
@@ -67,3 +67,4 @@ select {
     // scroll-behavior: auto !important;
   }
 }
+/* stylelint-enable */
