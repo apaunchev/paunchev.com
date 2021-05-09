@@ -1,0 +1,15 @@
+---
+title: Line clamp
+tags:
+  - css
+---
+
+```css
+.line-clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+```

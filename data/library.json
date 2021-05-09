@@ -1,5 +1,30 @@
 [
   {
+    "tags": ["personal-sites"],
+    "title": "Adam Collier",
+    "url": "https://adamcollier.co.uk/",
+    "image": { "src": "/people/adam-collier.jpg", "width": 80, "height": 80 }
+  },
+  {
+    "tags": ["personal-sites"],
+    "title": "Ahmad Shadeed",
+    "url": "https://ishadeed.com/",
+    "image": { "src": "/people/ahmad-shadeed.jpg", "width": 80, "height": 80 }
+  },
+  {
+    "tags": ["articles"],
+    "title": "The Importance of Career Laddering",
+    "author": "Sarah Drasner",
+    "quote": "(…) who can get their job done when they have no clue if what they’re doing is valued?",
+    "url": "https://css-tricks.com/the-importance-of-career-laddering/"
+  },
+  {
+    "tags": ["personal-sites"],
+    "title": "Darek Kay",
+    "url": "https://darekkay.com/",
+    "image": { "src": "/people/darek-kay.jpg", "width": 80, "height": 80 }
+  },
+  {
     "tags": ["tools"],
     "title": "Security Headers",
     "description": "Quickly and easily assess the security of your HTTP response headers",
