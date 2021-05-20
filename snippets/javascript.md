@@ -1,8 +1,45 @@
 ---
-title: Recursion examples
-tags:
-  - javascript
+updatedAt: '2021-05-09 19:39:02'
+published: true
 ---
+
+# JavaScript
+
+## Remove array duplicates
+
+```javascript
+const arr = [1, 1, 2, 3, 5, 8];
+
+[...new Set(arr)]; // [1, 2, 3, 5, 8]
+```
+
+## Remove object property using the rest operator
+
+```javascript
+const data = { a: 1, b: 2, c: 3 };
+
+const { a, ...rest } = data;
+
+console.log(a); // 1
+console.log(rest); // { b: 2, c: 3 }
+```
+
+## Swap two variables
+
+```javascript
+let a = 10;
+let b = 20;
+
+[a, b] = [b, a];
+```
+
+## Toggle design mode to edit the current page
+
+```javascript
+document.designMode = 'on'; // edit, then set to 'off'
+```
+
+## Recursion examples
 
 Authored by Leigh Halliday ([source](https://gist.github.com/leighhalliday/7ab9234c9106cda84ce284fc34ebeacd)).
 

@@ -1,8 +1,11 @@
 ---
-title: Read Firestore data in Next.js
-tags:
-  - nextjs
+updatedAt: '2021-05-09 19:39:02'
+published: true
 ---
+
+# Next.js
+
+## Read Firestore data in Next.js
 
 ```javascript
 // pages/api/doc.js
