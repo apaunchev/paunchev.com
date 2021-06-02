@@ -1,11 +1,6 @@
-.container {
-  --layout-max-width: 70rem;
-}
-
 .site-header {
-  max-width: var(--layout-max-width);
-  margin: 0 auto;
   padding: var(--space-base);
+  border-bottom: 1px solid var(--color-contrast-lower);
   color: var(--color-contrast-high);
 }
 
@@ -14,20 +9,23 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-2xs);
+  max-width: var(--layout-narrow);
+  margin: 0 auto;
 }
 
 .nav-item {
-  display: inline-flex;
-  flex-basis: calc(50% - var(--space-2xs));
+  display: flex;
+  flex: 0 1 calc(50% - var(--space-2xs));
   align-items: center;
   justify-content: center;
-  padding: var(--space-xs) var(--space-base);
+  padding: var(--space-xs);
   border: 0;
   border-radius: var(--radius);
   color: var(--color-contrast-higher);
+  font-size: var(--text-sm);
 
   @include breakpoint(sm) {
-    flex-basis: auto;
+    flex-basis: calc(25% - var(--space-2xs));
   }
 
   &:hover,
@@ -41,13 +39,13 @@
   }
 
   &--active {
-    color: var(--color-contrast-lower);
-    background-color: var(--color-accent);
+    color: var(--color-accent);
+    background-color: var(--color-contrast-lower);
 
     &:hover,
     &:focus {
-      color: var(--color-contrast-lower);
-      background-color: var(--color-accent);
+      color: var(--color-accent);
+      background-color: var(--color-contrast-lower);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -63,7 +61,7 @@
 
 .site-main {
   width: 100%;
-  max-width: var(--layout-max-width);
+  max-width: var(--layout-wide);
   margin: 0 auto;
   padding: var(--space-base) var(--space-base) 0;
 }
