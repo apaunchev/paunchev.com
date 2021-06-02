@@ -1,18 +1,19 @@
+import { routes } from '@/lib/routes';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { routes } from '@/lib/routes';
+import { Home, Bookmark, Code, Edit3 } from 'react-feather';
+
+const iconsMap = {
+  home: Home,
+  library: Bookmark,
+  notes: Edit3,
+  projects: Code,
+};
 
 export default function Container({ children, title, description }) {
   const router = useRouter();
-  let formattedTitle;
-
-  if (!title || title === 'About') {
-    formattedTitle = 'Angel Paunchev';
-  } else {
-    formattedTitle = `${title} – Angel Paunchev`;
-  }
+  const formattedTitle = title ? `${title} – Angel Paunchev` : 'Angel Paunchev';
 
   return (
     <>
@@ -21,39 +22,42 @@ export default function Container({ children, title, description }) {
         {description ? <meta name="description" content={description} /> : null}
       </Head>
       <div className="container">
-        <header className="container__header">
-          <div className="photo">
-            <Link href="/">
-              <a>
-                <Image
-                  src="/me.png"
-                  alt=""
-                  width={80}
-                  height={80}
-                  quality={100}
-                  priority={true}
-                />
-              </a>
-            </Link>
-          </div>
-          <nav className="navigation">
+        <header className="site-header">
+          <nav className="site-nav">
             {Object.keys(routes).map(key => {
               const { href, activePaths, title } = routes[key];
-              const classes = ['navigation__item'];
+              const Icon = iconsMap[key];
+              const classes = ['nav-item'];
 
               if (activePaths.includes(router.pathname)) {
-                classes.push('navigation__item--active');
+                classes.push('nav-item--active');
               }
 
               return (
                 <Link key={key} href={href}>
-                  <a className={classes.join(' ')}>{title}</a>
+                  <a className={classes.join(' ')}>
+                    {Icon ? <Icon width={18} height={18} /> : null}
+                    {title}
+                  </a>
                 </Link>
               );
             })}
           </nav>
         </header>
-        <main className="container__main">{children}</main>
+        <main className="site-main">
+          {children}
+          <footer className="site-footer">
+            <p>
+              Built with <a href="https://nextjs.org/">Next.js</a> and hosted on{' '}
+              <a href="https://vercel.com/">Vercel</a>.{' '}
+              <a href="https://github.com/apaunchev/paunchev.com">
+                Source code
+              </a>
+              .
+            </p>
+            <p>© 2021</p>
+          </footer>
+        </main>
       </div>
     </>
   );

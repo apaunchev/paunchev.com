@@ -1,14 +1,23 @@
 .page-header {
   margin-bottom: var(--space-base);
+
+  &:empty {
+    margin-bottom: 0;
+  }
+
+  &--centered {
+    text-align: center;
+  }
 }
 
 .page-header__title {
   margin-bottom: 0;
+  font-size: var(--text-4xl);
 }
 
 .page-header__subtitle {
   margin-bottom: 0;
-  font-size: var(--text-xl);
-  line-height: var(--body-line-height);
+  font-size: var(--text-2xl);
+  line-height: var(--heading-line-height);
   color: var(--color-contrast-high);
 }

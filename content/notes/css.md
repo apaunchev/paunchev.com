@@ -1,11 +1,14 @@
 ---
+title: 'CSS'
 updatedAt: '2021-05-09 19:39:02'
 published: true
 ---
 
 # CSS
 
-## Align items vertically
+## Snippets
+
+### Align items vertically
 
 ```css
 .flex {
@@ -22,7 +25,7 @@ To push an element to the right – for example in a navigation – use:
 }
 ```
 
-## Sticky element
+### Sticky element
 
 ```css
 .sticky {
@@ -31,7 +34,7 @@ To push an element to the right – for example in a navigation – use:
 }
 ```
 
-## Line clamp
+### Line clamp
 
 ```css
 .line-clamp {

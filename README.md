@@ -7,8 +7,8 @@ Built with [Next.js](https://nextjs.org/) and deployed on [Vercel](https://verce
 ## Development
 
 ```bash
-$ git clone https://github.com/apaunchev/paunchev.com.git
-$ cd paunchev.com
-$ npm install
-$ npm run dev
+git clone https://github.com/apaunchev/paunchev.com.git
+cd paunchev.com
+npm install
+npm run dev
 ```

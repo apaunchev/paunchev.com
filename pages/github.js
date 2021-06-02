@@ -1,14 +1,16 @@
 import ContentCard from '@/components/ContentCard';
-import PageGrid from '@/components/PageGrid';
+import ContentGrid from '@/components/ContentGrid';
+import PageHeader from '@/components/PageHeader';
 import PageLayout from '@/layouts/page';
 import fetcher from '@/lib/fetcher';
 import { dateFormatter } from '@/lib/helpers';
 import { useState } from 'react';
+import { Clock, Star } from 'react-feather';
 import useSWR from 'swr';
 
 export const pageInfo = {
-  title: 'Stargazer',
-  description: 'Explore the most starred GitHub repos.',
+  title: '/github',
+  description: 'The most starred repositories on GitHub.',
 };
 
 const PERIODS = {
@@ -18,7 +20,7 @@ const PERIODS = {
   YEAR: 1000 * 60 * 60 * 24 * 365,
 };
 
-export default function Stargazer() {
+export default function GitHub() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const yesterday = new Date(today.getTime() - PERIODS.DAY);
@@ -69,7 +71,8 @@ export default function Stargazer() {
   };
 
   return (
-    <PageLayout {...pageInfo}>
+    <PageLayout title={pageInfo.title} description={pageInfo.description}>
+      <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
       <div className="content-filters">
         <div className="content-filters__item">
           <label htmlFor="language" className="form-label">
@@ -105,7 +108,7 @@ export default function Stargazer() {
           </select>
         </div>
       </div>
-      <PageGrid>
+      <ContentGrid>
         {data
           ? data.items.map(
               ({
@@ -125,41 +128,21 @@ export default function Stargazer() {
                   subtitle={owner?.login}
                   description={description}
                   extra={
-                    <ul className="extra-list">
+                    <ul className="icons-list">
                       <li
-                        className="extra-list__item"
+                        className="icons-list__item"
                         title="Stars"
                         aria-label="Stars"
                       >
-                        <svg
-                          height="16"
-                          width="16"
-                          viewBox="0 0 16 16"
-                          aria-hidden="true"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
-                          ></path>
-                        </svg>{' '}
+                        <Star width={18} height={18} />
                         {stargazers_count}
                       </li>
                       <li
-                        className="extra-list__item"
+                        className="icons-list__item"
                         title="Date created"
                         aria-label="Date created"
                       >
-                        <svg
-                          height="16"
-                          width="16"
-                          viewBox="0 0 16 16"
-                          aria-hidden="true"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"
-                          ></path>
-                        </svg>{' '}
+                        <Clock width={18} height={18} />
                         {dateFormatter(new Date(created_at))}
                       </li>
                     </ul>
@@ -195,7 +178,7 @@ export default function Stargazer() {
                 <div className="line" style={{ width: '30%' }} />
               </div>
             ))}
-      </PageGrid>
+      </ContentGrid>
     </PageLayout>
   );
 }

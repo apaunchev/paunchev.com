@@ -1,11 +1,12 @@
 ---
+title: 'HTTP'
 updatedAt: '2021-05-09 19:39:02'
 published: true
 ---
 
 # HTTP
 
-## Cache-Control header
+## The Cache-Control header
 
 Useful directives and what they mean:
 

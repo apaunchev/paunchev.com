@@ -1,0 +1,48 @@
+[
+  {
+    "createdAt": "2021-05-30 12:00:00",
+    "title": "SlidesCodeHighlighter",
+    "description": "A little web app that helps you copy+paste syntax-highlighted code into slide decks",
+    "url": "https://romannurik.github.io/SlidesCodeHighlighter/"
+  },
+  {
+    "createdAt": "2021-05-15 12:00:00",
+    "title": "Security Headers",
+    "description": "Quickly and easily assess the security of your HTTP response headers",
+    "url": "https://securityheaders.com/"
+  },
+  {
+    "createdAt": "2021-05-15 12:00:00",
+    "title": "Iconic",
+    "description": "Free, “do wtf you want with” pixel-perfect icons",
+    "url": "https://iconic.app/"
+  },
+  {
+    "createdAt": "2021-04-16 12:00:00",
+    "title": "30 seconds of code",
+    "author": "Angelos Chalaris, Stefan Fejes",
+    "description": "Short code snippets for all your development needs",
+    "url": "https://www.30secondsofcode.org/"
+  },
+  {
+    "createdAt": "2021-04-16 12:00:00",
+    "title": "Moiva.io",
+    "author": "Alexey Antipov",
+    "description": "Find and compare GitHub and npm packages",
+    "url": "https://moiva.io/"
+  },
+  {
+    "createdAt": "2021-04-16 12:00:00",
+    "title": "BundlePhobia",
+    "author": "Shubham Kanodia",
+    "description": "Find the cost of adding a npm package to your bundle",
+    "url": "https://bundlephobia.com/"
+  },
+  {
+    "createdAt": "2021-04-16 12:00:00",
+    "title": "CSS Layout",
+    "author": "Nguyen Huu Phuoc",
+    "description": "A collection of popular layouts and patterns made with CSS",
+    "url": "https://csslayout.io/"
+  }
+]
