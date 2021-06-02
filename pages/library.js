@@ -103,7 +103,7 @@ export default function Library({ data }) {
       ) : null}
       {router.query.type ? (
         <>
-          <hr className="hr--large" />
+          <hr className="hr--transparent" />
           <p className="text-center">
             <a
               className="button button--outline"

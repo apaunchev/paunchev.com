@@ -15,7 +15,7 @@ export default function Note({ slug, title, description, content }) {
         </Link>
       </p>
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      <hr className="hr--large" />
+      <hr className="hr--transparent" />
       <p className="text-center">
         <a
           className="button button--outline"
