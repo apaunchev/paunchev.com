@@ -10,32 +10,16 @@
     &:focus {
       color: var(--color-contrast-higher);
 
-      h2 {
-        color: var(--color-primary);
+      .content-card__title {
+        color: var(--color-accent);
       }
     }
-  }
-
-  h2 {
-    transition: color 0.2s var(--transition);
-  }
-
-  h2,
-  h3 {
-    margin: 0;
-  }
-
-  p,
-  ul {
-    margin-bottom: 0;
-    margin-top: var(--space-xs);
-    font-size: var(--text-sm);
   }
 }
 
 .content-card__figure {
-  float: right;
-  margin: 0 0 var(--space-2xs) var(--space-base);
+  float: left;
+  margin: var(--space-2xs) var(--space-sm) 0 0;
   width: 5rem;
 
   img {
@@ -51,10 +35,16 @@
 .content-card__title {
   @include line-clamp(2);
 
+  margin: 0;
   font-size: var(--text-xl);
+  font-weight: 600;
+  transition: color 0.2s var(--transition);
 }
 
 .content-card__subtitle {
+  @include line-clamp(1);
+
+  margin: 0;
   font-size: var(--text-lg);
   font-weight: 400;
   color: var(--color-contrast-high);
@@ -62,4 +52,12 @@
 
 .content-card__description {
   @include line-clamp(4);
+
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--text-sm);
+}
+
+.content-card__quote {
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--text-sm);
 }

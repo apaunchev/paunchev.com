@@ -1,32 +1,92 @@
 .container {
+  --layout-max-width: 70rem;
+}
+
+.site-header {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: var(--space-base);
+  color: var(--color-contrast-high);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2xs);
+}
+
+.nav-item {
+  display: inline-flex;
+  flex-basis: calc(50% - var(--space-2xs));
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs) var(--space-base);
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--color-contrast-higher);
+
+  @include breakpoint(sm) {
+    flex-basis: auto;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-contrast-higher);
+    background-color: var(--color-contrast-lower);
+  }
+
+  svg {
+    margin-right: var(--space-2xs);
+  }
+
+  &--active {
+    color: var(--color-contrast-lower);
+    background-color: var(--color-accent);
+
+    &:hover,
+    &:focus {
+      color: var(--color-contrast-lower);
+      background-color: var(--color-accent);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-contrast-higher);
+
+      &:hover,
+      &:focus {
+        color: var(--color-contrast-higher);
+      }
+    }
+  }
+}
+
+.site-main {
+  width: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: var(--space-base) var(--space-base) 0;
+}
+
+.site-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--space-base);
+  margin: var(--space-2xl) auto 0;
+  padding: var(--space-base) 0;
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-contrast-lower);
+  font-size: var(--text-sm);
+  color: var(--color-contrast-medium);
+  text-align: center;
 
   @include breakpoint(sm) {
     flex-direction: row;
-    gap: var(--space-xl);
-    max-width: 72rem;
+    justify-content: space-between;
   }
-}
 
-.container__header {
-  display: flex;
-
-  flex-shrink: 0;
-
-  @include breakpoint(sm) {
-    flex-direction: column;
-    align-items: start;
-    align-self: start;
-    gap: var(--space-base);
-    position: sticky;
-    top: var(--space-2xl);
-  }
-}
-
-.container__main {
-  @include breakpoint(sm) {
-    flex-grow: 1;
+  > * {
+    margin: 0;
   }
 }

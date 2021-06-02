@@ -1,0 +1,20 @@
+.search {
+  position: relative;
+  margin: var(--space-xl) 0 var(--space-sm);
+
+  input {
+    width: 100%;
+    padding: var(--space-xs) var(--space-sm) var(--space-xs)
+      calc(20px + var(--space-lg));
+    font-weight: 600;
+    color: var(--color-contrast-higher);
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--space-base);
+    pointer-events: none;
+  }
+}

@@ -6,7 +6,7 @@ module.exports = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: `default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' unpkg.com; img-src * blob: data:; media-src 'none'; connect-src *;`,
+            value: `default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; font-src fonts.gstatic.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src * blob: data:; media-src 'none'; connect-src *;`,
           },
           {
             key: 'Referrer-Policy',

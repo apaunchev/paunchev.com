@@ -2,7 +2,7 @@
   --form-control-padding-y: var(--space-2xs);
   --form-control-padding-x: var(--space-xs);
   --form-control-radius: 0.25rem;
-  --form-control-font-size: 0.85rem;
+  --form-control-font-size: 1rem;
 }
 
 .form-control {
@@ -22,7 +22,7 @@
 
   &:focus {
     outline: none;
-    border-color: var(--color-primary);
+    border-color: var(--color-accent);
   }
 
   &--select {

@@ -1,13 +1,12 @@
 :root {
-  --radius: 0.25rem;
+  --radius: 0.5rem;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
   background-color: var(--color-bg);
-  padding: var(--space-lg);
+}
 
-  @include breakpoint(sm) {
-    padding: var(--space-2xl);
-  }
+.text-center {
+  text-align: center;
 }
