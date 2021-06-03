@@ -1,51 +1,23 @@
 .button {
   display: inline-flex;
   align-items: center;
-  border: 0;
+  border: 2px solid var(--color-contrast-low);
   border-radius: var(--radius);
-  background-color: var(--color-accent);
+  background-color: inherit;
   padding: var(--space-xs) var(--space-base);
   text-align: center;
   text-decoration: none;
   font-weight: 600;
-  color: var(--color-contrast-lower);
+  color: var(--color-contrast-high);
 
   &:hover,
   &:focus {
-    color: var(--color-contrast-lower);
-    background-color: var(--color-accent-dark);
-  }
-
-  @media (prefers-color-scheme: dark) {
     color: var(--color-contrast-higher);
-
-    &:hover,
-    &:focus {
-      color: var(--color-contrast-higher);
-    }
+    background-color: var(--color-bg);
   }
 
   > svg {
     margin-right: var(--space-2xs);
-  }
-
-  &--arrow {
-    &::after {
-      content: '→';
-      margin-left: var(--space-2xs);
-    }
-  }
-
-  &--outline {
-    background: inherit;
-    color: var(--color-contrast-high);
-    border: 2px solid var(--color-contrast-low);
-
-    &:hover,
-    &:focus {
-      color: var(--color-contrast-higher);
-      background-color: var(--color-bg);
-    }
   }
 }
 

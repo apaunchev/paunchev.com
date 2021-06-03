@@ -106,7 +106,7 @@ export default function Library({ data }) {
           <hr className="hr--transparent" />
           <p className="text-center">
             <a
-              className="button button--outline"
+              className="button"
               href={githubLink('library', router.query.type, 'json')}
             >
               <GitHub height={18} width={18} />

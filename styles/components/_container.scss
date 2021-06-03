@@ -21,7 +21,7 @@
   padding: var(--space-xs);
   border: 0;
   border-radius: var(--radius);
-  color: var(--color-contrast-higher);
+  color: var(--color-contrast-high);
   font-size: var(--text-sm);
 
   @include breakpoint(sm) {
@@ -34,28 +34,19 @@
     background-color: var(--color-contrast-lower);
   }
 
-  svg {
-    margin-right: var(--space-2xs);
-  }
-
   &--active {
-    color: var(--color-accent);
+    color: var(--color-contrast-higher);
     background-color: var(--color-contrast-lower);
 
     &:hover,
     &:focus {
-      color: var(--color-accent);
+      color: var(--color-contrast-higher);
       background-color: var(--color-contrast-lower);
     }
+  }
 
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-contrast-higher);
-
-      &:hover,
-      &:focus {
-        color: var(--color-contrast-higher);
-      }
-    }
+  > svg {
+    margin-right: var(--space-2xs);
   }
 }
 

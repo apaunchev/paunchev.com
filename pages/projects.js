@@ -31,7 +31,7 @@ export default function Projects() {
       <hr className="hr--transparent" />
       <p className="text-center">
         <a
-          className="button button--outline"
+          className="button"
           href="https://github.com/apaunchev?tab=repositories"
         >
           <GitHub width={18} height={18} />

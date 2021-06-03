@@ -48,17 +48,11 @@ export default function Home({ recentItems }) {
         tools, accessibility.
       </p>
       <p className="button-group">
-        <a
-          className="button button--outline"
-          href="https://www.linkedin.com/in/apaunchev/"
-        >
+        <a className="button" href="https://www.linkedin.com/in/apaunchev/">
           <Linkedin width={18} height={18} />
           Connect on LinkedIn
         </a>
-        <a
-          className="button button--outline"
-          href="https://github.com/apaunchev"
-        >
+        <a className="button" href="https://github.com/apaunchev">
           <GitHub width={18} height={18} />
           See code on GitHub
         </a>
@@ -73,7 +67,7 @@ export default function Home({ recentItems }) {
       <hr className="hr--transparent" />
       <p className="text-center">
         <Link href={routes.library.href}>
-          <a className="button button--arrow">Browse library</a>
+          <a className="button">Browse library →</a>
         </Link>
       </p>
       <hr className="hr--large" />
@@ -91,7 +85,7 @@ export default function Home({ recentItems }) {
       <hr className="hr--transparent" />
       <p className="text-center">
         <Link href={routes.projects.href}>
-          <a className="button button--arrow">More projects</a>
+          <a className="button">More projects →</a>
         </Link>
       </p>
     </ArticleLayout>

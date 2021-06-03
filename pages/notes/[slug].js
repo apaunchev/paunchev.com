@@ -17,10 +17,7 @@ export default function Note({ slug, title, description, content }) {
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <hr className="hr--transparent" />
       <p className="text-center">
-        <a
-          className="button button--outline"
-          href={githubLink('notes', slug, 'md')}
-        >
+        <a className="button" href={githubLink('notes', slug, 'md')}>
           <GitHub width={18} height={18} />
           Edit on GitHub
         </a>
