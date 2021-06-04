@@ -1,5 +1,17 @@
 [
   {
+    "createdAt": "2021-06-04 12:00:00",
+    "title": "Boring Avatars",
+    "description": "Avatar generator playground",
+    "url": "https://boringavatars.com/"
+  },
+  {
+    "createdAt": "2021-06-04 12:00:00",
+    "title": "Feather",
+    "description": "Simply beautiful open source icons",
+    "url": "https://feathericons.com/"
+  },
+  {
     "createdAt": "2021-05-30 12:00:00",
     "title": "SlidesCodeHighlighter",
     "description": "A little web app that helps you copy+paste syntax-highlighted code into slide decks",
