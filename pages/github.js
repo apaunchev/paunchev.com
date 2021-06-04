@@ -1,16 +1,22 @@
-import ContentCard from '@/components/ContentCard';
-import ContentGrid from '@/components/ContentGrid';
-import PageHeader from '@/components/PageHeader';
-import PageLayout from '@/layouts/page';
+import {
+  ContentFilters,
+  ContentFiltersSelect,
+} from '@/components/ContentFilters';
+import { ContentGrid, ContentGridItem } from '@/components/ContentGrid';
+import { IconsList, IconsListItem } from '@/components/IconsList';
+import { PageHeader } from '@/components/PageHeader';
+import { Placeholders } from '@/components/Placeholders';
+import projects from '@/content/projects';
+import { PageLayout } from '@/layouts/page';
 import fetcher from '@/lib/fetcher';
-import { dateFormatter } from '@/lib/helpers';
+import { formatDate } from '@/lib/helpers';
 import { useState } from 'react';
 import { Clock, Star } from 'react-feather';
 import useSWR from 'swr';
 
-export const pageInfo = {
-  title: '/github',
-  description: 'The most starred repositories on GitHub.',
+const pageInfo = {
+  title: projects.github.title,
+  description: projects.github.description,
 };
 
 const PERIODS = {
@@ -41,143 +47,85 @@ export default function GitHub() {
     fetcher,
   );
 
-  const handleSetLanguage = e => {
-    setLanguage(e.target.value);
-  };
-
   const handleSetPeriod = e => {
     const selectedPeriod = e.target.value;
 
     switch (selectedPeriod) {
-      case 'day':
+      case 'daily':
         setStartDate(yesterday.toISOString());
         setEndDate(today.toISOString());
         break;
-      case 'week':
+      case 'weekly':
         setStartDate(aWeekAgo.toISOString());
         setEndDate(today.toISOString());
         break;
-      case 'month':
+      case 'monthly':
         setStartDate(aMonthAgo.toISOString());
         setEndDate(today.toISOString());
         break;
-      case 'year':
+      case 'yearly':
         setStartDate(aYearAgo.toISOString());
         setEndDate(today.toISOString());
-        break;
-      default:
-        return;
     }
   };
 
   return (
     <PageLayout title={pageInfo.title} description={pageInfo.description}>
       <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
-      <div className="content-filters">
-        <div className="content-filters__item">
-          <label htmlFor="language" className="form-label">
-            Language:
-          </label>
-          <select
-            id="language"
-            name="language"
-            className="form-control form-control--select"
-            onChange={handleSetLanguage}
-          >
-            <option value="javascript">JavaScript</option>
-            <option value="typescript">TypeScript</option>
-            <option value="python">Python</option>
-            <option value="css">CSS</option>
-            <option value="html">HTML</option>
-          </select>
-        </div>
-        <div className="content-filters__item">
-          <label htmlFor="period" className="form-label">
-            Period:
-          </label>
-          <select
-            id="period"
-            name="period"
-            className="form-control form-control--select"
-            onChange={handleSetPeriod}
-          >
-            <option value="day">Daily</option>
-            <option value="week">Weekly</option>
-            <option value="month">Monthly</option>
-            <option value="year">Yearly</option>
-          </select>
-        </div>
-      </div>
+      <ContentFilters>
+        <ContentFiltersSelect
+          name="language"
+          label="Language"
+          options={['JavaScript', 'TypeScript', 'Python', 'CSS', 'HTML']}
+          onChange={e => setLanguage(e.target.value)}
+        />
+        <ContentFiltersSelect
+          name="period"
+          label="Period"
+          options={['Daily', 'Weekly', 'Monthly', 'Yearly']}
+          onChange={handleSetPeriod}
+        />
+      </ContentFilters>
       <ContentGrid>
-        {data
-          ? data.items.map(
-              ({
-                id,
-                name,
-                html_url,
-                description,
-                owner,
-                language,
-                stargazers_count,
-                created_at,
-              }) => (
-                <ContentCard
-                  key={id}
-                  url={html_url}
-                  title={name}
-                  subtitle={owner?.login}
-                  description={description}
-                  extra={
-                    <ul className="icons-list">
-                      <li
-                        className="icons-list__item"
-                        title="Stars"
-                        aria-label="Stars"
-                      >
-                        <Star width={18} height={18} />
-                        {stargazers_count}
-                      </li>
-                      <li
-                        className="icons-list__item"
-                        title="Date created"
-                        aria-label="Date created"
-                      >
-                        <Clock width={18} height={18} />
-                        {dateFormatter(new Date(created_at))}
-                      </li>
-                    </ul>
-                  }
-                  tags={[language?.toLowerCase()]}
-                />
-              ),
-            )
-          : [...Array(12)].map((_, i) => (
-              <div key={i} className="content-placeholder">
-                <div
-                  className="line"
-                  style={{
-                    width: '100%',
-                    height: '2rem',
-                  }}
-                />
-                <div
-                  className="line"
-                  style={{
-                    width: '50%',
-                    height: '1.75rem',
-                  }}
-                />
-                <div
-                  className="line"
-                  style={{
-                    width: '100%',
-                    height: '4rem',
-                  }}
-                />
-                <div className="line" style={{ width: '50%' }} />
-                <div className="line" style={{ width: '30%' }} />
-              </div>
-            ))}
+        {data ? (
+          data.items.map(
+            ({
+              id,
+              name,
+              html_url,
+              description,
+              owner,
+              language,
+              stargazers_count,
+              created_at,
+            }) => (
+              <ContentGridItem
+                key={id}
+                url={html_url}
+                title={name}
+                subtitle={owner?.login}
+                description={description}
+                extra={
+                  <IconsList>
+                    <IconsListItem
+                      label="Stars"
+                      icon={<Star width={18} height={18} />}
+                      value={stargazers_count}
+                    />
+                    <IconsListItem
+                      label="Date created"
+                      icon={<Clock width={18} height={18} />}
+                      value={formatDate(new Date(created_at))}
+                    />
+                  </IconsList>
+                }
+                tags={[language?.toLowerCase()]}
+              />
+            ),
+          )
+        ) : (
+          <Placeholders type="repository" count={15} />
+        )}
       </ContentGrid>
     </PageLayout>
   );

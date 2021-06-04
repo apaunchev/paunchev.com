@@ -1,8 +1,6 @@
-import ContentLink from '@/components/ContentLink';
-import ContentList from '@/components/ContentList';
-import PageHeader from '@/components/PageHeader';
-import projects from '@/content/projects';
-import ArticleLayout from '@/layouts/article';
+import { PageHeader } from '@/components/PageHeader';
+import { ProjectsList } from '@/components/ProjectsList';
+import { ArticleLayout } from '@/layouts/article';
 import { GitHub } from 'react-feather';
 
 const pageInfo = {
@@ -18,16 +16,7 @@ export default function Projects() {
         subtitle={pageInfo.description}
         isCentered
       />
-      <ContentList>
-        {projects.map(({ title, description, href }) => (
-          <ContentLink
-            key={title}
-            href={href}
-            title={title}
-            description={description}
-          />
-        ))}
-      </ContentList>
+      <ProjectsList />
       <hr className="hr--transparent" />
       <p className="text-center">
         <a

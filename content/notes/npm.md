@@ -6,7 +6,7 @@ published: true
 
 # npm
 
-## Snippets
+## Commands
 
 ### Draw a dependency tree in npm
 

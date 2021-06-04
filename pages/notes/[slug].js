@@ -1,4 +1,4 @@
-import ArticleLayout from '@/layouts/article';
+import { ArticleLayout } from '@/layouts/article';
 import { githubLink } from '@/lib/helpers';
 import markdownToHtml from '@/lib/markdown';
 import { getNoteBySlug, getNotes } from '@/lib/notes';

@@ -6,7 +6,7 @@ published: true
 
 # Linux
 
-## Snippets
+## Commands
 
 ### Check battery status (capacity, charging rate)
 

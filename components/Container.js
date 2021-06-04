@@ -11,7 +11,7 @@ const iconsMap = {
   projects: Code,
 };
 
-export default function Container({ children, title, description }) {
+export function Container({ children, title, description }) {
   const router = useRouter();
   const formattedTitle = title ? `${title} – Angel Paunchev` : 'Angel Paunchev';
 

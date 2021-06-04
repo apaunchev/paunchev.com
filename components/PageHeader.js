@@ -1,4 +1,4 @@
-export default function PageHeader({ title, subtitle, isCentered = false }) {
+export function PageHeader({ title, subtitle, isCentered = false }) {
   const classes = ['page-header'];
 
   if (isCentered) {

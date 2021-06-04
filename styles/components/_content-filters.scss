@@ -3,36 +3,32 @@
   flex-wrap: wrap;
   gap: var(--space-sm);
   margin: var(--space-lg) 0;
+}
+
+.content-filters-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-2xs);
+  width: 100%;
 
   @include breakpoint(sm) {
-    flex-wrap: nowrap;
+    width: auto;
+
+    &--push {
+      margin-left: auto;
+    }
   }
 
-  .content-filters__item {
-    display: flex;
-    align-items: center;
-    column-gap: var(--space-xs);
+  .form-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .form-control {
     width: 100%;
 
     @include breakpoint(sm) {
-      width: auto;
-
-      &--push {
-        margin-left: auto;
-      }
-    }
-
-    .form-label {
-      font-size: var(--text-sm);
-      font-weight: 600;
-    }
-
-    .form-control {
-      width: 100%;
-
-      @include breakpoint(sm) {
-        width: 15rem;
-      }
+      width: 15rem;
     }
   }
 }
