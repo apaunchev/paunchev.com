@@ -45,3 +45,12 @@ To push an element to the right – for example in a navigation – use:
   -webkit-box-orient: vertical;
 }
 ```
+
+### Make grid rows of equal height
+
+```css
+.grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+```
