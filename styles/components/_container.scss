@@ -35,12 +35,12 @@
   }
 
   &--active {
-    color: var(--color-contrast-higher);
+    color: var(--color-accent);
     background-color: var(--color-contrast-lower);
 
     &:hover,
     &:focus {
-      color: var(--color-contrast-higher);
+      color: var(--color-accent);
       background-color: var(--color-contrast-lower);
     }
   }
