@@ -1,7 +1,12 @@
-[
-  {
+{
+  "github": {
     "title": "/github",
-    "description": "My preferred way to browse GitHub for interesting new repositories.",
+    "description": "The most starred repositories on GitHub.",
     "href": "/github"
+  },
+  "jobs": {
+    "title": "/jobs",
+    "description": "A job aggregator for the Bulgarian IT market.",
+    "href": "/jobs"
   }
-]
+}

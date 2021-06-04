@@ -1,8 +1,7 @@
-import ContentLink from '@/components/ContentLink';
-import ContentList from '@/components/ContentList';
-import PageHeader from '@/components/PageHeader';
-import Search from '@/components/Search';
-import ArticleLayout from '@/layouts/article';
+import { ContentList, ContentListItem } from '@/components/ContentList';
+import { PageHeader } from '@/components/PageHeader';
+import { Search } from '@/components/Search';
+import { ArticleLayout } from '@/layouts/article';
 import { getNotes } from '@/lib/notes';
 import { routes } from '@/lib/routes';
 import { useState } from 'react';
@@ -14,7 +13,7 @@ const pageInfo = {
 
 export default function Notes({ content }) {
   const [searchValue, setSearchValue] = useState('');
-  const filteredContent = content.filter(item => {
+  const filteredData = content.filter(item => {
     const filterValue = searchValue.toLowerCase();
     const title = item?.title?.toLowerCase();
     const content = item?.content?.toLowerCase();
@@ -29,10 +28,10 @@ export default function Notes({ content }) {
         onInputChange={e => setSearchValue(e.target.value)}
         label="Search notes"
       />
-      {filteredContent.length ? (
+      {filteredData.length ? (
         <ContentList>
-          {filteredContent.map(({ slug, title, description }) => (
-            <ContentLink
+          {filteredData.map(({ slug, title, description }) => (
+            <ContentListItem
               key={slug}
               href={`${routes.notes.href}/${slug}`}
               title={title}

@@ -1,4 +1,4 @@
-export default function TagsList({ tags = [] }) {
+export function TagsList({ tags = [] }) {
   if (!tags.length) {
     return null;
   }
@@ -6,7 +6,7 @@ export default function TagsList({ tags = [] }) {
   return (
     <ul className="tags-list">
       {tags.map(tag => (
-        <li key={tag} className="tags-list__item">
+        <li key={tag} className="tags-list-item">
           {tag}
         </li>
       ))}

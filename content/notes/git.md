@@ -6,7 +6,7 @@ published: true
 
 # Git
 
-## Snippets
+## Commands
 
 ### Amend a commit
 

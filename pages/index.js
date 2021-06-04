@@ -1,10 +1,7 @@
-import ContentCardLibrary from '@/components/ContentCardLibrary';
-import ContentGrid from '@/components/ContentGrid';
-import ContentLink from '@/components/ContentLink';
-import ContentList from '@/components/ContentList';
-import PageHeader from '@/components/PageHeader';
-import projects from '@/content/projects';
-import ArticleLayout from '@/layouts/article';
+import { ContentGrid, ContentGridLibraryItem } from '@/components/ContentGrid';
+import { PageHeader } from '@/components/PageHeader';
+import { ProjectsList } from '@/components/ProjectsList';
+import { ArticleLayout } from '@/layouts/article';
 import { getLibrary } from '@/lib/library';
 import { routes } from '@/lib/routes';
 import Image from 'next/image';
@@ -61,7 +58,7 @@ export default function Home({ recentItems }) {
       <h2>From the library</h2>
       <ContentGrid>
         {recentItems.map(item => (
-          <ContentCardLibrary key={item.url} {...item} />
+          <ContentGridLibraryItem key={item.url} {...item} />
         ))}
       </ContentGrid>
       <hr className="hr--transparent" />
@@ -72,16 +69,7 @@ export default function Home({ recentItems }) {
       </p>
       <hr className="hr--large" />
       <h2>Featured projects</h2>
-      <ContentList>
-        {projects.map(({ title, description, href }) => (
-          <ContentLink
-            key={title}
-            href={href}
-            title={title}
-            description={description}
-          />
-        ))}
-      </ContentList>
+      <ProjectsList />
       <hr className="hr--transparent" />
       <p className="text-center">
         <Link href={routes.projects.href}>

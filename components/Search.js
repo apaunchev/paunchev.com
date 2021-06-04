@@ -1,6 +1,6 @@
 import { Search as SearchIcon } from 'react-feather';
 
-export default function Search({ onInputChange, label = 'Search' }) {
+export function Search({ onInputChange, label = 'Search' }) {
   return (
     <div className="search">
       <SearchIcon width={18} height={18} />

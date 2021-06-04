@@ -3,13 +3,18 @@
   margin: var(--space-xs) 0 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: var(--space-sm);
+  row-gap: var(--space-2xs);
 }
 
-.icons-list__item {
+.icons-list-item {
   display: flex;
   align-items: center;
-  column-gap: var(--space-2xs);
   font-size: var(--text-xs);
+
+  > svg {
+    margin-right: var(--space-2xs);
+  }
 }

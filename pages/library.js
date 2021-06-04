@@ -1,7 +1,6 @@
-import ContentCardLibrary from '@/components/ContentCardLibrary';
-import ContentGrid from '@/components/ContentGrid';
-import PageHeader from '@/components/PageHeader';
-import PageLayout from '@/layouts/page';
+import { ContentGrid, ContentGridLibraryItem } from '@/components/ContentGrid';
+import { PageHeader } from '@/components/PageHeader';
+import { PageLayout } from '@/layouts/page';
 import { githubLink, hyphenize } from '@/lib/helpers';
 import { getLibrary } from '@/lib/library';
 import { types } from '@/lib/types';
@@ -68,7 +67,7 @@ export default function Library({ data }) {
       <div className="tabs">
         <a
           className={
-            !router.query.type ? 'tabs__item tabs__item--active' : 'tabs__item'
+            !router.query.type ? 'tabs-item tabs-item--active' : 'tabs-item'
           }
           href={router.pathname}
           onClick={handleSetFilter}
@@ -76,10 +75,10 @@ export default function Library({ data }) {
           All
         </a>
         {Object.keys(types).map(type => {
-          const classes = ['tabs__item'];
+          const classes = ['tabs-item'];
 
           if (router.query.type === type) {
-            classes.push('tabs__item--active');
+            classes.push('tabs-item--active');
           }
 
           return (
@@ -97,7 +96,7 @@ export default function Library({ data }) {
       {filteredData.length ? (
         <ContentGrid>
           {filteredData.map(item => (
-            <ContentCardLibrary key={item.url} {...item} />
+            <ContentGridLibraryItem key={item.url} {...item} />
           ))}
         </ContentGrid>
       ) : null}

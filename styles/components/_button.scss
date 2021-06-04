@@ -1,3 +1,4 @@
+button,
 .button {
   display: inline-flex;
   align-items: center;
@@ -9,11 +10,15 @@
   text-decoration: none;
   font-weight: 600;
   color: var(--color-contrast-high);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s,
+    background-color 0.2s var(--transition);
 
   &:hover,
   &:focus {
     color: var(--color-contrast-higher);
     background-color: var(--color-bg);
+    border-color: var(--color-accent);
   }
 
   > svg {

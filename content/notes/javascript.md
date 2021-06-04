@@ -6,7 +6,7 @@ published: true
 
 # JavaScript
 
-## Snippets
+## Arrays
 
 ### Remove array duplicates
 
@@ -15,6 +15,32 @@ const arr = [1, 1, 2, 3, 5, 8];
 
 [...new Set(arr)]; // [1, 2, 3, 5, 8]
 ```
+
+### Shuffle array
+
+```javascript
+const shuffle = array =>
+  array
+    .map(a => ({ sort: Math.random(), value: a }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(a => a.value);
+```
+
+## Strings
+
+### Hyphenize a string (slug)
+
+```javascript
+const hyphenize = string => string.replace(/\s+/g, '-').toLowerCase();
+```
+
+### Capitalize a string
+
+```javascript
+const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+```
+
+## Objects
 
 ### Remove object property using the rest operator
 
@@ -27,6 +53,8 @@ console.log(a); // 1
 console.log(rest); // { b: 2, c: 3 }
 ```
 
+## General
+
 ### Swap two variables
 
 ```javascript
@@ -36,32 +64,10 @@ let b = 20;
 [a, b] = [b, a];
 ```
 
-### Toggle design mode to edit the current page
+### Format a date
 
 ```javascript
-document.designMode = 'on'; // edit, then set to 'off'
-```
-
-### Hypehnize a string (slug)
-
-```javascript
-export function hyphenize(string) {
-  return string.replace(/\s+/g, '-').toLowerCase();
-}
-```
-
-### Capitalize a string
-
-```javascript
-export function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-```
-
-### Date formatter
-
-```javascript
-export function dateFormatter(
+const formatDate = (
   date,
   locale = 'en-GB',
   options = {
@@ -70,18 +76,5 @@ export function dateFormatter(
     month: 'long',
     day: 'numeric',
   },
-) {
-  return date.toLocaleDateString(locale, options);
-}
-```
-
-### Shuffle array
-
-```javascript
-export function shuffle(array) {
-  return array
-    .map(a => ({ sort: Math.random(), value: a }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(a => a.value);
-}
+) => date.toLocaleDateString(locale, options);
 ```
