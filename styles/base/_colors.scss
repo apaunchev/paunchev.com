@@ -1,22 +1,43 @@
-:root {
-  --color-accent: hsl(262, 83%, 58%);
-  --color-accent-dark: hsl(262, 83%, 54%);
+* {
+  --brand-hue: 262;
+  --brand-saturation: 83%;
+  --brand-lightness: 58%;
 
-  --color-bg: hsl(240, 0%, 100%);
-  --color-contrast-lower: hsl(240, 0%, 95%);
-  --color-contrast-low: hsl(240, 0%, 85%);
-  --color-contrast-medium: hsl(240, 0%, 60%);
-  --color-contrast-high: hsl(240, 0%, 40%);
-  --color-contrast-higher: hsl(240, 0%, 15%);
+  --body-hue: 240;
+  --body-saturation: 0%;
+  --body-lightness: 15%;
+}
+
+:root {
+  --color-brand: hsl(
+    var(--brand-hue),
+    var(--brand-saturation),
+    var(--brand-lightness)
+  );
+  --color-bg: hsl(var(--body-hue), var(--body-saturation), 100%);
+  --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 95%);
+  --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 85%);
+  --color-contrast-medium: hsl(var(--body-hue), var(--body-saturation), 60%);
+  --color-contrast-high: hsl(var(--body-hue), var(--body-saturation), 40%);
+  --color-contrast-higher: hsl(var(--body-hue), var(--body-saturation), 15%);
+
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: hsl(240, 0%, 5%);
-    --color-contrast-lower: hsl(240, 0%, 15%);
-    --color-contrast-low: hsl(240, 0%, 25%);
-    --color-contrast-medium: hsl(240, 0%, 60%);
-    --color-contrast-high: hsl(240, 0%, 75%);
-    --color-contrast-higher: hsl(240, 0%, 95%);
+    --color-brand: hsl(
+      var(--brand-hue),
+      var(--brand-saturation),
+      var(--brand-lightness)
+    );
+    --color-bg: hsl(var(--body-hue), var(--body-saturation), 5%);
+    --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 15%);
+    --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 25%);
+    --color-contrast-medium: hsl(var(--body-hue), var(--body-saturation), 60%);
+    --color-contrast-high: hsl(var(--body-hue), var(--body-saturation), 75%);
+    --color-contrast-higher: hsl(var(--body-hue), var(--body-saturation), 95%);
+
+    color-scheme: dark;
   }
 }
