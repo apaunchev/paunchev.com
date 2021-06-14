@@ -1,5 +1,19 @@
 [
   {
+    "createdAt": "2021-06-14 21:00:00",
+    "title": "The 80% energy principle",
+    "author": "Justin Jackson",
+    "quote": "At the buffet of life, we don't need to fill our plate with every opportunity that comes our way.",
+    "url": "https://justinjackson.ca/the-principle-that-changed-my-life"
+  },
+  {
+    "createdAt": "2021-06-14 21:00:00",
+    "title": "Get better at programming by learning how things work",
+    "author": "Julia Evans",
+    "quote": "Being a senior developer is less about knowing absolutely everything and more about quickly being able to recognize when you don’t know something and learn it.",
+    "url": "https://jvns.ca/blog/learn-how-things-work/"
+  },
+  {
     "createdAt": "2021-05-25 12:00:00",
     "title": "The Importance of Career Laddering",
     "author": "Sarah Drasner",

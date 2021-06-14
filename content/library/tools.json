@@ -38,13 +38,6 @@
   },
   {
     "createdAt": "2021-04-16 12:00:00",
-    "title": "Moiva.io",
-    "author": "Alexey Antipov",
-    "description": "Find and compare GitHub and npm packages",
-    "url": "https://moiva.io/"
-  },
-  {
-    "createdAt": "2021-04-16 12:00:00",
     "title": "BundlePhobia",
     "author": "Shubham Kanodia",
     "description": "Find the cost of adding a npm package to your bundle",
