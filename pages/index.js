@@ -81,7 +81,10 @@ export default function Home({ recentItems }) {
 }
 
 export async function getStaticProps() {
-  const recentItems = getLibrary(true);
+  const recentItems = getLibrary({
+    articles: 2,
+    books: 2,
+  });
 
   return {
     props: {
