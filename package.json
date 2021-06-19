@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "eslint": "eslint --ext .js,.jsx components layouts lib pages",
     "prettier": "prettier --check components layouts lib pages",
     "stylelint": "stylelint \"styles/**/*.scss\" --syntax \"scss\"",
     "prepare": "husky install"
@@ -36,7 +36,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
-      "npm run lint",
+      "npm run eslint",
       "npm run prettier"
     ],
     "styles/**/*.scss": [
