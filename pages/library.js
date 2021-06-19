@@ -1,12 +1,11 @@
 import { ContentGrid, ContentGridLibraryItem } from '@/components/ContentGrid';
 import { PageHeader } from '@/components/PageHeader';
 import { PageLayout } from '@/layouts/page';
-import { githubLink, hyphenize } from '@/lib/helpers';
+import { hyphenize } from '@/lib/helpers';
 import { getLibrary } from '@/lib/library';
 import { types } from '@/lib/types';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
-import { GitHub } from 'react-feather';
 
 export const pageInfo = {
   title: 'Library',
@@ -99,20 +98,6 @@ export default function Library({ data }) {
             <ContentGridLibraryItem key={item.url} {...item} />
           ))}
         </ContentGrid>
-      ) : null}
-      {router.query.type ? (
-        <>
-          <hr className="hr--transparent" />
-          <p className="text-center">
-            <a
-              className="button"
-              href={githubLink('library', router.query.type, 'json')}
-            >
-              <GitHub height={18} width={18} />
-              Edit on GitHub
-            </a>
-          </p>
-        </>
       ) : null}
     </PageLayout>
   );
