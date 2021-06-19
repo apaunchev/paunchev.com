@@ -1,6 +1,5 @@
 import { ContentGrid, ContentGridLibraryItem } from '@/components/ContentGrid';
 import { PageHeader } from '@/components/PageHeader';
-import { ProjectsList } from '@/components/ProjectsList';
 import { ArticleLayout } from '@/layouts/article';
 import { getLibrary } from '@/lib/library';
 import { routes } from '@/lib/routes';
@@ -65,15 +64,6 @@ export default function Home({ recentItems }) {
       <p className="text-center">
         <Link href={routes.library.href}>
           <a className="button">Browse library →</a>
-        </Link>
-      </p>
-      <hr className="hr--large" />
-      <h2>Featured projects</h2>
-      <ProjectsList />
-      <hr className="hr--transparent" />
-      <p className="text-center">
-        <Link href={routes.projects.href}>
-          <a className="button">More projects →</a>
         </Link>
       </p>
     </ArticleLayout>
