@@ -10,7 +10,7 @@ const formatFilters = ({ startDate, endDate, language }) => {
   return formattedFilters;
 };
 
-export default async (req, res) => {
+const github = async (req, res) => {
   const { startDate, endDate, language } = req.query;
   const filtersParams = new URLSearchParams(
     formatFilters({ startDate, endDate, language }),
@@ -32,3 +32,5 @@ export default async (req, res) => {
 
   return res.status(200).json(repos);
 };
+
+export default github;

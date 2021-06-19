@@ -6,6 +6,7 @@ import { routes } from '@/lib/routes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GitHub, Linkedin } from 'react-feather';
+import author from '../public/me.png';
 
 const pageInfo = {
   title: null,
@@ -23,14 +24,7 @@ export default function Home({ recentItems }) {
         subtitle={pageInfo.headerSubtitle}
       />
       <div className="photo">
-        <Image
-          src="/me.png"
-          alt=""
-          width={130}
-          height={130}
-          quality={100}
-          priority={true}
-        />
+        <Image src={author} alt="Picture of the author" placeholder="blur" />
       </div>
       <p>
         I specialize in front-end development and delivering meaningful user
