@@ -14,17 +14,23 @@ export function ContentGridItem({
   extra,
   tags,
 }) {
+  const useImageComponent = image && image.width && image.height;
+
   return (
     <article className="content-grid-item">
       <a href={url} title={title}>
         {image?.src ? (
           <figure className="content-grid-item__figure">
-            <Image
-              src={image.src}
-              width={image.width}
-              height={image.height}
-              alt={title}
-            />
+            {useImageComponent ? (
+              <Image
+                src={image.src}
+                width={image.width}
+                height={image.height}
+                alt={title}
+              />
+            ) : (
+              <img src={image.src} alt={title} />
+            )}
           </figure>
         ) : null}
         {title ? <h2 className="content-grid-item__title">{title}</h2> : null}
