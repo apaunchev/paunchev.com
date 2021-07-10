@@ -1,4 +1,4 @@
-import { ContentList, ContentListItem } from '@/components/ContentList';
+import { ContentList, ContentListItem } from '@/components/content-list';
 import projects from '@/content/projects';
 
 export function ProjectsList() {

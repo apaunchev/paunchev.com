@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { TagsList } from '@/components/TagsList';
+import { TagsList } from '@/components/tags-list';
 
 export function ContentGrid({ children }) {
   return <div className="content-grid">{children}</div>;

@@ -1,4 +1,4 @@
-import { Container } from '@/components/Container';
+import { Container } from '@/components/container';
 
 export function PageLayout({ children, title, description }) {
   return (

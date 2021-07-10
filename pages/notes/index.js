@@ -1,6 +1,6 @@
-import { ContentList, ContentListItem } from '@/components/ContentList';
-import { PageHeader } from '@/components/PageHeader';
-import { Search } from '@/components/Search';
+import { ContentList, ContentListItem } from '@/components/content-list';
+import { PageHeader } from '@/components/page-header';
+import { Search } from '@/components/search';
 import { ArticleLayout } from '@/layouts/article';
 import { getNotes } from '@/lib/notes';
 import { routes } from '@/lib/routes';

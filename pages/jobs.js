@@ -2,12 +2,12 @@ import {
   ContentFilters,
   ContentFiltersInput,
   ContentFiltersSelect,
-} from '@/components/ContentFilters';
-import { ContentGrid, ContentGridItem } from '@/components/ContentGrid';
-import { IconsList, IconsListItem } from '@/components/IconsList';
-import { PageHeader } from '@/components/PageHeader';
-import { Placeholders } from '@/components/Placeholders';
-import { Salary } from '@/components/Salary';
+} from '@/components/content-filters';
+import { ContentGrid, ContentGridItem } from '@/components/content-grid';
+import { IconsList, IconsListItem } from '@/components/icons-list';
+import { PageHeader } from '@/components/page-header';
+import { Placeholders } from '@/components/placeholders';
+import { Salary } from '@/components/salary';
 import projects from '@/content/projects';
 import { PageLayout } from '@/layouts/page';
 import fetcher from '@/lib/fetcher';

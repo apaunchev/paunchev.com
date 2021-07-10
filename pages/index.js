@@ -1,5 +1,5 @@
-import { ContentGrid, ContentGridLibraryItem } from '@/components/ContentGrid';
-import { PageHeader } from '@/components/PageHeader';
+import { ContentGrid, ContentGridLibraryItem } from '@/components/content-grid';
+import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
 import { getLibrary } from '@/lib/library';
 import { routes } from '@/lib/routes';

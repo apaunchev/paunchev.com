@@ -1,5 +1,5 @@
-import { PageHeader } from '@/components/PageHeader';
-import { ProjectsList } from '@/components/ProjectsList';
+import { PageHeader } from '@/components/page-header';
+import { ProjectsList } from '@/components/projects-list';
 import { ArticleLayout } from '@/layouts/article';
 import { GitHub } from 'react-feather';
 

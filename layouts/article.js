@@ -1,4 +1,4 @@
-import { Container } from '@/components/Container';
+import { Container } from '@/components/container';
 
 export function ArticleLayout({ children, title, description }) {
   return (
