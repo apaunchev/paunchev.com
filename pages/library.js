@@ -3,7 +3,7 @@ import { PageHeader } from '@/components/page-header';
 import { PageLayout } from '@/layouts/page';
 import { hyphenize } from '@/lib/helpers';
 import { getLibrary } from '@/lib/library';
-import { types } from '@/lib/types';
+import { contentTypes } from '@/lib/content-types';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 
@@ -36,7 +36,7 @@ export default function Library({ data }) {
       return;
     }
 
-    if (!types[hyphenize(type)]) {
+    if (!contentTypes[hyphenize(type)]) {
       setFilterValue('');
       router.push(router.pathname, undefined, { shallow: true });
       return;
@@ -73,7 +73,7 @@ export default function Library({ data }) {
         >
           All
         </a>
-        {Object.keys(types).map(type => {
+        {Object.keys(contentTypes).map(type => {
           const classes = ['tabs-item'];
 
           if (router.query.type === type) {
@@ -87,7 +87,7 @@ export default function Library({ data }) {
               href={`${router.pathname}/?type=${type}`}
               onClick={e => handleSetFilter(e, type)}
             >
-              {types[type]}
+              {contentTypes[type]}
             </a>
           );
         })}
