@@ -2,15 +2,15 @@ import {
   ContentFilters,
   ContentFiltersSelect,
 } from '@/components/content-filters';
-import { ContentGrid, ContentGridItem } from '@/components/content-grid';
-import { IconsList, IconsListItem } from '@/components/icons-list';
+import {
+  ContentGrid,
+  ContentGridRepositoryItem,
+} from '@/components/content-grid';
 import { PageHeader } from '@/components/page-header';
 import { Placeholders } from '@/components/placeholders';
 import { PageLayout } from '@/layouts/page';
 import fetcher from '@/lib/fetcher';
-import { formatDate } from '@/lib/helpers';
 import { useState } from 'react';
-import { Clock, Star } from 'react-feather';
 import useSWR from 'swr';
 
 const pageInfo = {
@@ -87,41 +87,9 @@ export default function GitHub() {
       </ContentFilters>
       <ContentGrid>
         {data ? (
-          data.items.map(
-            ({
-              id,
-              name,
-              html_url,
-              description,
-              owner,
-              language,
-              stargazers_count,
-              created_at,
-            }) => (
-              <ContentGridItem
-                key={id}
-                url={html_url}
-                title={name}
-                subtitle={owner?.login}
-                description={description}
-                extra={
-                  <IconsList>
-                    <IconsListItem
-                      label="Stars"
-                      icon={<Star width={18} height={18} />}
-                      value={stargazers_count}
-                    />
-                    <IconsListItem
-                      label="Date created"
-                      icon={<Clock width={18} height={18} />}
-                      value={formatDate(new Date(created_at))}
-                    />
-                  </IconsList>
-                }
-                tags={[language?.toLowerCase()]}
-              />
-            ),
-          )
+          data.items.map(item => (
+            <ContentGridRepositoryItem key={item.id} {...item} />
+          ))
         ) : (
           <Placeholders type="repository" count={15} />
         )}
