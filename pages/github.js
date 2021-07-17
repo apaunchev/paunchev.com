@@ -6,7 +6,6 @@ import { ContentGrid, ContentGridItem } from '@/components/content-grid';
 import { IconsList, IconsListItem } from '@/components/icons-list';
 import { PageHeader } from '@/components/page-header';
 import { Placeholders } from '@/components/placeholders';
-import projects from '@/content/projects';
 import { PageLayout } from '@/layouts/page';
 import fetcher from '@/lib/fetcher';
 import { formatDate } from '@/lib/helpers';
@@ -15,8 +14,8 @@ import { Clock, Star } from 'react-feather';
 import useSWR from 'swr';
 
 const pageInfo = {
-  title: projects.github.title,
-  description: projects.github.description,
+  title: '/github',
+  // description: '',
 };
 
 const PERIODS = {
