@@ -57,6 +57,7 @@ export function ContentGridLibraryItem({
   image,
   url,
   quote,
+  type,
 }) {
   return (
     <ContentGridItem
@@ -73,6 +74,7 @@ export function ContentGridLibraryItem({
           </div>
         ) : null
       }
+      tags={[type]}
     />
   );
 }
