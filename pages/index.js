@@ -13,7 +13,7 @@ const pageInfo = {
   description: 'Angel is a software engineer from Bulgaria.',
   headerTitle: 'Hey, I’m Angel—',
   headerSubtitle:
-    'a software engineer with an eye for details and an obsession for quality. Welcome to my space on the internet.',
+    'a software engineer based in Sofia. Welcome to my space on the internet.',
 };
 
 export default function Home({ recentItems }) {
@@ -28,14 +28,14 @@ export default function Home({ recentItems }) {
       </div>
       <p>
         I specialize in front-end development and delivering meaningful user
-        experiences for the web and mobile. I navigate complex business domains,
-        helping teams to meet targets and bring value to customers. I approach
-        everything with a growth mindset and try to inspire and mentor others
-        along the way.
+        experiences for the web and mobile. I navigate complex business domains
+        with ease, helping teams to meet targets and bring value to customers. I
+        approach everything with a growth mindset and try to inspire and mentor
+        others along the way.
       </p>
       <p>
         Specialties: JavaScript, CSS, architecture, performance, testing, build
-        tools, accessibility.
+        tooling, accessibility.
       </p>
       <p className="button-group">
         <a className="button" href="https://www.linkedin.com/in/apaunchev/">
