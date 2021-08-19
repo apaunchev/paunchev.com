@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import { TagsList } from '@/components/tags-list';
-import { IconsList, IconsListItem } from './icons-list';
-import { Clock, Star } from 'react-feather';
-import { formatDate } from '@/lib/helpers';
 
 export function ContentGrid({ children }) {
   return <div className="content-grid">{children}</div>;
@@ -21,7 +18,7 @@ export function ContentGridItem({
 
   return (
     <article className="content-grid-item">
-      <a href={url} title={title}>
+      <a href={url}>
         {image?.src ? (
           <figure className="content-grid-item__figure">
             {useImageComponent ? (
@@ -75,40 +72,6 @@ export function ContentGridLibraryItem({
         ) : null
       }
       tags={[type]}
-    />
-  );
-}
-
-export function ContentGridRepositoryItem({
-  id,
-  name,
-  html_url,
-  description,
-  language,
-  stargazers_count,
-  created_at,
-}) {
-  return (
-    <ContentGridItem
-      key={id}
-      url={html_url}
-      title={name}
-      description={description}
-      extra={
-        <IconsList>
-          <IconsListItem
-            label="Stars"
-            icon={<Star width={18} height={18} />}
-            value={stargazers_count}
-          />
-          <IconsListItem
-            label="Date created"
-            icon={<Clock width={18} height={18} />}
-            value={formatDate(new Date(created_at))}
-          />
-        </IconsList>
-      }
-      tags={[language?.toLowerCase()]}
     />
   );
 }

@@ -12,9 +12,9 @@
   // --text-base
   --text-lg: calc(1.125 * var(--text-base));
   --text-xl: calc(1.25 * var(--text-base));
-  --text-2xl: calc(1.33 * var(--text-base));
-  --text-3xl: calc(1.5 * var(--text-base));
-  --text-4xl: calc(2 * var(--text-base));
+  --text-2xl: calc(1.5 * var(--text-base));
+  --text-3xl: calc(1.75 * var(--text-base));
+  --text-4xl: calc(2.25 * var(--text-base));
 }
 
 @include breakpoint(sm) {
@@ -156,11 +156,13 @@ u {
 }
 
 code,
-pre,
-.remark-highlight {
-  font-size: var(--text-sm);
-  line-height: 1.4;
+pre {
   font-family: Monaco, Consolas, monospace;
-  font-style: normal;
-  word-break: break-word;
+  font-size: var(--text-sm);
+}
+
+pre {
+  padding: var(--space-lg);
+  overflow: auto;
+  border-radius: var(--radius);
 }

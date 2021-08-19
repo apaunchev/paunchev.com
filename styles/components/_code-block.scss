@@ -1,0 +1,27 @@
+.code-block {
+  position: relative;
+
+  .copy-button {
+    position: absolute;
+    top: var(--space-base);
+    right: var(--space-base);
+    padding: var(--space-2xs) var(--space-xs);
+    background-color: var(--color-bg);
+    border: 0;
+    border-radius: var(--radius);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: var(--text-xs);
+    color: var(--color-contrast-higher);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-contrast-low);
+    }
+
+    &:disabled {
+      color: var(--color-contrast-medium);
+    }
+  }
+}

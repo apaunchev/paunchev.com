@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--space-lg);
+  row-gap: var(--space-xs);
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-brand);
+  }
+
+  &--active {
+    color: var(--color-contrast-higher);
+    border-color: var(--color-brand);
+  }
+}

@@ -6,7 +6,8 @@
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
       "@/content/*": ["content/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/public/*": ["public/*"]
     }
   },
   "exclude": ["node_modules"]

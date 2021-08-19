@@ -3,17 +3,16 @@ import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
 import { getLibrary } from '@/lib/library';
 import { routes } from '@/lib/routes';
+import author from '@/public/me.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GitHub, Linkedin } from 'react-feather';
-import author from '../public/me.png';
 
 const pageInfo = {
   title: null,
-  description: 'Angel is a software engineer from Bulgaria.',
-  headerTitle: 'Hey, I’m Angel—',
-  headerSubtitle:
-    'a software engineer based in Sofia. Welcome to my space on the internet.',
+  description: 'Angel is a software engineer from Sofia, Bulgaria.',
+  headerTitle: 'Hey! I’m Angel.',
+  headerSubtitle: 'I’m a software engineer from Sofia, Bulgaria.',
 };
 
 export default function Home({ recentItems }) {
@@ -23,20 +22,21 @@ export default function Home({ recentItems }) {
         title={pageInfo.headerTitle}
         subtitle={pageInfo.headerSubtitle}
       />
-      <div className="photo">
-        <Image src={author} alt="Picture of the author" placeholder="blur" />
+      <div className="intro">
+        <div className="photo">
+          <Image src={author} alt="Picture of the author" placeholder="blur" />
+        </div>
+        <p>
+          I develop software for the web platform. With knowledge across the
+          stack and experience in cross-functional collaboration, I help teams
+          provide robust solutions to real customer problems.
+        </p>
+        <p>
+          This site is where I collect digital content that inspires me or helps
+          me in my day-to-day, and that I want to be able to quickly look up
+          when needed.
+        </p>
       </div>
-      <p>
-        I specialize in front-end development and delivering meaningful user
-        experiences for the web and mobile. I navigate complex business domains
-        with ease, helping teams to meet targets and bring value to customers. I
-        approach everything with a growth mindset and try to inspire and mentor
-        others along the way.
-      </p>
-      <p>
-        Specialties: JavaScript, CSS, architecture, performance, testing, build
-        tooling, accessibility.
-      </p>
       <p className="button-group">
         <a className="button" href="https://www.linkedin.com/in/apaunchev/">
           <Linkedin width={18} height={18} />

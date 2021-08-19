@@ -1,0 +1,19 @@
+.accordion {
+  button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-2xs);
+    padding: 0 0 0 var(--space-base);
+    background: 0;
+    border: 0;
+    font-size: var(--text-base);
+    cursor: pointer;
+  }
+
+  .icon {
+    position: absolute;
+    top: calc(50% - 8px); // Half the icon width
+    left: 0;
+  }
+}

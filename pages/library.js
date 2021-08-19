@@ -1,16 +1,14 @@
 import { ContentGrid, ContentGridLibraryItem } from '@/components/content-grid';
-import { PageHeader } from '@/components/page-header';
 import { PageLayout } from '@/layouts/page';
 import { hyphenize } from '@/lib/helpers';
 import { getLibrary } from '@/lib/library';
-import { contentTypes } from '@/lib/content-types';
+import { libraryTypes } from '@/lib/library-types';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 
 export const pageInfo = {
   title: 'Library',
-  description:
-    'A digital library linking to my favourite content around the web.',
+  description: 'My digital library of written content and sites I like.',
 };
 
 export default function Library({ data }) {
@@ -36,7 +34,7 @@ export default function Library({ data }) {
       return;
     }
 
-    if (!contentTypes[hyphenize(type)]) {
+    if (!libraryTypes[hyphenize(type)]) {
       setFilterValue('');
       router.push(router.pathname, undefined, { shallow: true });
       return;
@@ -62,7 +60,6 @@ export default function Library({ data }) {
 
   return (
     <PageLayout title={pageInfo.title} description={pageInfo.description}>
-      <PageHeader title={pageInfo.title} subtitle={pageInfo.description} />
       <div className="tabs">
         <a
           className={
@@ -73,7 +70,7 @@ export default function Library({ data }) {
         >
           All
         </a>
-        {Object.keys(contentTypes).map(type => {
+        {Object.keys(libraryTypes).map(type => {
           const classes = ['tabs-item'];
 
           if (router.query.type === type) {
@@ -87,7 +84,7 @@ export default function Library({ data }) {
               href={`${router.pathname}/?type=${type}`}
               onClick={e => handleSetFilter(e, type)}
             >
-              {contentTypes[type]}
+              {libraryTypes[type]}
             </a>
           );
         })}

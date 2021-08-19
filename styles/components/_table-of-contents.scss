@@ -1,0 +1,22 @@
+.toc__title {
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.toc__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: var(--text-sm);
+
+  li {
+    margin-bottom: var(--space-2xs);
+  }
+
+  .toc__list {
+    margin-left: var(--space-base);
+    font-size: var(--text-sm);
+  }
+}

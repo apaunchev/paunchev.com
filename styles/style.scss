@@ -10,14 +10,15 @@
 
 @import 'components/layout';
 @import 'components/page-header';
-@import 'components/photo';
-@import 'components/article';
+@import 'components/nav';
+@import 'components/intro';
 @import 'components/content-grid';
 @import 'components/content-list';
-@import 'components/content-filters';
-@import 'components/content-placeholder';
-@import 'components/icons-list';
 @import 'components/tags-list';
+@import 'components/code-block';
 @import 'components/button';
 @import 'components/tabs';
 @import 'components/search';
+@import 'components/table-of-contents';
+@import 'components/accordion';
+@import 'components/bookmark';
