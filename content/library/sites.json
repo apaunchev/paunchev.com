@@ -1,5 +1,15 @@
 [
   {
+    "createdAt": "2021-10-03 12:00:00",
+    "title": "Mark Otto",
+    "url": "https://markdotto.com/",
+    "image": {
+      "src": "/sites/mark-otto.jpg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
     "createdAt": "2021-05-25 12:00:00",
     "title": "Adam Collier",
     "url": "https://adamcollier.co.uk/",
