@@ -36,7 +36,7 @@ function transform(source) {
 
         return {
           id,
-          title: String(title),
+          title: htmlDecode(String(title)),
           author: author_name,
           coverImageUrl: rest.book_large_image_url,
           goodreadsUrl: `https://www.goodreads.com/book/show/${id}`,
@@ -50,6 +50,10 @@ function transform(source) {
   }
 
   return feed;
+}
+
+function htmlDecode(input) {
+  return input.replace(/&apos;/g, "'");
 }
 
 main();
