@@ -1,30 +1,33 @@
-import { ContentGrid, ContentGridLibraryItem } from '@/components/content-grid';
+import {
+  ContentGrid,
+  ContentGridBookmarkItem,
+} from '@/components/content-grid';
 import { PageLayout } from '@/layouts/page';
-import { hyphenize } from '@/lib/helpers';
-import { getLibrary } from '@/lib/library';
-import { libraryTypes } from '@/lib/library-types';
+import { classNames, hyphenize } from '@/lib/helpers';
+import { getBookmarks } from '@/lib/bookmarks';
+import { bookmarkTypes } from '@/lib/types';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 
 export const pageInfo = {
-  title: 'Library',
-  description: 'My digital library of written content and sites I like.',
+  title: 'Bookmarks',
+  description: 'Links to favourite content and tools.',
 };
 
-export default function Library({ data }) {
+export default function Bookmarks({ bookmarks }) {
   const router = useRouter();
   const [filterValue, setFilterValue] = useState('');
-  const filteredData = useMemo(() => {
-    let filteredData = data || [];
+  const filteredBookmarks = useMemo(() => {
+    let filteredBookmarks = bookmarks || [];
 
     if (filterValue) {
-      filteredData = filteredData.filter(
+      filteredBookmarks = filteredBookmarks.filter(
         item => item.type === hyphenize(filterValue),
       );
     }
 
-    return filteredData;
-  }, [data, filterValue]);
+    return filteredBookmarks;
+  }, [bookmarks, filterValue]);
 
   useEffect(() => {
     const type = router.query.type;
@@ -34,7 +37,7 @@ export default function Library({ data }) {
       return;
     }
 
-    if (!libraryTypes[hyphenize(type)]) {
+    if (!bookmarkTypes[hyphenize(type)]) {
       setFilterValue('');
       router.push(router.pathname, undefined, { shallow: true });
       return;
@@ -70,42 +73,34 @@ export default function Library({ data }) {
         >
           All
         </a>
-        {Object.keys(libraryTypes).map(type => {
-          const classes = ['tabs-item'];
-
-          if (router.query.type === type) {
-            classes.push('tabs-item--active');
-          }
-
-          return (
-            <a
-              key={type}
-              className={classes.join(' ')}
-              href={`${router.pathname}/?type=${type}`}
-              onClick={e => handleSetFilter(e, type)}
-            >
-              {libraryTypes[type]}
-            </a>
-          );
-        })}
+        {Object.keys(bookmarkTypes).map(type => (
+          <a
+            key={type}
+            className={classNames(
+              'tabs-item',
+              router.query.type === type ? 'tabs-item--active' : '',
+            )}
+            href={`${router.pathname}/?type=${type}`}
+            onClick={e => handleSetFilter(e, type)}
+          >
+            {bookmarkTypes[type]}
+          </a>
+        ))}
       </div>
-      {filteredData.length ? (
-        <ContentGrid>
-          {filteredData.map(item => (
-            <ContentGridLibraryItem key={item.url} {...item} />
-          ))}
-        </ContentGrid>
-      ) : null}
+      <ContentGrid
+        items={filteredBookmarks}
+        component={ContentGridBookmarkItem}
+      />
     </PageLayout>
   );
 }
 
 export async function getStaticProps() {
-  const data = getLibrary();
+  const bookmarks = getBookmarks();
 
   return {
     props: {
-      data,
+      bookmarks,
     },
   };
 }

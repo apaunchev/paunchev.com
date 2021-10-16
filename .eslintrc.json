@@ -4,5 +4,10 @@
     "browser": true,
     "node": true,
     "es6": true
+  },
+  "rules": {
+    // Temporary disable until fix is released:
+    // https://github.com/vercel/next.js/issues/28596
+    "@next/next/no-document-import-in-page": "off"
   }
 }

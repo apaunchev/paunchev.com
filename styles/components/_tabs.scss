@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   overflow-x: auto;
-  margin: var(--space-base) 0;
+  margin-block: var(--space-base);
 
   &::after {
     content: '';
@@ -20,7 +20,8 @@
 .tabs-item {
   position: relative;
   z-index: 1;
-  padding: var(--space-xs) var(--space-sm);
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-sm);
 
   &--active {
     border-color: var(--color-brand);

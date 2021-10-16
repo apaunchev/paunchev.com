@@ -1,7 +1,9 @@
+@use '../base/mixins';
+
 :root {
   --space-base: 1rem;
 
-  @include breakpoint(sm) {
+  @include mixins.breakpoint(sm) {
     --space-base: 1.25rem;
   }
 }

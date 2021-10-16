@@ -9,26 +9,28 @@
     "eslint": "eslint --ext .js,.jsx components layouts lib pages",
     "prettier": "prettier --check components layouts lib pages",
     "stylelint": "stylelint \"styles/**/*.scss\" --syntax \"scss\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fetch-books": "node scripts/fetch-books.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "^11.1.0",
-    "next-mdx-remote": "^3.0.4",
+    "next": "^11.1.2",
+    "next-mdx-remote": "^3.0.6",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
     "remark-autolink-headings": "^7.0.1",
     "remark-slug": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.2",
-    "prettier": "2.3.2",
-    "sass": "^1.38.0",
+    "eslint-config-next": "^11.1.2",
+    "fast-xml-parser": "^3.20.3",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "node-fetch": "^3.0.0",
+    "prettier": "2.4.1",
+    "sass": "^1.43.2",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0"
   },

@@ -1,8 +1,10 @@
+@use '../base/mixins';
+
 .content-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: var(--space-xl);
-  margin: var(--space-lg) 0;
+  margin-block: var(--space-lg);
 }
 
 .content-grid-item {
@@ -26,31 +28,25 @@
 
 .content-grid-item__figure {
   float: left;
-  margin: var(--space-2xs) var(--space-sm) 0 0;
+  margin-block-start: var(--space-2xs);
+  margin-inline-end: var(--space-sm);
   width: 5rem;
 
   img {
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
     border-radius: var(--radius);
   }
 }
 
 .content-grid-item__title {
-  @include line-clamp(2);
-
+  @include mixins.line-clamp(2);
   margin: 0;
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.2s var(--transition);
 }
 
 .content-grid-item__subtitle {
-  @include line-clamp(2);
-
+  @include mixins.line-clamp(2);
   margin: 0;
   font-size: var(--text-lg);
   font-weight: 400;
@@ -58,13 +54,12 @@
 }
 
 .content-grid-item__description {
-  @include line-clamp(4);
-
-  margin: var(--space-2xs) 0 0;
+  @include mixins.line-clamp(4);
+  margin-block: var(--space-2xs) 0;
   font-size: var(--text-sm);
 }
 
 .content-grid-item__quote {
-  margin: var(--space-2xs) 0 0;
+  margin-block: var(--space-2xs) 0;
   font-size: var(--text-sm);
 }

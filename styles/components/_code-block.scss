@@ -5,7 +5,8 @@
     position: absolute;
     top: var(--space-base);
     right: var(--space-base);
-    padding: var(--space-2xs) var(--space-xs);
+    padding-block: var(--space-2xs);
+    padding-inline: var(--space-xs);
     background-color: var(--color-bg);
     border: 0;
     border-radius: var(--radius);

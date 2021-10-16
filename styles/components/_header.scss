@@ -1,0 +1,27 @@
+@use '../base/mixins';
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-base);
+
+  @include mixins.breakpoint(sm) {
+    justify-content: space-between;
+  }
+}
+
+.header__image {
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 100%;
+
+  &:hover {
+    border-color: var(--color-brand);
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+}

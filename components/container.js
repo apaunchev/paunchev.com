@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 
 export function Container({ children, title, description }) {
@@ -13,7 +12,6 @@ export function Container({ children, title, description }) {
       </Head>
       <Header />
       <main className="main">{children}</main>
-      <Footer />
     </>
   );
 }

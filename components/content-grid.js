@@ -1,8 +1,20 @@
 import Image from 'next/image';
 import { TagsList } from '@/components/tags-list';
 
-export function ContentGrid({ children }) {
-  return <div className="content-grid">{children}</div>;
+export function ContentGrid({ items, component = ContentGridItem }) {
+  if (items.length === 0) {
+    return null;
+  }
+
+  const Component = component;
+
+  return (
+    <div className="content-grid">
+      {items.map(item => (
+        <Component key={item.url} {...item} />
+      ))}
+    </div>
+  );
 }
 
 export function ContentGridItem({
@@ -47,7 +59,7 @@ export function ContentGridItem({
   );
 }
 
-export function ContentGridLibraryItem({
+export function ContentGridBookmarkItem({
   title,
   author,
   description,

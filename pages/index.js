@@ -1,18 +1,15 @@
-import { ContentGrid, ContentGridLibraryItem } from '@/components/content-grid';
 import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
-import { getLibrary } from '@/lib/library';
-import { routes } from '@/lib/routes';
-import author from '@/public/me.png';
-import Image from 'next/image';
-import Link from 'next/link';
-import { GitHub, Linkedin } from 'react-feather';
+import { parseBookTitle } from '@/lib/helpers';
+import { getBookmarks } from '@/lib/bookmarks';
+import { ContentList } from '@/components/content-list';
+import { getBooks } from '@/lib/books';
 
 const pageInfo = {
   title: null,
   description: 'Angel is a software engineer from Sofia, Bulgaria.',
   headerTitle: 'Hey! I’m Angel.',
-  headerSubtitle: 'I’m a software engineer from Sofia, Bulgaria.',
+  headerSubtitle: 'Welcome to my space on the internet. ',
 };
 
 export default function Home({ recentItems }) {
@@ -22,53 +19,51 @@ export default function Home({ recentItems }) {
         title={pageInfo.headerTitle}
         subtitle={pageInfo.headerSubtitle}
       />
-      <div className="intro">
-        <div className="photo">
-          <Image src={author} alt="Picture of the author" placeholder="blur" />
-        </div>
-        <p>
-          I develop software for the web platform. With knowledge across the
-          stack and experience in cross-functional collaboration, I help teams
-          provide robust solutions to real customer problems.
-        </p>
-        <p>
-          This site is where I collect digital content that inspires me or helps
-          me in my day-to-day, and that I want to be able to quickly look up
-          when needed.
-        </p>
-      </div>
-      <p className="button-group">
-        <a className="button" href="https://www.linkedin.com/in/apaunchev/">
-          <Linkedin width={18} height={18} />
-          Connect on LinkedIn
-        </a>
-        <a className="button" href="https://github.com/apaunchev">
-          <GitHub width={18} height={18} />
-          See code on GitHub
-        </a>
+      <p>
+        I’m a software engineer from Sofia, Bulgaria. You can find my
+        professional summary on{' '}
+        <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a> or look at
+        code I’ve written on <a href="https://github.com/apaunchev">GitHub</a>.
       </p>
-      <hr className="hr--large" />
-      <h2>From the library</h2>
-      <ContentGrid>
-        {recentItems.map(item => (
-          <ContentGridLibraryItem key={item.url} {...item} />
-        ))}
-      </ContentGrid>
-      <hr className="hr--transparent" />
-      <p className="text-center">
-        <Link href={routes.library.href}>
-          <a className="button">Browse library →</a>
-        </Link>
+      <p>
+        I use this site as long-term storage of digital content that I’d like to
+        go back to whenever I need to. You may or may not find this of interest.
       </p>
+      <p>
+        If you have any questions or feedback, feel free to{' '}
+        <a href="mailto:apaunchev@gmail.com">contact me</a>.
+      </p>
+      <hr className="hr hr--transparent" />
+      <h2>Recently</h2>
+      <p>Things I’ve shared recently.</p>
+      <ContentList items={recentItems} />
     </ArticleLayout>
   );
 }
 
 export async function getStaticProps() {
-  const recentItems = getLibrary({
-    articles: 2,
-    books: 2,
-  });
+  const bookmarks = getBookmarks();
+  const books = getBooks();
+  const recentItems = [
+    ...bookmarks.map(b => ({
+      ...b,
+      createdAt: new Date(b.createdAt).toJSON().split('T')[0],
+    })),
+    ...books.map(b => ({
+      ...b,
+      type: 'books',
+      title: parseBookTitle(b.title),
+      finishedAt: new Date(b.finishedAt).toJSON().split('T')[0],
+    })),
+  ]
+    .map(item => ({
+      ...item,
+      date: item.createdAt || item.finishedAt,
+      url: item.url || item.goodreadsUrl,
+      description: item.description || item.quote || null,
+    }))
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 10);
 
   return {
     props: {

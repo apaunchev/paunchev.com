@@ -4,7 +4,7 @@
     "title": "Mark Otto",
     "url": "https://markdotto.com/",
     "image": {
-      "src": "/sites/mark-otto.jpg",
+      "src": "/people/mark-otto.jpg",
       "width": 80,
       "height": 80
     }
@@ -14,7 +14,7 @@
     "title": "Adam Collier",
     "url": "https://adamcollier.co.uk/",
     "image": {
-      "src": "/sites/adam-collier.jpg",
+      "src": "/people/adam-collier.jpg",
       "width": 80,
       "height": 80
     }
@@ -24,7 +24,7 @@
     "title": "Ahmad Shadeed",
     "url": "https://ishadeed.com/",
     "image": {
-      "src": "/sites/ahmad-shadeed.jpg",
+      "src": "/people/ahmad-shadeed.jpg",
       "width": 80,
       "height": 80
     }
@@ -34,7 +34,7 @@
     "title": "Darek Kay",
     "url": "https://darekkay.com/",
     "image": {
-      "src": "/sites/darek-kay.jpg",
+      "src": "/people/darek-kay.jpg",
       "width": 80,
       "height": 80
     }
@@ -44,7 +44,7 @@
     "title": "Dave Rupert",
     "url": "https://daverupert.com/",
     "image": {
-      "src": "/sites/dave-rupert.jpg",
+      "src": "/people/dave-rupert.jpg",
       "width": 80,
       "height": 80
     }
@@ -54,7 +54,7 @@
     "title": "Chase McCoy",
     "url": "https://chasem.co/",
     "image": {
-      "src": "/sites/chase-mccoy.jpg",
+      "src": "/people/chase-mccoy.jpg",
       "width": 80,
       "height": 80
     }
@@ -64,7 +64,7 @@
     "title": "David Klein",
     "url": "https://diklein.com/",
     "image": {
-      "src": "/sites/david-klein.jpg",
+      "src": "/people/david-klein.jpg",
       "width": 80,
       "height": 80
     }
@@ -74,7 +74,7 @@
     "title": "Pedro Duarte",
     "url": "https://ped.ro/",
     "image": {
-      "src": "/sites/pedro-duarte.jpg",
+      "src": "/people/pedro-duarte.jpg",
       "width": 80,
       "height": 80
     }
@@ -84,7 +84,7 @@
     "title": "Noah Stokes",
     "url": "https://esbueno.noahstokes.com/",
     "image": {
-      "src": "/sites/noah-stokes.jpg",
+      "src": "/people/noah-stokes.jpg",
       "width": 80,
       "height": 80
     }
@@ -94,7 +94,7 @@
     "title": "Aleksandr Hovhannisyan",
     "url": "https://www.aleksandrhovhannisyan.com/",
     "image": {
-      "src": "/sites/aleksandr-hovhannisyan.webp",
+      "src": "/people/aleksandr-hovhannisyan.webp",
       "width": 80,
       "height": 80
     }
@@ -104,7 +104,7 @@
     "title": "Frank Chimero",
     "url": "https://frankchimero.com",
     "image": {
-      "src": "/sites/frank-chimero.jpg",
+      "src": "/people/frank-chimero.jpg",
       "width": 80,
       "height": 80
     }
@@ -114,7 +114,7 @@
     "url": "https://chriscoyier.net/",
     "title": "Chris Coyier",
     "image": {
-      "src": "/sites/chris-coyier.jpg",
+      "src": "/people/chris-coyier.jpg",
       "width": 80,
       "height": 80
     }
@@ -124,7 +124,7 @@
     "url": "https://remysharp.com/",
     "title": "Remy Sharp",
     "image": {
-      "src": "/sites/remy-sharp.jpg",
+      "src": "/people/remy-sharp.jpg",
       "width": 80,
       "height": 80
     }
@@ -134,7 +134,7 @@
     "url": "https://mxstbr.com/",
     "title": "Max Stoiber",
     "image": {
-      "src": "/sites/max-stoiber.jpg",
+      "src": "/people/max-stoiber.jpg",
       "width": 80,
       "height": 80
     }
@@ -144,7 +144,7 @@
     "url": "https://paulstamatiou.com/",
     "title": "Paul Stamatiou",
     "image": {
-      "src": "/sites/paul-stamatiou.jpeg",
+      "src": "/people/paul-stamatiou.jpeg",
       "width": "80",
       "height": "80"
     }
@@ -154,7 +154,7 @@
     "url": "https://stevenwestmoreland.com/",
     "title": "Steven Westmoreland",
     "image": {
-      "src": "/sites/steven-westmoreland.jpg",
+      "src": "/people/steven-westmoreland.jpg",
       "width": 80,
       "height": 80
     }
@@ -164,7 +164,7 @@
     "url": "https://allenpike.com/",
     "title": "Allen Pike",
     "image": {
-      "src": "/sites/allen-pike.jpg",
+      "src": "/people/allen-pike.jpg",
       "width": 80,
       "height": 80
     }
@@ -174,7 +174,7 @@
     "url": "https://rsms.me/",
     "title": "Rasmus Andersson",
     "image": {
-      "src": "/sites/rasmus-andersson.jpg",
+      "src": "/people/rasmus-andersson.jpg",
       "width": 80,
       "height": 80
     }
@@ -184,7 +184,7 @@
     "url": "https://tonsky.me/",
     "title": "Niki Tonsky",
     "image": {
-      "src": "/sites/niki-tonsky.png",
+      "src": "/people/niki-tonsky.png",
       "width": 80,
       "height": 80
     }
@@ -194,7 +194,7 @@
     "url": "https://leerob.io/",
     "title": "Lee Robinson",
     "image": {
-      "src": "/sites/lee-robinson.jpg",
+      "src": "/people/lee-robinson.jpg",
       "width": 80,
       "height": 80
     }
@@ -204,7 +204,7 @@
     "url": "https://wesbos.com/",
     "title": "Wes Bos",
     "image": {
-      "src": "/sites/wes-bos.jpg",
+      "src": "/people/wes-bos.jpg",
       "width": 80,
       "height": 80
     }
@@ -214,7 +214,7 @@
     "url": "https://macwright.com/",
     "title": "Tom MacWright",
     "image": {
-      "src": "/sites/tom-macwright.jpg",
+      "src": "/people/tom-macwright.jpg",
       "width": 80,
       "height": 80
     }
@@ -224,7 +224,7 @@
     "url": "https://joshwcomeau.com/",
     "title": "Josh W Comeau",
     "image": {
-      "src": "/sites/josh-w-comeau.jpg",
+      "src": "/people/josh-w-comeau.jpg",
       "width": 80,
       "height": 80
     }
@@ -234,7 +234,7 @@
     "url": "https://daneden.me/",
     "title": "Daniel Eden",
     "image": {
-      "src": "/sites/daniel-eden.jpg",
+      "src": "/people/daniel-eden.jpg",
       "width": 80,
       "height": 80
     }
@@ -244,7 +244,7 @@
     "url": "https://www.chriscollins.me",
     "title": "Chris Collins",
     "image": {
-      "src": "/sites/chris-collins.jpg",
+      "src": "/people/chris-collins.jpg",
       "width": 80,
       "height": 80
     }
@@ -254,7 +254,7 @@
     "url": "https://brianlovin.com/",
     "title": "Brian Lovin",
     "image": {
-      "src": "/sites/brian-lovin.jpg",
+      "src": "/people/brian-lovin.jpg",
       "width": 80,
       "height": 80
     }
@@ -264,7 +264,7 @@
     "url": "https://alexkondov.com/",
     "title": "Alex Kondov",
     "image": {
-      "src": "/sites/alex-kondov.jpg",
+      "src": "/people/alex-kondov.jpg",
       "width": 80,
       "height": 80
     }

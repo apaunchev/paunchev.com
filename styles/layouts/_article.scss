@@ -1,0 +1,17 @@
+@use '../base/shared';
+
+.article-layout {
+  --width: 42rem;
+  --min-height: 65vh;
+
+  .header {
+    @extend %container;
+    max-width: var(--width);
+  }
+
+  .main {
+    @extend %container;
+    max-width: var(--width);
+    min-height: var(--min-height);
+  }
+}

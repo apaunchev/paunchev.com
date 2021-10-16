@@ -1,6 +1,8 @@
+@use '../base/mixins';
+
 .bookmark {
   display: flex;
-  margin: var(--space-base) 0;
+  margin-block: var(--space-base);
   border: 2px solid var(--color-contrast-low);
   border-radius: var(--radius);
   overflow: hidden; // For the border radius to work with nested images
@@ -18,7 +20,7 @@
       width: 100px;
       height: 100px;
 
-      @include breakpoint(sm) {
+      @include mixins.breakpoint(sm) {
         width: 140px;
         height: 140px;
       }
@@ -40,7 +42,7 @@
 
     .bookmark__url,
     .bookmark__description {
-      margin-top: var(--space-xs);
+      margin-block-start: var(--space-xs);
     }
 
     .bookmark__image,
@@ -62,7 +64,7 @@
     height: 100%;
     object-fit: cover;
 
-    @include breakpoint(sm) {
+    @include mixins.breakpoint(sm) {
       width: 140px;
     }
   }
@@ -70,29 +72,30 @@
 
 .bookmark__content {
   width: 100%;
-  padding: var(--space-xs) var(--space-sm);
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-sm);
 
   > :last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 
 .bookmark__title {
-  @include line-clamp(1);
-  margin-bottom: 0;
+  @include mixins.line-clamp(1);
+  margin-block-end: 0;
   font-size: var(--text-lg);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .bookmark__url {
-  @include line-clamp(1);
-  margin-bottom: var(--space-xs);
+  @include mixins.line-clamp(1);
+  margin-block-end: var(--space-xs);
   font-size: var(--text-sm);
   font-weight: 400;
 }
 
 .bookmark__description {
-  @include line-clamp(2);
+  @include mixins.line-clamp(2);
   font-size: var(--text-sm);
   font-weight: 400;
 }
