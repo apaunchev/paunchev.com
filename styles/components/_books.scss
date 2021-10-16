@@ -1,5 +1,9 @@
 @use '../base/mixins' as *;
 
+.books:first-of-type .books-header {
+  margin-block-start: 0;
+}
+
 .books-header {
   display: flex;
   align-items: center;
@@ -32,6 +36,10 @@
       .book-info__title {
         color: var(--color-brand);
       }
+    }
+
+    img {
+      border-radius: var(--radius-md);
     }
   }
 }
