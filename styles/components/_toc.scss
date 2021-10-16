@@ -1,7 +1,7 @@
-@use '../base/mixins';
+@use '../base/mixins' as *;
 
 .toc-grid {
-  @include mixins.breakpoint(sm) {
+  @include breakpoint(sm) {
     display: grid;
     grid-template-columns: 250px minmax(0, 1fr);
     gap: var(--space-lg);

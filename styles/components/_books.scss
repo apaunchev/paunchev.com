@@ -1,4 +1,4 @@
-@use '../base/mixins';
+@use '../base/mixins' as *;
 
 .books-header {
   margin-block: var(--space-xl) var(--space-sm);
@@ -52,7 +52,7 @@
 }
 
 .book-info__title {
-  @include mixins.line-clamp(2);
+  @include line-clamp(2);
   margin: 0;
   font-size: var(--text-base);
   font-weight: 500;
@@ -65,7 +65,7 @@
 
 .book-info__author,
 .book-info__rating {
-  @include mixins.line-clamp(1);
+  @include line-clamp(1);
   margin: 0;
   font-size: var(--text-sm);
 }

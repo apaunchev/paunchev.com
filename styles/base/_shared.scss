@@ -1,4 +1,4 @@
-@use '../base/mixins';
+@use '../base/mixins' as *;
 
 :root {
   --radius: 0.5rem;
@@ -9,7 +9,7 @@ body {
   padding: var(--space-base);
   background-color: var(--color-bg);
 
-  @include mixins.breakpoint(sm) {
+  @include breakpoint(sm) {
     padding-block-start: var(--space-xl);
     padding-block-end: var(--space-2xl);
   }

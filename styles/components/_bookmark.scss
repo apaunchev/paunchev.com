@@ -1,4 +1,4 @@
-@use '../base/mixins';
+@use '../base/mixins' as *;
 
 .bookmark {
   display: flex;
@@ -20,7 +20,7 @@
       width: 100px;
       height: 100px;
 
-      @include mixins.breakpoint(sm) {
+      @include breakpoint(sm) {
         width: 140px;
         height: 140px;
       }
@@ -64,7 +64,7 @@
     height: 100%;
     object-fit: cover;
 
-    @include mixins.breakpoint(sm) {
+    @include breakpoint(sm) {
       width: 140px;
     }
   }
@@ -81,21 +81,21 @@
 }
 
 .bookmark__title {
-  @include mixins.line-clamp(1);
+  @include line-clamp(1);
   margin-block-end: 0;
   font-size: var(--text-lg);
   font-weight: 500;
 }
 
 .bookmark__url {
-  @include mixins.line-clamp(1);
+  @include line-clamp(1);
   margin-block-end: var(--space-xs);
   font-size: var(--text-sm);
   font-weight: 400;
 }
 
 .bookmark__description {
-  @include mixins.line-clamp(2);
+  @include line-clamp(2);
   font-size: var(--text-sm);
   font-weight: 400;
 }

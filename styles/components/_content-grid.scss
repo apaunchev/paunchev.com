@@ -1,4 +1,4 @@
-@use '../base/mixins';
+@use '../base/mixins' as *;
 
 .content-grid {
   display: grid;
@@ -38,7 +38,7 @@
 }
 
 .content-grid-item__title {
-  @include mixins.line-clamp(2);
+  @include line-clamp(2);
   margin: 0;
   font-size: var(--text-xl);
   font-weight: 500;
@@ -46,7 +46,7 @@
 }
 
 .content-grid-item__subtitle {
-  @include mixins.line-clamp(2);
+  @include line-clamp(2);
   margin: 0;
   font-size: var(--text-lg);
   font-weight: 400;
@@ -54,7 +54,7 @@
 }
 
 .content-grid-item__description {
-  @include mixins.line-clamp(4);
+  @include line-clamp(4);
   margin-block: var(--space-2xs) 0;
   font-size: var(--text-sm);
 }
