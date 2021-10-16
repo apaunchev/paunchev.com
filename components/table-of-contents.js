@@ -24,12 +24,12 @@ export function TableOfContents({ headings }) {
 
   return (
     <div className="toc">
-      <p
+      <h2
         className="toc__title"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
-        Table of Contents
-      </p>
+        Table of contents
+      </h2>
       <ul className="toc__list">{renderTable(headings)}</ul>
     </div>
   );

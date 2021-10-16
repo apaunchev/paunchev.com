@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   overflow-x: auto;
-  margin-block: var(--space-base);
+  margin-block: var(--space-unit);
 
   &::after {
     content: '';

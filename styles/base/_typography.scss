@@ -1,33 +1,47 @@
 @use '../base/mixins' as *;
 
 :root {
+  // font family
   --font-primary: 'Inter', sans-serif;
-  --text-base: 1rem;
+
+  // font size
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.133;
+
+  // line height
   --body-line-height: 1.5;
-  --heading-line-height: 1.4;
+  --heading-line-height: 1.35;
+
+  // unit
+  --text-unit: var(--text-base-size);
 }
 
 :root,
 * {
-  --text-xs: calc(0.75 * var(--text-base));
-  --text-sm: calc(0.875 * var(--text-base));
-  // --text-base
-  --text-lg: calc(1.125 * var(--text-base));
-  --text-xl: calc(1.25 * var(--text-base));
-  --text-2xl: calc(1.5 * var(--text-base));
-  --text-3xl: calc(1.75 * var(--text-base));
-  --text-4xl: calc(2.25 * var(--text-base));
+  --text-xs: calc(
+    (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
+  );
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
 }
 
 @include breakpoint(sm) {
   :root {
-    --text-base: 1.125rem;
+    --text-base-size: 1.125rem;
   }
 }
 
 body {
-  font-size: var(--text-base);
+  font-size: var(--text-base-size);
   font-family: var(--font-primary);
+  font-weight: var(--body-font-weight);
   color: var(--color-contrast-higher);
 }
 
@@ -38,7 +52,7 @@ h4 {
   color: var(--color-contrast-higher);
   line-height: var(--heading-line-height);
   letter-spacing: -0.025em;
-  margin-block-end: var(--space-sm);
+  margin-block-end: var(--space-xxs);
 }
 
 h2,
@@ -49,20 +63,20 @@ h4 {
 }
 
 h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-xxxl);
   font-weight: 600;
 }
 
 h2 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-xxl);
 }
 
 h3 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
 }
 
 h4 {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
 }
 
 small {
@@ -80,7 +94,7 @@ ul,
 ol,
 p,
 blockquote {
-  margin-block-end: var(--space-base);
+  margin-block-end: var(--space-unit);
 }
 
 ul ul,
@@ -104,16 +118,14 @@ ol {
 
 hr,
 .hr {
-  margin-block-start: var(--space-lg);
-  margin-block-end: var(--space-lg);
+  margin-block: var(--space-lg);
   width: 100%;
   border: 0;
   border-block-start: 2px solid var(--color-contrast-lower);
 }
 
 .hr--large {
-  margin-block-start: var(--space-xl);
-  margin-block-end: var(--space-xl);
+  margin-block: var(--space-xl);
 }
 
 .hr--transparent {
@@ -126,7 +138,7 @@ a {
   font-weight: 500;
   border-block-end: 2px solid var(--color-contrast-low);
   transition: color 0.2s, border-color 0.2s,
-    background-color 0.2s var(--transition);
+    background-color 0.2s var(--ease-in-out);
 
   &:hover,
   &:focus {
@@ -159,7 +171,7 @@ pre {
 }
 
 pre {
-  padding: var(--space-lg);
+  padding: var(--space-unit);
   overflow: auto;
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
 }

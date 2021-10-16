@@ -2,17 +2,16 @@
   button {
     display: flex;
     align-items: center;
-    margin-block-end: var(--space-2xs);
     padding: 0;
     background: 0;
     border: 0;
-    font-size: var(--text-base);
+    font-size: var(--text-unit);
     cursor: pointer;
     color: var(--color-contrast-highest);
     font-weight: 500;
   }
 
   .icon {
-    margin-inline-end: var(--space-2xs);
+    margin-inline-end: var(--space-xxs);
   }
 }

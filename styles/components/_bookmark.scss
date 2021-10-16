@@ -2,16 +2,16 @@
 
 .bookmark {
   display: flex;
-  margin-block: var(--space-base);
+  margin-block: var(--space-unit);
   border: 2px solid var(--color-contrast-low);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden; // For the border radius to work with nested images
 
   &:hover,
   &:focus {
     .bookmark__url {
       color: var(--color-contrast-higher);
-      transition: color 0.2s var(--transition);
+      transition: color 0.2s var(--ease-in-out);
     }
   }
 
@@ -33,16 +33,17 @@
 
     .bookmark__url {
       width: 30%;
-      height: 15;
+      height: 15px;
     }
 
     .bookmark__description {
       height: 15px;
     }
 
+    .bookmark__title,
     .bookmark__url,
     .bookmark__description {
-      margin-block-start: var(--space-xs);
+      margin-block-end: var(--space-xs);
     }
 
     .bookmark__image,
@@ -96,6 +97,6 @@
 
 .bookmark__description {
   @include line-clamp(2);
-  font-size: var(--text-sm);
+  font-size: var(--text-unit);
   font-weight: 400;
 }

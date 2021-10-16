@@ -3,8 +3,8 @@
 .content-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: var(--space-xl);
-  margin-block: var(--space-lg);
+  gap: var(--space-md);
+  margin-block: var(--space-unit);
 }
 
 .content-grid-item {
@@ -28,38 +28,37 @@
 
 .content-grid-item__figure {
   float: left;
-  margin-block-start: var(--space-2xs);
   margin-inline-end: var(--space-sm);
   width: 5rem;
 
   img {
-    border-radius: var(--radius);
+    border-radius: var(--radius-md);
   }
 }
 
 .content-grid-item__title {
   @include line-clamp(2);
   margin: 0;
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 500;
-  transition: color 0.2s var(--transition);
+  transition: color 0.2s var(--ease-in-out);
 }
 
 .content-grid-item__subtitle {
   @include line-clamp(2);
   margin: 0;
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   font-weight: 400;
   color: var(--color-contrast-high);
 }
 
 .content-grid-item__description {
   @include line-clamp(4);
-  margin-block: var(--space-2xs) 0;
+  margin-block: var(--space-xxxs) 0;
   font-size: var(--text-sm);
 }
 
 .content-grid-item__quote {
-  margin-block: var(--space-2xs) 0;
+  margin-block: var(--space-xxxs) 0;
   font-size: var(--text-sm);
 }

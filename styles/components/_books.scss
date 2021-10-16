@@ -1,10 +1,10 @@
 @use '../base/mixins' as *;
 
 .books-header {
-  margin-block: var(--space-xl) var(--space-sm);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-block-end: var(--space-sm);
 
   span {
     color: var(--color-contrast-high);
@@ -14,14 +14,9 @@
 }
 
 .books-content {
-  --column-min-width: 140px;
-
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--column-min-width), 1fr)
-  );
-  grid-gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr));
+  grid-gap: var(--space-md);
 }
 
 .book {
@@ -34,8 +29,6 @@
 
     &:hover,
     &:focus {
-      color: var(--color-contrast-higher);
-
       .book-info__title {
         color: var(--color-brand);
       }
@@ -54,9 +47,9 @@
 .book-info__title {
   @include line-clamp(2);
   margin: 0;
-  font-size: var(--text-base);
+  font-size: var(--text-unit);
   font-weight: 500;
-  transition: color 0.2s var(--transition);
+  transition: color 0.2s var(--ease-in-out);
 }
 
 .book-info__author {

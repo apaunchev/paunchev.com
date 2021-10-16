@@ -3,13 +3,13 @@
 
   .copy-button {
     position: absolute;
-    top: var(--space-base);
-    right: var(--space-base);
-    padding-block: var(--space-2xs);
+    top: var(--space-unit);
+    right: var(--space-unit);
+    padding-block: var(--space-xxs);
     padding-inline: var(--space-xs);
     background-color: var(--color-bg);
     border: 0;
-    border-radius: var(--radius);
+    border-radius: var(--radius-md);
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: var(--text-xs);

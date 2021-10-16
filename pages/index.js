@@ -33,7 +33,6 @@ export default function Home({ recentItems }) {
         If you have any questions or feedback, feel free to{' '}
         <a href="mailto:apaunchev@gmail.com">contact me</a>.
       </p>
-      <hr className="hr hr--transparent" />
       <h2>Recently</h2>
       <p>Things I’ve shared recently.</p>
       <ContentList items={recentItems} />

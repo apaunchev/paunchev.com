@@ -15,12 +15,12 @@ export default function Snippets({ snippets }) {
   const headings = getHeadings(allRawMDX);
 
   return (
-    <PageLayout title={pageInfo.title} description={pageInfo.description}>
-      <div className="toc-grid">
-        <div>
+    <PageLayout title={pageInfo.title} description={pageInfo.subtitle}>
+      <div className="toc-container">
+        <div className="toc-side">
           <TableOfContents headings={headings} />
         </div>
-        <div>
+        <div className="toc-content">
           {snippets.map(({ source }, index) => (
             <MDXRemote key={index} {...source} components={baseComponents} />
           ))}
