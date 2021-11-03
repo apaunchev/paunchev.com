@@ -31,7 +31,8 @@
   margin-inline-end: var(--space-sm);
   width: 5rem;
 
-  img {
+  img,
+  svg {
     border-radius: var(--radius-md);
   }
 }

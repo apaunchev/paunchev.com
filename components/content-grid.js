@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Avatar from 'boring-avatars';
 import { TagsList } from '@/components/tags-list';
+import { bookmarkTypes } from '@/lib/types';
 
 export function ContentGrid({ items, component = ContentGridItem }) {
   if (items.length === 0) {
@@ -26,23 +28,35 @@ export function ContentGridItem({
   extra,
   tags,
 }) {
-  const useImageComponent = image && image.width && image.height;
+  let imageComponent = null;
+
+  if (tags.includes(bookmarkTypes.people.toLowerCase())) {
+    imageComponent = (
+      <Avatar
+        size={80}
+        name={title}
+        variant="beam"
+        square={true}
+        colors={['#EDECCF', '#F1C694', '#DC6378', '#207178', '#101652']}
+      />
+    );
+  } else if (image && image.src) {
+    imageComponent = (
+      <Image
+        src={image.src}
+        width={image.width}
+        height={image.height}
+        alt={title}
+      />
+    );
+  }
 
   return (
     <article className="content-grid-item">
       <a href={url}>
-        {image?.src ? (
+        {imageComponent ? (
           <figure className="content-grid-item__figure">
-            {useImageComponent ? (
-              <Image
-                src={image.src}
-                width={image.width}
-                height={image.height}
-                alt={title}
-              />
-            ) : (
-              <img src={image.src} alt={title} />
-            )}
+            {imageComponent}
           </figure>
         ) : null}
         {title ? <h2 className="content-grid-item__title">{title}</h2> : null}
