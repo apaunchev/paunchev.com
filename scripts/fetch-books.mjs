@@ -2,6 +2,7 @@ import { join } from 'path';
 import { promises } from 'fs';
 import { parse } from 'fast-xml-parser';
 import fetch from 'node-fetch';
+import slugify from 'slugify';
 
 const GOODREADS_SHELF_URL = `https://www.goodreads.com/review/list_rss/40107870?shelf=read&sort=date_read`;
 const BOOKS_FILE = join(process.cwd(), 'content/books.json');
@@ -62,11 +63,22 @@ function transform(source) {
 
     feed = source.rss.channel.item.map(
       ({ title, author_name, book, ...rest }) => {
+        title = htmlDecode(String(title));
+        const parsedTitle = parseTitle(title);
+        let slug;
+
+        if (Array.isArray(parsedTitle)) {
+          slug = slugifyTitle(parsedTitle[0]);
+        } else {
+          slug = slugifyTitle(parsedTitle);
+        }
+
         const id = parseInt(rest.book_id, 10);
 
         return {
           id,
-          title: htmlDecode(String(title)),
+          title,
+          slug,
           author: author_name,
           coverImageUrl: rest.book_large_image_url,
           goodreadsUrl: `https://www.goodreads.com/book/show/${id}`,
@@ -80,6 +92,22 @@ function transform(source) {
   }
 
   return feed;
+}
+
+function slugifyTitle(title) {
+  return slugify(title, {
+    remove: /[*+~.()'"!?:@,#]/g,
+  }).toLowerCase();
+}
+
+function parseTitle(fullTitle) {
+  if (!fullTitle.includes(':')) {
+    return fullTitle;
+  }
+
+  const [title, subtitle] = fullTitle.split(':');
+
+  return [title, subtitle];
 }
 
 function htmlDecode(input) {

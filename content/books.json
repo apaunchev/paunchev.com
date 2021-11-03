@@ -2,6 +2,7 @@
   {
     "id": 18401910,
     "title": "The Great Gatsby",
+    "slug": "the-great-gatsby",
     "author": "F. Scott Fitzgerald",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394225429l/18401910.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18401910",
@@ -29,6 +30,7 @@
   {
     "id": 41941223,
     "title": "Recursion",
+    "slug": "recursion",
     "author": "Blake Crouch",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1584713127l/41941223._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/41941223",
@@ -105,6 +107,7 @@
   {
     "id": 1713426,
     "title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions",
+    "slug": "predictably-irrational",
     "author": "Dan Ariely",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1255573980l/1713426.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/1713426",
@@ -116,6 +119,7 @@
   {
     "id": 51181015,
     "title": "The Psychology of Money: Timeless lessons on wealth, greed, and happiness",
+    "slug": "the-psychology-of-money",
     "author": "Morgan Housel",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581443441l/51181015._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/51181015",
@@ -127,6 +131,7 @@
   {
     "id": 55710304,
     "title": "Exhalation",
+    "slug": "exhalation",
     "author": "Ted Chiang",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603031062l/55710304._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/55710304",
@@ -138,6 +143,7 @@
   {
     "id": 39704854,
     "title": "Barking Up the Wrong Tree: The Surprising Science Behind Why Everything You Know About Success Is (Mostly) Wrong",
+    "slug": "barking-up-the-wrong-tree",
     "author": "Eric Barker",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522691000l/39704854.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/39704854",
@@ -149,6 +155,7 @@
   {
     "id": 40961427,
     "title": "1984",
+    "slug": "1984",
     "author": "George Orwell",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532714506l/40961427._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/40961427",
@@ -160,6 +167,7 @@
   {
     "id": 36645100,
     "title": "INSPIRED: How to Create Tech Products Customers Love",
+    "slug": "inspired",
     "author": "Marty Cagan",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511403934l/36645100._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/36645100",
@@ -171,6 +179,7 @@
   {
     "id": 20423680,
     "title": "The Last Town (Wayward Pines, #3)",
+    "slug": "the-last-town-wayward-pines-3",
     "author": "Blake Crouch",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1399508172l/20423680.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/20423680",
@@ -182,6 +191,7 @@
   {
     "id": 19438157,
     "title": "Wayward (Wayward Pines, #2)",
+    "slug": "wayward-wayward-pines-2",
     "author": "Blake Crouch",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433559623l/19438157._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/19438157",
@@ -193,6 +203,7 @@
   {
     "id": 44525305,
     "title": "The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company",
+    "slug": "the-ride-of-a-lifetime",
     "author": "Robert Iger",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556036622l/44525305.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/44525305",
@@ -204,6 +215,7 @@
   {
     "id": 38820046,
     "title": "21 Lessons for the 21st Century",
+    "slug": "21-lessons-for-the-21st-century",
     "author": "Yuval Noah Harari",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564577305l/38820046._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/38820046",
@@ -215,6 +227,7 @@
   {
     "id": 13126988,
     "title": "Your Brain at Work: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter All Day Long (Audiobook)",
+    "slug": "your-brain-at-work",
     "author": "David Rock",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1322590887l/13126988.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/13126988",
@@ -226,6 +239,7 @@
   {
     "id": 37643296,
     "title": "Pines (Wayward Pines, #1)",
+    "slug": "pines-wayward-pines-1",
     "author": "Blake Crouch",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1513813489l/37643296._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/37643296",
@@ -237,6 +251,7 @@
   {
     "id": 18626849,
     "title": "Stories of Your Life and Others",
+    "slug": "stories-of-your-life-and-others",
     "author": "Ted Chiang",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499943597l/18626849._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18626849",
@@ -248,6 +263,7 @@
   {
     "id": 29939161,
     "title": "Radical Candor: Be a Kickass Boss Without Losing Your Humanity",
+    "slug": "radical-candor",
     "author": "Kim Malone Scott",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1482838407l/29939161.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/29939161",
@@ -259,6 +275,7 @@
   {
     "id": 39704901,
     "title": "Homo Deus: A Brief History of Tomorrow",
+    "slug": "homo-deus",
     "author": "Yuval Noah Harari",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624232683l/39704901._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/39704901",
@@ -270,6 +287,7 @@
   {
     "id": 36526392,
     "title": "The Sun Does Shine: How I Found Life on Death Row",
+    "slug": "the-sun-does-shine",
     "author": "Anthony Ray Hinton",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542374995l/36526392._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/36526392",
@@ -374,6 +392,7 @@
   {
     "id": 36185940,
     "title": "Factfulness: Ten Reasons We're Wrong About the World—and Why Things Are Better Than You Think",
+    "slug": "factfulness",
     "author": "Hans Rosling",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520379402l/36185940._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/36185940",
@@ -385,6 +404,7 @@
   {
     "id": 23692271,
     "title": "Sapiens: A Brief History of Humankind",
+    "slug": "sapiens",
     "author": "Yuval Noah Harari",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/23692271",
@@ -396,6 +416,7 @@
   {
     "id": 30186948,
     "title": "Think and Grow Rich",
+    "slug": "think-and-grow-rich",
     "author": "Napoleon Hill",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463241782l/30186948._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30186948",
@@ -407,6 +428,7 @@
   {
     "id": 26156469,
     "title": "Never Split the Difference: Negotiating As If Your Life Depended On It",
+    "slug": "never-split-the-difference",
     "author": "Chris Voss",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460910517l/26156469.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/26156469",
@@ -418,6 +440,7 @@
   {
     "id": 17204679,
     "title": "Man's Search for Meaning",
+    "slug": "mans-search-for-meaning",
     "author": "Viktor E. Frankl",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1357174224l/17204679.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/17204679",
@@ -429,6 +452,7 @@
   {
     "id": 34611704,
     "title": "The Compound Effect",
+    "slug": "the-compound-effect",
     "author": "Darren Hardy",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489730793l/34611704._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/34611704",
@@ -440,6 +464,7 @@
   {
     "id": 42619761,
     "title": "Toll (KESTREL #2)",
+    "slug": "toll-kestrel-2",
     "author": "Matt Gemmell",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541258426l/42619761._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/42619761",
@@ -451,6 +476,7 @@
   {
     "id": 12035458,
     "title": "Buddhism is Not What You Think: Finding Freedom Beyond Beliefs",
+    "slug": "buddhism-is-not-what-you-think",
     "author": "Steve Hagen",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328302167l/12035458.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/12035458",
@@ -462,6 +488,7 @@
   {
     "id": 48499647,
     "title": "Grit: The Power of Passion and Perseverance",
+    "slug": "grit",
     "author": "Angela Duckworth",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571406380l/48499647._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/48499647",
@@ -473,6 +500,7 @@
   {
     "id": 41543378,
     "title": "Sell It Like Serhant: How to Sell More, Earn More, and Become the Ultimate Sales Machine",
+    "slug": "sell-it-like-serhant",
     "author": "Ryan Serhant",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535402679l/41543378._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/41543378",
@@ -484,6 +512,7 @@
   {
     "id": 40277241,
     "title": "Brief Answers to the Big Questions",
+    "slug": "brief-answers-to-the-big-questions",
     "author": "Stephen Hawking",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536862019l/40277241.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/40277241",
@@ -495,6 +524,7 @@
   {
     "id": 25666050,
     "title": "Algorithms to Live By: The Computer Science of Human Decisions",
+    "slug": "algorithms-to-live-by",
     "author": "Brian Christian",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454296875l/25666050.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/25666050",
@@ -506,6 +536,7 @@
   {
     "id": 157993,
     "title": "The Little Prince",
+    "slug": "the-little-prince",
     "author": "Antoine de Saint-Exupéry",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1367545443l/157993.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/157993",
@@ -517,6 +548,7 @@
   {
     "id": 25390361,
     "title": "Expanding Universe: Photographs from the Hubble Space Telescope",
+    "slug": "expanding-universe",
     "author": "Charles F. Bolden Jr.",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429472215l/25390361.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/25390361",
@@ -528,6 +560,7 @@
   {
     "id": 28257707,
     "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+    "slug": "the-subtle-art-of-not-giving-a-fck",
     "author": "Mark Manson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465761302l/28257707.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/28257707",
@@ -539,6 +572,7 @@
   {
     "id": 38358698,
     "title": "The Pragmatist’s Guide to Life",
+    "slug": "the-pragmatists-guide-to-life",
     "author": "Malcolm  Collins",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1517876838l/38358698._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/38358698",
@@ -550,6 +584,7 @@
   {
     "id": 4865,
     "title": "How to Win Friends and Influence People",
+    "slug": "how-to-win-friends-and-influence-people",
     "author": "Dale Carnegie",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442726934l/4865._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/4865",
@@ -561,6 +596,7 @@
   {
     "id": 33369254,
     "title": "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change",
+    "slug": "the-managers-path",
     "author": "Camille Fournier",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484107737l/33369254._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/33369254",
@@ -572,6 +608,7 @@
   {
     "id": 36234689,
     "title": "Why We Sleep: The New Science of Sleep and Dreams",
+    "slug": "why-we-sleep",
     "author": "Matthew Walker",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1505329976l/36234689._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/36234689",
@@ -583,6 +620,7 @@
   {
     "id": 36141600,
     "title": "Life 3.0: Being Human in the Age of Artificial Intelligence",
+    "slug": "life-30",
     "author": "Max  Tegmark",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1503961448l/36141600._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/36141600",
@@ -594,6 +632,7 @@
   {
     "id": 18908425,
     "title": "Improv Wisdom: Don't Prepare, Just Show Up",
+    "slug": "improv-wisdom",
     "author": "Patricia Ryan Madson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394282027l/18908425.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18908425",
@@ -605,6 +644,7 @@
   {
     "id": 30256654,
     "title": "Ego is the Enemy: The Fight to Master Our Greatest Opponent",
+    "slug": "ego-is-the-enemy",
     "author": "Ryan Holiday",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1464003150l/30256654._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30256654",
@@ -616,6 +656,7 @@
   {
     "id": 12359421,
     "title": "Ready Player One",
+    "slug": "ready-player-one",
     "author": "Ernest Cline",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1561428264l/12359421._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/12359421",
@@ -627,6 +668,7 @@
   {
     "id": 31381283,
     "title": "The Little Book of Big Management Wisdom: 90 Important Quotes and How to Use Them in Business",
+    "slug": "the-little-book-of-big-management-wisdom",
     "author": "Jim McGrath",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471286687l/31381283.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/31381283",
@@ -638,6 +680,7 @@
   {
     "id": 19262939,
     "title": "Rhinoceros Success",
+    "slug": "rhinoceros-success",
     "author": "Scott  Alexander",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386429299l/19262939.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/19262939",
@@ -649,6 +692,7 @@
   {
     "id": 18928690,
     "title": "The Assertiveness Workbook: How to Express Your Ideas and Stand Up for Yourself at Work and in Relationships",
+    "slug": "the-assertiveness-workbook",
     "author": "Randy J. Paterson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403833668l/18928690.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18928690",
@@ -660,6 +704,7 @@
   {
     "id": 30630916,
     "title": "Find Your Why: A Practical Guide for Discovering Purpose for You and Your Team",
+    "slug": "find-your-why",
     "author": "Simon Sinek",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466062159l/30630916._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30630916",
@@ -671,6 +716,7 @@
   {
     "id": 24836437,
     "title": "The Best Interface Is No Interface: The simple path to brilliant technology (Voices That Matter)",
+    "slug": "the-best-interface-is-no-interface",
     "author": "Golden Krishna",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1441837263l/24836437._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/24836437",
@@ -682,6 +728,7 @@
   {
     "id": 30065530,
     "title": "How to Be Miserable: 40 Strategies You Already Use",
+    "slug": "how-to-be-miserable",
     "author": "Randy J. Paterson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1462075394l/30065530._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30065530",
@@ -693,6 +740,7 @@
   {
     "id": 18931341,
     "title": "The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results: Achieve your goals with one of the world's bestselling success books (Basic Skills)",
+    "slug": "the-one-thing",
     "author": "Gary Keller",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394617102l/18931341.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18931341",
@@ -704,6 +752,7 @@
   {
     "id": 32191710,
     "title": "Astrophysics for People in a Hurry",
+    "slug": "astrophysics-for-people-in-a-hurry",
     "author": "Neil deGrasse Tyson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562761669l/32191710._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/32191710",
@@ -715,6 +764,7 @@
   {
     "id": 30518988,
     "title": "Dark Matter",
+    "slug": "dark-matter",
     "author": "Blake Crouch",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465618938l/30518988._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30518988",
@@ -726,6 +776,7 @@
   {
     "id": 16158498,
     "title": "Give and Take: A Revolutionary Approach to Success",
+    "slug": "give-and-take",
     "author": "Adam M. Grant",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356136579l/16158498.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/16158498",
@@ -737,6 +788,7 @@
   {
     "id": 25899336,
     "title": "When Breath Becomes Air",
+    "slug": "when-breath-becomes-air",
     "author": "Paul Kalanithi",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492677644l/25899336.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/25899336",
@@ -748,6 +800,7 @@
   {
     "id": 23848190,
     "title": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
+    "slug": "extreme-ownership",
     "author": "Jocko Willink",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427163007l/23848190.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/23848190",
@@ -759,6 +812,7 @@
   {
     "id": 6908348,
     "title": "The Presentation Secrets of Steve Jobs",
+    "slug": "the-presentation-secrets-of-steve-jobs",
     "author": "Carmine Gallo",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546076819l/6908348.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/6908348",
@@ -770,6 +824,7 @@
   {
     "id": 25744928,
     "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "slug": "deep-work",
     "author": "Cal Newport",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447957962l/25744928._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/25744928",
@@ -781,6 +836,7 @@
   {
     "id": 546936,
     "title": "Up the Organization: How to Stop the Corporation from Stifling People and Strangling Profits",
+    "slug": "up-the-organization",
     "author": "Robert C. Townsend",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348734563l/546936.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/546936",
@@ -792,6 +848,7 @@
   {
     "id": 17255186,
     "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+    "slug": "the-phoenix-project",
     "author": "Gene Kim",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361113128l/17255186.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/17255186",
@@ -803,6 +860,7 @@
   {
     "id": 19086970,
     "title": "The Confidence Gap",
+    "slug": "the-confidence-gap",
     "author": "Russ Harris",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408937412l/19086970.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/19086970",
@@ -814,6 +872,7 @@
   {
     "id": 22433379,
     "title": "10% Happier: How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works - A True Story",
+    "slug": "10percent-happier",
     "author": "Dan   Harris",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434181599l/22433379._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/22433379",
@@ -825,6 +884,7 @@
   {
     "id": 30253678,
     "title": "The Shooter Act",
+    "slug": "the-shooter-act",
     "author": "Turner Tomlinson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463956213l/30253678._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30253678",
@@ -836,6 +896,7 @@
   {
     "id": 20515315,
     "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't",
+    "slug": "leaders-eat-last",
     "author": "Simon Sinek",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389493137l/20515315.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/20515315",
@@ -847,6 +908,7 @@
   {
     "id": 29907494,
     "title": "За кого се сещаш, когато се сещаш за някого",
+    "slug": "za-kogo-se-seshash-kogato-se-seshash-za-nyakogo",
     "author": "Константин Трендафилов",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460520094l/29907494._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/29907494",
@@ -858,6 +920,7 @@
   {
     "id": 33399792,
     "title": "Resilient Web Design",
+    "slug": "resilient-web-design",
     "author": "Jeremy Keith",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484233186l/33399792.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/33399792",
@@ -869,6 +932,7 @@
   {
     "id": 18954141,
     "title": "Start With Why: How Great Leaders Inspire Everyone To Take Action",
+    "slug": "start-with-why",
     "author": "Simon Sinek",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385436443l/18954141.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18954141",
@@ -880,6 +944,7 @@
   {
     "id": 2309367,
     "title": "The 60 Second Leader: Everything You Need to Know about Leadership, in One Minute Bites",
+    "slug": "the-60-second-leader",
     "author": "Phil Dourado",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396239862l/2309367.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/2309367",
@@ -891,6 +956,7 @@
   {
     "id": 6828896,
     "title": "Delivering Happiness: A Path to Profits, Passion, and Purpose",
+    "slug": "delivering-happiness",
     "author": "Tony Hsieh",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344267716l/6828896.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/6828896",
@@ -902,6 +968,7 @@
   {
     "id": 13453029,
     "title": "Wool Omnibus (Silo, #1)",
+    "slug": "wool-omnibus-silo-1",
     "author": "Hugh Howey",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349614200l/13453029.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/13453029",
@@ -913,6 +980,7 @@
   {
     "id": 23848518,
     "title": "The School of Greatness: A Real-World Guide to Living Bigger, Loving Deeper, and Leaving a Legacy",
+    "slug": "the-school-of-greatness",
     "author": "Lewis Howes",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438192737l/23848518.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/23848518",
@@ -924,6 +992,7 @@
   {
     "id": 6596,
     "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+    "slug": "the-four-agreements",
     "author": "Miguel Ruiz",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630664059l/6596.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/6596",
@@ -935,6 +1004,7 @@
   {
     "id": 30716622,
     "title": "Changer (KESTREL #1)",
+    "slug": "changer-kestrel-1",
     "author": "Matt Gemmell",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466548989l/30716622._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/30716622",
@@ -946,6 +1016,7 @@
   {
     "id": 8520610,
     "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    "slug": "quiet",
     "author": "Susan Cain",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328562861l/8520610.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/8520610",
@@ -957,6 +1028,7 @@
   {
     "id": 3869,
     "title": "A Brief History of Time",
+    "slug": "a-brief-history-of-time",
     "author": "Stephen Hawking",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333578746l/3869.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/3869",
@@ -968,6 +1040,7 @@
   {
     "id": 11878168,
     "title": "Anything You Want",
+    "slug": "anything-you-want",
     "author": "Derek Sivers",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1608491606l/11878168._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/11878168",
@@ -979,6 +1052,7 @@
   {
     "id": 18077875,
     "title": "Essentialism: The Disciplined Pursuit of Less",
+    "slug": "essentialism",
     "author": "Greg McKeown",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403165375l/18077875.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18077875",
@@ -990,6 +1064,7 @@
   {
     "id": 18378,
     "title": "Flowers for Algernon",
+    "slug": "flowers-for-algernon",
     "author": "Daniel Keyes",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1634287549l/18378._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18378",
@@ -1001,6 +1076,7 @@
   {
     "id": 7861053,
     "title": "Rework",
+    "slug": "rework",
     "author": "Jason Fried",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1346255766l/7861053.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/7861053",
@@ -1012,6 +1088,7 @@
   {
     "id": 22535480,
     "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+    "slug": "elon-musk",
     "author": "Ashlee Vance",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444831210l/22535480._SY475_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/22535480",
@@ -1023,6 +1100,7 @@
   {
     "id": 26888441,
     "title": "As You Are: Ignite Your Charisma, Reclaim Your Confidence, Unleash Your Masculinity",
+    "slug": "as-you-are",
     "author": "Nick Sparks",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444259182l/26888441._SX318_.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/26888441",
@@ -1034,6 +1112,7 @@
   {
     "id": 18007564,
     "title": "The Martian",
+    "slug": "the-martian",
     "author": "Andy Weir",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413706054l/18007564.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18007564",
@@ -1045,6 +1124,7 @@
   {
     "id": 865,
     "title": "The Alchemist",
+    "slug": "the-alchemist",
     "author": "Paulo Coelho",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483412266l/865.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/865",
@@ -1056,6 +1136,7 @@
   {
     "id": 13529074,
     "title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
+    "slug": "so-good-they-cant-ignore-you",
     "author": "Cal Newport",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1340770443l/13529074.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/13529074",
@@ -1067,6 +1148,7 @@
   {
     "id": 22699559,
     "title": "My True Type: Clarifying Your Personality Type, Preferences & Functions",
+    "slug": "my-true-type",
     "author": "A.J. Drenth",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404933899l/22699559.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/22699559",
@@ -1078,6 +1160,7 @@
   {
     "id": 2998152,
     "title": "JavaScript: The Good Parts",
+    "slug": "javascript",
     "author": "Douglas Crockford",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328834793l/2998152.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/2998152",
@@ -1089,6 +1172,7 @@
   {
     "id": 18170143,
     "title": "An Astronaut's Guide to Life on Earth",
+    "slug": "an-astronauts-guide-to-life-on-earth",
     "author": "Chris Hadfield",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1380495144l/18170143.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/18170143",
@@ -1100,6 +1184,7 @@
   {
     "id": 97642,
     "title": "No More Mr. Nice Guy",
+    "slug": "no-more-mr-nice-guy",
     "author": "Robert A. Glover",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348332977l/97642.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/97642",
@@ -1111,6 +1196,7 @@
   {
     "id": 23258103,
     "title": "The Mathematics of Love: Patterns, Proofs, and the Search for the Ultimate Equation",
+    "slug": "the-mathematics-of-love",
     "author": "Hannah Fry",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563705628l/23258103.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/23258103",
@@ -1122,6 +1208,7 @@
   {
     "id": 19546120,
     "title": "Terrible Estate Agent Photos: A Book of the Most Baffling Property Photographs Ever Taken",
+    "slug": "terrible-estate-agent-photos",
     "author": "Andy Donaldson",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408645258l/19546120.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/19546120",
@@ -1133,6 +1220,7 @@
   {
     "id": 1207904,
     "title": "Clapton: The Autobiography",
+    "slug": "clapton",
     "author": "Eric Clapton",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407042555l/1207904.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/1207904",
@@ -1144,6 +1232,7 @@
   {
     "id": 10589332,
     "title": "The Steve Jobs Way: iLeadership for a New Generation",
+    "slug": "the-steve-jobs-way",
     "author": "Jay Elliot",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348771444l/10589332.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/10589332",
@@ -1155,6 +1244,7 @@
   {
     "id": 21454912,
     "title": "What If?: Serious Scientific Answers to Absurd Hypothetical Questions",
+    "slug": "what-if",
     "author": "Randall Munroe",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1412425183l/21454912.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/21454912",
@@ -1166,6 +1256,7 @@
   {
     "id": 21535127,
     "title": "Quiet Impact: How to be a successful Introvert",
+    "slug": "quiet-impact",
     "author": "Sylvia Loehken",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420776024l/21535127.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/21535127",
@@ -1177,6 +1268,7 @@
   {
     "id": 23006925,
     "title": "Raw Materials: Collected Essays",
+    "slug": "raw-materials",
     "author": "Matt Gemmell",
     "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408656447l/23006925.jpg",
     "goodreadsUrl": "https://www.goodreads.com/book/show/23006925",
