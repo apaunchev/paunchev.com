@@ -5,6 +5,10 @@
   &:empty {
     margin-block-end: 0;
   }
+
+  &--centered {
+    text-align: center;
+  }
 }
 
 .page-header__title {
@@ -17,4 +21,8 @@
   font-size: var(--text-xl);
   line-height: var(--heading-line-height);
   color: var(--color-contrast-high);
+}
+
+.page-header__meta {
+  margin-block-start: var(--space-xxs);
 }

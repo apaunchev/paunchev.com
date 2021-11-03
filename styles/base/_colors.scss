@@ -14,6 +14,7 @@
     var(--brand-saturation),
     var(--brand-lightness)
   );
+  --color-highlight: hsl(var(--brand-hue), var(--brand-saturation), 95%);
   --color-bg: hsl(var(--body-hue), var(--body-saturation), 100%);
   --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 95%);
   --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 85%);
@@ -32,6 +33,7 @@
       var(--brand-lightness)
     );
     --color-bg: hsl(var(--body-hue), var(--body-saturation), 5%);
+    --color-highlight: transparent;
     --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 15%);
     --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 25%);
     --color-contrast-medium: hsl(var(--body-hue), var(--body-saturation), 60%);

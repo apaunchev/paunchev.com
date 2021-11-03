@@ -1,5 +1,32 @@
 [
   {
+    "id": 18401910,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "coverImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394225429l/18401910.jpg",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/18401910",
+    "rating": 3,
+    "pages": 172,
+    "finishedAt": "Sat, 23 Oct 2021 13:18:48 -0700",
+    "startedAt": "Sat, 04 Apr 2020 11:02:48 -0700",
+    "highlights": [
+      {
+        "text": "It was one of those rare smiles with a quality of eternal reassurance in it, that you may come across four or five times in life. It faced—or seemed to face—the whole external world for an instant, and then concentrated on YOU with an irresistible prejudice in your favor. It understood you just so far as you wanted to be understood, believed in you as you would like to believe in yourself and assured you that it had precisely the impression of you that, at your best, you hoped to convey.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B00EJRPZEQ&location=628",
+          "value": 628
+        }
+      },
+      {
+        "text": "Thirty—the promise of a decade of loneliness, a thinning list of single men to know, a thinning brief-case of enthusiasm, thinning hair.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B00EJRPZEQ&location=1810",
+          "value": 1810
+        }
+      }
+    ]
+  },
+  {
     "id": 41941223,
     "title": "Recursion",
     "author": "Blake Crouch",
@@ -8,7 +35,72 @@
     "rating": 4,
     "pages": 324,
     "finishedAt": "Wed, 29 Sep 2021 13:20:24 -0700",
-    "startedAt": "Sun, 08 Mar 2020 07:55:56 -0700"
+    "startedAt": "Sun, 08 Mar 2020 07:55:56 -0700",
+    "highlights": [
+      {
+        "text": "Seeing Julia always upends him. For a long time after their marriage ended, he thought he missed his ex. Thought he would never get over her. He would often dream of her and wake to the ache of her absence eating him alive. The dreams cut him deeply—half memory, half fantasy—because in them, she felt like the Julia of old. The smile. The unhesitating laugh. The lightness of being. She was the person who stole his heart again. All through the following morning, she’d be on his mind, the totality of that loss staring him down, unblinking, until the emotional hangover of the dream finally released its hold on him like a slowly lifting fog. He saw Julia once, in the wake of one such dream—an unexpected bump-in at the party of an old friend. To his surprise, he felt nothing as they chatted stiffly on the veranda. Being in her presence slashed through the dream-withdrawal; he didn’t want her. It was a liberating revelation, even as it devastated him. Liberating because it meant he didn’t love this Julia—he loved the person she used to be. Devastating because the woman who haunted his dreams was truly gone. As unreachable as the dead.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=271",
+          "value": 271
+        }
+      },
+      {
+        "text": "“Because memory…is everything. Physically speaking, a memory is nothing but a specific combination of neurons firing together—a symphony of neural activity. But in actuality, it’s the filter between us and reality. You think you’re tasting this wine, hearing the words I’m saying, in the present, but there’s no such thing. The neural impulses from your taste buds and your ears get transmitted to your brain, which processes them and dumps them into working memory—so by the time you know you’re experiencing something, it’s already in the past. Already a memory.”",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=577",
+          "value": 577
+        }
+      },
+      {
+        "text": "The visual and auditory information arrive at your eyes and ears at different speeds, and then are processed by your brain at different speeds. Your brain waits for the slowest bit of stimulus to be processed, then reorders the neural inputs correctly, and lets you experience them together, as a simultaneous event—about half a second after what actually happened. We think we’re perceiving the world directly and immediately, but everything we experience is this carefully edited, tape-delayed reconstruction.”",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=582",
+          "value": 582
+        }
+      },
+      {
+        "text": "Helena thinking—this disease is some sadistic, schizophrenic form of memory travel, flinging its victims across the expanse of their life, tricking them into thinking they’re living in the past. Cutting them adrift in time.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=2005",
+          "value": 2005
+        }
+      },
+      {
+        "text": "This relationship was meant for a specific time, and no longer.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=2042",
+          "value": 2042
+        }
+      },
+      {
+        "text": "That’s one of the great things about New York—no one cares about your emotional state as long as there’s no blood involved. Crying on the sidewalk in the middle of the day is no less private than crying in your bedroom in the middle of the night. Maybe it’s because no one cares. Maybe it’s because it’s a brutal city, and they’ve all been there at one time or another.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=2060",
+          "value": 2060
+        }
+      },
+      {
+        "text": "Life with a cheat code isn’t life. Our existence isn’t something to be engineered or optimized for the avoidance of pain. That’s what it is to be human—the beauty and the pain, each meaningless without the other.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=4676",
+          "value": 4676
+        }
+      },
+      {
+        "text": "Life can only be understood backwards; but it must be lived forwards. —SØREN KIERKEGAARD",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=4684",
+          "value": 4684
+        }
+      },
+      {
+        "text": "“I need to tell you something, Julia.” He looks out at the Hudson. The breeze coming off the water carries a cool bite, and the sun is warm on his shoulders. Tourist boats go up and down the river. The noise of traffic is ceaseless on the highway above. The sky crisscrossed with the fading contrails of a thousand jets. “I was angry with you for a long time.” “I know,” she says. “I thought you left me because of Meghan.” “Maybe. I don’t know. It was too much to keep breathing the same air as you in those dark days.” He shakes his head. “I think that if you and I could go back to before she died, even if we could somehow prevent it, you still would have gone your way, and I would’ve gone mine. I think we were meant to be together for a time. Perhaps losing Meghan shortened the life-span of us, but even if she had lived, we’d still be apart in this moment.” “You really believe that?” “I do, and I’m sorry I held on to the anger. I’m sorry I only see this now. We had so many perfect moments, and for a long time, I couldn’t appreciate them. I could only look back in regret. This is what I wanted to tell you: I wouldn’t change anything. I’m glad you came into my life when you did. I’m glad for the time we had. I’m glad for Meghan, and that she came from the two of us. That she couldn’t have come from any other two people. I wouldn’t take back a second of any of it.” She wipes away a tear. “All these years, I thought you wished you’d never met me. I thought you blamed me for ruining your life.” “I was just hurting.” She squeezes his hand. “I’m sorry we weren’t the ones for each other, Barry. You’re right about that, and I’m sorry for everything else.”",
+        "location": {
+          "url": "kindle://book?action=open&asin=B07HDSHP7N&location=4719",
+          "value": 4719
+        }
+      }
+    ]
   },
   {
     "id": 1713426,
@@ -184,7 +276,100 @@
     "rating": 5,
     "pages": 272,
     "finishedAt": "Sat, 06 Jun 2020 13:16:15 -0700",
-    "startedAt": "Sat, 01 Jun 2019 12:01:49 -0700"
+    "startedAt": "Sat, 01 Jun 2019 12:01:49 -0700",
+    "highlights": [
+      {
+        "text": "There’s no sadder place to be in this world than a place where there’s no hope.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=151",
+          "value": 151
+        }
+      },
+      {
+        "text": "Staying with my mom wasn’t an obligation, though; it was a joy. I loved her more than anything, and I couldn’t have lived anywhere else knowing she didn’t have anyone to help her out. Her happiness was my happiness and the other way around, and that’s the way it had always been and would always be. I also didn’t mind her cooking for me. She would cook for me anytime day or night, and that food tasted just like love felt.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=644",
+          "value": 644
+        }
+      },
+      {
+        "text": "“If it makes you happy, you’d better be able to make it yourself. I don’t see no wife on your arm anytime soon.”",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=789",
+          "value": 789
+        }
+      },
+      {
+        "text": "She made me laugh, she kept me on the straight and narrow, and she never once rushed me to figure things out. She just loved me the same way she had loved me for as long as I could remember—absolutely and unconditionally.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=791",
+          "value": 791
+        }
+      },
+      {
+        "text": "I was born with the same gift from God we are all born with—the impulse to reach out and lessen the suffering of another human being. It was a gift, and we each had a choice whether to use this gift or not.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=2204",
+          "value": 2204
+        }
+      },
+      {
+        "text": "I didn’t know his story or what he had done or anything about him that made him different from me—hell, I didn’t know if he was black or white. But on the row, I realized, it didn’t matter. When you are trying to survive, the superficial things don’t matter anymore. When you are hanging at the end of your rope, does it really matter what color the hand is that reaches up to help you? What I knew was that he loved his mother just like I loved my mother. I could understand his pain.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=2206",
+          "value": 2206
+        }
+      },
+      {
+        "text": "Everything, I realized, is a choice. And spending your days waiting to die is no way to live.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=2216",
+          "value": 2216
+        }
+      },
+      {
+        "text": "I closed my eyes. I could leave the row in my mind, and now I was going to show these guys that they could leave too. I remember being in school and reading a book about California and getting so lost in it, I swear I could smell the salt water of the Pacific Ocean. I just needed to get some books. Then we could all leave this place together.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=2587",
+          "value": 2587
+        }
+      },
+      {
+        "text": "As soon as the guard left Henry’s cell, I passed some coffee out of my cell to Henry. The guys next to me reached out and took it from me and passed it down to the guy next to him. Up and down the row, all day long, men who might just as soon kill each other as look at each other on the streets passed their precious food items to Henry’s cell—candy bars and soup and coffee and small pieces of chocolate and even fruit. Anyone who had something of value ordered from commissary or left over from a meal passed it one to the other until it reached Henry. Nobody took it for himself. Nobody interrupted the chain of comfort as it wound its way up and down and around the row until it reached Henry. We all knew grief. We all knew sorrow. We all knew what it was like to be alone. And we all were beginning to learn that you can make a family out of anyone. Even the guards, perhaps caught up in their own humanity or because Henry’s dad had collapsed under their watch, helped pass the food to Henry. In a twisted way, they were also a part of this big, strange family on death row. They were the ones charged with our care every day—obligated to help us when we were sick yet also the ones who walked us to our deaths, strapped us into the chair, and then turned their backs as the warden flipped the switch to end our lives. In the end, we were all just trying to find our way.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=2750",
+          "value": 2750
+        }
+      },
+      {
+        "text": "I’ve loved and I’ve laughed and I’ve lost God and found God again and wondered for too many hours what the purpose is for me going to death row for something I didn’t do. And sometimes I think there is no purpose—that this is just the life I was meant to live. I’ve made a home here and a family out of some of the most terrifying men you’d ever meet. And you know what I’ve learned? We’re all the same. We’re all guilty of something, and we’re all innocent at the same time.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=4084",
+          "value": 4084
+        }
+      },
+      {
+        "text": "Life was a crazy, strange mix of tragedy and sorrow and triumph and joy.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=4246",
+          "value": 4246
+        }
+      },
+      {
+        "text": "I chose to forgive. I chose to stay vigilant to any signs of anger or hate in my heart. They took thirty years of my life. If I couldn’t forgive, if I couldn’t feel joy, that would be like giving them the rest of my life.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=4410",
+          "value": 4410
+        }
+      },
+      {
+        "text": "It’s hard not to wrap your life in a story—a story that has a beginning, a middle, and an end. A story that has logic and purpose and a bigger reason for why things turned out the way they did. I look for purpose in losing thirty years of my life. I try to make meaning out of something so wrong and so senseless. We all do. We have to find ways to recover after bad things happen. We have to make every ending be a happy ending. Every single one of us wants to matter. We want our lives and our stories and the choices we made or didn’t make to matter. Death row taught me that it all matters. How we live matters. Do we choose love or do we choose hate? Do we help or do we harm? Because there’s no way to know the exact second your life changes forever. You can only begin to know that moment by looking in the rearview mirror. And trust me when I tell you that you never, ever see it coming.",
+        "location": {
+          "url": "kindle://book?action=open&asin=B075DDDYHG&location=4456",
+          "value": 4456
+        }
+      }
+    ]
   },
   {
     "id": 36185940,
