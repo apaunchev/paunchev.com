@@ -1,3 +1,4 @@
+import { BookHighlights } from '@/components/book-highlights';
 import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
 import { getBookBySlug, getBooks } from '@/lib/books';
@@ -9,12 +10,22 @@ export default function BookPage({ book }) {
     ? {
         title: title[0],
         subtitle: title[1],
-        meta: `${book.author} · ${getStarRating(book.rating)}`,
+        meta: (
+          <>
+            {book.author} · {getStarRating(book.rating)} ·{' '}
+            <a href={book.goodreadsUrl}>Goodreads</a>
+          </>
+        ),
       }
     : {
         title,
         subtitle: book.author,
-        meta: getStarRating(book.rating),
+        meta: (
+          <>
+            {getStarRating(book.rating)} ·{' '}
+            <a href={book.goodreadsUrl}>Goodreads</a>
+          </>
+        ),
       };
 
   return (
@@ -29,21 +40,7 @@ export default function BookPage({ book }) {
         }}
         isCentered={true}
       />
-      <ol className="highlights">
-        {book.highlights.map(({ text, location }) => (
-          <li key={location.value} id={location.value} className="highlight">
-            <blockquote className="highlight__quote">
-              <p>
-                <span>{text}</span>
-              </p>
-            </blockquote>
-            <p className="highlight__meta">
-              <a href={`#${location.value}`}>Link</a> · Location:{' '}
-              <a href={location.url}>{location.value}</a>
-            </p>
-          </li>
-        ))}
-      </ol>
+      <BookHighlights highlights={book.highlights} />
     </ArticleLayout>
   );
 }
