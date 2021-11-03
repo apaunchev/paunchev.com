@@ -1,6 +1,6 @@
 import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
-import { getBookById, getBooks } from '@/lib/books';
+import { getBookBySlug, getBooks } from '@/lib/books';
 import { getStarRating, parseBookTitle } from '@/lib/helpers';
 
 export default function BookPage({ book }) {
@@ -49,7 +49,7 @@ export default function BookPage({ book }) {
 }
 
 export async function getStaticProps({ params }) {
-  const book = getBookById(params.id);
+  const book = getBookBySlug(params.slug);
 
   return {
     props: {
@@ -62,7 +62,7 @@ export async function getStaticPaths() {
   const books = getBooks();
 
   return {
-    paths: books.map(b => ({ params: { id: String(b.id) } })),
+    paths: books.map(b => ({ params: { slug: b.slug } })),
     fallback: false,
   };
 }

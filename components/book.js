@@ -5,7 +5,7 @@ import { routes } from '@/lib/routes';
 
 const BookLink = ({ book, children }) =>
   book.highlights ? (
-    <Link href={`${routes.books.href}/${book.id}`}>
+    <Link href={`${routes.books.href}/${book.slug}`}>
       <a>{children}</a>
     </Link>
   ) : (
