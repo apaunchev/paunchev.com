@@ -1,6 +1,6 @@
 import { PageHeader } from '@/components/page-header';
 import { ArticleLayout } from '@/layouts/article';
-import { parseBookTitle } from '@/lib/helpers';
+import { getStarRating, parseBookTitle } from '@/lib/helpers';
 import { getBookmarks } from '@/lib/bookmarks';
 import { ContentList } from '@/components/content-list';
 import { getBooks } from '@/lib/books';
@@ -52,6 +52,7 @@ export async function getStaticProps() {
       ...b,
       type: 'books',
       title: parseBookTitle(b.title),
+      description: getStarRating(b.rating),
       finishedAt: new Date(b.finishedAt).toJSON().split('T')[0],
     })),
   ]
