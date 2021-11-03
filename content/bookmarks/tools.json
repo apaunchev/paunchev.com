@@ -1,5 +1,17 @@
 [
   {
+    "createdAt": "2021-10-30 12:00:00",
+    "title": "Mantine",
+    "url": "https://mantine.dev/",
+    "description": "React components and hooks library focused on usability, accessibility and developer experience."
+  },
+  {
+    "createdAt": "2021-10-20 12:00:00",
+    "title": "Accessibility from the Ground Up",
+    "url": "https://kittygiraudel.com/2021/08/20/accessibility-from-the-ground-up/#have-a-checklist",
+    "description": "On how to get started with web accessibility. Particularly useful checklist inside."
+  },
+  {
     "createdAt": "2021-10-03 12:00:00",
     "title": "Actionable Color Palettes",
     "url": "https://colorpalettes.colorion.co/",
