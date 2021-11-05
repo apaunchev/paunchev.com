@@ -8,7 +8,7 @@
     "start": "next start",
     "eslint": "eslint --ext .js,.jsx components layouts lib pages",
     "prettier": "prettier --check components layouts lib pages",
-    "stylelint": "stylelint \"styles/**/*.scss\" --syntax \"scss\"",
+    "stylelint": "stylelint \"styles/**/*.scss\"",
     "prepare": "husky install",
     "fetch-books": "node scripts/fetch-books.mjs"
   },
@@ -31,10 +31,11 @@
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "node-fetch": "^3.0.0",
+    "postcss": "^8.3.11",
     "prettier": "2.4.1",
     "sass": "^1.43.4",
-    "stylelint": "^13.13.1",
-    "stylelint-config-sass-guidelines": "^8.0.0"
+    "stylelint": "^14.0.1",
+    "stylelint-config-sass-guidelines": "^9.0.1"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
