@@ -17,7 +17,7 @@
     cursor: pointer;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       background-color: var(--color-contrast-low);
     }
 

@@ -17,7 +17,8 @@
   min-width: 68px; // 64px for image and 4px for borders
   max-width: 68px;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     border-color: var(--color-brand);
   }
 

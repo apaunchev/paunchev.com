@@ -32,7 +32,7 @@
     font-weight: inherit;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       .book-info__title {
         color: var(--color-brand);
       }

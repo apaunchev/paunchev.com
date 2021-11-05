@@ -8,10 +8,9 @@
   overflow: hidden; // For the border radius to work with nested images
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     .bookmark__url {
       color: var(--color-contrast-higher);
-      transition: color 0.2s var(--ease-in-out);
     }
   }
 

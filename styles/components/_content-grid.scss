@@ -16,7 +16,7 @@
     font-weight: 400;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--color-contrast-higher);
 
       .content-grid-item__title {

@@ -12,7 +12,7 @@
   border-color: transparent;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     border-color: var(--color-brand);
   }
 
