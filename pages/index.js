@@ -4,6 +4,7 @@ import { getStarRating, parseBookTitle } from '@/lib/helpers';
 import { getBookmarks } from '@/lib/bookmarks';
 import { ContentList } from '@/components/content-list';
 import { getBooks } from '@/lib/books';
+import { routes } from '@/lib/routes';
 
 const pageInfo = {
   title: null,
@@ -54,12 +55,12 @@ export async function getStaticProps() {
       title: parseBookTitle(b.title),
       description: getStarRating(b.rating),
       finishedAt: new Date(b.finishedAt).toJSON().split('T')[0],
+      url: `${routes.books.href}/${b.slug}`,
     })),
   ]
     .map(item => ({
       ...item,
       date: item.createdAt || item.finishedAt,
-      url: item.url || item.goodreadsUrl,
       description: item.description || item.quote || null,
     }))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
