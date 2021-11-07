@@ -27,9 +27,17 @@ export function Book({ book }) {
               </h3>
             )}
             <p className="book-info__author">{book.author}</p>
-            {book.rating ? (
-              <p className="book-info__rating">{getStarRating(book.rating)}</p>
-            ) : null}
+            <p className="book-info__meta">
+              {book.highlights?.length > 0 ? (
+                <span title="Has highlights">📝</span>
+              ) : null}{' '}
+              {book.rating && book.highlights?.length > 0 ? ' · ' : null}
+              {book.rating ? (
+                <span title={`Rated ${book.rating} out of 5`}>
+                  {getStarRating(book.rating)}
+                </span>
+              ) : null}
+            </p>
           </div>
         </a>
       </Link>
