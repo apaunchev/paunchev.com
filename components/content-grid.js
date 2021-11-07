@@ -59,9 +59,15 @@ export function ContentGridItem({
             {imageComponent}
           </figure>
         ) : null}
-        {title ? <h2 className="content-grid-item__title">{title}</h2> : null}
+        {title ? (
+          <h2 className="content-grid-item__title" title={title}>
+            {title}
+          </h2>
+        ) : null}
         {subtitle ? (
-          <h3 className="content-grid-item__subtitle">{subtitle}</h3>
+          <h3 className="content-grid-item__subtitle" title={subtitle}>
+            {subtitle}
+          </h3>
         ) : null}
         {description ? (
           <p className="content-grid-item__description">{description}</p>
