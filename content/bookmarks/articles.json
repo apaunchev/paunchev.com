@@ -1,5 +1,12 @@
 [
   {
+    "createdAt": "2021-11-06 12:00:00",
+    "title": "Incident Review and Postmortem Best Practices",
+    "author": "Gergely Orosz",
+    "description": "Great read with lots of takeaways on how to make postmortems less painful for everyone.",
+    "url": "https://blog.pragmaticengineer.com/postmortem-best-practices/"
+  },
+  {
     "createdAt": "2021-07-17 12:00:00",
     "title": "Amazing Atelic Activities",
     "author": "Allen Pike",

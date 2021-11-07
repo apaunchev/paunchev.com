@@ -1,5 +1,29 @@
 [
   {
+    "createdAt": "2021-11-06 12:00:00",
+    "title": "Happy Hues",
+    "url": "https://www.happyhues.co/",
+    "description": "Curated colors in context."
+  },
+  {
+    "createdAt": "2021-11-06 12:00:00",
+    "title": "Reach UI",
+    "url": "https://reach.tech/",
+    "description": "A set of accessible UI components every web app needs."
+  },
+  {
+    "createdAt": "2021-11-06 12:00:00",
+    "title": "Easy Gradient Generator Tool",
+    "url": "https://learnui.design/tools/gradient-generator.html",
+    "description": "Truly good-looking CSS gradients are hard too. Use this to make it easier."
+  },
+  {
+    "createdAt": "2021-11-06 12:00:00",
+    "title": "Smooth Shadow",
+    "url": "https://shadows.brumm.af/",
+    "description": "Creating realistic shadows in CSS is hard. This tool helps a bit."
+  },
+  {
     "createdAt": "2021-10-30 12:00:00",
     "title": "Mantine",
     "url": "https://mantine.dev/",
