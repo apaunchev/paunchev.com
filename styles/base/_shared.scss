@@ -1,13 +1,13 @@
 @use '../base/mixins' as *;
 
 :root {
-  // radius
+  // Radius
   --radius: 0.25rem;
   --radius-sm: calc(var(--radius) / 2);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) * 2);
 
-  // box shadow
+  // Box shadow
   --shadow-xs: 0 0.1px 0.3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
   --shadow-sm: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
     0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
@@ -23,8 +23,8 @@
     0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117),
     0 46px 60px -6px rgba(0, 0, 0, 0.2);
 
-  // timing functions
-  // credits: https://github.com/ai/easings.net
+  // Timing functions
+  // Credits: https://github.com/ai/easings.net
   --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
   --ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -32,9 +32,13 @@
 }
 
 body {
+  background-color: var(--color-bg);
+}
+
+/* stylelint-disable-next-line selector-max-id */
+#__next {
   padding-block: var(--space-unit) var(--space-lg);
   padding-inline: var(--space-unit);
-  background-color: var(--color-bg);
 
   @include breakpoint(sm) {
     padding-block: var(--space-lg) var(--space-xl);
@@ -43,8 +47,4 @@ body {
 
 %container {
   margin-inline: auto;
-}
-
-.text-center {
-  text-align: center;
 }

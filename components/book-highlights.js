@@ -2,7 +2,7 @@ export function BookHighlights({ highlights = [] }) {
   if (highlights.length === 0) {
     return (
       <div className="highlights">
-        <p className="text-center">No highlights shared yet.</p>
+        <p>No highlights shared yet.</p>
       </div>
     );
   }
