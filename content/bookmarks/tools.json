@@ -1,5 +1,17 @@
 [
   {
+    "createdAt": "2021-12-24 12:00:00",
+    "title": "Open Props",
+    "url": "https://open-props.style/",
+    "description": "CSS custom properties to help accelerate adaptive and consistent design."
+  },
+  {
+    "createdAt": "2021-12-12 12:00:00",
+    "title": "Josh's Custom CSS Reset",
+    "url": "https://www.joshwcomeau.com/css/custom-css-reset/",
+    "description": "A modern take on the CSS reset."
+  },
+  {
     "createdAt": "2021-11-06 12:00:00",
     "title": "Happy Hues",
     "url": "https://www.happyhues.co/",
@@ -19,9 +31,9 @@
   },
   {
     "createdAt": "2021-11-06 12:00:00",
-    "title": "Smooth Shadow",
-    "url": "https://shadows.brumm.af/",
-    "description": "Creating realistic shadows in CSS is hard. This tool helps a bit."
+    "title": "Shadow Palette Generator",
+    "url": "https://www.joshwcomeau.com/shadow-palette/",
+    "description": "Creating realistic shadows in CSS is hard. This tool helps a lot."
   },
   {
     "createdAt": "2021-10-30 12:00:00",
