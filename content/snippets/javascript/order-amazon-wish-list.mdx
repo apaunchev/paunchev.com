@@ -1,0 +1,45 @@
+---
+title: Order an Amazon wish list by price drop percentage
+---
+
+This is quite specific, silly and potentially broken, but I needed a way to order my Amazon wish list of books. You might think Amazon has got this covered with their sorting functionality – however, it is completely broken when you have a list that is several pages long. Since they use infinite scrolling, their sorting actually only works on each page separately and not for the full list. So this little script reorders the full list (provided it is loaded first).
+
+```javascript
+(function () {
+  const items = [];
+
+  document.querySelectorAll('div[id^="itemInfo"]').forEach(el => {
+    const linkedName = el.querySelector('a[id^="itemName"]');
+    const name = linkedName.textContent.trim();
+    const url = linkedName.href;
+    const price = parseFloat(
+      el
+        .querySelector('span[id^="itemPrice"] .a-offscreen')
+        .textContent.replace(/\$/g, ''),
+    );
+
+    let priceDropPctg;
+    const priceDropEl = el.querySelector('span[id^="itemPriceDrop"]');
+
+    if (priceDropEl) {
+      const priceDropContent = priceDropEl.textContent;
+
+      if (priceDropContent.includes('%')) {
+        priceDropPctg = parseInt(
+          priceDropContent.replace(/price dropped /i, '').replace('%', ''),
+        );
+      } else if (priceDropContent.includes('$')) {
+        priceDropPctg = 0;
+      }
+    } else {
+      priceDropPctg = 0;
+    }
+
+    items.push({ name, url, price, priceDropPctg });
+  });
+
+  const result = items.sort((a, b) => b.priceDropPctg - a.priceDropPctg);
+
+  console.table(result);
+})();
+```

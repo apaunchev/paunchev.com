@@ -1,0 +1,18 @@
+---
+title: Format dates
+---
+
+A little wrapper for `toLocaleDateString` to avoid writing all those options.
+
+```javascript
+const formatDate = (
+  date,
+  locale = 'en-GB',
+  options = {
+    weekday: undefined,
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  },
+) => date.toLocaleDateString(locale, options);
+```

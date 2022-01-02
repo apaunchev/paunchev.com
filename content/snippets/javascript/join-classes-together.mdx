@@ -1,0 +1,11 @@
+---
+title: Join classes together
+---
+
+A simplified way to do (some of) what the [classnames](https://github.com/JedWatson/classnames) package does.
+
+```javascript
+const classNames = (...args) => args.filter(Boolean).join(' ');
+
+classNames('page-header', isCentered && 'page-header--centered');
+```

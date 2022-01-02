@@ -1,0 +1,10 @@
+---
+title: Move a commit to a different branch
+---
+
+```bash
+git checkout feature/name
+git cherry-pick [hash]
+git checkout master
+git reset --hard HEAD~1
+```
