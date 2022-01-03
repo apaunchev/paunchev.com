@@ -1,5 +1,26 @@
 [
   {
+    "createdAt": "2022-01-01 12:00:00",
+    "title": "Defensive CSS",
+    "author": "Ahmad Shadeed",
+    "description": "Common CSS gotchas and how to protect yourself from them.",
+    "url": "https://ishadeed.com/article/defensive-css/"
+  },
+  {
+    "createdAt": "2022-01-01 12:00:00",
+    "title": "Building a color scheme",
+    "author": "Adam Argyle",
+    "description": "A foundational overview of how to establish a dynamic and configurable color scheme.",
+    "url": "https://web.dev/building-a-color-scheme/"
+  },
+  {
+    "createdAt": "2022-01-01 12:00:00",
+    "title": "A Simple Explanation of JavaScript Closures",
+    "author": "Dmitri Pavlutin",
+    "description": "Closures are notoriously difficult to explain – Dmitri did a great job at it here.",
+    "url": "https://dmitripavlutin.com/simple-explanation-of-javascript-closures/"
+  },
+  {
     "createdAt": "2021-11-14 12:00:00",
     "title": "Titles",
     "author": "Gokul Rajaram",
@@ -12,6 +33,13 @@
     "author": "Gergely Orosz",
     "description": "Great read with lots of takeaways on how to make postmortems less painful for everyone.",
     "url": "https://blog.pragmaticengineer.com/postmortem-best-practices/"
+  },
+  {
+    "createdAt": "2021-10-20 12:00:00",
+    "title": "Accessibility from the Ground Up",
+    "author": "Kitty Giraudel",
+    "url": "https://kittygiraudel.com/2021/08/20/accessibility-from-the-ground-up/",
+    "description": "On how to get started with web accessibility. Particularly useful checklist inside."
   },
   {
     "createdAt": "2021-07-17 12:00:00",

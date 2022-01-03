@@ -6,12 +6,6 @@
     "description": "CSS custom properties to help accelerate adaptive and consistent design."
   },
   {
-    "createdAt": "2021-12-12 12:00:00",
-    "title": "Josh's Custom CSS Reset",
-    "url": "https://www.joshwcomeau.com/css/custom-css-reset/",
-    "description": "A modern take on the CSS reset."
-  },
-  {
     "createdAt": "2021-11-06 12:00:00",
     "title": "Happy Hues",
     "url": "https://www.happyhues.co/",
@@ -40,12 +34,6 @@
     "title": "Mantine",
     "url": "https://mantine.dev/",
     "description": "React components and hooks library focused on usability, accessibility and developer experience."
-  },
-  {
-    "createdAt": "2021-10-20 12:00:00",
-    "title": "Accessibility from the Ground Up",
-    "url": "https://kittygiraudel.com/2021/08/20/accessibility-from-the-ground-up/#have-a-checklist",
-    "description": "On how to get started with web accessibility. Particularly useful checklist inside."
   },
   {
     "createdAt": "2021-10-03 12:00:00",
@@ -82,12 +70,6 @@
     "title": "Feather Icons",
     "url": "https://feathericons.com/",
     "description": "Free SVG icon set. Configurable size and stroke. Has a React wrapper."
-  },
-  {
-    "createdAt": "2021-04-03 12:00:00",
-    "title": "Iconic",
-    "url": "https://iconic.app/",
-    "description": "SVG, 24x24px only."
   },
   {
     "createdAt": "2021-03-03 12:00:00",
