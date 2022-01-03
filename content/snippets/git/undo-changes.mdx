@@ -1,62 +1,86 @@
 ---
-title: Undo changes
+title: 'Undo changes'
+updatedAt: '2022-01-02 12:00:00'
+showTOC: true
 ---
 
-## Undo local changes
-
-### Undo unstaged local changes
+## Undo unstaged local changes
 
 To overwrite local changes:
 
-`git checkout -- [file]`
+```bash
+git checkout -- [file]
+```
 
 To save local changes so you can re-use them later:
 
-`git stash`
+```bash
+git stash
+```
 
 To discard local changes to all files, permanently:
 
-`git reset --hard`
+```bash
+git reset --hard
+```
 
-### Undo staged local changes
+## Undo staged local changes
 
 To unstage the file but keep your changes:
 
-`git restore --staged [file]`
+```bash
+git restore --staged [file]
+```
 
 To unstage everything but keep your changes:
 
-`git reset`
+```bash
+git reset
+```
 
 To unstage the file to current commit (HEAD):
 
-`git reset HEAD [file]`
+```bash
+git reset HEAD [file]
+```
 
 To discard all local changes, but save them for later:
 
-`git stash`
+```bash
+git stash
+```
 
 To discard everything permanently:
 
-`git reset --hard`
+```bash
+git reset --hard
+```
 
 ## Undo committed local changes
 
 To swap additions and deletions changes introduced by a commit:
 
-`git revert [hash]`
+```bash
+git revert [hash]
+```
 
 To undo changes on a single file or directory from a commit, but retain them in the staged state:
 
-`git checkout [hash] [file]`
+```bash
+git checkout [hash] [file]
+```
 
 To undo changes on a single file or directory from a commit, but retain them in the unstaged state:
 
-`git reset [hash] [file]`
+```bash
+git reset [hash] [file]
+```
 
 ## Undo remote changes without changing history
 
-`git revert [hash]`
+```bash
+git revert [hash]
+```
 
 ---
 

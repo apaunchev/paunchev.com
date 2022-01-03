@@ -1,13 +1,18 @@
 ---
-title: Rename a commit
+title: 'Rename a commit'
+updatedAt: '2022-01-02 12:00:00'
 ---
 
 To rename the most recent commit:
 
-`git commit --amend -m "The correct message"`
+```bash
+git commit --amend -m "The correct message"
+```
 
 If the commit is older, then do an interactive rebase:
 
-`git rebase -i [hash]`
+```bash
+git rebase -i [hash]
+```
 
 In the editor, change `pick` to `reword` and save.
