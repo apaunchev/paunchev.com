@@ -82,14 +82,16 @@ export default function Home({ lastBookmark, lastSnippet, lastBook }) {
             <p>📝 Last snippet I saved</p>
           </header>
           <div className="card__body">
-            <a href={lastSnippet.url}>
-              {lastSnippet.title ? (
-                <h2 className="card__title">{lastSnippet.title}</h2>
-              ) : null}
-              {lastSnippet.description ? (
-                <p className="card__description">{lastSnippet.description}</p>
-              ) : null}
-            </a>
+            <Link href={lastSnippet.url}>
+              <a>
+                {lastSnippet.title ? (
+                  <h2 className="card__title">{lastSnippet.title}</h2>
+                ) : null}
+                {lastSnippet.description ? (
+                  <p className="card__description">{lastSnippet.description}</p>
+                ) : null}
+              </a>
+            </Link>
           </div>
           <footer className="card__footer">
             <Link href={routes.snippets.href}>
@@ -102,17 +104,19 @@ export default function Home({ lastBookmark, lastSnippet, lastBook }) {
             <p>📚 Last book I read</p>
           </header>
           <div className="card__body">
-            <a href={lastBook.url}>
-              {lastBook.title ? (
-                <h2 className="card__title">{lastBook.title}</h2>
-              ) : null}
-              {lastBook.author ? (
-                <p className="card__description">{lastBook.author}</p>
-              ) : null}
-              {lastBook.rating ? (
-                <p className="card__meta">{lastBook.rating}</p>
-              ) : null}
-            </a>
+            <Link href={lastBook.url}>
+              <a>
+                {lastBook.title ? (
+                  <h2 className="card__title">{lastBook.title}</h2>
+                ) : null}
+                {lastBook.author ? (
+                  <p className="card__description">{lastBook.author}</p>
+                ) : null}
+                {lastBook.rating ? (
+                  <p className="card__meta">{lastBook.rating}</p>
+                ) : null}
+              </a>
+            </Link>
           </div>
           <footer className="card__footer">
             <Link href={routes.books.href}>
