@@ -13,16 +13,11 @@
 .header__image {
   display: flex;
   border: 2px solid transparent;
-  border-radius: 100%;
   min-width: 68px; // 64px for image and 4px for borders
   max-width: 68px;
 
   &:hover,
   &:focus-visible {
     border-color: var(--color-brand);
-  }
-
-  img {
-    border-radius: 100%;
   }
 }

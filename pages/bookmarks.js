@@ -1,97 +1,55 @@
-import {
-  ContentGrid,
-  ContentGridBookmarkItem,
-} from '@/components/content-grid';
-import { PageLayout } from '@/layouts/page';
-import { classNames, hyphenize } from '@/lib/helpers';
+import { BookmarkCard, CardGrid } from '@/components/card-grid';
+import { FilterToggle } from '@/components/filter-toggle';
+import { PageHeader } from '@/components/page-header';
+import { NarrowPage } from '@/layouts/narrow-page';
 import { getBookmarks } from '@/lib/bookmarks';
-import { bookmarkTypes } from '@/lib/types';
-import { useRouter } from 'next/router';
-import { useEffect, useMemo, useState } from 'react';
+import { hyphenize } from '@/lib/helpers';
+import { useMemo, useState } from 'react';
 
 export const pageInfo = {
   title: 'Bookmarks',
-  description: 'Links to favourite content and tools.',
+  description:
+    'I bookmark anything I find worth going back to; whether it is a tool I would use for work, or just a thought-provoking article on a random topic — it ends up here.',
 };
 
+const filterValues = ['All', 'Articles', 'Tools'];
+
 export default function Bookmarks({ bookmarks }) {
-  const router = useRouter();
-  const [filterValue, setFilterValue] = useState('');
+  const [filterIndex, setFilterIndex] = useState(0);
   const filteredBookmarks = useMemo(() => {
     let filteredBookmarks = bookmarks || [];
 
-    if (filterValue) {
+    if (filterIndex > 0) {
       filteredBookmarks = filteredBookmarks.filter(
-        item => item.type === hyphenize(filterValue),
+        item => item.type === hyphenize(filterValues[filterIndex]),
       );
     }
 
     return filteredBookmarks;
-  }, [bookmarks, filterValue]);
+  }, [bookmarks, filterIndex]);
 
-  useEffect(() => {
-    const type = router.query.type;
-
-    if (!type) {
-      setFilterValue('');
-      return;
+  const handleFilterChange = () => {
+    if (filterValues[filterIndex + 1]) {
+      setFilterIndex(filterIndex + 1);
+    } else {
+      setFilterIndex(0);
     }
-
-    if (!bookmarkTypes[hyphenize(type)]) {
-      setFilterValue('');
-      router.push(router.pathname, undefined, { shallow: true });
-      return;
-    }
-
-    setFilterValue(type);
-  }, [router, setFilterValue]);
-
-  const handleSetFilter = (e, filter) => {
-    e.preventDefault();
-
-    setFilterValue(filter);
-
-    if (!filter) {
-      router.push(router.pathname, undefined, { shallow: true });
-      return;
-    }
-
-    router.push(`${router.pathname}/?type=${hyphenize(filter)}`, undefined, {
-      shallow: true,
-    });
   };
 
   return (
-    <PageLayout title={pageInfo.title} description={pageInfo.description}>
-      <div className="tabs">
-        <a
-          className={
-            !router.query.type ? 'tabs-item tabs-item--active' : 'tabs-item'
-          }
-          href={router.pathname}
-          onClick={handleSetFilter}
-        >
-          All
-        </a>
-        {Object.keys(bookmarkTypes).map(type => (
-          <a
-            key={type}
-            className={classNames(
-              'tabs-item',
-              router.query.type === type ? 'tabs-item--active' : '',
-            )}
-            href={`${router.pathname}/?type=${type}`}
-            onClick={e => handleSetFilter(e, type)}
-          >
-            {bookmarkTypes[type]}
-          </a>
-        ))}
-      </div>
-      <ContentGrid
-        items={filteredBookmarks}
-        component={ContentGridBookmarkItem}
+    <NarrowPage title={pageInfo.title} description={pageInfo.description}>
+      <PageHeader title={pageInfo.title} description={pageInfo.description} />
+      <FilterToggle
+        filterValues={filterValues}
+        currentIndex={filterIndex}
+        onClick={handleFilterChange}
       />
-    </PageLayout>
+      <CardGrid
+        items={filteredBookmarks}
+        component={BookmarkCard}
+        isSingleColumn
+      />
+    </NarrowPage>
   );
 }
 

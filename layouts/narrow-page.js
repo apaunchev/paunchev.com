@@ -1,8 +1,8 @@
 import { Container } from '@/components/container';
 
-export function ArticleLayout({ children, title, description }) {
+export function NarrowPage({ children, title, description }) {
   return (
-    <div className="article-layout">
+    <div className="narrow-page">
       <Container title={title} description={description}>
         {children}
       </Container>

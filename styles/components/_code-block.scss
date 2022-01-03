@@ -1,13 +1,14 @@
 .code-block {
   position: relative;
+  margin-block: var(--space-unit);
 
   .copy-button {
     position: absolute;
-    top: var(--space-unit);
-    right: var(--space-unit);
+    top: var(--space-xs);
+    right: var(--space-xs);
     padding-block: var(--space-xxs);
     padding-inline: var(--space-xs);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-page);
     border: 0;
     border-radius: var(--radius-md);
     font-family: var(--font-primary);

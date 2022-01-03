@@ -1,15 +1,16 @@
 import { Book } from '@/components/book';
-import { PageLayout } from '@/layouts/page';
+import { WidePage } from '@/layouts/wide-page';
 import { getBooksByYear } from '@/lib/books';
 
 const pageInfo = {
   title: 'Books',
-  description: 'What I’ve been reading.',
+  description:
+    'My digital bookshelf of sorts. Holds most of the books I have read over the years, along with highlights for some of them.',
 };
 
 export default function BooksPage({ booksByYear }) {
   return (
-    <PageLayout title={pageInfo.title} description={pageInfo.description}>
+    <WidePage title={pageInfo.title} description={pageInfo.description}>
       {Object.keys(booksByYear)
         .sort((a, b) => b - a)
         .map(year => {
@@ -27,7 +28,7 @@ export default function BooksPage({ booksByYear }) {
                   {bookCount} books / {pagesCount} pages
                 </span>
               </h2>
-              <div className="books-content">
+              <div className="books-grid">
                 {booksByYear[year]
                   .sort((a, b) => b.finishedAt - a.finishedAt)
                   .map(book => (
@@ -37,7 +38,7 @@ export default function BooksPage({ booksByYear }) {
             </section>
           );
         })}
-    </PageLayout>
+    </WidePage>
   );
 }
 

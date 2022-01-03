@@ -15,7 +15,8 @@
     var(--brand-lightness)
   );
   --color-highlight: hsl(var(--brand-hue), var(--brand-saturation), 95%);
-  --color-bg: hsl(var(--body-hue), var(--body-saturation), 100%);
+  --color-bg-page: hsl(var(--body-hue), var(--body-saturation), 97%);
+  --color-bg-card: hsl(var(--body-hue), var(--body-saturation), 100%);
   --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 95%);
   --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 85%);
   --color-contrast-medium: hsl(var(--body-hue), var(--body-saturation), 60%);
@@ -32,8 +33,9 @@
       var(--brand-saturation),
       var(--brand-lightness)
     );
-    --color-bg: hsl(var(--body-hue), var(--body-saturation), 5%);
     --color-highlight: transparent;
+    --color-bg-page: hsl(var(--body-hue), var(--body-saturation), 8%);
+    --color-bg-card: hsl(var(--body-hue), var(--body-saturation), 16%);
     --color-contrast-lower: hsl(var(--body-hue), var(--body-saturation), 15%);
     --color-contrast-low: hsl(var(--body-hue), var(--body-saturation), 25%);
     --color-contrast-medium: hsl(var(--body-hue), var(--body-saturation), 60%);

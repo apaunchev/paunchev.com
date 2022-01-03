@@ -1,9 +1,29 @@
+@use '../base/mixins' as *;
+
 .page-header {
   margin-block-start: var(--space-lg);
   margin-block-end: var(--space-unit);
 
   &:empty {
     margin-block-end: 0;
+  }
+
+  &--with-image {
+    display: flex;
+    justify-content: space-between;
+
+    > div:first-child {
+      margin-inline-end: var(--space-unit);
+    }
+
+    > div:last-child {
+      flex-shrink: 0;
+      max-width: 96px;
+
+      @include breakpoint(sm) {
+        max-width: 190px;
+      }
+    }
   }
 
   &--centered {
@@ -13,16 +33,14 @@
 
 .page-header__title {
   margin-block-end: 0;
-  font-size: var(--text-xxxxl);
+  font-size: var(--text-xxxl);
 }
 
-.page-header__subtitle {
-  margin-block-end: 0;
-  font-size: var(--text-xl);
-  line-height: var(--heading-line-height);
+.page-header__description {
+  margin-block: var(--space-xxxs) 0;
   color: var(--color-contrast-high);
 }
 
 .page-header__meta {
-  margin-block-start: var(--space-xxs);
+  margin-block: var(--space-xxxs) 0;
 }

@@ -32,7 +32,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-page);
 }
 
 /* stylelint-disable-next-line selector-max-id */
@@ -47,4 +47,12 @@ body {
 
 %container {
   margin-inline: auto;
+}
+
+.round-image {
+  border-radius: 50%;
+
+  img {
+    border-radius: 50%;
+  }
 }

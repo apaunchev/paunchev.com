@@ -5,15 +5,14 @@
 @use 'base/typography';
 @use 'base/animations';
 
-@use 'layouts/page';
-@use 'layouts/article';
+@use 'layouts/wide-page';
+@use 'layouts/narrow-page';
 
 @use 'components/header';
 @use 'components/page-header';
 @use 'components/nav';
-@use 'components/content-grid';
-@use 'components/content-list';
-@use 'components/tags-list';
+@use 'components/card';
+@use 'components/card-grid';
 @use 'components/code-block';
 @use 'components/tabs';
 @use 'components/toc';
@@ -21,3 +20,4 @@
 @use 'components/bookmark';
 @use 'components/books';
 @use 'components/highlights';
+@use 'components/filter-toggle';

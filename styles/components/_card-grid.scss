@@ -1,0 +1,11 @@
+@use '../base/mixins' as *;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--space-sm);
+
+  &--single-column {
+    grid-template-columns: 1fr;
+  }
+}

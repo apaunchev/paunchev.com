@@ -1,74 +1,150 @@
-import { PageHeader } from '@/components/page-header';
-import { ArticleLayout } from '@/layouts/article';
-import { getStarRating, parseBookTitle } from '@/lib/helpers';
+import { NarrowPage } from '@/layouts/narrow-page';
 import { getBookmarks } from '@/lib/bookmarks';
-import { ContentList } from '@/components/content-list';
 import { getBooks } from '@/lib/books';
+import { getStarRating, parseBookTitle } from '@/lib/helpers';
 import { routes } from '@/lib/routes';
+import { getSnippets } from '@/lib/snippets';
+import author from '@/public/me.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const pageInfo = {
   title: null,
   description: 'Angel is a software engineer from Sofia, Bulgaria.',
-  headerTitle: 'Hey! I’m Angel.',
-  headerSubtitle: 'Welcome to my space on the internet. ',
 };
 
-export default function Home({ recentItems }) {
+export default function Home({ lastBookmark, lastSnippet, lastBook }) {
   return (
-    <ArticleLayout title={pageInfo.title} description={pageInfo.description}>
-      <PageHeader
-        title={pageInfo.headerTitle}
-        subtitle={pageInfo.headerSubtitle}
-      />
-      <p>
-        I’m a software engineer from Sofia, Bulgaria. You can find my
-        professional summary on{' '}
-        <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a> or look at
-        code I’ve written on <a href="https://github.com/apaunchev">GitHub</a>.
-      </p>
-      <p>
-        I use this site as long-term storage of digital content that I’d like to
-        go back to whenever I need to. You may or may not find this of interest.
-      </p>
-      <p>
-        If you have any questions or feedback, feel free to{' '}
-        <a href="mailto:apaunchev@gmail.com">contact me</a>.
-      </p>
-      <h2>Recently</h2>
-      <p>Things I’ve shared recently.</p>
-      <ContentList items={recentItems} />
-    </ArticleLayout>
+    <NarrowPage title={pageInfo.title} description={pageInfo.description}>
+      <div className="card-grid">
+        <article className="card">
+          <header className="card__header">
+            <div className="card__image round-image">
+              <Image src={author} alt="" />
+            </div>
+          </header>
+          <div className="card__body">
+            <p>
+              Hey, I’m Angel — a software engineer from Sofia, Bulgaria. Here’s
+              my{' '}
+              <Link href="/Angel_Paunchev.pdf">
+                <a>résumé</a>
+              </Link>
+              . This site is an archive of things I did or found around the web.
+            </p>
+          </div>
+        </article>
+        <article className="card">
+          <header className="card__header">
+            <p>🛠 Last thing I built</p>
+          </header>
+          <div className="card__body">
+            <a href="https://playground.paunchev.com">
+              <h2 className="card__title">Playground</h2>
+              <p className="card__description">
+                A browser playground for HTML, CSS and JavaScript.
+              </p>
+              <p className="card__meta">playground.paunchev.com</p>
+            </a>
+          </div>
+          <footer className="card__footer">
+            <a href="https://github.com/apaunchev">See more</a>
+          </footer>
+        </article>
+        <article className="card">
+          <header className="card__header">
+            <p>📑 Last thing I bookmarked</p>
+          </header>
+          <div className="card__body">
+            <a href={lastBookmark.url}>
+              {lastBookmark.title ? (
+                <h2 className="card__title">{lastBookmark.title}</h2>
+              ) : null}
+              {lastBookmark.description ? (
+                <p className="card__description">{lastBookmark.description}</p>
+              ) : null}
+              {lastBookmark.url ? (
+                <p className="card__meta">
+                  {new URL(lastBookmark.url).hostname}
+                </p>
+              ) : null}
+            </a>
+          </div>
+          <footer className="card__footer">
+            <Link href={routes.bookmarks.href}>
+              <a>See more</a>
+            </Link>
+          </footer>
+        </article>
+        <article className="card">
+          <header className="card__header">
+            <p>📝 Last snippet I saved</p>
+          </header>
+          <div className="card__body">
+            <a href={lastSnippet.url}>
+              {lastSnippet.title ? (
+                <h2 className="card__title">{lastSnippet.title}</h2>
+              ) : null}
+              {lastSnippet.description ? (
+                <p className="card__description">{lastSnippet.description}</p>
+              ) : null}
+            </a>
+          </div>
+          <footer className="card__footer">
+            <Link href={routes.snippets.href}>
+              <a>See more</a>
+            </Link>
+          </footer>
+        </article>
+        <article className="card">
+          <header className="card__header">
+            <p>📚 Last book I read</p>
+          </header>
+          <div className="card__body">
+            <a href={lastBook.url}>
+              {lastBook.title ? (
+                <h2 className="card__title">{lastBook.title}</h2>
+              ) : null}
+              {lastBook.author ? (
+                <p className="card__description">{lastBook.author}</p>
+              ) : null}
+              {lastBook.rating ? (
+                <p className="card__meta">{lastBook.rating}</p>
+              ) : null}
+            </a>
+          </div>
+          <footer className="card__footer">
+            <Link href={routes.books.href}>
+              <a>See more</a>
+            </Link>
+          </footer>
+        </article>
+      </div>
+    </NarrowPage>
   );
 }
 
 export async function getStaticProps() {
   const bookmarks = getBookmarks();
+  const snippets = await getSnippets();
   const books = getBooks();
-  const recentItems = [
-    ...bookmarks.map(b => ({
-      ...b,
-      createdAt: new Date(b.createdAt).toJSON().split('T')[0],
-    })),
-    ...books.map(b => ({
-      ...b,
-      type: 'books',
-      title: parseBookTitle(b.title),
-      description: getStarRating(b.rating),
-      finishedAt: new Date(b.finishedAt).toJSON().split('T')[0],
-      url: `${routes.books.href}/${b.slug}`,
-    })),
-  ]
-    .map(item => ({
-      ...item,
-      date: item.createdAt || item.finishedAt,
-      description: item.description || item.quote || null,
-    }))
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 10);
+
+  const lastBookmark = bookmarks.slice(0, 1)[0];
+  const lastSnippet = snippets
+    .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+    .slice(0, 1)[0];
+  const lastBook = books.slice(0, 1).map(b => ({
+    ...b,
+    title: parseBookTitle(b.title),
+    rating: getStarRating(b.rating),
+    url: `${routes.books.href}/${b.slug}`,
+  }))[0];
 
   return {
     props: {
-      recentItems,
+      lastBookmark,
+      lastSnippet,
+      lastBook,
     },
   };
 }

@@ -1,0 +1,23 @@
+.filter-toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-block: var(--space-unit);
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  background: none;
+  color: var(--color-contrast-high);
+  font-size: var(--text-unit);
+  font-weight: 500;
+  transition: color 0.2s var(--ease-in-out);
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-contrast-higher);
+  }
+}
