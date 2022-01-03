@@ -1,18 +1,21 @@
 @use '../base/mixins' as *;
 
 :root {
-  // font family
+  // Font family
   --font-primary: 'Inter', sans-serif;
 
-  // font size
+  // Font size
   --text-base-size: 1rem;
   --text-scale-ratio: 1.133;
 
-  // line height
+  // Font weight
+  --body-font-weight: 400;
+
+  // Line height
   --body-line-height: 1.5;
   --heading-line-height: 1.35;
 
-  // unit
+  // Base unit
   --text-unit: var(--text-base-size);
 }
 
