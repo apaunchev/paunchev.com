@@ -25,12 +25,13 @@ export default function Home({ lastBookmark, lastSnippet, lastBook }) {
           </header>
           <div className="card__body">
             <p>
-              Hey, I’m Angel — a software engineer from Sofia, Bulgaria. Here’s
+              Hey, I’m Angel — a software engineer from Sofia, Bulgaria. This
+              site is an archive of things I did or found around the web. Here’s
               my{' '}
               <Link href="/Angel_Paunchev.pdf">
                 <a>résumé</a>
               </Link>
-              . This site is an archive of things I did or found around the web.
+              , if you need it.
             </p>
           </div>
         </article>
