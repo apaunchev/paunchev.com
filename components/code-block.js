@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { copyToClipboard, delay } from '@/lib/helpers';
 import Highlight, { defaultProps } from 'prism-react-renderer';
+import theme from 'prism-react-renderer/themes/palenight';
 import React, { useState } from 'react';
 
 function CopyButton({ content }) {
@@ -31,7 +32,12 @@ export function CodeBlock({ children }) {
 
   return (
     <div className="code-block">
-      <Highlight {...defaultProps} code={content} language={language}>
+      <Highlight
+        {...defaultProps}
+        theme={theme}
+        code={content}
+        language={language}
+      >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <pre className={className} style={style}>
             <CopyButton content={content} />
