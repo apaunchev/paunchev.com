@@ -1,0 +1,63 @@
+---
+title: 'useInterval'
+updatedAt: '2022-01-04 19:00:00'
+---
+
+A React-friendly wrapper around setInterval.
+
+```jsx
+function useInterval(callback, delay) {
+  const intervalRef = React.useRef(null);
+  const savedCallback = React.useRef(callback);
+
+  React.useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  React.useEffect(() => {
+    const tick = () => savedCallback.current();
+
+    if (typeof delay === 'number') {
+      intervalRef.current = window.setInterval(tick, delay);
+
+      return () => window.clearInterval(intervalRef.current);
+    }
+  }, [delay]);
+
+  return intervalRef;
+}
+```
+
+Usage:
+
+```jsx
+const Stopwatch = () => {
+  const [status, setStatus] = React.useState('idle');
+  const [timeElapsed, setTimeElapsed] = React.useState(0);
+
+  useInterval(
+    () => {
+      setTimeElapsed(timeElapsed => timeElapsed + 1);
+    },
+    status === 'running' ? 1000 : null,
+  );
+
+  const toggle = () => {
+    setTimeElapsed(0);
+    setStatus(status => (status === 'running' ? 'idle' : 'running'));
+  };
+
+  return (
+    <>
+      Time Elapsed: {timeElapsed} second(s)
+      <button onClick={toggle}>
+        {status === 'running' ? 'Stop' : 'Start'}
+      </button>
+    </>
+  );
+};
+```
+
+---
+
+Source: https://www.joshwcomeau.com/snippets/react-hooks/use-interval/

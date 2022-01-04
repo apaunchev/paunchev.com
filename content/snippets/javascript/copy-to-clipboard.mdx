@@ -1,0 +1,20 @@
+---
+title: 'Copy to clipboard'
+updatedAt: '2022-01-04 16:00:00'
+---
+
+A way to copy some (textual) content to the clipboard. Used in the code block below!
+
+```javascript
+const copyToClipboard = content => {
+  const el = document.createElement('textarea');
+  el.value = content;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+};
+```

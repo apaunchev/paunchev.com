@@ -1,0 +1,49 @@
+---
+title: 'Debounce'
+updatedAt: '2022-01-04 12:00:00'
+---
+
+If the project I’m working on already has `lodash`, I’d use its `debounce`. Otherwise, here’s a straightforward implementation:
+
+```javascript
+const debounce = (callback, wait) => {
+  let timeoutId = null;
+
+  return (...args) => {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      callback.apply(null, args);
+    }, wait);
+  };
+};
+```
+
+Usage:
+
+```javascript
+const handleMouseMove = debounce(ev => {
+  // Do stuff with the event!
+}, 250);
+
+window.addEventListener('mousemove', handleMouseMove);
+```
+
+Usage in React:
+
+```jsx
+function App() {
+  const [mouseX, setMouseX] = React.useState(null);
+  const handleMouseMove = React.useMemo(
+    debounce(ev => {
+      setMouseX(ev.clientX);
+    }, 250),
+    [],
+  );
+
+  return <div onMouseMove={handleMouseMove}>Mouse position: {mouseX}</div>;
+}
+```
+
+---
+
+Source: https://www.joshwcomeau.com/snippets/javascript/debounce/

@@ -1,0 +1,20 @@
+---
+title: 'Delay'
+updatedAt: '2022-01-04 14:00:00'
+---
+
+To artificially delay execution of some code you can use a combination of a `Promise` and `setTimeout`.
+
+```javascript
+const delay = duration => new Promise(resolve => setTimeout(resolve, duration));
+```
+
+Usage:
+
+```javascript
+const handleAction = async () => {
+  // Do something
+  await delay(2000);
+  // Do something
+};
+```
