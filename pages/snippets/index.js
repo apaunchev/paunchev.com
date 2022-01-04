@@ -6,7 +6,7 @@ import { getSnippets } from '@/lib/snippets';
 const pageInfo = {
   title: 'Snippets',
   description:
-    'This is a collection of random code or commands that I discovered or used at some point and thought they might be useful again later. I also try to document things I’ve learned from them.',
+    'This is a collection of random bits of code or commands that I wrote or discovered at some point and thought they might be useful again later. I also try to document things I’ve learned from them.',
 };
 
 export default function Snippets({ snippets }) {
