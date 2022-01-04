@@ -1,9 +1,11 @@
 ---
-title: 'Order an Amazon wish list'
+title: 'Sort Amazon wish list'
 updatedAt: '2022-01-02 12:00:00'
 ---
 
-This is quite specific, silly and potentially broken, but I needed a way to order my Amazon wish list of books. You might think Amazon has got this covered with their sorting functionality – however, it is completely broken when you have a list that is several pages long. Since they use infinite scrolling, their sorting actually only works on each page separately and not for the full list. So this little script reorders the full list (provided it is loaded first).
+This is oddly specific, silly and potentially already broken, but: the Amazon website is built in a way where if you load a wish list that is several pages long and you want to sort the items by price, it would sort them for each page individually rather than sort the whole list. So I wrote a script that parses the list’s DOM elements and outputs to the console a sorted list — in this case sorted by price drop percentage.
+
+I use this to hunt for good book deals.
 
 ```javascript
 (function () {
