@@ -1,19 +1,7 @@
 /* eslint-disable react/jsx-key */
-import { delay } from '@/lib/helpers';
+import { copyToClipboard, delay } from '@/lib/helpers';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import React, { useState } from 'react';
-
-const copyToClipboard = content => {
-  const el = document.createElement('textarea');
-  el.value = content;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
-};
 
 function CopyButton({ content }) {
   const [copied, setCopied] = useState(false);
