@@ -1,6 +1,7 @@
 .code-block {
   position: relative;
   margin-block: var(--space-unit);
+  margin-inline: -5rem; // Expand horizontally to avoid scroll bars for long code
 
   .copy-button {
     position: absolute;
@@ -24,6 +25,7 @@
 
     &:disabled {
       color: var(--color-contrast-medium);
+      cursor: not-allowed;
     }
   }
 }
