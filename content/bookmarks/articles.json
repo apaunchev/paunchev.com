@@ -1,5 +1,11 @@
 [
   {
+    "createdAt": "2022-01-23 12:00:00",
+    "title": "The Myth of Decentralization and Lies about Web 2.0",
+    "description": "Excellent overview of how the web has evolved and the challenges ahead with web3.",
+    "url": "https://www.emilygorcenski.com/post/the-myth-of-decentralization-and-lies-about-web-2.0/"
+  },
+  {
     "createdAt": "2022-01-01 12:00:00",
     "title": "Defensive CSS",
     "description": "Common CSS gotchas and how to protect yourself from them.",
