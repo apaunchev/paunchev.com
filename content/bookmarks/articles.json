@@ -2,119 +2,102 @@
   {
     "createdAt": "2022-01-01 12:00:00",
     "title": "Defensive CSS",
-    "author": "Ahmad Shadeed",
     "description": "Common CSS gotchas and how to protect yourself from them.",
     "url": "https://ishadeed.com/article/defensive-css/"
   },
   {
     "createdAt": "2022-01-01 12:00:00",
     "title": "Building a color scheme",
-    "author": "Adam Argyle",
     "description": "A foundational overview of how to establish a dynamic and configurable color scheme.",
     "url": "https://web.dev/building-a-color-scheme/"
   },
   {
     "createdAt": "2022-01-01 12:00:00",
     "title": "A Simple Explanation of JavaScript Closures",
-    "author": "Dmitri Pavlutin",
     "description": "Closures are notoriously difficult to explain – Dmitri did a great job at it here.",
     "url": "https://dmitripavlutin.com/simple-explanation-of-javascript-closures/"
   },
   {
     "createdAt": "2021-11-14 12:00:00",
     "title": "Titles",
-    "author": "Gokul Rajaram",
     "description": "Job titles: you can’t not have them, but you can make them practical and meaningful.",
     "url": "https://medium.com/@gokulrajaram/the-one-thing-ceos-should-delay-as-long-as-possible-ea28347714b0"
   },
   {
     "createdAt": "2021-11-06 12:00:00",
     "title": "Incident Review and Postmortem Best Practices",
-    "author": "Gergely Orosz",
     "description": "Great read with lots of takeaways on how to make postmortems less painful for everyone.",
     "url": "https://blog.pragmaticengineer.com/postmortem-best-practices/"
   },
   {
     "createdAt": "2021-10-20 12:00:00",
     "title": "Accessibility from the Ground Up",
-    "author": "Kitty Giraudel",
     "url": "https://kittygiraudel.com/2021/08/20/accessibility-from-the-ground-up/",
     "description": "On how to get started with web accessibility. Particularly useful checklist inside."
   },
   {
     "createdAt": "2021-07-17 12:00:00",
     "title": "Amazing Atelic Activities",
-    "author": "Allen Pike",
     "quote": "Your youthful focus on telic activities – things you’re glad to be done with – ideally adjusts over time to more atelic activities – things you’re glad to be doing.",
     "url": "https://allenpike.com/2021/amazing-atelic-activities"
   },
   {
     "createdAt": "2021-07-10 12:00:00",
     "title": "Shields Down",
-    "author": "Michael Lopp",
     "quote": "Every moment as a leader is an opportunity to either strengthen or weaken shields.",
     "url": "https://randsinrepose.com/archives/shields-down/"
   },
   {
     "createdAt": "2021-06-14 21:00:00",
     "title": "The 80% energy principle",
-    "author": "Justin Jackson",
     "quote": "At the buffet of life, we don't need to fill our plate with every opportunity that comes our way.",
     "url": "https://justinjackson.ca/the-principle-that-changed-my-life"
   },
   {
     "createdAt": "2021-06-14 21:00:00",
     "title": "Get better at programming by learning how things work",
-    "author": "Julia Evans",
     "quote": "Being a senior developer is less about knowing absolutely everything and more about quickly being able to recognize when you don’t know something and learn it.",
     "url": "https://jvns.ca/blog/learn-how-things-work/"
   },
   {
     "createdAt": "2021-05-25 12:00:00",
     "title": "The Importance of Career Laddering",
-    "author": "Sarah Drasner",
     "quote": "(…) who can get their job done when they have no clue if what they’re doing is valued?",
     "url": "https://css-tricks.com/the-importance-of-career-laddering/"
   },
   {
     "createdAt": "2021-05-10 12:00:00",
     "title": "Senior Engineers Build Consensus",
-    "author": "Ryan Lopopolo",
     "quote": "Building consensus and embedding the idea that engineers would use the change to make good decisions for Stripe turned the four line PR into a self-serve strategic initiative.",
     "url": "https://hyperbo.la/w/nemawashi/"
   },
   {
     "createdAt": "2021-05-10 12:00:00",
     "title": "Looks Good To Me",
-    "author": "James Donohue",
     "quote": "Why do you do code reviews? Perhaps it’s company policy, just an automatic part of your process, but have you ever sat down with your team and asked what everyone hopes to get out of it?",
     "url": "https://medium.com/bbc-design-engineering/looks-good-to-me-making-code-reviews-better-for-remote-first-teams-95bd92ee4e27"
   },
   {
     "createdAt": "2021-04-28 12:00:00",
     "title": "Cache-Control for Civilians",
-    "author": "Harry Roberts",
     "quote": "The best request is the one that never happens: in the fight for fast websites, avoiding the network is far better than hitting the network at all.",
     "url": "https://csswizardry.com/2019/03/cache-control-for-civilians/"
   },
   {
     "createdAt": "2021-04-02 12:00:00",
     "title": "The web didn't change; you did",
-    "author": "Remy Sharp",
     "quote": "Web development did not change. Web development grew. There are more options now, not different options.",
     "url": "https://remysharp.com/2021/02/11/the-web-didnt-change-you-did"
   },
   {
     "createdAt": "2021-04-02 12:00:00",
     "title": "Human driven decisions",
-    "author": "Andreas Eldh",
     "quote": "We think data will give us the most reliable information, overlooking how misleading numbers can be, and discarding the knowledge that stems from human experience, emotion and intelligence.",
     "url": "https://eldh.co/human-driven-decisions/"
   },
   {
     "createdAt": "2021-04-02 12:00:00",
     "title": "You'll Figure It Out",
-    "author": "Andy Weissman",
     "quote": "(…) give the people who work for you a chance to resolve complex issues on their own.",
     "url": "http://blog.aweissman.com/2021/01/youll-figure-it-out_18.html"
   },
@@ -122,77 +105,66 @@
     "createdAt": "2021-03-27 12:00:00",
     "url": "https://mxb.dev/blog/on-simplicity/",
     "title": "On Simplicity",
-    "author": "Max Böck",
     "quote": "We assume that complex problems always require complex solutions. We try to solve complexity by inventing tools and technologies to address a problem; but in the process we create another layer of complexity that, in turn, causes its own set of issues."
   },
   {
     "createdAt": "2021-03-27 12:00:00",
     "url": "http://www.railstips.org/blog/archives/2010/01/12/i-have-no-talent/",
     "title": "I Have No Talent",
-    "author": "John Nunemaker",
     "quote": "What I do have is a lot of practice. (…) The kind of practice where all of a sudden I realize that it is 2am and I’m exhausted physically so I should go to bed, but mentally I feel on fire so I let the code have me for another hour or two."
   },
   {
     "createdAt": "2021-03-04 12:00:00",
     "url": "https://blog.codinghorror.com/nobody-hates-software-more-than-software-developers/",
     "title": "Nobody Hates Software More Than Software Developers",
-    "quote": "I hate software – most of all and especially my own – because I know how hard it is to get it right.",
-    "author": "Jeff Atwood"
+    "quote": "I hate software – most of all and especially my own – because I know how hard it is to get it right."
   },
   {
     "createdAt": "2021-03-04 12:00:00",
     "url": "https://seths.blog/2019/03/on-feeling-incompetent/",
     "title": "On feeling incompetent",
-    "author": "Seth Godin",
     "quote": "First we realize something can be done. Then we realize we can’t do it. And finally, we get better at it."
   },
   {
     "createdAt": "2021-03-04 12:00:00",
     "url": "https://m.signalvnoise.com/remote-work-is-a-platform/",
     "title": "Remote work is a platform",
-    "author": "Jason Fried",
     "quote": "The enlightened companies (…) will have discovered that remote work means more autonomy, more trust, more uninterrupted stretches of time, smaller teams, more independent, concurrent work (and less dependent, sequenced work)."
   },
   {
     "createdAt": "2021-02-27 12:00:00",
     "url": "https://jackmcdade.com/what-are-you-working-for",
     "title": "What Are You Working For?",
-    "author": "Jack McDade",
     "quote": "Do the work to support your family. Do the work if you love it. Do the work to help others. Do enough, well enough, focused enough, so you don’t have to do more."
   },
   {
     "createdAt": "2021-02-21 12:00:00",
     "url": "https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/",
     "title": "The Iceberg Secret, Revealed",
-    "author": "Joel Spolsky",
     "quote": "People who aren’t programmers are just looking at the screen and seeing some pixels. And if the pixels look like they make up a program which does something, they think “oh, gosh, how much harder could it be to make it actually work?“"
   },
   {
     "createdAt": "2021-02-21 12:00:00",
     "url": "https://hbr.org/2014/01/whats-your-1-billion-idea",
     "title": "What’s Your $1 Billion Idea?",
-    "author": "Doug Sundheim",
     "quote": "The questions that annoy, frustrate, or bother us are our greatest opportunities.  They poke us and get under our skin.  We’re naturally motivated to solve them."
   },
   {
     "createdAt": "2021-02-21 12:00:00",
     "url": "https://macwright.com/2019/08/25/side-projects.html",
     "title": "Finishing side projects",
-    "author": "Tom MacWright",
     "description": "Don’t get lost in asking why, don’t plan too much, do balance between existing and new skills."
   },
   {
     "createdAt": "2021-02-15 12:00:00",
     "url": "https://blog.codinghorror.com/falling-into-the-pit-of-success/",
     "title": "Falling Into The Pit of Success",
-    "author": "Jeff Atwood",
     "quote": "(…) a well-designed system makes it easy to do the right things and annoying (but not impossible) to do the wrong things."
   },
   {
     "createdAt": "2021-02-15 12:00:00",
     "url": "https://seths.blog/2019/02/work-before-passion/",
     "title": "Work before passion",
-    "author": "Seth Godin",
     "quote": "Offer me a chance to contribute, and I’ll work hard on it, with focus, and once I begin to make progress, I’ll become passionate about it."
   },
   {
@@ -205,20 +177,17 @@
     "createdAt": "2021-02-04 12:00:00",
     "url": "https://davidwalsh.name/are-you-a-developer",
     "title": "Are You a Developer?",
-    "author": "David Walsh",
     "quote": "Being a developer isn’t about summiting the top of the mountain of knowledge. It’s about climbing a hill and enjoying the view for a few moments—then spotting the next one and plodding on."
   },
   {
     "createdAt": "2021-01-29 12:00:00",
     "url": "https://blog.codinghorror.com/complaint-driven-development/",
     "title": "Complaint-Driven Development",
-    "quote": "The only thing I've ever seen work is getting down deep and dirty in the trenches with your users, communicating with them and cultivating relationships.",
-    "author": "Jeff Atwood"
+    "quote": "The only thing I've ever seen work is getting down deep and dirty in the trenches with your users, communicating with them and cultivating relationships."
   },
   {
     "createdAt": "2021-01-18 12:00:00",
     "title": "Everything Easy is Hard Again",
-    "author": "Frank Chimero",
     "quote": "I wonder if I have twenty years of experience making websites, or if it is really five years of experience, repeated four times.",
     "url": "https://frankchimero.com/blog/2018/everything-easy/"
   },
