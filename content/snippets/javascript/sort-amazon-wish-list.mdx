@@ -15,11 +15,13 @@ I use this to hunt for good book deals.
     const linkedName = el.querySelector('a[id^="itemName"]');
     const name = linkedName.textContent.trim();
     const url = linkedName.href;
-    const price = parseFloat(
-      el
-        .querySelector('span[id^="itemPrice"] .a-offscreen')
-        .textContent.replace(/\$/g, ''),
-    );
+
+    let price;
+    const priceEl = el.querySelector('span[id^="itemPrice"] .a-offscreen');
+
+    if (priceEl) {
+      price = parseFloat(priceEl.textContent.replace(/\$/g, ''));
+    }
 
     let priceDropPctg;
     const priceDropEl = el.querySelector('span[id^="itemPriceDrop"]');
