@@ -1,7 +1,12 @@
+@use '../base/mixins' as *;
+
 .code-block {
   position: relative;
   margin-block: var(--space-unit);
-  margin-inline: -5rem; // Expand horizontally to avoid scroll bars for long code
+
+  @include breakpoint(sm) {
+    margin-inline: -5rem; // Expand horizontally to avoid scroll bars for long code
+  }
 
   .copy-button {
     position: absolute;
