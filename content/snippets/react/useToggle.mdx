@@ -6,7 +6,7 @@ updatedAt: '2022-01-04 17:00:00'
 A wrapper for `useState` specifically made for boolean values that need to be toggled on some action.
 
 ```jsx
-export default function useToggle(initialValue = false) {
+function useToggle(initialValue = false) {
   const [value, setValue] = React.useState(initialValue);
   const toggle = React.useCallback(() => {
     setValue(v => !v);

@@ -1,5 +1,17 @@
 [
   {
+    "createdAt": "2022-03-26 12:00:00",
+    "title": "Employment history doesn't define your value",
+    "quote": "If you want to sum up who you are, then focus on your values, principles, skills, and outcomes.",
+    "url": "https://airbagindustries.com/employment-history-doesn-t-define-your-value/"
+  },
+  {
+    "createdAt": "2022-03-06 12:00:00",
+    "title": "React TypeScript Cheatsheets",
+    "description": "Cheatsheets for experienced React developers getting started with TypeScript.",
+    "url": "https://react-typescript-cheatsheet.netlify.app/"
+  },
+  {
     "createdAt": "2022-01-01 12:00:00",
     "title": "Defensive CSS",
     "description": "Common CSS gotchas and how to protect yourself from them.",
