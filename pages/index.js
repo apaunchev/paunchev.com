@@ -1,6 +1,6 @@
-import { Intro } from 'components/home-sections/Intro';
-import { Projects } from 'components/home-sections/Projects';
-import { Resume } from 'components/home-sections/Resume';
+import { Intro } from 'components/home-sections/intro';
+import { Projects } from 'components/home-sections/projects';
+import { Resume } from 'components/home-sections/resume';
 import { Page } from 'layouts/page';
 
 export default function HomePage() {

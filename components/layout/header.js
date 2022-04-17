@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Nav } from 'components/layout/Nav';
+import { Nav } from 'components/layout/nav';
 import portrait from 'public/portrait.png';
 
 export function Header() {
