@@ -1,64 +1,40 @@
-import { BookmarkCard, CardGrid } from '@/components/card-grid';
-import { FilterToggle } from '@/components/filter-toggle';
-import { PageHeader } from '@/components/page-header';
-import { NarrowPage } from '@/layouts/narrow-page';
-import { getBookmarks } from '@/lib/bookmarks';
-import { hyphenize } from '@/lib/helpers';
-import { useMemo, useState } from 'react';
+import { Page } from 'layouts/page';
+import { Card, CardGrid } from 'components/layout/card-grid';
+import { Quote } from 'components/content/quote';
+import careerAndLife from 'content/bookmarks/career-and-life';
+import webDevelopment from 'content/bookmarks/web-development';
 
-export const pageInfo = {
+const pageInfo = {
   title: 'Bookmarks',
   description:
-    'I bookmark anything I find worth going back to; whether it is a tool I would use for work, or just a thought-provoking article on a random topic — it ends up here.',
+    'Tools and articles I found on the web that I might want to go back to later.',
 };
 
-const filterValues = ['All', 'Articles', 'Tools'];
-
-export default function Bookmarks({ bookmarks }) {
-  const [filterIndex, setFilterIndex] = useState(0);
-  const filteredBookmarks = useMemo(() => {
-    let filteredBookmarks = bookmarks || [];
-
-    if (filterIndex > 0) {
-      filteredBookmarks = filteredBookmarks.filter(
-        item => item.type === hyphenize(filterValues[filterIndex]),
-      );
-    }
-
-    return filteredBookmarks;
-  }, [bookmarks, filterIndex]);
-
-  const handleFilterChange = () => {
-    if (filterValues[filterIndex + 1]) {
-      setFilterIndex(filterIndex + 1);
-    } else {
-      setFilterIndex(0);
-    }
-  };
-
+export default function BookmarksPage() {
   return (
-    <NarrowPage title={pageInfo.title} description={pageInfo.description}>
-      <PageHeader title={pageInfo.title} description={pageInfo.description} />
-      <FilterToggle
-        filterValues={filterValues}
-        currentIndex={filterIndex}
-        onClick={handleFilterChange}
+    <Page title={pageInfo.title} description={pageInfo.description}>
+      <CardGrid
+        title="Web Development"
+        items={webDevelopment}
+        component={BookmarkCard}
       />
       <CardGrid
-        items={filteredBookmarks}
+        title="Career & Life"
+        items={careerAndLife}
         component={BookmarkCard}
-        isSingleColumn
       />
-    </NarrowPage>
+    </Page>
   );
 }
 
-export async function getStaticProps() {
-  const bookmarks = getBookmarks();
-
-  return {
-    props: {
-      bookmarks,
-    },
-  };
+function BookmarkCard(bookmark) {
+  return (
+    <Card
+      {...bookmark}
+      description={
+        bookmark.quote ? <Quote text={bookmark.quote} /> : bookmark.description
+      }
+      meta={<div>{new URL(bookmark.url).hostname}</div>}
+    />
+  );
 }

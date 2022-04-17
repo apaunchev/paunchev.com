@@ -1,47 +1,26 @@
-import { PageHeader } from '@/components/page-header';
-import { TableOfContents } from '@/components/table-of-contents';
-import { NarrowPage } from '@/layouts/narrow-page';
-import { WidePage } from '@/layouts/wide-page';
-import { baseComponents } from '@/lib/base-components';
-import { getHeadings } from '@/lib/helpers';
-import { getSnippetBySlug, getSnippets } from '@/lib/snippets';
 import { MDXRemote } from 'next-mdx-remote';
+import { Page } from 'layouts/page';
+import { baseComponents } from 'lib/base-components';
+import { getSnippetBySlug, getSnippets } from 'lib/snippets';
 
-export default function Snippet({
+export default function SnippetPage({
   snippet: { title, description, image, source },
-  headings,
 }) {
-  return headings ? (
-    <WidePage title={title} description={description} image={image}>
-      <div className="toc-container">
-        <div className="toc-side">
-          <TableOfContents headings={headings} />
-        </div>
-        <div className="toc-content">
-          <MDXRemote {...source} components={baseComponents} />
-        </div>
+  return (
+    <Page title={title} description={description} image={image}>
+      <div className="max-w-none prose prose-headings:font-medium">
+        <MDXRemote {...source} components={baseComponents} />
       </div>
-    </WidePage>
-  ) : (
-    <NarrowPage title={title} description={description}>
-      <PageHeader title={title} description={description} image={image} />
-      <MDXRemote {...source} components={baseComponents} />
-    </NarrowPage>
+    </Page>
   );
 }
 
 export async function getStaticProps({ params }) {
   const snippet = await getSnippetBySlug(params.type, params.slug);
-  let headings = null;
-
-  if (snippet.showTOC) {
-    headings = snippet.showTOC && getHeadings(snippet.rawMDX);
-  }
 
   return {
     props: {
       snippet,
-      headings,
     },
   };
 }

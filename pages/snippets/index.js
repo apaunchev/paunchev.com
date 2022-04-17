@@ -1,20 +1,18 @@
-import { CardGrid } from '@/components/card-grid';
-import { PageHeader } from '@/components/page-header';
-import { NarrowPage } from '@/layouts/narrow-page';
-import { getSnippets } from '@/lib/snippets';
+import { CardGrid } from 'components/layout/card-grid';
+import { Page } from 'layouts/page';
+import { getSnippets } from 'lib/snippets';
 
 const pageInfo = {
   title: 'Snippets',
   description:
-    'This is a collection of random bits of code or commands that I wrote or discovered at some point and thought they might be useful again later. I also try to document things I’ve learned from them.',
+    'A collection of computer code or commands that I once used or learned from.',
 };
 
-export default function Snippets({ snippets }) {
+export default function SnippetsPage({ snippets }) {
   return (
-    <NarrowPage title={pageInfo.title} description={pageInfo.description}>
-      <PageHeader title={pageInfo.title} description={pageInfo.description} />
+    <Page title={pageInfo.title} description={pageInfo.description}>
       <CardGrid items={snippets} />
-    </NarrowPage>
+    </Page>
   );
 }
 
