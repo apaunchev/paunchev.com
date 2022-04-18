@@ -15,10 +15,7 @@ const projects = [
 export function Projects() {
   return (
     <section className="flex flex-col gap-4">
-      <Heading
-        title="Projects"
-        description="A selection of personal projects."
-      />
+      <Heading title="Projects" size="2xl" />
       <CardGrid>
         {projects.map(p => (
           <Project key={p} repository={p} />

@@ -35,15 +35,10 @@ const data = [
   },
 ];
 
-const pageInfo = {
-  title: 'Résumé',
-  description: 'Where I’ve worked and studied so far.',
-};
-
 export function Resume() {
   return (
     <section className="flex flex-col gap-4">
-      <Heading title={pageInfo.title} description={pageInfo.description} />
+      <Heading title="Résumé" size="2xl" />
       <ol className="flex flex-col gap-4" reversed>
         {data.map(item => (
           <ResumeItem key={item.when} {...item} />

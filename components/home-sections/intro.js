@@ -3,18 +3,14 @@ import { GitHub, Linkedin, Mail } from 'react-feather';
 
 export function Intro() {
   return (
-    <section>
+    <section className="max-w-prose">
       <p>
         <span className="block text-3xl font-semibold">Hey, I’m Angel—</span>
-        <span className="block mt-2 text-lg">
-          a software engineer from Sofia, Bulgaria. With knowledge across the
-          stack and experience in cross-functional collaboration, I help teams
-          provide robust solutions to real customer problems.
+        <span className="block mt-2 text-lg md:text-xl">
+          a software engineer who helps companies build ambitious ideas. I
+          specialise in web and mobile applications with a focus on simplicity
+          and usability.
         </span>
-      </p>
-      <p className="mt-4 text-lg">
-        Specialties: JavaScript, CSS, front-end architecture, performance, user
-        experience, accessibility.
       </p>
       <p className="mt-6 flex flex-wrap gap-4">
         <SocialLink className="bg-[#333]" href="https://github.com/apaunchev">

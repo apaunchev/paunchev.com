@@ -4,8 +4,7 @@ import { getSnippets } from 'lib/snippets';
 
 const pageInfo = {
   title: 'Snippets',
-  description:
-    'A collection of computer code or commands that I once used or learned from.',
+  description: '',
 };
 
 export default function SnippetsPage({ snippets }) {

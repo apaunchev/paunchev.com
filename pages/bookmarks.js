@@ -6,8 +6,7 @@ import webDevelopment from 'content/bookmarks/web-development';
 
 const pageInfo = {
   title: 'Bookmarks',
-  description:
-    'Tools and articles I found on the web that I might want to go back to later.',
+  description: '',
 };
 
 export default function BookmarksPage() {
