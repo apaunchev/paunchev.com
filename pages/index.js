@@ -5,7 +5,7 @@ import { Page } from 'layouts/page';
 
 export default function HomePage() {
   return (
-    <Page showHeading={false}>
+    <Page>
       <Intro />
       <Projects />
       <Resume />
