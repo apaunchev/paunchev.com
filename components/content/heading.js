@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-export function Heading({ title, description, image, size = '3xl' }) {
+export function Heading({ title, description, image, size = 'text-3xl' }) {
   const textContent = (
     <>
-      <h1 className={`text-${size} font-semibold`}>{title}</h1>
+      <h1 className={`${size} font-semibold`}>{title}</h1>
       {description ? (
         <p className="mt-1 text-lg text-zinc-500">{description}</p>
       ) : null}

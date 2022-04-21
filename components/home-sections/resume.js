@@ -41,7 +41,7 @@ export function Resume() {
       <Heading
         title="Résumé"
         description="Summary of where I’ve worked and studied."
-        size="2xl"
+        size="text-2xl"
       />
       <ol className="flex flex-col gap-4 max-w-prose" reversed>
         {data.map(item => (
