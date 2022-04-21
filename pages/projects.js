@@ -3,7 +3,7 @@ import { Star } from 'react-feather';
 import { useRepository } from 'hooks/useRepository';
 import { Card, CardGrid } from 'components/layout/card-grid';
 import { Skeleton } from 'components/content/skeleton';
-import { Heading } from 'components/content/heading';
+import { Page } from 'layouts/page';
 
 const projects = [
   'apaunchev/playground',
@@ -12,16 +12,20 @@ const projects = [
   'apaunchev/paunchev.com',
 ];
 
-export function Projects() {
+const pageInfo = {
+  title: 'Projects',
+  description: 'Personal open-source projects I (try to) maintain.',
+};
+
+export default function Projects() {
   return (
-    <section className="flex flex-col gap-4">
-      <Heading title="Projects" size="2xl" />
+    <Page title={pageInfo.title} description={pageInfo.description}>
       <CardGrid>
         {projects.map(p => (
           <Project key={p} repository={p} />
         ))}
       </CardGrid>
-    </section>
+    </Page>
   );
 }
 
@@ -40,6 +44,7 @@ function Project({ repository }) {
               className={clsx(
                 'inline-block w-3 h-3 rounded-full align-middle',
                 {
+                  'bg-zinc-200': language === undefined,
                   'bg-yellow-300': language === 'JavaScript',
                   'bg-blue-900': language === 'TypeScript',
                 },

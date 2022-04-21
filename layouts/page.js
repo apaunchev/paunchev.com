@@ -15,7 +15,12 @@ export function Page({ children, title, description, image }) {
         <Header />
         <main className="mt-6 md:mt-12 mx-auto max-w-3xl">
           {title ? (
-            <Heading title={title} description={description} image={image} />
+            <Heading
+              title={title}
+              description={description}
+              image={image}
+              size="3xl"
+            />
           ) : null}
           <div className="mt-4 flex flex-col gap-8 md:mt-6 md:gap-12">
             {children}

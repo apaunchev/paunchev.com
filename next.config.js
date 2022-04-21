@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
+  images: {
+    domains: ['i.gr-assets.com', 'a.ltrbxd.com'],
+  },
   async headers() {
     return [
       {

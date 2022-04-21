@@ -1,27 +1,18 @@
 import { Page } from 'layouts/page';
 import { Card, CardGrid } from 'components/layout/card-grid';
 import { Quote } from 'components/content/quote';
-import careerAndLife from 'content/bookmarks/career-and-life';
-import webDevelopment from 'content/bookmarks/web-development';
+import bookmarks from 'content/bookmarks';
 
 const pageInfo = {
   title: 'Bookmarks',
-  description: '',
+  description:
+    'Blog posts and articles I’ve learned something from and find worth going back to.',
 };
 
 export default function BookmarksPage() {
   return (
     <Page title={pageInfo.title} description={pageInfo.description}>
-      <CardGrid
-        title="Web Development"
-        items={webDevelopment}
-        component={BookmarkCard}
-      />
-      <CardGrid
-        title="Career & Life"
-        items={careerAndLife}
-        component={BookmarkCard}
-      />
+      <CardGrid items={bookmarks} component={BookmarkCard} />
     </Page>
   );
 }

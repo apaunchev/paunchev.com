@@ -37,39 +37,53 @@ const data = [
 
 export function Resume() {
   return (
-    <section className="flex flex-col gap-4">
-      <Heading title="Résumé" size="2xl" />
-      <ol className="flex flex-col gap-4" reversed>
+    <section className="flex flex-col gap-6">
+      <Heading
+        title="Résumé"
+        description="Summary of where I’ve worked and studied."
+        size="2xl"
+      />
+      <ol className="flex flex-col gap-4 max-w-prose" reversed>
         {data.map(item => (
-          <ResumeItem key={item.when} {...item} />
+          <li key={item.when} className="flex gap-4">
+            <ResumeItem {...item} />
+          </li>
         ))}
       </ol>
+      <p className="prose">
+        See{' '}
+        <a className="underline" href="https://www.linkedin.com/in/apaunchev/">
+          LinkedIn
+        </a>{' '}
+        for details.
+      </p>
     </section>
   );
 }
 
 function ResumeItem({ where, what, when, url, image }) {
   return (
-    <li className="flex items-center gap-3">
-      <a
-        className="flex-none block text-[0px] w-16 aspect-square rounded-md transition hover:opacity-90"
-        href={url}
-      >
+    <a className="flex gap-4 transition hover:opacity-90" href={url}>
+      <div className="flex-none text-[0px]">
         <Image
           src={image}
-          alt="eBag.bg"
+          alt={where}
           width={64}
           height={64}
           className="rounded-md"
         />
-      </a>
-      <div>
-        <p className="flex items-baseline">
-          <span className="font-semibold">{where}</span>
-        </p>
-        <p>{what}</p>
-        <p className="text-zinc-500">{when}</p>
       </div>
-    </li>
+      <div>
+        <p className="flex flex-wrap items-center gap-x-2">
+          <span className="font-semibold text-lg">{where}</span>
+          <span className="inline-block flex-none rounded bg-zinc-200 p-1 text-xs font-medium leading-none">
+            {when}
+          </span>
+        </p>
+        <p>
+          <span className="text-zinc-500">{what}</span>
+        </p>
+      </div>
+    </a>
   );
 }

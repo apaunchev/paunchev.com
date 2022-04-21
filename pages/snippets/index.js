@@ -4,7 +4,7 @@ import { getSnippets } from 'lib/snippets';
 
 const pageInfo = {
   title: 'Snippets',
-  description: '',
+  description: 'Code snippets, cheat sheets and other guides for quick access.',
 };
 
 export default function SnippetsPage({ snippets }) {

@@ -5,7 +5,7 @@ export function Heading({ title, description, image, size = '3xl' }) {
     <>
       <h1 className={`text-${size} font-semibold`}>{title}</h1>
       {description ? (
-        <p className="mt-1 text-xl text-zinc-500">{description}</p>
+        <p className="mt-1 text-lg text-zinc-500">{description}</p>
       ) : null}
     </>
   );

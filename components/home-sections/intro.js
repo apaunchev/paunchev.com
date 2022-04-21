@@ -1,45 +1,28 @@
-import clsx from 'clsx';
-import { GitHub, Linkedin, Mail } from 'react-feather';
-
 export function Intro() {
   return (
-    <section className="max-w-prose">
+    <section className="prose prose-zinc prose-h1:text-3xl prose-h1:mb-0 prose-p:text-zinc-800">
+      <h1>
+        I’m a software engineer from Bulgaria who likes to turn ambitious ideas
+        into reality.
+      </h1>
       <p>
-        <span className="block text-3xl font-semibold">Hey, I’m Angel—</span>
-        <span className="block mt-2 text-lg md:text-xl">
-          a software engineer who helps companies build ambitious ideas. I
-          specialise in web and mobile applications with a focus on simplicity
-          and usability.
-        </span>
+        I’ve been deeply invested in computers and technology since I was in
+        school. What used to be just a hobby turned into my field of study, then
+        into my career.
       </p>
-      <p className="mt-6 flex flex-wrap gap-4">
-        <SocialLink className="bg-[#333]" href="https://github.com/apaunchev">
-          <GitHub height={16} /> GitHub
-        </SocialLink>
-        <SocialLink
-          className="bg-[#0e76a8]"
-          href="https://www.linkedin.com/in/apaunchev/"
-        >
-          <Linkedin height={16} /> LinkedIn
-        </SocialLink>
-        <SocialLink className="bg-violet-700" href="mailto:apaunchev@gmail.com">
-          <Mail height={16} /> Email
-        </SocialLink>
+      <p>
+        At present, I work as a front-end engineer and try to build easy-to-use,
+        resilient and scalable interfaces. I put the user first, but the
+        developer is a close second. My tools of the trade include modern
+        JavaScript and CSS. I know my way around a backend API, but the frontend
+        is where I feel at home.
+      </p>
+      <p>
+        I use this site to experiment with web technologies—it changes often and
+        abruptly. Instead of making yet another portfolio that never gets
+        updated, I embed live data from other places (where possible), so that
+        it automatically shows what I’ve been up to recently.
       </p>
     </section>
-  );
-}
-
-function SocialLink({ children, className, href }) {
-  return (
-    <a
-      className={clsx(
-        className,
-        'flex items-center gap-1 py-2 px-2.5 no-underline rounded-md text-white transition hover:opacity-90',
-      )}
-      href={href}
-    >
-      {children}
-    </a>
   );
 }

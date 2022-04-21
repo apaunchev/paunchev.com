@@ -11,7 +11,7 @@ const GITHUB_HEADERS = new Headers({
 export const STALE_DURATION = 3600;
 export const FRESH_DURATION = STALE_DURATION / 2;
 
-export default async function route(req, res) {
+export default async function repository(req, res) {
   try {
     const {
       repository: [user, repository],
@@ -34,7 +34,7 @@ export default async function route(req, res) {
       stars: response.stargazers_count,
       language: response.language,
     });
-  } catch {
-    res.status(500).send(undefined);
+  } catch (err) {
+    res.status(500).send(err);
   }
 }

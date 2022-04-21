@@ -8,7 +8,7 @@ export default function SnippetPage({
 }) {
   return (
     <Page title={title} description={description} image={image}>
-      <div className="max-w-none prose prose-headings:font-medium">
+      <div className="max-w-none prose prose-zinc prose-headings:font-medium prose-p:text-zinc-800">
         <MDXRemote {...source} components={baseComponents} />
       </div>
     </Page>
