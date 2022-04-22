@@ -35,8 +35,8 @@ function Project({ repository }) {
   return (
     <Card
       url={`https://github.com/${repository}`}
-      title={name ?? <Skeleton className="w-40" />}
-      description={description ?? <Skeleton className="w-60" />}
+      title={name ?? <Skeleton className="!w-40" />}
+      description={description ?? <Skeleton className="!w-80" />}
       meta={
         <>
           <div className="flex items-center gap-1">
@@ -44,7 +44,7 @@ function Project({ repository }) {
               className={clsx(
                 'inline-block w-3 h-3 rounded-full align-middle',
                 {
-                  'bg-zinc-200': language === undefined,
+                  'bg-zinc-400': language === undefined,
                   'bg-yellow-300': language === 'JavaScript',
                   'bg-blue-900': language === 'TypeScript',
                 },
@@ -53,7 +53,7 @@ function Project({ repository }) {
             {language ?? <Skeleton />}
           </div>
           <div className="flex items-center">
-            <Star height={16} /> {stars ?? <Skeleton className="w-6" />}
+            <Star height={16} /> {stars ?? <Skeleton />}
           </div>
         </>
       }

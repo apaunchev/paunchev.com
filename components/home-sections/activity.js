@@ -76,7 +76,7 @@ function ActivityCard({ url, title, description, rating, image, when, year }) {
             className="rounded-md"
           />
         ) : (
-          <Skeleton className="w-16 h-24" />
+          <Skeleton className="!w-16 !h-24 !rounded-md" />
         )}
       </div>
       <div>
@@ -85,7 +85,7 @@ function ActivityCard({ url, title, description, rating, image, when, year }) {
         </p>
         <p className="mt-1">
           <span className="font-semibold text-lg">
-            {title ?? <Skeleton className="w-32" />}
+            {title ?? <Skeleton className="!w-32" />}
           </span>
           {year ? (
             <span className="ml-1.5 inline-block flex-none rounded bg-zinc-200 p-1 text-xs font-medium leading-none">
@@ -94,7 +94,11 @@ function ActivityCard({ url, title, description, rating, image, when, year }) {
           ) : null}
         </p>
         {description ? <p className="text-zinc-500">{description}</p> : null}
-        {rating ? <p>{getStarRating(rating)}</p> : null}
+        {rating ? (
+          <p>{getStarRating(rating)}</p>
+        ) : (
+          <Skeleton className="!w-16" />
+        )}
       </div>
     </a>
   );
