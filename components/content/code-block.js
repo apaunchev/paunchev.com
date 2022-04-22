@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/palenight';
+import theme from 'prism-react-renderer/themes/oceanicNext';
 import { delay } from 'lib/helpers';
 
 function CopyButton({ content }) {
