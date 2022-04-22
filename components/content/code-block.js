@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import clsx from 'clsx';
 import { useState } from 'react';
+import { Check, Copy } from 'react-feather';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/oceanicNext';
 import { delay } from 'lib/helpers';
@@ -17,12 +18,14 @@ function CopyButton({ content }) {
 
   return (
     <button
-      className="absolute top-2 right-2 py-2 px-3 bg-white font-sans text-zinc-800 text-sm border-0 rounded-md cursor-pointer disabled:cursor-not-allowed disabled:text-zinc-500"
+      className="absolute top-2 right-2 py-2 px-3 bg-white border-0 rounded-md text-zinc-800 cursor-pointer disabled:cursor-not-allowed transition hover:opacity-90"
       type="button"
       disabled={copied}
+      aria-label="Copy"
+      title="Copy"
       onClick={handleClick}
     >
-      {copied ? 'Copied' : 'Copy'}
+      {copied ? <Check size={14} /> : <Copy size={14} />}
     </button>
   );
 }
@@ -32,7 +35,7 @@ export function CodeBlock({ children }) {
   const content = children.props.children.trim();
 
   return (
-    <div className="lg:-mx-14">
+    <div className="lg:-mx-14 relative">
       <Highlight
         {...defaultProps}
         theme={theme}
@@ -41,7 +44,7 @@ export function CodeBlock({ children }) {
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <pre
-            className={clsx(className, 'relative p-6 overflow-auto rounded-md')}
+            className={clsx(className, 'p-4 lg:p-6 rounded-md')}
             style={style}
           >
             <CopyButton content={content} />
