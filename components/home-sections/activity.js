@@ -3,20 +3,7 @@ import { Heading } from 'components/content/heading';
 import { useLatestBook } from 'hooks/useLatestBook';
 import { useLatestFilm } from 'hooks/useLatestFilm';
 import { Skeleton } from 'components/content/skeleton';
-
-export const getStarRating = rating => Array(rating).fill('★').join('');
-
-export const formatDaysAgo = (value, locale = 'en') => {
-  if (!value) {
-    return null;
-  }
-
-  const date = new Date(value);
-  const deltaDays = (date.getTime() - Date.now()) / (1000 * 3600 * 24);
-  const formatter = new Intl.RelativeTimeFormat(locale);
-
-  return formatter.format(Math.round(deltaDays), 'days');
-};
+import { formatDaysAgo, getStarRating } from 'lib/helpers';
 
 export function Activity() {
   const latestBook = useLatestBook();

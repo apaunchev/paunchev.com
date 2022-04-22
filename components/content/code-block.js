@@ -3,8 +3,7 @@ import clsx from 'clsx';
 import { useState } from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/palenight';
-
-const delay = duration => new Promise(resolve => setTimeout(resolve, duration));
+import { delay } from 'lib/helpers';
 
 const copyToClipboard = content => {
   const el = document.createElement('textarea');
