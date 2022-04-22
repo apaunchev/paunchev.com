@@ -5,23 +5,11 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/palenight';
 import { delay } from 'lib/helpers';
 
-const copyToClipboard = content => {
-  const el = document.createElement('textarea');
-  el.value = content;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
-};
-
 function CopyButton({ content }) {
   const [copied, setCopied] = useState(false);
 
   const handleClick = async () => {
-    copyToClipboard(content);
+    navigator.clipboard.writeText(content);
     setCopied(true);
     await delay(2000);
     setCopied(false);
