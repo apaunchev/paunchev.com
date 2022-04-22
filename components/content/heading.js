@@ -13,7 +13,7 @@ export function Heading({ title, description, image, size = 'text-3xl' }) {
   return image ? (
     <div className="flex justify-between gap-4">
       <div>{textContent}</div>
-      <div className="flex-none">
+      <div className="flex-none text-[0px]">
         <Image {...image} alt="" />
       </div>
     </div>
