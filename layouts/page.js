@@ -22,9 +22,7 @@ export function Page({ children, title, description, image }) {
               size="text-3xl"
             />
           ) : null}
-          <div className="mt-4 flex flex-col gap-8 md:mt-6 md:gap-12">
-            {children}
-          </div>
+          <div className="mt-4 flex flex-col gap-8 md:mt-6">{children}</div>
         </main>
       </div>
     </>

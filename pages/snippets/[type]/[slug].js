@@ -4,10 +4,19 @@ import { baseComponents } from 'lib/base-components';
 import { getSnippetBySlug, getSnippets } from 'lib/snippets';
 
 export default function SnippetPage({
-  snippet: { title, description, image, source },
+  snippet: { title, description, type, source },
 }) {
   return (
-    <Page title={title} description={description} image={image}>
+    <Page
+      title={title}
+      description={description}
+      image={{
+        src: `/icons/${type}.svg`,
+        width: 36,
+        height: 36,
+        alt: '',
+      }}
+    >
       <div className="max-w-none prose prose-zinc prose-headings:font-medium prose-p:text-zinc-800">
         <MDXRemote {...source} components={baseComponents} />
       </div>
@@ -26,7 +35,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const snippets = await getSnippets();
+  const snippets = await getSnippets(false);
 
   return {
     paths: snippets.map(({ type, slug }) => ({
