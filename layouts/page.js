@@ -19,7 +19,7 @@ export function Page({ children, title, description, image }) {
               title={title}
               description={description}
               image={image}
-              size="text-3xl"
+              h1ClassName="text-3xl"
             />
           ) : null}
           <div className="mt-4 flex flex-col gap-8 md:mt-6">{children}</div>

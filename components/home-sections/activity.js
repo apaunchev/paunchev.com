@@ -14,7 +14,7 @@ export function Activity() {
       <Heading
         title="Activity"
         description="Books I read and films I watched recently."
-        size="text-2xl"
+        h1ClassName="text-2xl"
       />
       <ActivityCard
         url={latestBook.goodreadsUrl}
