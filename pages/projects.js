@@ -52,8 +52,8 @@ function Project({ repository }) {
             />
             {language ?? <Skeleton />}
           </div>
-          <div className="flex items-center">
-            <Star height={16} /> {stars ?? <Skeleton />}
+          <div className="flex items-center gap-1">
+            <Star size={16} /> {stars ?? <Skeleton />}
           </div>
         </>
       }
