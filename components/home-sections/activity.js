@@ -16,7 +16,7 @@ export function Activity() {
         description="Books I read and films I watched recently."
         h1ClassName="text-2xl"
       />
-      <ActivityCard
+      <ActivityItem
         url={latestBook.goodreadsUrl}
         title={latestBook.title}
         description={latestBook.author}
@@ -24,7 +24,7 @@ export function Activity() {
         image={latestBook.coverImageUrl}
         when={latestBook.finishedAt}
       />
-      <ActivityCard
+      <ActivityItem
         url={latestFilm.url}
         title={latestFilm.title}
         rating={latestFilm.rating}
@@ -50,7 +50,7 @@ export function Activity() {
   );
 }
 
-function ActivityCard({ url, title, description, rating, image, when, year }) {
+function ActivityItem({ url, title, description, rating, image, when, year }) {
   return (
     <a className="flex gap-4 transition hover:opacity-90" href={url}>
       <div className="flex-none text-[0px]">
