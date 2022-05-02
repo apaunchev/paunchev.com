@@ -1,5 +1,8 @@
-import books from 'content/books';
+import { fetcher } from 'lib/fetcher';
+import useSWR from 'swr/immutable';
 
 export function useLatestBook() {
-  return books[books.length - 1];
+  const { data } = useSWR('/api/goodreads/latest', fetcher);
+
+  return data ?? {};
 }

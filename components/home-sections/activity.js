@@ -17,12 +17,13 @@ export function Activity() {
         h1ClassName="text-2xl"
       />
       <ActivityItem
-        url={latestBook.goodreadsUrl}
+        url={latestBook.url}
         title={latestBook.title}
         description={latestBook.author}
         rating={latestBook.rating}
-        image={latestBook.coverImageUrl}
-        when={latestBook.finishedAt}
+        image={latestBook.cover}
+        year={latestFilm.year}
+        when={latestBook.date}
       />
       <ActivityItem
         url={latestFilm.url}
