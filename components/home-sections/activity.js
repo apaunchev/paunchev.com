@@ -22,7 +22,7 @@ export function Activity() {
         description={latestBook.author}
         rating={latestBook.rating}
         image={latestBook.cover}
-        year={latestFilm.year}
+        year={latestBook.year}
         when={latestBook.date}
       />
       <ActivityItem
