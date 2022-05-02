@@ -27,7 +27,6 @@ export default async function latestFilm(req, res) {
       )
       .status(200)
       .json({
-        film,
         poster,
         title: decode(film['letterboxd:filmTitle']),
         year: film['letterboxd:filmYear'],
