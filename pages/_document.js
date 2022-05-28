@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="bg-zinc-50 text-zinc-800 font-sans">
+      <Html lang="en" className="bg-zinc-50 text-zinc-800">
         <Head>
           <link
             rel="apple-touch-icon"
