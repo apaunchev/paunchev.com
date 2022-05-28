@@ -43,13 +43,7 @@ export function Resume() {
         description="Summary of where I’ve worked and studied."
         h1ClassName="text-2xl"
       />
-      <ol className="flex flex-col gap-4 max-w-prose" reversed>
-        {data.map(item => (
-          <li key={item.when} className="flex gap-4">
-            <ResumeItem {...item} />
-          </li>
-        ))}
-      </ol>
+      <ResumeList items={data} />
       <p className="prose">
         See{' '}
         <a className="underline" href="https://www.linkedin.com/in/apaunchev/">
@@ -58,6 +52,16 @@ export function Resume() {
         for details.
       </p>
     </section>
+  );
+}
+
+function ResumeList({ items }) {
+  return (
+    <ol className="flex flex-col gap-4 max-w-prose" reversed>
+      {items.map(item => (
+        <ResumeItem key={item.when} {...item} />
+      ))}
+    </ol>
   );
 }
 
