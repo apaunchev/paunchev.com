@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import { Heading } from 'components/content/heading';
-import { useLatestBook } from 'hooks/useLatestBook';
-import { useLatestFilm } from 'hooks/useLatestFilm';
 import { Skeleton } from 'components/content/skeleton';
 import { formatDaysAgo, getStarRating } from 'lib/helpers';
+import { useLatestActivity } from 'hooks/useLatestActivity';
 
 export function Activity() {
-  const latestBook = useLatestBook();
-  const latestFilm = useLatestFilm();
+  const latestActivity = useLatestActivity();
 
   return (
     <section className="flex flex-col gap-6">
@@ -16,23 +14,7 @@ export function Activity() {
         description="Books I read and films I watched recently."
         h1ClassName="text-2xl"
       />
-      <ActivityItem
-        url={latestBook.url}
-        title={latestBook.title}
-        description={latestBook.author}
-        rating={latestBook.rating}
-        image={latestBook.cover}
-        year={latestBook.year}
-        when={latestBook.date}
-      />
-      <ActivityItem
-        url={latestFilm.url}
-        title={latestFilm.title}
-        rating={latestFilm.rating}
-        image={latestFilm.poster}
-        year={latestFilm.year}
-        when={latestFilm.date}
-      />
+      <ActivityList items={latestActivity} />
       <p className="prose">
         See{' '}
         <a
@@ -51,7 +33,25 @@ export function Activity() {
   );
 }
 
-function ActivityItem({ url, title, description, rating, image, when, year }) {
+function ActivityList({ items = [] }) {
+  const expectedItemsCount = 4;
+
+  if (items.length === 0) {
+    items = [...Array(expectedItemsCount)].map((_, index) => ({
+      id: index,
+    }));
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      {items.map(item => (
+        <ActivityItem key={item.id} {...item} />
+      ))}
+    </div>
+  );
+}
+
+function ActivityItem({ url, title, subtitle, rating, image, date, year }) {
   return (
     <a className="flex gap-4 transition hover:opacity-90" href={url}>
       <div className="flex-none text-[0px]">
@@ -69,19 +69,19 @@ function ActivityItem({ url, title, description, rating, image, when, year }) {
       </div>
       <div>
         <p className="uppercase font-semibold text-xs text-zinc-500">
-          {when ? formatDaysAgo(when) : <Skeleton />}
+          {date ? formatDaysAgo(date) : <Skeleton />}
         </p>
         <p className="mt-1">
-          <span className="font-semibold text-lg">
+          <span className="mr-1.5 font-semibold text-lg">
             {title ?? <Skeleton className="!w-32" />}
           </span>
           {year ? (
-            <span className="ml-1.5 inline-block flex-none rounded bg-zinc-200 p-1 text-xs font-medium leading-none">
+            <span className="relative top-[-2px] inline-block rounded bg-zinc-200 p-1 text-xs font-medium leading-none">
               {year}
             </span>
           ) : null}
         </p>
-        {description ? <p className="text-zinc-500">{description}</p> : null}
+        {subtitle ? <p className="text-zinc-500">{subtitle}</p> : null}
         {rating ? (
           <p>{getStarRating(rating)}</p>
         ) : (
