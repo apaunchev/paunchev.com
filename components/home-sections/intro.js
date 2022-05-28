@@ -1,9 +1,12 @@
+import { routes } from 'lib/routes';
+import Link from 'next/link';
+
 export function Intro() {
   return (
     <section className="prose prose-zinc prose-h1:text-3xl prose-h1:mb-0 prose-p:text-zinc-800">
       <h1>
-        I’m a software engineer from Bulgaria who likes to turn ambitious ideas
-        into reality.
+        I’m a software engineer from Bulgaria who turns ambitious ideas into
+        reality.
       </h1>
       <p>
         I’ve been deeply invested in computers and technology since I was in
@@ -20,8 +23,11 @@ export function Intro() {
       <p>
         I use this site to experiment with web technologies—it changes often and
         abruptly. Instead of making yet another portfolio that never gets
-        updated, I embed live data from other places (where possible), so that
-        it automatically shows what I’ve been up to recently.
+        updated, I embed live data from other places, so that it automatically
+        shows what I’ve been up to recently. Also, I use it as long-term storage
+        for various <Link href={routes.bookmarks.href}>bookmarks</Link> and{' '}
+        <Link href={routes.snippets.href}>snippets</Link> that I may want to go
+        back to later.
       </p>
     </section>
   );
