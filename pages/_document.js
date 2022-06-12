@@ -6,6 +6,20 @@ class MyDocument extends Document {
       <Html lang="en" className="bg-zinc-50 text-zinc-800">
         <Head>
           <link
+            as="font"
+            crossOrigin="anonymous"
+            href="/fonts/inter.woff2"
+            rel="preload"
+            type="font/woff2"
+          />
+          <link
+            as="font"
+            crossOrigin="anonymous"
+            href="/fonts/inter-italic.woff2"
+            rel="preload"
+            type="font/woff2"
+          />
+          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/apple-touch-icon.png"
@@ -21,11 +35,6 @@ class MyDocument extends Document {
             type="image/png"
             sizes="16x16"
             href="/favicon-16x16.png"
-          />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-            rel="stylesheet"
           />
         </Head>
         <body>
