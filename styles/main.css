@@ -21,3 +21,7 @@
   src: url('/fonts/inter-italic.woff2') format('woff2');
   unicode-range: U+20-7E;
 }
+
+html {
+  @apply bg-zinc-50 text-zinc-800;
+}

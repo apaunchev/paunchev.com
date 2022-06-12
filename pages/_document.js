@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="bg-zinc-50 text-zinc-800">
+      <Html lang="en">
         <Head>
           <link
             as="font"
