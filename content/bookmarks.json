@@ -1,5 +1,17 @@
 [
   {
+    "createdAt": "2022-07-03 12:00:00",
+    "title": "Strong opinions, weakly held",
+    "quote": "Allow your intuition to guide you to a conclusion, no matter how imperfect (…). Then (…) prove yourself wrong.",
+    "url": "https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/"
+  },
+  {
+    "createdAt": "2022-07-03 12:00:00",
+    "description": "Useful to reread as your progress in your SE career. As a sanity check and a to-do list.",
+    "title": "Software Engineering - The Soft Parts",
+    "url": "https://addyosmani.com/blog/software-engineering-soft-parts/"
+  },
+  {
     "createdAt": "2022-05-01 12:00:00",
     "title": "\"F**k You\" Money",
     "quote": "Ironically, the best indicator of having \"f*ck you\" money is the absence of having to think about money at all.",
