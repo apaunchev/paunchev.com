@@ -1,4 +1,4 @@
-import { routes } from 'lib/routes';
+import { menu } from 'lib/menu';
 import Link from 'next/link';
 
 export function Intro() {
@@ -25,8 +25,8 @@ export function Intro() {
         abruptly. Instead of making yet another portfolio that never gets
         updated, I embed live data from other places, so that it automatically
         shows what I’ve been up to recently. Also, I use it as long-term storage
-        for various <Link href={routes.bookmarks.href}>bookmarks</Link> and{' '}
-        <Link href={routes.snippets.href}>snippets</Link> that I may want to go
+        for various <Link href={menu.bookmarks.href}>bookmarks</Link> and{' '}
+        <Link href={menu.snippets.href}>snippets</Link> that I may want to go
         back to later.
       </p>
     </section>

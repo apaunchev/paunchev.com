@@ -1,15 +1,15 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { routes } from 'lib/routes';
+import { menu } from 'lib/menu';
 
 export function Nav() {
   const router = useRouter();
 
   return (
     <nav className="flex flex-wrap items-center gap-x-2">
-      {Object.keys(routes).map(key => {
-        const { href, activePaths, title } = routes[key];
+      {Object.keys(menu).map(key => {
+        const { href, activePaths, title } = menu[key];
 
         return (
           <Link key={key} href={href}>
