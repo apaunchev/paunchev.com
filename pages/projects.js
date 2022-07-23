@@ -28,16 +28,18 @@ const projects = [
 export default function Projects() {
   return (
     <Page title={pageInfo.title} description={pageInfo.description}>
-      {projects.map(project => (
-        <Project key={project.name} {...project} />
-      ))}
+      <div className="flex flex-col gap-8">
+        {projects.map(project => (
+          <Project key={project.name} {...project} />
+        ))}
+      </div>
     </Page>
   );
 }
 
 function Project({ name, description, image, websiteUrl, githubUrl }) {
   return (
-    <div className="prose mb-6">
+    <div className="prose">
       <a
         href={websiteUrl || githubUrl}
         className="block text-[0px] bg-white shadow rounded-md transition-shadow hover:shadow-md"
