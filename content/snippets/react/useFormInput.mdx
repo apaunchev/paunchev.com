@@ -1,0 +1,19 @@
+---
+title: 'useFormInput'
+updatedAt: '2022-09-05 12:00:00'
+---
+
+```jsx
+function useFormInput(initialValue) {
+  const [value, setValue] = React.useState(initialValue);
+
+  function handleChange(e) {
+    setValue(e.target.value);
+  }
+
+  return {
+    value: value,
+    onChange: handleChange,
+  };
+}
+```
