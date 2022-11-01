@@ -44,5 +44,5 @@ h2 {
 }
 
 a {
-  @apply font-medium underline transition-colors hover:text-indigo-600;
+  @apply font-medium underline transition-colors hover:text-brand;
 }

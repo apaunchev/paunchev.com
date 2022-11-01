@@ -32,7 +32,7 @@ export function Layout({
               <Image
                 src={portrait}
                 alt="Portrait of the author"
-                className="h-16 w-16 rounded-full border-2 border-transparent transition-colors hover:border-indigo-600"
+                className="h-16 w-16 rounded-full border-2 border-transparent transition-colors hover:border-brand"
               />
             </Link>
             {children}
