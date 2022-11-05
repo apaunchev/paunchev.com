@@ -38,7 +38,7 @@ export function Layout({
       </main>
       <footer className="border-t border-zinc-100">
         <div className="px-6 pt-4 pb-8 md:px-12 md:pb-12 lg:px-24 lg:pb-16">
-          <div className="flex flex-col justify-start gap-3 sm:flex-row sm:justify-between">
+          <div className="flex max-w-prose flex-col justify-start gap-3 sm:flex-row sm:justify-between">
             <nav className="flex gap-3">
               <NavLink href="/">Home</NavLink>
               <NavLink href="/notes">Notes</NavLink>
