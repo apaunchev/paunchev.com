@@ -10,7 +10,7 @@ export function NavLink({
   return (
     <Link
       href={href}
-      className="text-sm font-semibold tracking-tight text-zinc-400 no-underline transition-colors hover:text-zinc-800"
+      className="text-sm font-semibold tracking-tight text-zinc-500 no-underline transition-colors hover:text-zinc-800"
     >
       {children}
     </Link>
