@@ -5,6 +5,9 @@ import portrait from "public/portrait.png";
 import { NavLink } from "./nav-link";
 import { SVGLink } from "./svg-link";
 
+const defaultDescription =
+  "Angel is a software engineer from Bulgaria who turns ambitious ideas into reality.";
+
 export function Layout({
   title,
   description,
@@ -20,7 +23,7 @@ export function Layout({
     <>
       <Head>
         <title>{formattedTitle}</title>
-        {description ? <meta name="description" content={description} /> : null}
+        <meta name="description" content={description ?? defaultDescription} />
       </Head>
       <main>
         <div className="px-6 pt-8 pb-12 md:px-12 md:pt-12 lg:px-24 lg:pt-16">
