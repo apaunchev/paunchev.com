@@ -1,10 +1,10 @@
 ---
 import ContentLink from "../components/ContentLink.astro";
-import Layout from "../layouts/Base.astro";
+import BaseLayout from "../layouts/Base.astro";
 import bookmarks from "../data/bookmarks.json";
 ---
 
-<Layout title="Bookmarks">
+<BaseLayout title="Bookmarks">
   <h1>Bookmarks</h1>
   <div class="flex flex-col gap-4">
     {
@@ -17,4 +17,4 @@ import bookmarks from "../data/bookmarks.json";
       ))
     }
   </div>
-</Layout>
+</BaseLayout>

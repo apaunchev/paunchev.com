@@ -1,5 +1,5 @@
 ---
-import Layout from "./Base.astro";
+import BaseLayout from "./Base.astro";
 
 interface Props {
   title?: string;
@@ -9,7 +9,7 @@ interface Props {
 const { title, description, frontmatter } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<BaseLayout title={title} description={description}>
   <p>
     <a href="/notes">&larr; Notes</a>
   </p>
@@ -17,4 +17,4 @@ const { title, description, frontmatter } = Astro.props;
   <article class="prose prose-zinc">
     <slot />
   </article>
-</Layout>
+</BaseLayout>

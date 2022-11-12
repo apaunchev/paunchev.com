@@ -1,15 +1,15 @@
 ---
 import ContentLink from "../components/ContentLink.astro";
-import Layout from "../layouts/Base.astro";
+import BaseLayout from "../layouts/Base.astro";
 
 const notes = await Astro.glob("./notes/*.md");
 ---
 
-<Layout title="Notes">
+<BaseLayout title="Notes">
   <h1>Notes</h1>
   {
     notes.map((note) => (
       <ContentLink href={note.url!} title={note.frontmatter.title} />
     ))
   }
-</Layout>
+</BaseLayout>
