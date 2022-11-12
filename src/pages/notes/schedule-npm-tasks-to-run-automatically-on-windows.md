@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Note.astro
 title: "Schedule npm tasks to run automatically on Windows"
 ---
 

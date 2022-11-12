@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Note.astro
 title: "Cache-Control directives"
 ---
 

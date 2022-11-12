@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Note.astro
 title: "Transfer git stash between computers"
 ---
 
