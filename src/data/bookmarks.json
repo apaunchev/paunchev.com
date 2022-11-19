@@ -1,5 +1,22 @@
 [
   {
+    "createdAt": "2022-11-19 12:00:00",
+    "title": "Designing a Candidate-Focused Interview Process",
+    "description": "I like companies that try to make the SWE interview process less broken.",
+    "url": "https://blog.readme.com/designing-a-candidate-focused-interview-process/"
+  },
+  {
+    "createdAt": "2022-11-19 12:00:00",
+    "title": "The Engineer/Manager Pendulum",
+    "quote": "You can only really improve at one of these things at a time: engineering or management.",
+    "url": "https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/"
+  },
+  {
+    "createdAt": "2022-11-19 12:00:00",
+    "title": "Engineering Management: The Pendulum Or The Ladder",
+    "url": "https://charity.wtf/2019/01/04/engineering-management-the-pendulum-or-the-ladder/"
+  },
+  {
     "createdAt": "2022-08-13 12:00:00",
     "title": "I can't save you, nobody can",
     "quote": "The best you can do is cheer them on, point them in the right direction, and give them the opportunities they need to prove that they have what it takes.",
