@@ -1,7 +1,8 @@
 ---
+import { Image } from "@astrojs/image/components";
+import portrait from "../assets/portrait.png";
 import NavLink from "../components/NavLink.astro";
 import SVGLink from "../components/SVGLink.astro";
-import portrait from "/portrait.png";
 
 interface Props {
   title?: string;
@@ -44,9 +45,11 @@ const defaultDescription =
       <div class="px-6 pt-8 pb-12 md:px-12 md:pt-12 lg:px-24 lg:pt-16">
         <div class="max-w-prose">
           <a href="/" class="flex h-16 w-16 rounded-full">
-            <img
+            <Image
               src={portrait}
               alt="Portrait of the author"
+              width={200}
+              aspectRatio="1:1"
               class="h-16 w-16 rounded-full border-2 border-transparent transition-colors hover:border-brand"
             />
           </a>
