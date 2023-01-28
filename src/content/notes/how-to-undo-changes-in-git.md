@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Note.astro
 title: "How to undo changes in git"
 ---
 

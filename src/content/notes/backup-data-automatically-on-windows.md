@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Note.astro
 title: "Backup data automatically on Windows"
 ---
 
