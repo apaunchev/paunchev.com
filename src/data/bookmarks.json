@@ -1,5 +1,29 @@
 [
   {
+    "createdAt": "2023-01-28 12:00:00",
+    "title": "When it’s time",
+    "description": "How do you decide when it's time to leave?",
+    "url": "https://hoho.com/posts/when-its-time/"
+  },
+  {
+    "createdAt": "2023-01-28 12:00:00",
+    "title": "Failing slowly",
+    "quote": "If an organization wants to embrace failure, it must be equally comfortable rejecting bad goals, eliminating distractions, and demanding accountability in failure.",
+    "url": "https://hoho.com/posts/failing-slowly/"
+  },
+  {
+    "createdAt": "2023-01-28 12:00:00",
+    "title": "Do the low-tech thing first",
+    "quote": "Give yourself permission to be simple and unsophisticated, when doing so works, and when the fancier option isn’t obviously justified right now.",
+    "url": "https://hoho.com/posts/low-tech/"
+  },
+  {
+    "createdAt": "2023-01-28 12:00:00",
+    "title": "Your tech stack is not the product",
+    "description": "Focus on shipping frequently and reliably. Be able to bring in more people when you need them.",
+    "url": "https://hoho.com/posts/your-stack-is-not-the-product/"
+  },
+  {
     "createdAt": "2022-12-04 12:00:00",
     "title": "I’ve Been Laid Off 5.5 Times. Here Are 4.5 Lessons I Learned.",
     "description": "It’s probably not your fault. Choose who you work for. Do not be afraid to leave. Be the best you can be. Get the right perspective.",
