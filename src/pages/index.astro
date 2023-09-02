@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/Base.astro";
 ---
 
 <BaseLayout>
-  <h1 class="text-2xl">
+  <h1 class="mb-3 mt-6 text-2xl font-semibold tracking-tight">
     Hello, I’m Angel—a software engineer from Bulgaria who turns ambitious ideas
     into reality.
   </h1>
@@ -21,10 +21,12 @@ import BaseLayout from "../layouts/Base.astro";
       lifecycle—from early concept, through technical design, to delivering and
       maintaining the finished product. I’m also responsible for growing and
       mentoring a team of engineers. See{" "}
-      <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a> for more.
+      <a href="https://www.linkedin.com/in/apaunchev/" class="hover:text-brand"
+        >LinkedIn</a
+      > for more.
     </p>
   </article>
-  <h2>Projects</h2>
+  <h2 class="mb-3 mt-6 text-2xl font-semibold tracking-tight">Projects</h2>
   <div class="flex flex-col gap-4">
     <ContentLink
       href="https://github.com/apaunchev/playground"

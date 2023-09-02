@@ -21,7 +21,9 @@ const { Content } = await note.render();
 ---
 
 <BaseLayout title={note.data.title}>
-  <h1>{note.data.title}</h1>
+  <h1 class="mb-3 mt-6 text-3xl font-semibold tracking-tight">
+    {note.data.title}
+  </h1>
   <article class="prose prose-zinc mt-6 prose-p:leading-relaxed">
     <Content />
   </article>

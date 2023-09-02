@@ -1,7 +1,8 @@
 ---
+import { Image } from "astro:assets";
 import NavLink from "../components/NavLink.astro";
 import SVGLink from "../components/SVGLink.astro";
-import portrait from "/portrait.png";
+import portrait from "../images/portrait.png";
 
 interface Props {
   title?: string;
@@ -15,7 +16,7 @@ const defaultDescription =
   "Angel is a software engineer from Bulgaria who turns ambitious ideas into reality.";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -41,10 +42,10 @@ const defaultDescription =
   </head>
   <body>
     <main>
-      <div class="px-6 pt-8 pb-12 md:px-12 md:pt-12 lg:px-24 lg:pt-16">
+      <div class="px-6 pb-12 pt-8 md:px-12 md:pt-12 lg:px-24 lg:pt-16">
         <div class="max-w-prose">
           <a href="/" class="flex h-16 w-16 rounded-full">
-            <img
+            <Image
               src={portrait}
               alt="Portrait of the author"
               class="h-16 w-16 rounded-full border-2 border-transparent transition-colors hover:border-brand"
@@ -55,7 +56,7 @@ const defaultDescription =
       </div>
     </main>
     <footer class="border-t border-zinc-100">
-      <div class="px-6 pt-4 pb-8 md:px-12 md:pb-12 lg:px-24 lg:pb-16">
+      <div class="px-6 pb-8 pt-4 md:px-12 md:pb-12 lg:px-24 lg:pb-16">
         <div
           class="flex max-w-prose flex-col justify-start gap-3 sm:flex-row sm:justify-between"
         >
@@ -108,26 +109,5 @@ const defaultDescription =
     font-weight: 400;
     src: url("/fonts/inter-italic.woff2") format("woff2");
     unicode-range: U+20-7E;
-  }
-
-  html {
-    @apply font-sans text-zinc-800 antialiased;
-  }
-
-  h1,
-  h2 {
-    @apply mt-6 mb-3 font-semibold tracking-tight;
-  }
-
-  h1 {
-    @apply text-3xl;
-  }
-
-  h2 {
-    @apply text-2xl;
-  }
-
-  a {
-    @apply font-medium underline transition-colors hover:text-brand;
   }
 </style>
