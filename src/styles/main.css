@@ -8,6 +8,6 @@
   }
 
   a {
-    @apply border-b text-neutral-900 border-neutral-300 hover:border-neutral-900 focus:border-neutral-900 transition-colors;
+    @apply text-neutral-900 underline decoration-neutral-300 hover:decoration-orange-400 decoration-[0.09375rem] transition-colors;
   }
 }
