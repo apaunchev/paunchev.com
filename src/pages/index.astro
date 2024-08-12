@@ -1,7 +1,36 @@
 ---
+import { Image } from "astro:assets";
+import portrait from "../images/portrait.png";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Home">
-  <h1 class="text-2xl">Hello world</h1>
+<Layout>
+  <header>
+    <Image
+      src={portrait}
+      alt="Angel Paunchev"
+      class="w-16 h-16 rounded-full"
+      quality={100}
+    />
+    <h1 class="font-semibold mt-4">Angel Paunchev</h1>
+    <p class="text-neutral-600">Product Engineer</p>
+  </header>
+  <article class="*:mt-4">
+    <p>
+      A versatile software engineer who thrives at the intersection of product
+      and engineering, bringing a keen eye for detail, a deep understanding of
+      user experience, and the technical expertise to guide projects smoothly
+      from concept to launch—and beyond.
+    </p>
+    <p>
+      Currently helping shape the future of online grocery shopping at <a
+        href="https://www.ebag.bg/">eBag</a
+      >.
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/apaunchev/">LinkedIn</a>
+      <span class="text-neutral-300">·</span>
+      <a href="https://github.com/apaunchev">GitHub</a>
+    </p>
+  </article>
 </Layout>
