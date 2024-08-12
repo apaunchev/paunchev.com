@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/inter";
+import { ViewTransitions } from "astro:transitions";
 import "../styles/main.css";
 
 interface Props {
@@ -22,6 +23,7 @@ const defaultDescription = "Angel is a software engineer from Bulgaria.";
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title ? `${title} / ${defaultTitle}` : defaultTitle}</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="max-w-xl mx-auto px-4 pt-16 md:pt-32 pb-4">
