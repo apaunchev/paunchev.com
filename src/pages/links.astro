@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const links = await getCollection("links");
+const sortedLinks = links.sort(
+  (a, b) =>
+    Date.parse(b.data.published_at.toString()) -
+    Date.parse(a.data.published_at.toString()),
+);
+---
+
+<Layout title="Links">
+  <div>
+    <p>
+      <a href="/">&larr;</a>
+    </p>
+    <div class="mt-4">
+      {
+        sortedLinks.map((link) =>
+          link.render().then(({ Content }) => (
+            <article class="[&:not(:first-of-type)]:border-dashed [&:not(:first-of-type)]:border-t py-6">
+              <h2 class="font-semibold">
+                <a href={link.data.url}>{link.data.title}</a>
+              </h2>
+              <p class="mt-0.5 text-sm text-neutral-500">
+                {new URL(link.data.url).hostname}
+              </p>
+              {link.body && (
+                <div class="mt-4 prose prose-sm">
+                  <Content />
+                </div>
+              )}
+            </article>
+          )),
+        )
+      }
+    </div>
+  </div>
+</Layout>
