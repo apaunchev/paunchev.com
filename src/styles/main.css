@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply text-neutral-800 bg-white font-sans antialiased selection:bg-orange-100;
-    }
+  body {
+    @apply text-neutral-800 bg-white font-sans antialiased selection:bg-orange-100;
+  }
 
-    a {
-        @apply border-b text-neutral-900 border-neutral-300 hover:border-neutral-900 focus:border-neutral-900 transition-colors;
-    }
+  a {
+    @apply border-b text-neutral-900 border-neutral-300 hover:border-neutral-900 focus:border-neutral-900 transition-colors;
+  }
 }
